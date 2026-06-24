@@ -503,6 +503,14 @@
   line-height: 1.8;
 }
 
+.next-lesson-link {
+  justify-self: start;
+  padding-bottom: 6px;
+  border-bottom: 1px solid currentColor;
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .next-lesson span {
   font-size: 11px;
   font-weight: 800;

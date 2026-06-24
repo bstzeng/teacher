@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="互動認識 Airbus A320 駕駛艙的主要儀表、控制器與飛行顯示器。"
+    />
+    <title>A320 駕駛艙探險｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cockpit.css" />
+    <script src="cockpit.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header cockpit-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span>
+        <span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#map">互動地圖</a>
+        <a href="#zones">三大區域</a>
+        <a href="#mission">找儀表任務</a>
+      </nav>
+      <a class="header-cta lesson-home" href="aircraft.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="cockpit-hero">
+        <div>
+          <p class="eyebrow"><span aria-hidden="true"></span>飛機與機場・第二課</p>
+          <p class="lesson-chip">互動課程 · 約 15 分鐘</p>
+          <h1>歡迎進入，<em>A320 駕駛艙。</em></h1>
+          <p class="hero-intro">
+            眼前看起來有上百個按鈕，但飛行員不是同時操作全部。
+            我們先把駕駛艙分區，再認識九個最重要的設備。
+          </p>
+          <a class="button button-primary" href="#map">
+            開始探索 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+        <div class="cockpit-hero-note">
+          <span>先記住</span>
+          <strong>看飛行</strong>
+          <strong>管飛行</strong>
+          <strong>顧飛機</strong>
+          <p>複雜的駕駛艙，其實可以先用這三件事理解。</p>
+        </div>
+      </section>
+
+      <section class="cockpit-map-section" id="map" aria-labelledby="map-title">
+        <div class="map-heading">
+          <div>
+            <p class="section-kicker">互動駕駛艙</p>
+            <h2 id="map-title">點一個編號，看看它在做什麼</h2>
+          </div>
+          <p>
+            熱點位置依這張 A320 照片標示。不同航空公司、機齡與改裝版本，
+            外觀可能稍有不同，但基本功能與分區相近。
+          </p>
+        </div>
+
+        <div class="map-mission-banner" id="map-mission-banner" hidden>
+          <span>目前任務</span>
+          <strong id="map-mission-text">請找到指定設備</strong>
+          <a href="#mission">查看進度 ↓</a>
+        </div>
+
+        <div class="explorer">
+          <div class="cockpit-scroll" aria-label="可水平捲動的 A320 駕駛艙互動照片">
+            <div class="cockpit-stage">
+              <img
+                src="assets/cockpit/a320-cockpit.jpg"
+                alt="Air France Airbus A320 駕駛艙正面照片"
+              />
+              <button class="hotspot is-active" style="--x: 23%; --y: 44%" data-part="pfd" type="button" aria-label="PFD 主要飛行顯示器">1</button>
+              <button class="hotspot" style="--x: 35%; --y: 44%" data-part="nd" type="button" aria-label="ND 導航顯示器">2</button>
+              <button class="hotspot" style="--x: 50%; --y: 28%" data-part="fcu" type="button" aria-label="FCU 飛行控制面板">3</button>
+              <button class="hotspot" style="--x: 56%; --y: 46%" data-part="ecam" type="button" aria-label="ECAM 飛機系統顯示">4</button>
+              <button class="hotspot" style="--x: 70%; --y: 48%" data-part="gear" type="button" aria-label="起落架控制桿">5</button>
+              <button class="hotspot" style="--x: 12%; --y: 61%" data-part="sidestick" type="button" aria-label="側桿">6</button>
+              <button class="hotspot" style="--x: 52%; --y: 80%" data-part="thrust" type="button" aria-label="推力控制桿">7</button>
+              <button class="hotspot" style="--x: 37%; --y: 72%" data-part="mcdu" type="button" aria-label="MCDU 多功能控制顯示組件">8</button>
+              <button class="hotspot" style="--x: 51%; --y: 9%" data-part="overhead" type="button" aria-label="頭頂控制面板">9</button>
+            </div>
+          </div>
+
+          <aside class="instrument-panel" aria-live="polite">
+            <div class="instrument-index" id="instrument-index">01 / 09</div>
+            <p class="instrument-zone" id="instrument-zone">看飛行</p>
+            <h3 id="instrument-name">PFD・主要飛行顯示器</h3>
+            <p id="instrument-description">
+              飛行員最常看的畫面。它把姿態、速度、高度、升降率與飛行模式集中在一起。
+            </p>
+            <div class="instrument-detail">
+              <span>觀察提示</span>
+              <p id="instrument-tip">找找看藍色天空與棕色地面交界的「人工地平線」。</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="instrument-tabs" id="instrument-tabs" aria-label="駕駛艙設備清單"></div>
+        <p class="photo-license">
+          照片：Louis，Air France Airbus A320-211 cockpit，
+          <a href="https://commons.wikimedia.org/wiki/File:Cockpit_of_Airbus_A320-211_Air_France_(F-GFKH).jpg" target="_blank" rel="noreferrer">
+            CC BY-SA 2.0 ↗
+          </a>
+        </p>
+      </section>
+
+      <section class="zone-section" id="zones" aria-labelledby="zones-title">
+        <div class="zone-heading">
+          <p class="section-kicker">把複雜變簡單</p>
+          <h2 id="zones-title">先把駕駛艙分成三件事</h2>
+        </div>
+        <div class="zone-grid">
+          <article>
+            <span>01</span>
+            <h3>看飛行</h3>
+            <p>PFD、ND 告訴飛行員「飛機現在在哪裡、飛得如何」。</p>
+            <div class="zone-parts">PFD · ND</div>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>管飛行</h3>
+            <p>FCU、側桿、油門與 MCDU 用來輸入飛行員的意圖。</p>
+            <div class="zone-parts">FCU · 側桿 · 推力 · MCDU</div>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>顧飛機</h3>
+            <p>ECAM、起落架與頭頂面板協助管理飛機各項系統。</p>
+            <div class="zone-parts">ECAM · 起落架 · 頭頂面板</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mission-section" id="mission" aria-labelledby="mission-title">
+        <div class="mission-copy">
+          <p class="section-kicker">機長交給你的任務</p>
+          <h2 id="mission-title">找到指定的儀表</h2>
+          <p>
+            按下開始後，系統會指定三個設備。請回到照片上點出正確位置。
+          </p>
+          <button class="button button-primary" id="start-mission" type="button">
+            開始任務 <span aria-hidden="true">✦</span>
+          </button>
+        </div>
+        <div class="mission-card" id="mission-card">
+          <p class="mission-status" id="mission-status">任務尚未開始</p>
+          <h3 id="mission-prompt">準備好在駕駛艙中尋寶了嗎？</h3>
+          <div class="mission-progress" aria-label="任務進度">
+            <span></span><span></span><span></span>
+          </div>
+          <p id="mission-feedback" aria-live="polite">提示：所有答案都在上方的照片裡。</p>
+        </div>
+      </section>
+
+      <section class="third-lesson">
+        <p>下一站</p>
+        <div>
+          <span>第三課・準備中</span>
+          <h2>Airbus vs Boeing</h2>
+        </div>
+        <p>同樣都在飛，兩家公司設計駕駛艙的想法卻很不一樣。</p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>今天，你已經看懂駕駛艙了。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

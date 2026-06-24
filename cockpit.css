@@ -1,0 +1,521 @@
+.cockpit-header {
+  background: var(--cream);
+}
+
+.cockpit-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.55fr;
+  gap: 90px;
+  align-items: center;
+  width: min(1180px, calc(100% - 48px));
+  min-height: 620px;
+  margin: 0 auto;
+  padding: 75px 0 90px;
+}
+
+.cockpit-hero h1 {
+  font-size: clamp(55px, 6vw, 82px);
+}
+
+.lesson-chip {
+  width: fit-content;
+  margin-bottom: 24px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cockpit-hero-note {
+  position: relative;
+  display: grid;
+  padding: 38px;
+  color: var(--paper);
+  background: var(--ink);
+  box-shadow: 13px 15px 0 var(--orange);
+  transform: rotate(2deg);
+}
+
+.cockpit-hero-note span {
+  margin-bottom: 24px;
+  color: #f4b69f;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.cockpit-hero-note strong {
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 31px;
+}
+
+.cockpit-hero-note p {
+  margin: 24px 0 0;
+  color: rgba(255, 253, 247, 0.65);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.cockpit-map-section {
+  padding: 100px max(24px, calc((100% - 1280px) / 2)) 105px;
+  color: var(--paper);
+  background: #112923;
+}
+
+.map-heading {
+  display: grid;
+  grid-template-columns: 1fr 0.65fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.map-heading h2,
+.zone-heading h2,
+.mission-copy h2,
+.third-lesson h2 {
+  margin-bottom: 0;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.map-heading > p {
+  margin-bottom: 3px;
+  color: rgba(255, 253, 247, 0.65);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.map-mission-banner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 13px 17px;
+  color: var(--ink);
+  background: #f3d158;
+  font-size: 12px;
+}
+
+.map-mission-banner[hidden] {
+  display: none;
+}
+
+.map-mission-banner span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.map-mission-banner a {
+  border-bottom: 1px solid currentColor;
+  font-weight: 700;
+}
+
+.explorer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  overflow: hidden;
+  background: #091815;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cockpit-scroll {
+  overflow-x: auto;
+}
+
+.cockpit-stage {
+  position: relative;
+  min-width: 760px;
+}
+
+.cockpit-stage img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.hotspot {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: var(--ink);
+  background: var(--paper);
+  border: 3px solid var(--orange);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(239, 112, 71, 0.25);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  transform: translate(-50%, -50%);
+  transition:
+    transform 160ms ease,
+    color 160ms ease,
+    background 160ms ease;
+}
+
+.hotspot:hover,
+.hotspot.is-active,
+.hotspot.is-target {
+  color: var(--paper);
+  background: var(--orange);
+  transform: translate(-50%, -50%) scale(1.17);
+}
+
+.hotspot.is-target {
+  animation: target-pulse 1s ease-in-out infinite;
+}
+
+@keyframes target-pulse {
+  50% {
+    box-shadow: 0 0 0 13px rgba(239, 112, 71, 0.1);
+  }
+}
+
+.instrument-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 540px;
+  padding: 36px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.instrument-index {
+  margin-bottom: 34px;
+  color: var(--orange-dark);
+  font-family: "Newsreader", serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.instrument-zone {
+  margin-bottom: 9px;
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.instrument-panel h3 {
+  margin-bottom: 18px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 31px;
+  line-height: 1.25;
+}
+
+.instrument-panel > p:not(.instrument-zone) {
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.instrument-detail {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.instrument-detail span {
+  color: var(--orange-dark);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.instrument-detail p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.instrument-tabs {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 5px;
+  margin-top: 12px;
+}
+
+.instrument-tab {
+  min-height: 58px;
+  padding: 8px 5px;
+  color: rgba(255, 253, 247, 0.65);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.instrument-tab:hover,
+.instrument-tab.is-active {
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.photo-license {
+  margin: 18px 0 0;
+  color: rgba(255, 253, 247, 0.5);
+  font-size: 9px;
+}
+
+.photo-license a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.zone-section {
+  padding: 110px max(24px, calc((100% - 1180px) / 2));
+  background: #e9ebe0;
+}
+
+.zone-heading {
+  display: grid;
+  grid-template-columns: 0.45fr 1fr;
+  gap: 50px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.zone-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.zone-grid article {
+  min-height: 280px;
+  padding: 30px;
+  background: var(--paper);
+  border-top: 4px solid var(--orange);
+}
+
+.zone-grid article > span {
+  color: var(--orange-dark);
+  font-family: "Newsreader", serif;
+  font-weight: 700;
+}
+
+.zone-grid h3 {
+  margin: 42px 0 12px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 31px;
+}
+
+.zone-grid p {
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.zone-parts {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.mission-section {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 80px;
+  width: min(1050px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.mission-copy > p:not(.section-kicker) {
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+.mission-copy .button {
+  border: 0;
+  cursor: pointer;
+}
+
+.mission-card {
+  min-height: 350px;
+  padding: 45px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 12px 14px 0 var(--orange);
+}
+
+.mission-status {
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.mission-card h3 {
+  margin: 45px 0 32px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 29px;
+  line-height: 1.4;
+}
+
+.mission-progress {
+  display: flex;
+  gap: 8px;
+}
+
+.mission-progress span {
+  width: 42px;
+  height: 5px;
+  background: var(--line);
+}
+
+.mission-progress span.is-done {
+  background: var(--orange);
+}
+
+#mission-feedback {
+  margin-top: 24px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.third-lesson {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 0.8fr;
+  gap: 45px;
+  align-items: center;
+  padding: 85px max(24px, calc((100% - 1180px) / 2));
+  color: var(--paper);
+  background: var(--orange-dark);
+}
+
+.third-lesson p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.third-lesson span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+@media (max-width: 960px) {
+  .explorer {
+    grid-template-columns: 1fr;
+  }
+
+  .instrument-panel {
+    min-height: auto;
+  }
+
+  .instrument-tabs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .cockpit-hero,
+  .map-heading,
+  .zone-heading,
+  .mission-section,
+  .third-lesson {
+    grid-template-columns: 1fr;
+  }
+
+  .cockpit-hero {
+    gap: 55px;
+  }
+
+  .zone-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .lesson-home {
+    font-size: 0;
+  }
+
+  .lesson-home span {
+    font-size: 13px;
+  }
+
+  .cockpit-hero {
+    width: min(100% - 32px, 1180px);
+    min-height: auto;
+    padding: 55px 0 75px;
+  }
+
+  .cockpit-hero h1 {
+    font-size: 46px;
+  }
+
+  .cockpit-hero-note {
+    padding: 30px;
+  }
+
+  .cockpit-map-section {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .map-mission-banner {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .map-mission-banner a {
+    display: none;
+  }
+
+  .cockpit-scroll {
+    margin-right: -1px;
+  }
+
+  .instrument-panel {
+    padding: 30px 24px;
+  }
+
+  .instrument-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mission-section {
+    width: min(100% - 32px, 1050px);
+    gap: 40px;
+    padding: 85px 0 95px;
+  }
+
+  .mission-card {
+    padding: 30px 24px;
+    box-shadow: 7px 9px 0 var(--orange);
+  }
+
+  .third-lesson {
+    gap: 15px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hotspot.is-target {
+    animation: none;
+  }
+}
