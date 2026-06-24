@@ -396,9 +396,14 @@ h1 em {
   background: #dceae8;
 }
 
+.chart-topic-card {
+  background: #e7e2c8;
+}
+
 .cockpit-topic-card .plus-mark,
 .compare-topic-card .plus-mark,
-.hardware-topic-card .plus-mark {
+.hardware-topic-card .plus-mark,
+.chart-topic-card .plus-mark {
   width: auto;
   height: auto;
   margin: -35px 0 12px;
@@ -413,7 +418,8 @@ h1 em {
 
 .cockpit-topic-card > p,
 .compare-topic-card > p,
-.hardware-topic-card > p {
+.hardware-topic-card > p,
+.chart-topic-card > p {
   margin-bottom: 26px;
   color: var(--ink-soft);
   font-size: 13px;

@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="用互動熱點逐區讀懂桃園機場 LOC RWY 05L 儀器進場航圖。"
+    />
+    <title>第一次讀懂進場航圖｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="chart.css" />
+    <script src="chart.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header chart-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#reader">航圖解說</a>
+        <a href="#route">跟著飛一遍</a>
+        <a href="#challenge">讀圖挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="hardware.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="chart-hero">
+        <div>
+          <p class="eyebrow"><span aria-hidden="true"></span>飛機與機場・第五課</p>
+          <p class="lesson-chip">互動讀圖 · 約 20 分鐘</p>
+          <h1>一張航圖，<em>就是一份降落劇本。</em></h1>
+          <p class="hero-intro">
+            航圖不是要一次全部看懂。先學會它分成哪些區塊，
+            再沿著航路一段一段讀，密密麻麻的線條就會開始說話。
+          </p>
+          <a class="button button-primary" href="#reader">
+            開始讀圖 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+        <div class="hero-chart-card" aria-hidden="true">
+          <span>RCTP</span>
+          <strong>LOC<br />RWY 05L</strong>
+          <div class="hero-route">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <p>JAMMY → KARAN → ANKLE → ITIA</p>
+        </div>
+      </section>
+
+      <section class="safety-note" aria-label="航圖版本與安全提醒">
+        <strong>僅供教學，不可用於實際飛航</strong>
+        <p>
+          本課使用民航局 AIP AMDT 01-23、2023 年 1 月 12 日版本作為讀圖範例。
+          航圖、程序與頻率可能變更，實際飛航必須使用當期有效資料。
+        </p>
+        <a href="assets/charts/rctp-loc-rwy05l-2023.pdf" target="_blank">開啟原始 PDF ↗</a>
+      </section>
+
+      <section class="reader-section" id="reader" aria-labelledby="reader-title">
+        <div class="reader-heading">
+          <div>
+            <p class="section-kicker">逐區拆解</p>
+            <h2 id="reader-title">航圖上的每一塊，都在回答一個問題</h2>
+          </div>
+          <p>點航圖上的編號，或從區塊清單選擇。使用縮放按鈕可以放大閱讀原圖。</p>
+        </div>
+
+        <div class="chart-reader">
+          <div class="chart-column">
+            <div class="chart-toolbar">
+              <div>
+                <strong>RCTP LOC RWY 05L</strong>
+                <span>15 個解說區塊</span>
+              </div>
+              <div class="zoom-controls" aria-label="航圖縮放">
+                <button id="zoom-out" type="button" aria-label="縮小航圖">−</button>
+                <span id="zoom-label">100%</span>
+                <button id="zoom-in" type="button" aria-label="放大航圖">＋</button>
+                <button id="zoom-reset" type="button">重設</button>
+              </div>
+            </div>
+            <div class="chart-viewport" id="chart-viewport">
+              <div class="chart-canvas" id="chart-canvas">
+                <img
+                  src="assets/charts/rctp-loc-rwy05l-2023.png"
+                  alt="桃園機場 RCTP LOC RWY 05L 儀器進場航圖，2023 年 1 月 12 日版本"
+                />
+                <span class="region-highlight" id="region-highlight" aria-hidden="true"></span>
+                <button class="chart-pin is-active" data-region="identity" style="--x:91%;--y:5%" type="button">1</button>
+                <button class="chart-pin" data-region="communications" style="--x:49%;--y:12%" type="button">2</button>
+                <button class="chart-pin" data-region="reference" style="--x:44%;--y:18%" type="button">3</button>
+                <button class="chart-pin" data-region="msa" style="--x:91%;--y:15%" type="button">4</button>
+                <button class="chart-pin" data-region="speed" style="--x:18%;--y:31%" type="button">5</button>
+                <button class="chart-pin" data-region="plan" style="--x:55%;--y:48%" type="button">6</button>
+                <button class="chart-pin" data-region="navaids" style="--x:89%;--y:28%" type="button">7</button>
+                <button class="chart-pin" data-region="waypoints" style="--x:59%;--y:58%" type="button">8</button>
+                <button class="chart-pin" data-region="airspace" style="--x:37%;--y:57%" type="button">9</button>
+                <button class="chart-pin" data-region="scale" style="--x:87%;--y:68%" type="button">10</button>
+                <button class="chart-pin" data-region="advisory" style="--x:52%;--y:73%" type="button">11</button>
+                <button class="chart-pin" data-region="profile" style="--x:39%;--y:81%" type="button">12</button>
+                <button class="chart-pin" data-region="missed" style="--x:82%;--y:81%" type="button">13</button>
+                <button class="chart-pin" data-region="minima" style="--x:35%;--y:94%" type="button">14</button>
+                <button class="chart-pin" data-region="notes" style="--x:83%;--y:94%" type="button">15</button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="region-panel" aria-live="polite">
+            <div class="region-index">
+              <span id="region-number">01 / 15</span>
+              <span id="region-question">這是哪一張圖？</span>
+            </div>
+            <h3 id="region-title">程序名稱與跑道</h3>
+            <p id="region-summary">
+              RCTP 是桃園國際機場的 ICAO 代碼；LOC 表示這是左右方向導引的
+              Localizer 進場；RWY 05L 表示使用磁向約 050 度的左跑道。
+            </p>
+            <div class="read-example">
+              <span>在圖上怎麼讀</span>
+              <strong id="region-example">RCTP · LOC · RWY 05L</strong>
+            </div>
+            <div class="beginner-tip">
+              <span>初學者提醒</span>
+              <p id="region-tip">
+                LOC 程序不等於完整 ILS。這張圖主要提供左右方向導引，下降高度要依剖面圖與 DME 距離管理。
+              </p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="region-list" aria-label="航圖解說區塊清單">
+          <button class="region-button is-active" data-region="identity" type="button"><span>01</span>程序名稱</button>
+          <button class="region-button" data-region="communications" type="button"><span>02</span>通訊頻率</button>
+          <button class="region-button" data-region="reference" type="button"><span>03</span>標高與基準</button>
+          <button class="region-button" data-region="msa" type="button"><span>04</span>MSA 與磁差</button>
+          <button class="region-button" data-region="speed" type="button"><span>05</span>速度限制</button>
+          <button class="region-button" data-region="plan" type="button"><span>06</span>平面圖</button>
+          <button class="region-button" data-region="navaids" type="button"><span>07</span>導航台</button>
+          <button class="region-button" data-region="waypoints" type="button"><span>08</span>航點與定位</button>
+          <button class="region-button" data-region="airspace" type="button"><span>09</span>限制區域</button>
+          <button class="region-button" data-region="scale" type="button"><span>10</span>比例尺</button>
+          <button class="region-button" data-region="advisory" type="button"><span>11</span>距離建議高度</button>
+          <button class="region-button" data-region="profile" type="button"><span>12</span>垂直剖面</button>
+          <button class="region-button" data-region="missed" type="button"><span>13</span>重飛程序</button>
+          <button class="region-button" data-region="minima" type="button"><span>14</span>最低標準</button>
+          <button class="region-button" data-region="notes" type="button"><span>15</span>附註與條件</button>
+        </div>
+      </section>
+
+      <section class="route-section" id="route" aria-labelledby="route-title">
+        <div class="route-heading">
+          <p class="section-kicker">把程序串起來</p>
+          <h2 id="route-title">跟著飛機，從進場點一路飛到跑道</h2>
+          <p>點選步驟，看看飛機此時在哪裡、要保持什麼高度，以及下一件事是什麼。</p>
+        </div>
+        <div class="route-workspace">
+          <div class="route-map" aria-hidden="true">
+            <svg viewBox="0 0 860 300">
+              <path class="route-line" d="M65 220C160 220 180 170 265 170S380 136 455 136S565 96 645 96L790 55"/>
+              <path class="missed-line" d="M790 55C805 75 790 105 725 125"/>
+              <circle cx="65" cy="220" r="8"/><circle cx="265" cy="170" r="8"/>
+              <circle cx="455" cy="136" r="8"/><circle cx="645" cy="96" r="8"/>
+              <circle cx="790" cy="55" r="8"/><circle cx="725" cy="125" r="8"/>
+            </svg>
+            <span style="--x:7%;--y:78%">JAMMY</span>
+            <span style="--x:30%;--y:61%">KARAN</span>
+            <span style="--x:52%;--y:49%">ANKLE</span>
+            <span style="--x:74%;--y:34%">FAF</span>
+            <span style="--x:89%;--y:16%">MAPt</span>
+            <span style="--x:82%;--y:50%">SEDUM</span>
+            <i class="route-plane" id="route-plane">✈</i>
+          </div>
+          <div class="route-card" aria-live="polite">
+            <span id="route-step">步驟 1 / 6</span>
+            <h3 id="route-name">JAMMY · 起始進場定位點</h3>
+            <p id="route-instruction">
+              JAMMY 是其中一個 IAF。飛機可在 4000 呎加入程序，接著沿 068 度航向飛向 KARAN。
+            </p>
+            <strong id="route-altitude">目標：4000 FT</strong>
+          </div>
+        </div>
+        <div class="route-controls" aria-label="進場程序步驟">
+          <button class="route-button is-active" data-step="0" type="button">JAMMY</button>
+          <button class="route-button" data-step="1" type="button">KARAN</button>
+          <button class="route-button" data-step="2" type="button">ANKLE</button>
+          <button class="route-button" data-step="3" type="button">FAF</button>
+          <button class="route-button" data-step="4" type="button">MAPt</button>
+          <button class="route-button" data-step="5" type="button">重飛</button>
+        </div>
+      </section>
+
+      <section class="terms-section" aria-labelledby="terms-title">
+        <div>
+          <p class="section-kicker">先記住四個縮寫</p>
+          <h2 id="terms-title">航路上的四個關鍵角色</h2>
+        </div>
+        <div class="terms-grid">
+          <article><span>IAF</span><h3>起始進場定位點</h3><p>飛機從這裡加入正式儀器進場程序。</p></article>
+          <article><span>IF</span><h3>中間進場定位點</h3><p>讓飛機穩定對正最後進場航線。</p></article>
+          <article><span>FAF</span><h3>最後進場定位點</h3><p>通過後進入最後下降階段，本圖為 ITIA 4.2D。</p></article>
+          <article><span>MAPt</span><h3>誤失進場點</h3><p>到這裡仍無法安全落地，就必須執行重飛。</p></article>
+        </div>
+      </section>
+
+      <section class="challenge-section chart-challenge" id="challenge" aria-labelledby="challenge-title">
+        <div class="challenge-copy">
+          <p class="section-kicker">讀圖挑戰</p>
+          <h2 id="challenge-title">你會去哪一區找答案？</h2>
+          <p>共五題。這次不是背數字，而是練習知道該看航圖的哪個位置。</p>
+        </div>
+        <div class="challenge-card">
+          <p id="challenge-progress">第 1 題，共 5 題</p>
+          <h3 id="challenge-question">想知道要使用哪個塔台頻率，應該查看哪一區？</h3>
+          <div class="challenge-options" id="challenge-options"></div>
+          <p id="challenge-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="challenge-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第五課完成</p>
+        <h2>你不需要記住整張圖，只要知道去哪裡找答案。</h2>
+        <a href="index.html">回到課程首頁 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>先辨認區塊，再沿著航路閱讀。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

@@ -597,6 +597,15 @@
   font-size: 32px;
 }
 
+.next-lesson-link {
+  justify-self: start;
+  padding-bottom: 6px;
+  color: var(--paper);
+  border-bottom: 1px solid currentColor;
+  font-size: 12px;
+  font-weight: 800;
+}
+
 @media (max-width: 940px) {
   .hardware-hero,
   .anatomy-workspace,
