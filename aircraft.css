@@ -1,0 +1,570 @@
+.lesson-header {
+  background: var(--cream);
+}
+
+.lesson-hero {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 70px;
+  align-items: center;
+  width: min(1180px, calc(100% - 48px));
+  min-height: 690px;
+  margin: 0 auto;
+  padding: 70px 0 90px;
+}
+
+.lesson-meta {
+  width: fit-content;
+  margin-bottom: 24px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.lesson-hero h1 {
+  font-size: clamp(55px, 6vw, 82px);
+}
+
+.lesson-hero-image {
+  position: relative;
+  margin: 0;
+}
+
+.lesson-hero-image::before {
+  position: absolute;
+  z-index: -1;
+  top: -24px;
+  right: -22px;
+  width: 75%;
+  height: 88%;
+  content: "";
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+.lesson-hero-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 2px solid var(--ink);
+  box-shadow: 16px 18px 0 var(--ink);
+}
+
+.lesson-hero-image figcaption {
+  margin-top: 28px;
+  color: var(--ink-soft);
+  font-size: 10px;
+}
+
+.image-stamp {
+  position: absolute;
+  right: -18px;
+  bottom: 50px;
+  padding: 9px 13px;
+  color: var(--paper);
+  background: var(--ink);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  transform: rotate(-4deg);
+}
+
+.spotting-section {
+  padding: 100px max(24px, calc((100% - 1180px) / 2));
+  background: #e9ebe0;
+}
+
+.lesson-section-heading {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.8fr;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.lesson-section-heading h2,
+.quiz-intro h2,
+.next-lesson h2 {
+  margin-bottom: 0;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.lesson-section-heading > p:last-child {
+  margin-bottom: 3px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.spotting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.spotting-grid article {
+  position: relative;
+  min-height: 285px;
+  padding: 28px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.spot-number {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: var(--orange);
+  font-family: "Newsreader", serif;
+  font-weight: 700;
+}
+
+.spot-icon {
+  position: relative;
+  width: 90px;
+  height: 78px;
+  margin-bottom: 24px;
+}
+
+.fuselage-icon::before {
+  position: absolute;
+  top: 34px;
+  left: 2px;
+  width: 85px;
+  height: 16px;
+  content: "";
+  background: var(--ink);
+  border-radius: 70% 18% 18% 70%;
+  transform: rotate(-8deg);
+}
+
+.fuselage-icon::after {
+  position: absolute;
+  top: 15px;
+  left: 44px;
+  width: 8px;
+  height: 58px;
+  content: "";
+  background: var(--orange);
+  transform: rotate(35deg);
+}
+
+.engine-icon {
+  width: 65px;
+  height: 65px;
+  border: 9px solid var(--ink);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 7px var(--orange);
+}
+
+.engine-icon::after {
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background: var(--ink);
+  border-radius: 50%;
+}
+
+.wing-icon {
+  border-bottom: 17px solid var(--ink);
+  border-left: 8px solid transparent;
+  transform: skewX(-28deg) rotate(-8deg);
+}
+
+.wing-icon::after {
+  position: absolute;
+  right: -3px;
+  bottom: -17px;
+  width: 8px;
+  height: 40px;
+  content: "";
+  background: var(--orange);
+  transform: rotate(24deg);
+  transform-origin: bottom;
+}
+
+.spotting-grid h3 {
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 23px;
+}
+
+.spotting-grid p {
+  margin-bottom: 0;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.aircraft-section {
+  padding: 108px max(24px, calc((100% - 1180px) / 2));
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.light-heading > p:last-child {
+  color: rgba(255, 253, 247, 0.65);
+}
+
+.aircraft-list {
+  display: grid;
+  gap: 24px;
+}
+
+.aircraft-card {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  min-height: 500px;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.aircraft-card.reverse .aircraft-photo {
+  order: 2;
+}
+
+.aircraft-photo {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+}
+
+.aircraft-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.aircraft-card:hover .aircraft-photo img {
+  transform: scale(1.025);
+}
+
+.maker-tag {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  padding: 7px 11px;
+  color: var(--paper);
+  background: var(--orange-dark);
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.boeing-tag {
+  background: var(--ink);
+}
+
+.aircraft-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px;
+}
+
+.aircraft-number {
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.aircraft-copy h3 {
+  margin-bottom: 12px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 38px;
+}
+
+.aircraft-lead {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.aircraft-copy dl {
+  margin: 15px 0 25px;
+  border-top: 1px solid var(--line);
+}
+
+.aircraft-copy dl div {
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.aircraft-copy dt {
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.aircraft-copy dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.clue-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 0;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--ink);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.clue-list {
+  margin: 17px 0 5px;
+  padding-left: 19px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.photo-credit {
+  margin-top: 18px;
+  color: var(--ink-soft);
+  font-size: 9px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.quiz-section {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 80px;
+  width: min(1050px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.quiz-intro > p:last-child {
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+.quiz-card {
+  min-height: 390px;
+  padding: 42px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 12px 14px 0 var(--orange);
+}
+
+.quiz-progress {
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.quiz-card h3 {
+  min-height: 76px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 26px;
+  line-height: 1.45;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+
+.quiz-option {
+  padding: 13px 8px;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--ink);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.quiz-option:hover,
+.quiz-option.is-correct {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.quiz-option.is-wrong {
+  color: var(--paper);
+  background: var(--orange-dark);
+  border-color: var(--orange-dark);
+}
+
+.quiz-option:disabled {
+  cursor: default;
+}
+
+.quiz-feedback {
+  min-height: 30px;
+  margin: 18px 0 7px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.next-question {
+  border: 0;
+  cursor: pointer;
+}
+
+.quiz-result {
+  text-align: center;
+}
+
+.quiz-badge {
+  display: grid;
+  width: 105px;
+  height: 105px;
+  margin: 10px auto 25px;
+  place-items: center;
+  color: var(--paper);
+  background: var(--orange);
+  border: 5px double var(--paper);
+  border-radius: 50%;
+  outline: 2px solid var(--orange);
+  font-size: 37px;
+}
+
+.next-lesson {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 0.8fr;
+  gap: 45px;
+  align-items: center;
+  padding: 85px max(24px, calc((100% - 1180px) / 2));
+  color: var(--paper);
+  background: var(--orange-dark);
+}
+
+.next-lesson > p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.next-lesson span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+@media (max-width: 860px) {
+  .lesson-hero,
+  .lesson-section-heading,
+  .quiz-section,
+  .next-lesson {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-hero {
+    gap: 55px;
+  }
+
+  .spotting-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spotting-grid article {
+    min-height: 230px;
+  }
+
+  .aircraft-card {
+    grid-template-columns: 1fr;
+  }
+
+  .aircraft-card.reverse .aircraft-photo {
+    order: 0;
+  }
+
+  .quiz-section {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .lesson-home {
+    font-size: 0;
+  }
+
+  .lesson-home span {
+    font-size: 13px;
+  }
+
+  .lesson-hero {
+    width: min(100% - 32px, 1180px);
+    min-height: auto;
+    padding: 55px 0 80px;
+  }
+
+  .lesson-hero h1 {
+    font-size: 47px;
+  }
+
+  .lesson-hero-image::before {
+    right: -12px;
+  }
+
+  .lesson-section-heading {
+    gap: 12px;
+  }
+
+  .aircraft-section {
+    padding-top: 78px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .aircraft-photo {
+    min-height: 245px;
+  }
+
+  .aircraft-copy {
+    padding: 30px 24px 34px;
+  }
+
+  .aircraft-copy h3 {
+    font-size: 31px;
+  }
+
+  .quiz-section {
+    width: min(100% - 32px, 1050px);
+    padding: 85px 0 95px;
+  }
+
+  .quiz-card {
+    padding: 27px 22px;
+    box-shadow: 7px 9px 0 var(--orange);
+  }
+
+  .quiz-options {
+    grid-template-columns: 1fr;
+  }
+
+  .next-lesson {
+    gap: 15px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}

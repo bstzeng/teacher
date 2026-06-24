@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="認識桃園國際機場常見的六種客機，學會從機身、機翼與發動機辨認飛機。"
+    />
+    <title>桃園機場常見客機｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="aircraft.css" />
+    <script src="aircraft.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header lesson-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span>
+        <span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#spotting">辨認方法</a>
+        <a href="#aircraft">六種客機</a>
+        <a href="#quiz">小測驗</a>
+      </nav>
+      <a class="header-cta lesson-home" href="index.html">
+        回首頁 <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="lesson-hero">
+        <div class="lesson-hero-copy">
+          <p class="eyebrow"><span aria-hidden="true"></span>飛機與機場・第一課</p>
+          <p class="lesson-meta">約 12 分鐘 · 初學者</p>
+          <h1>抬頭看，<em>這是哪一架？</em></h1>
+          <p class="hero-intro">
+            桃園機場每天有各式客機起降。先不用背型號，
+            只要看懂機身大小、發動機和翼尖，你就已經像個小小觀察家。
+          </p>
+          <a class="button button-primary" href="#spotting">
+            開始認飛機 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+        <figure class="lesson-hero-image">
+          <img
+            src="assets/aircraft/a350.jpg"
+            alt="星宇航空 Airbus A350-1000 從桃園機場起飛"
+          />
+          <figcaption>
+            星宇航空 A350-1000，攝影：4300streetcar，CC BY 4.0
+          </figcaption>
+          <span class="image-stamp" aria-hidden="true">TPE / RCTP</span>
+        </figure>
+      </section>
+
+      <section class="spotting-section" id="spotting" aria-labelledby="spotting-title">
+        <div class="lesson-section-heading">
+          <p class="section-kicker">先學會怎麼看</p>
+          <h2 id="spotting-title">認飛機，先看三個地方</h2>
+          <p>航空公司會換塗裝，但飛機的骨架不會。從這三個線索開始最可靠。</p>
+        </div>
+        <div class="spotting-grid">
+          <article>
+            <span class="spot-number">01</span>
+            <div class="spot-icon fuselage-icon" aria-hidden="true"></div>
+            <h3>機身：單走道或雙走道？</h3>
+            <p>窄而細長的通常是短中程窄體機；寬大的機身多半能飛更遠、載更多人。</p>
+          </article>
+          <article>
+            <span class="spot-number">02</span>
+            <div class="spot-icon engine-icon" aria-hidden="true"></div>
+            <h3>發動機：圓、扁，還是特別大？</h3>
+            <p>737 的部分型號引擎底部較扁；777 的發動機則大得非常有存在感。</p>
+          </article>
+          <article>
+            <span class="spot-number">03</span>
+            <div class="spot-icon wing-icon" aria-hidden="true"></div>
+            <h3>翼尖：翹起、彎曲或削尖？</h3>
+            <p>翼尖像飛機的簽名。A350、787 和 737 MAX 都有不同的收尾方式。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="aircraft-section" id="aircraft" aria-labelledby="aircraft-title">
+        <div class="lesson-section-heading light-heading">
+          <p class="section-kicker">桃園機場觀察名單</p>
+          <h2 id="aircraft-title">先認識這六種常見客機</h2>
+          <p>
+            「常見」會隨航空公司班表與機隊調度改變；這六種是很實用的入門觀察名單。
+          </p>
+        </div>
+
+        <div class="aircraft-list">
+          <article class="aircraft-card" data-family="airbus">
+            <div class="aircraft-photo">
+              <img src="assets/aircraft/a321neo.jpg" alt="中華航空 Airbus A321neo 從桃園機場起飛" />
+              <span class="maker-tag">AIRBUS</span>
+            </div>
+            <div class="aircraft-copy">
+              <p class="aircraft-number">01 · 窄體機</p>
+              <h3>A320 / A321 系列</h3>
+              <p class="aircraft-lead">最常見的區域線主力，像一支細長的飛行鉛筆。</p>
+              <dl>
+                <div><dt>常見任務</dt><dd>日本、韓國、香港、東南亞等短中程航線</dd></div>
+                <div><dt>桃園可見</dt><dd>華航、星宇及多家外籍航空</dd></div>
+                <div><dt>座位概念</dt><dd>大約 180–240 人，依型號與配置不同</dd></div>
+              </dl>
+              <button class="clue-button" type="button" aria-expanded="false">
+                看三個辨識重點 <span aria-hidden="true">＋</span>
+              </button>
+              <ul class="clue-list" hidden>
+                <li>單走道、每側通常有三個座位</li>
+                <li>A321 比 A320 明顯更長</li>
+                <li>neo 常配較大的新世代引擎與上翹翼尖</li>
+              </ul>
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:China_Airlines_Airbus_A321neo_B-18102_departing_Taoyuan_February_2026.jpg" target="_blank" rel="noreferrer">
+                照片：4300streetcar · CC BY 4.0 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="aircraft-card reverse" data-family="airbus">
+            <div class="aircraft-photo">
+              <img src="assets/aircraft/a330.jpg" alt="長榮航空 Airbus A330-300 從桃園機場起飛" />
+              <span class="maker-tag">AIRBUS</span>
+            </div>
+            <div class="aircraft-copy">
+              <p class="aircraft-number">02 · 寬體機</p>
+              <h3>Airbus A330</h3>
+              <p class="aircraft-lead">圓潤、安靜的雙走道老將，區域線與中長程都能勝任。</p>
+              <dl>
+                <div><dt>常見任務</dt><dd>亞洲區域線及部分中長程航線</dd></div>
+                <div><dt>桃園可見</dt><dd>長榮、星宇 A330neo 及外籍航空</dd></div>
+                <div><dt>座位概念</dt><dd>大約 250–300 人</dd></div>
+              </dl>
+              <button class="clue-button" type="button" aria-expanded="false">
+                看三個辨識重點 <span aria-hidden="true">＋</span>
+              </button>
+              <ul class="clue-list" hidden>
+                <li>雙走道、每側只有一具發動機</li>
+                <li>機頭較圓，駕駛艙側窗線條柔和</li>
+                <li>經典 A330 的翼尖常有直立小翼</li>
+              </ul>
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:EVA_Air_Airbus_A330-300_B-16337_departing_Taoyuan_February_2026.jpg" target="_blank" rel="noreferrer">
+                照片：4300streetcar · CC BY 4.0 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="aircraft-card" data-family="airbus">
+            <div class="aircraft-photo">
+              <img src="assets/aircraft/a350.jpg" alt="星宇航空 Airbus A350-1000 從桃園機場起飛" />
+              <span class="maker-tag">AIRBUS</span>
+            </div>
+            <div class="aircraft-copy">
+              <p class="aircraft-number">03 · 寬體機</p>
+              <h3>Airbus A350</h3>
+              <p class="aircraft-lead">新世代長程客機，最醒目的特徵就是駕駛艙的黑色「墨鏡」。</p>
+              <dl>
+                <div><dt>常見任務</dt><dd>歐洲、北美及高運量亞洲航線</dd></div>
+                <div><dt>桃園可見</dt><dd>華航、星宇及多家外籍航空</dd></div>
+                <div><dt>座位概念</dt><dd>大約 300–400 人</dd></div>
+              </dl>
+              <button class="clue-button" type="button" aria-expanded="false">
+                看三個辨識重點 <span aria-hidden="true">＋</span>
+              </button>
+              <ul class="clue-list" hidden>
+                <li>駕駛艙窗戶外圍有連續黑色框線</li>
+                <li>翼尖優雅地向後、向上彎曲</li>
+                <li>機翼很長，整體線條流暢</li>
+              </ul>
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Starlux_Airbus_A350-1000_B-58551_departing_Taoyuan_February_2026_1.jpg" target="_blank" rel="noreferrer">
+                照片：4300streetcar · CC BY 4.0 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="aircraft-card reverse" data-family="boeing">
+            <div class="aircraft-photo">
+              <img src="assets/aircraft/b737.jpg" alt="峇迪航空 Boeing 737 MAX 降落桃園機場" />
+              <span class="maker-tag boeing-tag">BOEING</span>
+            </div>
+            <div class="aircraft-copy">
+              <p class="aircraft-number">04 · 窄體機</p>
+              <h3>Boeing 737</h3>
+              <p class="aircraft-lead">A320 系列的老對手，世界各地短程航線上的熟面孔。</p>
+              <dl>
+                <div><dt>常見任務</dt><dd>韓國、東南亞、中國及關島等區域線</dd></div>
+                <div><dt>桃園可見</dt><dd>濟州、真航空、聯合航空等外籍航空</dd></div>
+                <div><dt>座位概念</dt><dd>大約 160–210 人</dd></div>
+              </dl>
+              <button class="clue-button" type="button" aria-expanded="false">
+                看三個辨識重點 <span aria-hidden="true">＋</span>
+              </button>
+              <ul class="clue-list" hidden>
+                <li>機身離地面較低</li>
+                <li>部分型號的引擎進氣口底部看起來較扁</li>
+                <li>MAX 的翼尖像上下分岔的剪刀</li>
+              </ul>
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Batik_Air_Malaysia_Boeing_737-8_MAX_9M-LRS_landing_at_Taoyuan_February_2026.jpg" target="_blank" rel="noreferrer">
+                照片：4300streetcar · CC BY 4.0 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="aircraft-card" data-family="boeing">
+            <div class="aircraft-photo">
+              <img src="assets/aircraft/b777.jpg" alt="長榮航空 Boeing 777-300ER 從桃園機場起飛" />
+              <span class="maker-tag boeing-tag">BOEING</span>
+            </div>
+            <div class="aircraft-copy">
+              <p class="aircraft-number">05 · 寬體機</p>
+              <h3>Boeing 777-300ER</h3>
+              <p class="aircraft-lead">又長、又有力；兩具巨型發動機是它最有氣勢的招牌。</p>
+              <dl>
+                <div><dt>常見任務</dt><dd>北美、歐洲與高運量長程航線</dd></div>
+                <div><dt>桃園可見</dt><dd>長榮、華航及多家國際航空</dd></div>
+                <div><dt>座位概念</dt><dd>大約 350–400 人</dd></div>
+              </dl>
+              <button class="clue-button" type="button" aria-expanded="false">
+                看三個辨識重點 <span aria-hidden="true">＋</span>
+              </button>
+              <ul class="clue-list" hidden>
+                <li>發動機直徑非常大，幾乎和 737 機身一樣寬</li>
+                <li>主起落架每側有三排、共六個輪子</li>
+                <li>777-300ER 機身特別修長，翼尖向後削尖</li>
+              </ul>
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:EVA_Air_Boeing_777-300ER_B-16720_departing_Taoyuan_February_2026.jpg" target="_blank" rel="noreferrer">
+                照片：4300streetcar · CC BY 4.0 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="aircraft-card reverse" data-family="boeing">
+            <div class="aircraft-photo">
+              <img src="assets/aircraft/b787.jpg" alt="長榮航空 Boeing 787-10 從桃園機場起飛" />
+              <span class="maker-tag boeing-tag">BOEING</span>
+            </div>
+            <div class="aircraft-copy">
+              <p class="aircraft-number">06 · 寬體機</p>
+              <h3>Boeing 787 Dreamliner</h3>
+              <p class="aircraft-lead">科技感十足的夢幻客機，窗戶大、機翼柔軟，飛行時會明顯上彎。</p>
+              <dl>
+                <div><dt>常見任務</dt><dd>亞洲、歐洲、北美等中長程航線</dd></div>
+                <div><dt>桃園可見</dt><dd>長榮、日本航空、全日空等</dd></div>
+                <div><dt>座位概念</dt><dd>大約 250–340 人</dd></div>
+              </dl>
+              <button class="clue-button" type="button" aria-expanded="false">
+                看三個辨識重點 <span aria-hidden="true">＋</span>
+              </button>
+              <ul class="clue-list" hidden>
+                <li>機翼在空中會像鳥翼一樣優雅上彎</li>
+                <li>發動機後緣有鋸齒狀設計</li>
+                <li>機頭圓滑，駕駛艙窗戶像一圈黑色面罩</li>
+              </ul>
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:EVA_Air_Boeing_787-10_B-17807_departing_Taoyuan_February_2026.jpg" target="_blank" rel="noreferrer">
+                照片：4300streetcar · CC BY 4.0 ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="quiz-intro">
+          <p class="section-kicker">登機前的小測驗</p>
+          <h2 id="quiz-title">只看線索，你認得出來嗎？</h2>
+          <p>三題全對，就頒給你今天的「桃機觀察員」徽章。</p>
+        </div>
+        <div class="quiz-card">
+          <p class="quiz-progress" id="quiz-progress">第 1 題，共 3 題</p>
+          <h3 id="quiz-question">我的駕駛艙窗戶像戴著一副連在一起的黑色墨鏡。我是誰？</h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary next-question" id="next-question" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="next-lesson">
+        <p>下一站</p>
+        <div>
+          <span>第二課・準備中</span>
+          <h2>走進 A320 駕駛艙</h2>
+        </div>
+        <p>我們會把整張儀表板變成可以點擊探索的互動地圖。</p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次在機場，記得抬頭看看。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
