@@ -368,7 +368,7 @@ h1 em {
 
 .topic-grid {
   display: grid;
-  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
@@ -392,20 +392,13 @@ h1 em {
   background: #f2ded1;
 }
 
-.cockpit-topic-card .plus-mark {
-  width: auto;
-  height: auto;
-  margin: -35px 0 12px;
-  justify-content: start;
-  border: 0;
-  border-radius: 0;
-  color: var(--orange-dark);
-  font-family: "Newsreader", serif;
-  font-size: 12px;
-  font-weight: 800;
+.hardware-topic-card {
+  background: #dceae8;
 }
 
-.compare-topic-card .plus-mark {
+.cockpit-topic-card .plus-mark,
+.compare-topic-card .plus-mark,
+.hardware-topic-card .plus-mark {
   width: auto;
   height: auto;
   margin: -35px 0 12px;
@@ -419,7 +412,8 @@ h1 em {
 }
 
 .cockpit-topic-card > p,
-.compare-topic-card > p {
+.compare-topic-card > p,
+.hardware-topic-card > p {
   margin-bottom: 26px;
   color: var(--ink-soft);
   font-size: 13px;
