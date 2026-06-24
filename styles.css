@@ -388,6 +388,10 @@ h1 em {
   background: #e9ebe0;
 }
 
+.compare-topic-card {
+  background: #f2ded1;
+}
+
 .cockpit-topic-card .plus-mark {
   width: auto;
   height: auto;
@@ -401,7 +405,21 @@ h1 em {
   font-weight: 800;
 }
 
-.cockpit-topic-card > p {
+.compare-topic-card .plus-mark {
+  width: auto;
+  height: auto;
+  margin: -35px 0 12px;
+  justify-content: start;
+  border: 0;
+  border-radius: 0;
+  color: var(--orange-dark);
+  font-family: "Newsreader", serif;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.cockpit-topic-card > p,
+.compare-topic-card > p {
   margin-bottom: 26px;
   color: var(--ink-soft);
   font-size: 13px;

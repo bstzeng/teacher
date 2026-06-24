@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="互動比較 Airbus A320 與 Boeing 737 駕駛艙的操縱方式、自動駕駛、油門和系統顯示。"
+    />
+    <title>Airbus vs Boeing 駕駛艙比較｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="comparison.css" />
+    <script src="comparison.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header compare-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span>
+        <span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#cockpits">看駕駛艙</a>
+        <a href="#compare">五大差異</a>
+        <a href="#challenge">判斷挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="cockpit.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="compare-hero">
+        <p class="eyebrow"><span aria-hidden="true"></span>飛機與機場・第三課</p>
+        <p class="lesson-chip">互動比較 · 約 12 分鐘</p>
+        <h1>同樣在飛，<em>想法不太一樣。</em></h1>
+        <div class="hero-bottom">
+          <p class="hero-intro">
+            Airbus A320 和 Boeing 737 都是短中程主力客機。
+            它們顯示的飛行資訊相似，卻用不同方式讓飛行員控制飛機。
+          </p>
+          <a class="button button-primary" href="#cockpits">
+            並排看看 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="cockpit-duel" id="cockpits" aria-labelledby="duel-title">
+        <div class="duel-heading">
+          <div>
+            <p class="section-kicker">第一眼觀察</p>
+            <h2 id="duel-title">你先看到哪些不同？</h2>
+          </div>
+          <p>點選下方的差異標籤，兩張照片會同時標出對應位置。</p>
+        </div>
+
+        <div class="duel-grid">
+          <article class="duel-card airbus-card">
+            <header>
+              <span>AIRBUS</span>
+              <h3>A320</h3>
+              <p>簡潔、整齊，前方沒有大型駕駛盤。</p>
+            </header>
+            <div class="duel-photo">
+              <img src="assets/cockpit/a320-cockpit.jpg" alt="Airbus A320 駕駛艙" />
+              <span class="focus-ring" data-focus="control" style="--x: 13%; --y: 66%"></span>
+              <span class="focus-ring" data-focus="autopilot" style="--x: 50%; --y: 27%"></span>
+              <span class="focus-ring" data-focus="throttle" style="--x: 52%; --y: 81%"></span>
+              <span class="focus-ring" data-focus="display" style="--x: 49%; --y: 47%"></span>
+              <span class="focus-ring" data-focus="overhead" style="--x: 50%; --y: 9%"></span>
+            </div>
+            <a href="https://commons.wikimedia.org/wiki/File:Cockpit_of_Airbus_A320-211_Air_France_(F-GFKH).jpg" target="_blank" rel="noreferrer">
+              照片：Louis · CC BY-SA 2.0 ↗
+            </a>
+          </article>
+
+          <div class="versus-mark" aria-hidden="true">VS</div>
+
+          <article class="duel-card boeing-card">
+            <header>
+              <span>BOEING</span>
+              <h3>737 MAX</h3>
+              <p>大型駕駛盤就在面前，保留較多傳統控制感。</p>
+            </header>
+            <div class="duel-photo">
+              <img src="assets/cockpit/737-max-cockpit.jpg" alt="Boeing 737 MAX 駕駛艙" />
+              <span class="focus-ring" data-focus="control" style="--x: 22%; --y: 58%"></span>
+              <span class="focus-ring" data-focus="autopilot" style="--x: 50%; --y: 35%"></span>
+              <span class="focus-ring" data-focus="throttle" style="--x: 58%; --y: 75%"></span>
+              <span class="focus-ring" data-focus="display" style="--x: 51%; --y: 52%"></span>
+              <span class="focus-ring" data-focus="overhead" style="--x: 50%; --y: 12%"></span>
+            </div>
+            <a href="https://commons.wikimedia.org/wiki/File:737_MAX_cockpit.jpg" target="_blank" rel="noreferrer">
+              照片：GeoMancer448 · CC BY 4.0 ↗
+            </a>
+          </article>
+        </div>
+
+        <div class="focus-controls" aria-label="選擇要比較的駕駛艙差異">
+          <button class="focus-button is-active" data-focus="control" type="button">操縱裝置</button>
+          <button class="focus-button" data-focus="autopilot" type="button">自動駕駛</button>
+          <button class="focus-button" data-focus="throttle" type="button">油門</button>
+          <button class="focus-button" data-focus="display" type="button">系統顯示</button>
+          <button class="focus-button" data-focus="overhead" type="button">頭頂面板</button>
+        </div>
+        <div class="focus-explanation" aria-live="polite">
+          <span id="focus-label">01 · 操縱裝置</span>
+          <h3 id="focus-title">側桿，對上駕駛盤</h3>
+          <p id="focus-text">
+            A320 的側桿藏在座椅外側，前方視野比較開闊；737 的駕駛盤在正前方，
+            左右駕駛盤會連動，能直接看見對方的操縱動作。
+          </p>
+        </div>
+      </section>
+
+      <section class="difference-section" id="compare" aria-labelledby="difference-title">
+        <div class="difference-heading">
+          <p class="section-kicker">五大差異</p>
+          <h2 id="difference-title">不是誰比較好，而是設計選擇不同</h2>
+        </div>
+        <div class="difference-table">
+          <div class="difference-row table-head">
+            <span>比較項目</span><strong>Airbus A320</strong><strong>Boeing 737</strong>
+          </div>
+          <div class="difference-row">
+            <span>操縱飛機</span><p>左右側邊的側桿</p><p>正前方的駕駛盤</p>
+          </div>
+          <div class="difference-row">
+            <span>自動駕駛面板</span><p>FCU</p><p>MCP</p>
+          </div>
+          <div class="difference-row">
+            <span>自動油門動作</span><p>推力桿通常停在固定檔位</p><p>油門桿會跟著系統移動</p>
+          </div>
+          <div class="difference-row">
+            <span>系統資訊</span><p>ECAM 集中顯示與程序提示</p><p>737 依世代使用引擎與系統顯示</p>
+          </div>
+          <div class="difference-row">
+            <span>整體感受</span><p>電腦介入較明顯、強調機隊一致性</p><p>保留較多機械回饋與傳統操作習慣</p>
+          </div>
+        </div>
+        <p class="generation-note">
+          注意：本課以 A320 傳統駕駛艙與 737 MAX 照片示範。A320neo、737 NG
+          及不同航空公司的設備外觀會有差異。
+        </p>
+      </section>
+
+      <section class="common-section" aria-labelledby="common-title">
+        <div>
+          <p class="section-kicker">其實更像的地方</p>
+          <h2 id="common-title">飛行員需要的核心資訊相同</h2>
+        </div>
+        <div class="common-grid">
+          <article><span>01</span><h3>姿態與高度</h3><p>兩者都有 PFD，人工地平線、速度與高度的閱讀邏輯相近。</p></article>
+          <article><span>02</span><h3>航路與位置</h3><p>導航顯示器都會呈現航線、方向、距離和氣象資訊。</p></article>
+          <article><span>03</span><h3>雙人協作</h3><p>機長與副駕駛遵循相同程序，互相檢查與確認重要操作。</p></article>
+        </div>
+      </section>
+
+      <section class="challenge-section" id="challenge" aria-labelledby="challenge-title">
+        <div class="challenge-copy">
+          <p class="section-kicker">最後的判斷挑戰</p>
+          <h2 id="challenge-title">這句話是在說誰？</h2>
+          <p>共五題。選 Airbus、Boeing，或「兩者都有」。</p>
+        </div>
+        <div class="challenge-card">
+          <p id="challenge-progress">第 1 題，共 5 題</p>
+          <h3 id="challenge-question">我的主要操縱裝置放在座椅側邊。</h3>
+          <div class="challenge-options" id="challenge-options"></div>
+          <p id="challenge-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="challenge-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第一個主題完成</p>
+        <h2>你已從停機坪，走進兩種駕駛艙。</h2>
+        <a href="index.html">回到首頁，等待下一個主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>差異讓設計變得有趣。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

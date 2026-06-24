@@ -1,0 +1,555 @@
+.compare-header {
+  background: var(--cream);
+}
+
+.compare-hero {
+  width: min(1180px, calc(100% - 48px));
+  min-height: 610px;
+  margin: 0 auto;
+  padding: 80px 0 95px;
+}
+
+.lesson-chip {
+  width: fit-content;
+  margin-bottom: 25px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.compare-hero h1 {
+  max-width: 950px;
+  font-size: clamp(58px, 7vw, 96px);
+}
+
+.hero-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 70px;
+  align-items: end;
+}
+
+.hero-bottom .hero-intro {
+  margin-bottom: 0;
+}
+
+.cockpit-duel {
+  padding: 100px max(24px, calc((100% - 1280px) / 2));
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.duel-heading {
+  display: grid;
+  grid-template-columns: 1fr 0.55fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.duel-heading h2,
+.difference-heading h2,
+.common-section h2,
+.challenge-copy h2,
+.course-finish h2 {
+  margin-bottom: 0;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.duel-heading > p {
+  margin-bottom: 3px;
+  color: rgba(255, 253, 247, 0.65);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.duel-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.duel-card {
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.duel-card header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 18px;
+  align-items: center;
+  padding: 22px 25px;
+}
+
+.duel-card header span {
+  grid-row: 1 / 3;
+  padding: 7px 9px;
+  color: var(--paper);
+  background: var(--orange-dark);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.boeing-card header span {
+  background: var(--ink);
+}
+
+.duel-card h3 {
+  margin: 0;
+  font-family: "Newsreader", serif;
+  font-size: 33px;
+}
+
+.duel-card header p {
+  margin: 1px 0 0;
+  color: var(--ink-soft);
+  font-size: 11px;
+}
+
+.duel-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.duel-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.duel-card > a {
+  display: block;
+  padding: 13px 24px;
+  color: var(--ink-soft);
+  font-size: 9px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.versus-mark {
+  position: absolute;
+  z-index: 4;
+  top: 53%;
+  left: 50%;
+  display: grid;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  color: var(--ink);
+  background: #f3d158;
+  border: 5px solid var(--ink);
+  border-radius: 50%;
+  font-family: "Newsreader", serif;
+  font-size: 20px;
+  font-weight: 700;
+  transform: translate(-50%, -50%) rotate(-7deg);
+}
+
+.focus-ring {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 54px;
+  height: 54px;
+  border: 4px solid #f3d158;
+  border-radius: 50%;
+  box-shadow: 0 0 0 999px rgba(7, 20, 16, 0.36);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.7);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.focus-ring.is-active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.focus-controls {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  margin-top: 18px;
+}
+
+.focus-button {
+  padding: 14px 8px;
+  color: rgba(255, 253, 247, 0.65);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.focus-button:hover,
+.focus-button.is-active {
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.focus-explanation {
+  display: grid;
+  grid-template-columns: 0.45fr 0.8fr 1.2fr;
+  gap: 35px;
+  align-items: start;
+  margin-top: 14px;
+  padding: 28px;
+  background: #0d201b;
+  border-left: 4px solid #f3d158;
+}
+
+.focus-explanation span {
+  color: #f3d158;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.focus-explanation h3 {
+  margin: 0;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 25px;
+}
+
+.focus-explanation p {
+  margin: 0;
+  color: rgba(255, 253, 247, 0.68);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.difference-section {
+  padding: 110px max(24px, calc((100% - 1120px) / 2));
+  background: var(--cream);
+}
+
+.difference-heading {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  gap: 45px;
+  align-items: end;
+  margin-bottom: 50px;
+}
+
+.difference-table {
+  border-top: 2px solid var(--ink);
+}
+
+.difference-row {
+  display: grid;
+  grid-template-columns: 0.55fr 1fr 1fr;
+  gap: 28px;
+  padding: 22px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.difference-row > span {
+  color: var(--orange-dark);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.difference-row p,
+.difference-row strong {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.table-head {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.table-head span {
+  color: #f4b69f;
+}
+
+.generation-note {
+  max-width: 760px;
+  margin: 25px 0 0 auto;
+  color: var(--ink-soft);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.common-section {
+  display: grid;
+  grid-template-columns: 0.65fr 1.35fr;
+  gap: 80px;
+  padding: 110px max(24px, calc((100% - 1180px) / 2));
+  background: #e9ebe0;
+}
+
+.common-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.common-grid article {
+  padding: 28px;
+  background: var(--paper);
+}
+
+.common-grid span {
+  color: var(--orange-dark);
+  font-family: "Newsreader", serif;
+  font-weight: 700;
+}
+
+.common-grid h3 {
+  margin: 55px 0 12px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 23px;
+}
+
+.common-grid p {
+  margin-bottom: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.challenge-section {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 80px;
+  width: min(1050px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.challenge-copy > p:last-child {
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+.challenge-card {
+  min-height: 390px;
+  padding: 42px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 12px 14px 0 var(--orange);
+}
+
+.challenge-card [hidden] {
+  display: none;
+}
+
+#challenge-progress {
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.challenge-card h3 {
+  min-height: 85px;
+  margin: 34px 0;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.challenge-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.challenge-option {
+  padding: 13px 8px;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--ink);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.challenge-option.is-correct,
+.challenge-option:hover {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.challenge-option.is-wrong {
+  color: var(--paper);
+  background: var(--orange-dark);
+  border-color: var(--orange-dark);
+}
+
+#challenge-feedback {
+  min-height: 28px;
+  margin: 18px 0 8px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#challenge-next {
+  border: 0;
+  cursor: pointer;
+}
+
+.challenge-result {
+  text-align: center;
+}
+
+.course-finish {
+  padding: 95px max(24px, calc((100% - 950px) / 2));
+  color: var(--paper);
+  background: var(--orange-dark);
+  text-align: center;
+}
+
+.course-finish p {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.course-finish a {
+  display: inline-block;
+  margin-top: 30px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid currentColor;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .duel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .versus-mark {
+    top: 50%;
+  }
+
+  .common-section,
+  .common-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .common-grid article {
+    min-height: 210px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-bottom,
+  .duel-heading,
+  .difference-heading,
+  .focus-explanation,
+  .challenge-section {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .difference-row {
+    grid-template-columns: 0.65fr 1fr 1fr;
+    gap: 12px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
+
+@media (max-width: 560px) {
+  .lesson-home {
+    font-size: 0;
+  }
+
+  .lesson-home span {
+    font-size: 13px;
+  }
+
+  .compare-hero {
+    width: min(100% - 32px, 1180px);
+    min-height: auto;
+    padding: 55px 0 75px;
+  }
+
+  .compare-hero h1 {
+    font-size: 47px;
+  }
+
+  .cockpit-duel {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .duel-card header {
+    padding: 18px;
+  }
+
+  .focus-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .difference-section {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .difference-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .table-head {
+    display: none;
+  }
+
+  .difference-row p:last-child {
+    padding-bottom: 12px;
+    border-bottom: 1px dashed var(--line);
+  }
+
+  .difference-row p::before {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--ink-soft);
+    font-size: 9px;
+    font-weight: 800;
+  }
+
+  .difference-row p:nth-child(2)::before {
+    content: "AIRBUS A320";
+  }
+
+  .difference-row p:nth-child(3)::before {
+    content: "BOEING 737";
+  }
+
+  .challenge-section {
+    width: min(100% - 32px, 1050px);
+    gap: 40px;
+    padding: 85px 0 95px;
+  }
+
+  .challenge-card {
+    padding: 28px 22px;
+    box-shadow: 7px 9px 0 var(--orange);
+  }
+
+  .challenge-options {
+    grid-template-columns: 1fr;
+  }
+}
