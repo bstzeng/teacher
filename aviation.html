@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題，從辨認客機、駕駛艙、飛機硬體到桃園機場進場航圖。"
+    />
+    <title>航空主題｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="aviation.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header aviation-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="航空主題選單">
+        <a href="#courses">全部課程</a>
+        <a href="#route">學習路線</a>
+      </nav>
+      <a class="header-cta" href="index.html">
+        所有主題 <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="aviation-hero">
+        <div class="aviation-hero-copy">
+          <a class="breadcrumb" href="index.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>主題 01 · AVIATION</p>
+          <h1>從停機坪，<em>一路走進駕駛艙。</em></h1>
+          <p class="hero-intro">
+            先在機場認出常見客機，再看懂駕駛艙與飛機硬體，
+            最後試著讀一張真正的進場航圖。五堂課可以照順序學，也能自由挑選。
+          </p>
+          <div class="aviation-summary">
+            <div><strong>5</strong><span>堂互動課</span></div>
+            <div><strong>80</strong><span>分鐘左右</span></div>
+            <div><strong>0</strong><span>基礎也能開始</span></div>
+          </div>
+          <a class="button button-primary" href="#courses">
+            選擇一堂課 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+        <div class="aviation-visual" aria-hidden="true">
+          <span class="visual-code">TPE / RCTP</span>
+          <div class="radar-circle radar-one"></div>
+          <div class="radar-circle radar-two"></div>
+          <div class="runway">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="aviation-plane">✈</div>
+          <span class="visual-caption">LEARN · EXPLORE · UNDERSTAND</span>
+        </div>
+      </section>
+
+      <section class="course-section" id="courses" aria-labelledby="courses-title">
+        <div class="course-heading">
+          <div>
+            <p class="section-kicker">航空主題課程</p>
+            <h2 id="courses-title">從你最好奇的地方開始</h2>
+          </div>
+          <p>每堂課都有互動說明與小挑戰。第一次來，建議從第一課依序往下。</p>
+        </div>
+
+        <div class="course-list">
+          <article class="course-card course-aircraft">
+            <div class="course-number"><span>01</span><i></i></div>
+            <div class="course-content">
+              <p>辨認飛機 · 約 18 分鐘</p>
+              <h3>桃園機場常見客機</h3>
+              <span>從機身、發動機與翼尖特徵，認識十種常見客機與貨機。</span>
+            </div>
+            <div class="course-tags"><span>初學者</span><span>機型圖鑑</span></div>
+            <a href="aircraft.html" aria-label="開始第一課：桃園機場常見客機">開始第一課 <b>→</b></a>
+          </article>
+
+          <article class="course-card course-cockpit">
+            <div class="course-number"><span>02</span><i></i></div>
+            <div class="course-content">
+              <p>互動探索 · 約 15 分鐘</p>
+              <h3>A320 駕駛艙探險</h3>
+              <span>點擊真正的駕駛艙照片，認識九個重要顯示器與控制設備。</span>
+            </div>
+            <div class="course-tags"><span>互動照片</span><span>儀表</span></div>
+            <a href="cockpit.html" aria-label="進入第二課：A320 駕駛艙探險">進入駕駛艙 <b>→</b></a>
+          </article>
+
+          <article class="course-card course-compare">
+            <div class="course-number"><span>03</span><i></i></div>
+            <div class="course-content">
+              <p>設計比較 · 約 12 分鐘</p>
+              <h3>Airbus vs Boeing</h3>
+              <span>把 A320 與 737 MAX 並排，看懂兩家公司不同的駕駛艙哲學。</span>
+            </div>
+            <div class="course-tags"><span>雙圖比較</span><span>設計思維</span></div>
+            <a href="comparison.html" aria-label="開始第三課：Airbus vs Boeing">開始大比較 <b>→</b></a>
+          </article>
+
+          <article class="course-card course-hardware">
+            <div class="course-number"><span>04</span><i></i></div>
+            <div class="course-content">
+              <p>互動解剖 · 約 15 分鐘</p>
+              <h3>客機硬體解剖</h3>
+              <span>點開機翼、發動機、起落架與控制面，了解各零件如何合作。</span>
+            </div>
+            <div class="course-tags"><span>結構</span><span>飛行原理</span></div>
+            <a href="hardware.html" aria-label="開始第四課：客機硬體解剖">拆解一架飛機 <b>→</b></a>
+          </article>
+
+          <article class="course-card course-chart">
+            <div class="course-number"><span>05</span><i></i></div>
+            <div class="course-content">
+              <p>互動讀圖 · 約 20 分鐘</p>
+              <h3>第一次讀懂進場航圖</h3>
+              <span>逐區拆解桃園 LOC RWY 05L 航圖，再跟著飛機走完進場與重飛。</span>
+            </div>
+            <div class="course-tags"><span>進階入門</span><span>真實航圖</span></div>
+            <a href="chart.html" aria-label="開始第五課：第一次讀懂進場航圖">打開進場航圖 <b>→</b></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="route-guide" id="route" aria-labelledby="route-guide-title">
+        <div>
+          <p class="section-kicker">建議學習路線</p>
+          <h2 id="route-guide-title">先看外面，再走進裡面</h2>
+        </div>
+        <ol>
+          <li><span>看見</span><strong>認出不同機型</strong></li>
+          <li><span>操作</span><strong>讀懂駕駛艙</strong></li>
+          <li><span>比較</span><strong>理解設計差異</strong></li>
+          <li><span>拆解</span><strong>認識飛機硬體</strong></li>
+          <li><span>應用</span><strong>第一次讀航圖</strong></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>航空主題 · 五堂互動課程</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

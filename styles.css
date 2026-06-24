@@ -368,8 +368,153 @@ h1 em {
 
 .topic-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.55fr 0.45fr;
   gap: 18px;
+}
+
+.category-card {
+  min-height: 410px;
+  border-radius: 3px;
+}
+
+.aviation-category {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.category-visual {
+  position: relative;
+  min-height: 410px;
+  overflow: hidden;
+  color: var(--paper);
+  background: #173e52;
+}
+
+.category-visual::before {
+  position: absolute;
+  inset: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  content: "";
+}
+
+.category-code,
+.category-count {
+  position: absolute;
+  z-index: 2;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+}
+
+.category-code {
+  top: 35px;
+  left: 35px;
+  color: #efc256;
+}
+
+.category-count {
+  right: 32px;
+  bottom: 30px;
+}
+
+.category-orbit {
+  position: absolute;
+  top: 75px;
+  left: 42px;
+  width: 285px;
+  height: 285px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+
+.category-orbit::after {
+  position: absolute;
+  inset: 55px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  content: "";
+}
+
+.category-plane {
+  position: absolute;
+  top: 168px;
+  left: 125px;
+  color: #efc256;
+  font-size: 82px;
+  transform: rotate(-18deg);
+}
+
+.category-copy {
+  display: flex;
+  padding: 38px 42px;
+  flex-direction: column;
+}
+
+.category-copy .card-top {
+  margin-bottom: auto;
+}
+
+.category-copy h3 {
+  margin: 45px 0 14px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 42px;
+}
+
+.category-copy > p {
+  max-width: 520px;
+  margin: 0 0 22px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.category-topics {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.category-topics span {
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.category-coming {
+  display: grid;
+  padding: 35px;
+  align-content: center;
+  justify-items: center;
+  border: 1px dashed rgba(255, 253, 247, 0.3);
+  color: rgba(255, 253, 247, 0.65);
+  text-align: center;
+}
+
+.category-coming p {
+  margin: 0 0 7px;
+  color: var(--paper);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.category-coming h3 {
+  margin: 0 0 12px;
+  color: var(--paper);
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 23px;
+}
+
+.category-coming > span:last-child {
+  font-size: 11px;
+  line-height: 1.75;
 }
 
 .topic-card {
@@ -623,6 +768,10 @@ footer p:last-child {
     grid-template-columns: 1fr;
   }
 
+  .aviation-category {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+
   .topic-card-empty {
     min-height: 210px;
   }
@@ -686,6 +835,30 @@ footer p:last-child {
   .topic-card {
     min-height: 310px;
     padding: 25px;
+  }
+
+  .aviation-category {
+    grid-template-columns: 1fr;
+  }
+
+  .category-visual {
+    min-height: 320px;
+  }
+
+  .category-copy {
+    padding: 30px 26px;
+  }
+
+  .category-copy .card-top {
+    margin-bottom: 0;
+  }
+
+  .category-copy h3 {
+    margin-top: 34px;
+  }
+
+  .category-coming {
+    min-height: 270px;
   }
 
   .about-section {
