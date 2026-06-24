@@ -33,6 +33,18 @@ const quiz = [
     answer: "787",
     note: "正確！鋸齒狀發動機後緣是 787 很有名的特徵。",
   },
+  {
+    question: "我有四具發動機，而且上下兩層客艙幾乎從頭延伸到尾。我是誰？",
+    options: ["A380", "747", "A330neo"],
+    answer: "A380",
+    note: "答對了！A380 的全長雙層客艙，是它和 747 最明顯的差別。",
+  },
+  {
+    question: "我沒有一整排旅客窗戶，卻保留 777 的巨型雙發動機。我是誰？",
+    options: ["777F", "747", "A350"],
+    answer: "777F",
+    note: "沒錯！777F 是大型雙發貨機，機身側面還有大型貨艙門。",
+  },
 ];
 
 const progress = document.querySelector("#quiz-progress");
@@ -91,8 +103,8 @@ function showResult() {
   feedback.textContent = "";
   question.innerHTML = `
     <div class="quiz-result">
-      <span class="quiz-badge" aria-hidden="true">${score === 3 ? "✈" : "✓"}</span>
-      ${score === 3 ? "滿分！你是今天的桃機觀察員。" : `你答對 ${score} 題，再看一次辨識重點就會更熟。`}
+      <span class="quiz-badge" aria-hidden="true">${score === quiz.length ? "✈" : "✓"}</span>
+      ${score === quiz.length ? "滿分！你是今天的桃機觀察員。" : `你答對 ${score} 題，再看一次辨識重點就會更熟。`}
     </div>
   `;
 }
