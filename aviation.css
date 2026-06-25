@@ -220,6 +220,7 @@
 .course-taxiway { background: #e2e7d7; }
 .course-lights { background: #e6dfec; }
 .course-weather { background: #dce8ef; }
+.course-airline { background: #efe5d9; }
 
 .course-number {
   display: flex;

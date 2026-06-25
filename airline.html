@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十三課：認識台灣常見航空公司，學會看懂飛機塗裝。"
+    />
+    <title>台灣常見航空公司與塗裝｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="airline.css?v=20260625-readable" />
+    <script src="airline.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header airline-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#airlines">認識航空公司</a>
+        <a href="#livery">看塗裝</a>
+        <a href="#spotting">來辨認</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="weather.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="airline-hero">
+        <div class="airline-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十三課</p>
+          <h1>先認航空公司，<em>再認飛機身上的顏色。</em></h1>
+          <p class="hero-intro">
+            在桃園機場，除了看機型，也很常先用塗裝認出是哪一家航空公司。
+            這堂課會先認識台灣最常見的四家，再學會從尾翼、機身字樣和整體配色快速辨認。
+          </p>
+          <div class="airline-summary" aria-label="本課重點">
+            <div><strong>4</strong><span>家常見航空公司</span></div>
+            <div><strong>3</strong><span>個辨認重點</span></div>
+            <div><strong>1</strong><span>眼看出塗裝差異</span></div>
+          </div>
+          <a class="button button-primary" href="#airlines">
+            開始認航空公司 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="airline-hero-visual" aria-hidden="true">
+          <span class="visual-code">TAIWAN AIRLINES</span>
+          <div class="tail-row">
+            <div class="tail tail-cal"></div>
+            <div class="tail tail-eva"></div>
+            <div class="tail tail-jx"></div>
+            <div class="tail tail-it"></div>
+          </div>
+          <div class="plane-lineup">
+            <div class="plane-body cal">
+              <span class="title">CHINA AIRLINES</span>
+            </div>
+            <div class="plane-body eva">
+              <span class="title">EVA AIR</span>
+            </div>
+            <div class="plane-body jx">
+              <span class="title">STARLUX</span>
+            </div>
+            <div class="plane-body it">
+              <span class="title">tigerair</span>
+            </div>
+          </div>
+          <p class="visual-caption">先看顏色，再看尾翼，再看字樣</p>
+        </div>
+      </section>
+
+      <section class="airlines-section" id="airlines" aria-labelledby="airlines-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">常見航空公司</p>
+            <h2 id="airlines-title">先記住這四家，去機場就很容易有成就感</h2>
+          </div>
+          <p>
+            這四家是在桃園機場最容易看到、也最適合初學者先記住的名字。
+            你不需要一次背很多資料，只要先抓住「風格」就夠了。
+          </p>
+        </div>
+
+        <div class="airlines-layout">
+          <div class="airline-selector" role="tablist" aria-label="選擇航空公司">
+            <button class="airline-tab is-active" type="button" data-airline="cal">華航</button>
+            <button class="airline-tab" type="button" data-airline="eva">長榮</button>
+            <button class="airline-tab" type="button" data-airline="jx">星宇</button>
+            <button class="airline-tab" type="button" data-airline="it">台灣虎航</button>
+
+            <div class="selector-visual" id="selector-visual">
+              <div class="selector-plane">
+                <div class="selector-fuselage">
+                  <span id="selector-title">CHINA AIRLINES</span>
+                </div>
+                <div class="selector-tail"></div>
+                <div class="selector-wing"></div>
+                <div class="selector-engine engine-one"></div>
+                <div class="selector-engine engine-two"></div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="airline-card" aria-live="polite">
+            <p class="card-kicker" id="airline-kicker">全服務航空</p>
+            <h3 id="airline-name">中華航空</h3>
+            <p id="airline-text">
+              華航常見的辨認方式，是白色機身配上藍色字樣，以及尾翼上的粉紅梅花。
+            </p>
+            <div class="airline-facts">
+              <div><span>常見感覺</span><strong id="airline-vibe">傳統、穩重、很有代表性</strong></div>
+              <div><span>常見機型</span><strong id="airline-fleet">A321neo、A330、A350、777</strong></div>
+              <div><span>一眼辨認</span><strong id="airline-look">粉紅梅花尾翼</strong></div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="extra-note">
+          <strong>補充一下：</strong>
+          在台灣你也可能看到華信航空和立榮航空，它們在國內線、離島線和部分短程航線也很常見。
+        </div>
+      </section>
+
+      <section class="livery-section" id="livery" aria-labelledby="livery-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">什麼是塗裝</p>
+            <h2 id="livery-title">塗裝不是只是「把飛機塗漂亮」</h2>
+          </div>
+          <p>
+            塗裝就是航空公司放在飛機外觀上的識別語言。最常見的重點是尾翼、機身字樣，
+            還有整體主色。先看這三個地方，通常就能猜得很接近。
+          </p>
+        </div>
+
+        <div class="livery-layout">
+          <div class="livery-demo" id="livery-demo">
+            <div class="demo-plane">
+              <button class="hotspot hotspot-tail is-active" type="button" data-part="tail">尾翼</button>
+              <button class="hotspot hotspot-title" type="button" data-part="title">機身字樣</button>
+              <button class="hotspot hotspot-color" type="button" data-part="color">主色</button>
+              <div class="demo-fuselage">
+                <span id="demo-title">CHINA AIRLINES</span>
+              </div>
+              <div class="demo-tail"></div>
+              <div class="demo-wing"></div>
+              <div class="demo-engine engine-a"></div>
+              <div class="demo-engine engine-b"></div>
+            </div>
+          </div>
+
+          <div class="livery-panel">
+            <div class="livery-buttons">
+              <button class="livery-airline is-active" type="button" data-livery="cal">華航版</button>
+              <button class="livery-airline" type="button" data-livery="eva">長榮版</button>
+              <button class="livery-airline" type="button" data-livery="jx">星宇版</button>
+              <button class="livery-airline" type="button" data-livery="it">虎航版</button>
+            </div>
+
+            <div class="livery-explainer" aria-live="polite">
+              <p class="card-kicker" id="livery-kicker">先看尾翼</p>
+              <h3 id="livery-airline-name">華航塗裝</h3>
+              <p id="livery-text">
+                華航最容易被記住的是尾翼梅花。就算距離有點遠，只要看到粉紅色花朵，很容易先猜到是華航。
+              </p>
+              <div class="memory-box">
+                <span>記憶口訣</span>
+                <strong id="livery-memory">梅花、藍字、白機身。</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="spotting-section" id="spotting" aria-labelledby="spotting-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">辨認練習</p>
+            <h2 id="spotting-title">只看提示，你猜得出是哪一家嗎？</h2>
+          </div>
+          <p>
+            每張卡片先只給你三個線索。想一想，再按下揭曉。
+            這個練習很像在機場看遠方飛機時的感覺。
+          </p>
+        </div>
+
+        <div class="spotting-grid" id="spotting-grid">
+          <article class="spot-card" data-answer="華航">
+            <p>提示 1：尾翼是花</p>
+            <p>提示 2：白色機身很多</p>
+            <p>提示 3：藍色字樣很常見</p>
+            <button class="reveal-button" type="button">揭曉答案</button>
+            <strong class="spot-answer" hidden>答案：華航</strong>
+          </article>
+
+          <article class="spot-card" data-answer="長榮">
+            <p>提示 1：整體是綠色系</p>
+            <p>提示 2：尾翼像圓形徽章</p>
+            <p>提示 3：常看到 Hello Kitty 特別塗裝</p>
+            <button class="reveal-button" type="button">揭曉答案</button>
+            <strong class="spot-answer" hidden>答案：長榮</strong>
+          </article>
+
+          <article class="spot-card" data-answer="星宇">
+            <p>提示 1：黑金感很強</p>
+            <p>提示 2：整體看起來比較新</p>
+            <p>提示 3：現在全部都是 Airbus</p>
+            <button class="reveal-button" type="button">揭曉答案</button>
+            <strong class="spot-answer" hidden>答案：星宇</strong>
+          </article>
+
+          <article class="spot-card" data-answer="台灣虎航">
+            <p>提示 1：橘色很醒目</p>
+            <p>提示 2：名字就像老虎</p>
+            <p>提示 3：低成本航空</p>
+            <button class="reveal-button" type="button">揭曉答案</button>
+            <strong class="spot-answer" hidden>答案：台灣虎航</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經可以開始看塗裝猜航空公司了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把顏色、尾翼和航空公司連在一起。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十三課完成</p>
+        <h2>你現在去看飛機，不只會看機型，也會開始看得懂是誰家的飛機了。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>先認顏色，再認尾翼，再認名字，辨認就會越來越快。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
