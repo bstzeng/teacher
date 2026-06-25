@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第二十七課：認識飛機怎麼啟動發動機，了解 APU、空氣、燃油和點火怎麼一步一步合作。"
+    />
+    <title>飛機怎麼啟動發動機｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="start-engine.css?v=20260625-new" />
+    <script src="start-engine.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header start-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#helpers">先看幫手</a>
+        <a href="#steps">啟動順序</a>
+        <a href="#simulator">互動觀察</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="apu.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="start-hero">
+        <div class="start-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第二十七課</p>
+          <h1>飛機發動機不是按一下就自己醒來，<em>它需要幾個幫手一起慢慢把它叫醒。</em></h1>
+          <p class="hero-intro">
+            客機發動機啟動時，不是像家裡電風扇那樣一按就轉。
+            通常會先有空氣幫它轉起來，再給燃油，再點火，等它真的穩定工作後，才算成功啟動。
+          </p>
+          <div class="start-summary" aria-label="本課重點">
+            <div><strong>4</strong><span>個主要步驟</span></div>
+            <div><strong>3</strong><span>種關鍵幫手</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#helpers">
+            開始看啟動流程 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="start-hero-visual" aria-hidden="true">
+          <span class="visual-code">AIR · FUEL · IGNITION · RUN</span>
+          <div class="start-scene">
+            <div class="engine-shell"></div>
+            <div class="fan"></div>
+            <div class="air-arrow"></div>
+            <div class="fuel-drop"></div>
+            <div class="spark"></div>
+          </div>
+          <div class="start-note">WAKE UP THE ENGINE</div>
+          <p class="visual-caption">先轉起來，再給油點火，最後穩穩接手</p>
+        </div>
+      </section>
+
+      <section class="helpers-section" id="helpers" aria-labelledby="helpers-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先看幫手</p>
+            <h2 id="helpers-title">啟動發動機前，誰會先來幫忙？</h2>
+          </div>
+          <p>先把角色分清楚，等一下看順序時就不會覺得全部混在一起。</p>
+        </div>
+
+        <div class="helpers-layout">
+          <div class="helper-buttons" role="tablist" aria-label="選擇啟動幫手">
+            <button class="helper-button is-active" type="button" data-helper="apu">APU</button>
+            <button class="helper-button" type="button" data-helper="air">空氣</button>
+            <button class="helper-button" type="button" data-helper="fuel">燃油與點火</button>
+          </div>
+
+          <aside class="helper-card" aria-live="polite">
+            <p class="helper-kicker" id="helper-kicker">APU</p>
+            <h3 id="helper-title">APU</h3>
+            <p id="helper-text">
+              APU 常常先提供幫忙啟動需要的資源，所以很多時候主發動機能開始醒來，背後第一位幫手就是 APU。
+            </p>
+            <div class="helper-note">
+              <div><span>小朋友版記法</span><strong id="helper-memory">像是主發動機起床前，先來叫它起床的小助手。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="steps-section" id="steps" aria-labelledby="steps-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">啟動順序</p>
+            <h2 id="steps-title">主發動機通常怎麼一步一步醒來？</h2>
+          </div>
+          <p>你可以把它想成叫醒一個大機器：先讓它動，再給它吃東西，再讓它自己接手。</p>
+        </div>
+
+        <div class="step-grid">
+          <button class="step-card is-active" type="button" data-step="spin">
+            <span>第一步</span>
+            <strong>先轉起來</strong>
+          </button>
+          <button class="step-card" type="button" data-step="fuel">
+            <span>第二步</span>
+            <strong>給燃油</strong>
+          </button>
+          <button class="step-card" type="button" data-step="ignite">
+            <span>第三步</span>
+            <strong>點火</strong>
+          </button>
+          <button class="step-card" type="button" data-step="stable">
+            <span>第四步</span>
+            <strong>穩定運轉</strong>
+          </button>
+        </div>
+
+        <div class="step-explainer" aria-live="polite">
+          <p class="helper-kicker" id="step-kicker">SPIN</p>
+          <h3 id="step-title">先轉起來</h3>
+          <p id="step-text">
+            啟動時通常不會先直接噴火，而是先讓發動機裡面的部分開始轉動，這樣後面的燃油和點火才有意義。
+          </p>
+          <div class="step-note">
+            <span>一句記住</span>
+            <strong id="step-memory">先讓它動起來，再談後面的燃燒。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動觀察</p>
+            <h2 id="simulator-title">啟動前、中、後，哪個環節最明顯？</h2>
+          </div>
+          <p>按按看不同階段，看看這時候最關鍵的是空氣、燃油點火，還是穩定接手。</p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="simulator-controls">
+            <p class="simulator-label">選一個階段</p>
+            <div class="mode-buttons">
+              <button class="mode-button is-active" type="button" data-mode="before">啟動前</button>
+              <button class="mode-button" type="button" data-mode="during">啟動中</button>
+              <button class="mode-button" type="button" data-mode="after">啟動後</button>
+            </div>
+            <div class="mode-bars" aria-hidden="true">
+              <div class="mode-bar">
+                <span>空氣幫忙感</span>
+                <i id="bar-air"></i>
+              </div>
+              <div class="mode-bar">
+                <span>燃油點火感</span>
+                <i id="bar-fire"></i>
+              </div>
+              <div class="mode-bar">
+                <span>自己穩定運轉感</span>
+                <i id="bar-run"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-card" aria-live="polite">
+            <p class="helper-kicker" id="sim-kicker">BEFORE START</p>
+            <h3 id="sim-title">啟動前</h3>
+            <p id="sim-text">
+              啟動前最重要的是先把準備工作做好，這時候像 APU 和空氣幫忙的角色會比較明顯，因為主發動機自己還沒正式接手。
+            </p>
+            <div class="step-note">
+              <span>一句記住</span>
+              <strong id="sim-memory">主角還沒上場前，後台小幫手已經很忙了。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道發動機怎麼被叫醒了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把先轉、給油、點火和穩定接手分清楚。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十七課完成</p>
+        <h2>現在你知道，發動機啟動不是按一下就好，而是空氣、燃油、點火和穩定運轉一步一步接力完成。</h2>
+        <a href="pushback.html">繼續下一課：推車車在做什麼 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>大機器要醒來，也需要一個有順序的早晨。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

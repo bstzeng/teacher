@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第二十八課：認識推車車 pushback 在做什麼，了解飛機為什麼常常不能自己倒退、需要地面車輛幫忙。"
+    />
+    <title>推車車在做什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="pushback.css?v=20260625-new" />
+    <script src="pushback.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header pushback-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#basics">先認識</a>
+        <a href="#steps">看流程</a>
+        <a href="#simulator">互動觀察</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="start-engine.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="pushback-hero">
+        <div class="pushback-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第二十八課</p>
+          <h1>飛機停在登機門前通常不會自己倒退，<em>它常常要靠推車車幫忙慢慢退出去。</em></h1>
+          <p class="hero-intro">
+            這台在機場地面工作的車，大家常叫它推車車，英文常叫 pushback tug。
+            它的工作不是載客，而是把飛機從停靠位置慢慢推離出去，讓飛機之後可以自己滑行去跑道。
+          </p>
+          <div class="pushback-summary" aria-label="本課重點">
+            <div><strong>3</strong><span>個主要角色</span></div>
+            <div><strong>1</strong><span>段推出流程</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#basics">
+            開始看推出流程 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="pushback-hero-visual" aria-hidden="true">
+          <span class="visual-code">TUG · PUSH · DISCONNECT</span>
+          <div class="pushback-scene">
+            <div class="aircraft-body"></div>
+            <div class="nose-wheel"></div>
+            <div class="tug-body"></div>
+            <div class="towbar"></div>
+            <div class="guide-line"></div>
+          </div>
+          <div class="push-note">READY TO PUSH</div>
+          <p class="visual-caption">先離開停機位，飛機才能自己接著往前走</p>
+        </div>
+      </section>
+
+      <section class="basics-section" id="basics" aria-labelledby="basics-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先認識</p>
+            <h2 id="basics-title">推車車最先要記住哪幾件事？</h2>
+          </div>
+          <p>先分清楚它不是拖行李車，也不是普通卡車，而是專門幫飛機倒退出去的地面幫手。</p>
+        </div>
+
+        <div class="basics-layout">
+          <div class="basic-buttons" role="tablist" aria-label="選擇推車車重點">
+            <button class="basic-button is-active" type="button" data-basic="why">為什麼需要它</button>
+            <button class="basic-button" type="button" data-basic="how">怎麼連接</button>
+            <button class="basic-button" type="button" data-basic="who">誰一起合作</button>
+          </div>
+
+          <aside class="basic-card" aria-live="polite">
+            <p class="basic-kicker" id="basic-kicker">WHY PUSHBACK</p>
+            <h3 id="basic-title">為什麼需要它</h3>
+            <p id="basic-text">
+              很多停機位前方空間有限，而且飛機在登機門前不適合自己亂倒退，所以常常會由推車車先幫忙把飛機穩穩推出去。
+            </p>
+            <div class="basic-note">
+              <div><span>小朋友版記法</span><strong id="basic-memory">先有人幫忙倒車，飛機再自己往前走。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="steps-section" id="steps" aria-labelledby="steps-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看流程</p>
+            <h2 id="steps-title">推出飛機時通常怎麼一步一步來？</h2>
+          </div>
+          <p>你可以把它想成一場很慢、很小心的倒車合作：先連好，再推出，再分開。</p>
+        </div>
+
+        <div class="step-grid">
+          <button class="step-card is-active" type="button" data-step="connect">
+            <span>第一步</span>
+            <strong>連接</strong>
+          </button>
+          <button class="step-card" type="button" data-step="push">
+            <span>第二步</span>
+            <strong>慢慢推出</strong>
+          </button>
+          <button class="step-card" type="button" data-step="stop">
+            <span>第三步</span>
+            <strong>停好角度</strong>
+          </button>
+          <button class="step-card" type="button" data-step="disconnect">
+            <span>第四步</span>
+            <strong>分開離開</strong>
+          </button>
+        </div>
+
+        <div class="step-explainer" aria-live="polite">
+          <p class="basic-kicker" id="step-kicker">CONNECT</p>
+          <h3 id="step-title">連接</h3>
+          <p id="step-text">
+            推出前，推車車要先和前輪附近正確連接好。沒有連好就亂推，當然不行，所以這一步很重要。
+          </p>
+          <div class="step-note">
+            <span>一句記住</span>
+            <strong id="step-memory">先連好，才有辦法安全地動。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動觀察</p>
+            <h2 id="simulator-title">推出前、中、後，哪個角色最明顯？</h2>
+          </div>
+          <p>按按看不同階段，看看是連接、慢慢推，還是分開離開最有存在感。</p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="simulator-controls">
+            <p class="simulator-label">選一個階段</p>
+            <div class="mode-buttons">
+              <button class="mode-button is-active" type="button" data-mode="before">推出前</button>
+              <button class="mode-button" type="button" data-mode="during">推出中</button>
+              <button class="mode-button" type="button" data-mode="after">推出後</button>
+            </div>
+            <div class="mode-bars" aria-hidden="true">
+              <div class="mode-bar">
+                <span>連接感</span>
+                <i id="bar-connect"></i>
+              </div>
+              <div class="mode-bar">
+                <span>慢慢推出感</span>
+                <i id="bar-push"></i>
+              </div>
+              <div class="mode-bar">
+                <span>分開離開感</span>
+                <i id="bar-disconnect"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-card" aria-live="polite">
+            <p class="basic-kicker" id="sim-kicker">BEFORE PUSH</p>
+            <h3 id="sim-title">推出前</h3>
+            <p id="sim-text">
+              推出前最重要的是確認連接和周圍狀況，因為還沒正式動之前，大家要先把安全和位置都看清楚。
+            </p>
+            <div class="step-note">
+              <span>一句記住</span>
+              <strong id="sim-memory">真正開始推之前，檢查和連接就是最關鍵的部分。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道推車車在幫什麼忙了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把連接、推出和分開這幾步分清楚。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十八課完成</p>
+        <h2>現在你知道，推車車不是普通小車，而是專門幫飛機安全倒退出去的重要地面夥伴。</h2>
+        <a href="fueling.html">繼續下一課：飛機怎麼加油 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>出發前先退一步，後面才更能往前走。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

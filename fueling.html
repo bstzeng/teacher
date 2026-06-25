@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第二十九課：認識飛機怎麼加油，了解加油車、油量計畫和機翼油箱各自扮演什麼角色。"
+    />
+    <title>飛機怎麼加油｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="fueling.css?v=20260625-new" />
+    <script src="fueling.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header fueling-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#basics">先認識</a>
+        <a href="#steps">看流程</a>
+        <a href="#simulator">互動觀察</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="pushback.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="fueling-hero">
+        <div class="fueling-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第二十九課</p>
+          <h1>飛機不是像機車一樣隨便加滿就好，<em>它要先算好要飛多遠、要留多少，還要放在對的地方。</em></h1>
+          <p class="hero-intro">
+            飛機加油不只是把油倒進去而已。要先決定需要多少油，再由地面人員慢慢加到指定位置。
+            很多客機的油會放在機翼裡，所以加油這件事和重量、平衡、航程都很有關係。
+          </p>
+          <div class="fueling-summary" aria-label="本課重點">
+            <div><strong>3</strong><span>個主要觀念</span></div>
+            <div><strong>1</strong><span>段加油流程</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#basics">
+            開始看加油流程 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="fueling-hero-visual" aria-hidden="true">
+          <span class="visual-code">PLAN · FUEL · BALANCE</span>
+          <div class="fueling-scene">
+            <div class="wing"></div>
+            <div class="fuel-tank left"></div>
+            <div class="fuel-tank right"></div>
+            <div class="truck"></div>
+            <div class="hose"></div>
+            <div class="fuel-line"></div>
+          </div>
+          <div class="fuel-note">FUEL GOES INTO THE WINGS</div>
+          <p class="visual-caption">不是只看有沒有加，還要看加多少、放哪裡</p>
+        </div>
+      </section>
+
+      <section class="basics-section" id="basics" aria-labelledby="basics-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先認識</p>
+            <h2 id="basics-title">飛機加油最先要記住哪幾件事？</h2>
+          </div>
+          <p>先分清楚：油不是亂加的，也不是只看加得多不多。</p>
+        </div>
+
+        <div class="basics-layout">
+          <div class="basic-buttons" role="tablist" aria-label="選擇加油重點">
+            <button class="basic-button is-active" type="button" data-basic="plan">先算需要多少</button>
+            <button class="basic-button" type="button" data-basic="where">油放在哪裡</button>
+            <button class="basic-button" type="button" data-basic="balance">還要看平衡</button>
+          </div>
+
+          <aside class="basic-card" aria-live="polite">
+            <p class="basic-kicker" id="basic-kicker">FUEL PLAN</p>
+            <h3 id="basic-title">先算需要多少</h3>
+            <p id="basic-text">
+              飛機出發前不會隨便說「加滿好了」，而是要先看航程、備用需求和整體計畫，決定這次要帶多少油。
+            </p>
+            <div class="basic-note">
+              <div><span>小朋友版記法</span><strong id="basic-memory">不是吃到飽概念，而是要先算好夠不夠、重不重。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="steps-section" id="steps" aria-labelledby="steps-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看流程</p>
+            <h2 id="steps-title">飛機加油通常怎麼一步一步來？</h2>
+          </div>
+          <p>你可以把它想成一場有計畫的補給：先知道要多少，再慢慢加進去，最後確認數字對不對。</p>
+        </div>
+
+        <div class="step-grid">
+          <button class="step-card is-active" type="button" data-step="plan">
+            <span>第一步</span>
+            <strong>先看加多少</strong>
+          </button>
+          <button class="step-card" type="button" data-step="connect">
+            <span>第二步</span>
+            <strong>接上加油設備</strong>
+          </button>
+          <button class="step-card" type="button" data-step="fill">
+            <span>第三步</span>
+            <strong>慢慢加進去</strong>
+          </button>
+          <button class="step-card" type="button" data-step="check">
+            <span>第四步</span>
+            <strong>確認數字</strong>
+          </button>
+        </div>
+
+        <div class="step-explainer" aria-live="polite">
+          <p class="basic-kicker" id="step-kicker">PLAN AMOUNT</p>
+          <h3 id="step-title">先看加多少</h3>
+          <p id="step-text">
+            加油前要先知道這次需要多少油，因為飛機不是只要飛得到，還要考慮備用和整體重量安排。
+          </p>
+          <div class="step-note">
+            <span>一句記住</span>
+            <strong id="step-memory">第一步不是先打開油蓋，而是先把需求想清楚。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動觀察</p>
+            <h2 id="simulator-title">加油前、中、後，哪個重點最明顯？</h2>
+          </div>
+          <p>按按看不同階段，看看是計畫、加注，還是確認結果最重要。</p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="simulator-controls">
+            <p class="simulator-label">選一個階段</p>
+            <div class="mode-buttons">
+              <button class="mode-button is-active" type="button" data-mode="before">加油前</button>
+              <button class="mode-button" type="button" data-mode="during">加油中</button>
+              <button class="mode-button" type="button" data-mode="after">加油後</button>
+            </div>
+            <div class="mode-bars" aria-hidden="true">
+              <div class="mode-bar">
+                <span>先算好感</span>
+                <i id="bar-plan"></i>
+              </div>
+              <div class="mode-bar">
+                <span>實際加注感</span>
+                <i id="bar-fill"></i>
+              </div>
+              <div class="mode-bar">
+                <span>確認數字感</span>
+                <i id="bar-check"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-card" aria-live="polite">
+            <p class="basic-kicker" id="sim-kicker">BEFORE FUELING</p>
+            <h3 id="sim-title">加油前</h3>
+            <p id="sim-text">
+              加油前最重要的是先把需求算好，因為這會影響後面到底要加多少、加到哪裡，以及整架飛機的重量安排。
+            </p>
+            <div class="step-note">
+              <span>一句記住</span>
+              <strong id="sim-memory">還沒開始加油前，其實很多重要決定就已經先做好了。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道飛機加油不是只看加滿了沒嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把油量計畫、放的位置和平衡一起想到。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十九課完成</p>
+        <h2>現在你知道，飛機加油不是隨便灌滿，而是要先算好需求，再把油安全地加到對的地方。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>飛得遠不只是靠油多，還要靠加得剛剛好。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

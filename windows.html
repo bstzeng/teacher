@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第二十五課：認識飛機窗戶為什麼是圓的，了解壓力、形狀和安全之間的關係。"
+    />
+    <title>飛機窗戶為什麼是圓的｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="windows.css?v=20260625-new" />
+    <script src="windows.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header windows-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#shapes">先看形狀</a>
+        <a href="#pressure">看壓力</a>
+        <a href="#simulator">互動觀察</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="blackbox.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="windows-hero">
+        <div class="windows-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第二十五課</p>
+          <h1>飛機窗戶不是隨便做成圓圓的，<em>它和高空壓力還有安全很有關係。</em></h1>
+          <p class="hero-intro">
+            你平常看到的房子窗戶常常是方的，但飛機窗戶大多是圓角或橢圓形。
+            這不是為了好看，而是因為飛機在高空時，機身裡外會有壓力差，形狀就變得很重要。
+          </p>
+          <div class="windows-summary" aria-label="本課重點">
+            <div><strong>2</strong><span>種常見形狀比較</span></div>
+            <div><strong>3</strong><span>個安全觀念</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#shapes">
+            開始看窗戶 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="windows-hero-visual" aria-hidden="true">
+          <span class="visual-code">ROUND CORNERS · SAFER STRESS</span>
+          <div class="window-scene">
+            <div class="fuselage"></div>
+            <div class="window rounded"></div>
+            <div class="window squared"></div>
+            <div class="pressure-line p-one"></div>
+            <div class="pressure-line p-two"></div>
+            <div class="pressure-line p-three"></div>
+          </div>
+          <div class="window-note">LESS SHARP CORNERS</div>
+          <p class="visual-caption">角越尖，壓力越容易集中在那裡</p>
+        </div>
+      </section>
+
+      <section class="shapes-section" id="shapes" aria-labelledby="shapes-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先看形狀</p>
+            <h2 id="shapes-title">為什麼不是用一般方方的窗戶？</h2>
+          </div>
+          <p>先記住一個觀念：尖角常常比較容易讓力量集中，圓角通常比較平均。</p>
+        </div>
+
+        <div class="shapes-layout">
+          <div class="shape-buttons" role="tablist" aria-label="選擇窗戶形狀">
+            <button class="shape-button is-active" type="button" data-shape="round">圓角窗</button>
+            <button class="shape-button" type="button" data-shape="square">方角窗</button>
+            <button class="shape-button" type="button" data-shape="layers">多層窗片</button>
+          </div>
+
+          <aside class="shape-card" aria-live="polite">
+            <p class="shape-kicker" id="shape-kicker">ROUNDED WINDOW</p>
+            <h3 id="shape-title">圓角窗</h3>
+            <p id="shape-text">
+              圓角或橢圓形的窗戶，能讓力量比較平均地分散在周圍，不會像尖角那樣把壓力卡在某一小塊地方。
+            </p>
+            <div class="shape-note">
+              <div><span>小朋友版記法</span><strong id="shape-memory">角不要太尖，壓力就比較不會擠在同一點。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="pressure-section" id="pressure" aria-labelledby="pressure-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看壓力</p>
+            <h2 id="pressure-title">高空飛行時，窗戶為什麼會更需要注意形狀？</h2>
+          </div>
+          <p>因為飛機裡外的空氣狀態不一樣，窗戶周圍就會一直承受力量。</p>
+        </div>
+
+        <div class="pressure-grid">
+          <button class="pressure-card is-active" type="button" data-pressure="inside">
+            <span>第一個觀念</span>
+            <strong>機艙裡外有差</strong>
+          </button>
+          <button class="pressure-card" type="button" data-pressure="corners">
+            <span>第二個觀念</span>
+            <strong>尖角容易集中</strong>
+          </button>
+          <button class="pressure-card" type="button" data-pressure="layers">
+            <span>第三個觀念</span>
+            <strong>窗戶不是只有一層</strong>
+          </button>
+        </div>
+
+        <div class="pressure-explainer" aria-live="polite">
+          <p class="shape-kicker" id="pressure-kicker">CABIN PRESSURE</p>
+          <h3 id="pressure-title-card">機艙裡外有差</h3>
+          <p id="pressure-text">
+            飛機飛到高空時，外面的空氣狀態和機艙裡不一樣，所以窗戶周圍要一直幫忙承受這些差異帶來的力量。
+          </p>
+          <div class="pressure-note">
+            <span>一句記住</span>
+            <strong id="pressure-memory">不是窗戶特別脆弱，而是它一直在面對高空環境。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動觀察</p>
+            <h2 id="simulator-title">不同設計時，哪種看起來比較容易讓力量平均分開？</h2>
+          </div>
+          <p>按按看不同情境，看看是形狀、尖角，還是多層設計最有存在感。</p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="simulator-controls">
+            <p class="simulator-label">選一個觀察情境</p>
+            <div class="mode-buttons">
+              <button class="mode-button is-active" type="button" data-mode="shape">看形狀</button>
+              <button class="mode-button" type="button" data-mode="stress">看角落受力</button>
+              <button class="mode-button" type="button" data-mode="layers">看多層保護</button>
+            </div>
+            <div class="mode-bars" aria-hidden="true">
+              <div class="mode-bar">
+                <span>圓角的重要感</span>
+                <i id="bar-round"></i>
+              </div>
+              <div class="mode-bar">
+                <span>尖角風險感</span>
+                <i id="bar-corner"></i>
+              </div>
+              <div class="mode-bar">
+                <span>多層保護感</span>
+                <i id="bar-layer"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-card" aria-live="polite">
+            <p class="shape-kicker" id="sim-kicker">SHAPE VIEW</p>
+            <h3 id="sim-title">看形狀</h3>
+            <p id="sim-text">
+              單看外形時，最容易先注意到的就是圓角設計，因為它會讓窗戶周圍的力量比較不容易卡在尖尖的地方。
+            </p>
+            <div class="pressure-note">
+              <span>一句記住</span>
+              <strong id="sim-memory">窗戶做得圓一點，不只是可愛，還和安全有關。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道飛機窗戶為什麼不是方方的了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把形狀、壓力和安全之間的關係說清楚。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十五課完成</p>
+        <h2>現在你知道，飛機窗戶做成圓角，不只是外型問題，而是和高空壓力還有安全很有關係。</h2>
+        <a href="apu.html">繼續下一課：APU 是什麼 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>有時候一個小小的圓角，背後其實藏著很大的工程想法。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
