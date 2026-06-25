@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十二課：認識風向、雲、能見度與天氣怎麼影響飛行。"
+    />
+    <title>風和天氣怎麼影響飛行？｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="weather.css?v=20260625-readable" />
+    <script src="weather.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header weather-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#weather-factors">看天氣</a>
+        <a href="#wind-lab">玩風向</a>
+        <a href="#wingsock">看風向袋</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="lighting.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="weather-hero">
+        <div class="weather-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十二課</p>
+          <h1>飛行前，<em>大家都先抬頭看天氣。</em></h1>
+          <p class="hero-intro">
+            飛機不是只有「會不會飛」的問題，還要看風往哪裡吹、雲有多低、看得清不清楚，
+            以及前方有沒有對流和雷雨。這一堂會把最重要的幾件天氣事，變成好懂的地圖。
+          </p>
+          <div class="weather-summary" aria-label="本課重點">
+            <div><strong>4</strong><span>個關鍵天氣</span></div>
+            <div><strong>順風逆風</strong><span>一看就懂</span></div>
+            <div><strong>風向袋</strong><span>看方向也看大小</span></div>
+          </div>
+          <a class="button button-primary" href="#weather-factors">
+            開始看天氣 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="weather-hero-visual" aria-hidden="true">
+          <span class="visual-code">AIRPORT WEATHER</span>
+          <div class="sky-layer">
+            <div class="cloud cloud-one"></div>
+            <div class="cloud cloud-two"></div>
+            <div class="wind-line wind-one"></div>
+            <div class="wind-line wind-two"></div>
+            <div class="rain-band"></div>
+            <div class="windsock-pole"></div>
+            <div class="windsock-flag"></div>
+          </div>
+          <p class="visual-caption">風、雲和能見度，會一起影響起飛與落地</p>
+        </div>
+      </section>
+
+      <section class="factors-section" id="weather-factors" aria-labelledby="factors-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先看哪幾件事</p>
+            <h2 id="factors-title">飛行員看天氣，不只看會不會下雨</h2>
+          </div>
+          <p>
+            影響飛機的天氣很多，但最先要抓的是風、能見度、雲底高度，還有對流或雷雨。
+            這四件事會直接改變跑道使用、進場難度和整體安全。
+          </p>
+        </div>
+
+        <div class="factors-layout">
+          <div class="factor-map">
+            <button class="factor-button is-active" type="button" data-factor="wind">風向與風速</button>
+            <button class="factor-button" type="button" data-factor="visibility">能見度</button>
+            <button class="factor-button" type="button" data-factor="cloud">雲底高度</button>
+            <button class="factor-button" type="button" data-factor="storm">對流與雷雨</button>
+
+            <div class="factor-scene" aria-hidden="true">
+              <div class="scene-runway"></div>
+              <div class="scene-cloud low"></div>
+              <div class="scene-cloud high"></div>
+              <div class="scene-arrow"></div>
+              <div class="scene-fog"></div>
+              <div class="scene-lightning"></div>
+            </div>
+          </div>
+
+          <aside class="factor-explainer" aria-live="polite">
+            <p class="explainer-kicker" id="factor-kicker">天氣重點</p>
+            <h3 id="factor-title">風向與風速</h3>
+            <p id="factor-text">
+              風不只是大不大，還要看它是迎面吹、從後面吹，還是從側面吹。這會直接影響跑道選擇和起降難度。
+            </p>
+            <div class="factor-memory">
+              <span>先記住</span>
+              <strong id="factor-remember">飛機通常更喜歡迎風起降，因為比較容易產生升力，也比較省跑道。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="wind-section" id="wind-lab" aria-labelledby="wind-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">風向實驗</p>
+            <h2 id="wind-title">同一條跑道，風一變，使用方向也可能跟著變</h2>
+          </div>
+          <p>
+            這裡先用一條簡化的 05 / 23 跑道示意。實際機場還會考慮航管、程序和障礙物，
+            但迎風起降這個原則，是最容易先學會的一步。
+          </p>
+        </div>
+
+        <div class="wind-layout">
+          <div class="wind-stage">
+            <div class="wind-runway">
+              <span class="runway-end left">05</span>
+              <span class="runway-center"></span>
+              <span class="runway-end right">23</span>
+            </div>
+            <div class="wind-arrow" id="wind-arrow">→</div>
+            <p class="wind-caption" id="wind-caption">風從左邊吹來，通常比較有利使用 05 端起降。</p>
+          </div>
+
+          <div class="wind-controls">
+            <div class="wind-button-grid">
+              <button class="wind-button is-active" type="button" data-wind="left">左邊吹來</button>
+              <button class="wind-button" type="button" data-wind="right">右邊吹來</button>
+              <button class="wind-button" type="button" data-wind="cross">側風</button>
+            </div>
+            <div class="wind-result">
+              <span id="wind-status">比較有利：05 端</span>
+              <p id="wind-text">
+                迎風時，飛機會更容易在較短距離內起飛，也能用較低地速落地。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="windsock-section" id="wingsock" aria-labelledby="windsock-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">風向袋</p>
+            <h2 id="windsock-title">看它指哪裡，也看它有多撐開</h2>
+          </div>
+          <p>
+            風向袋很像機場裡最直覺的小助手。它會指向風被吹去的方向，
+            也會用張開的程度，讓人快速感覺風勢大小。
+          </p>
+        </div>
+
+        <div class="windsock-layout">
+          <div class="windsock-visual">
+            <div class="sock-pole"></div>
+            <div class="sock-body" id="sock-body">
+              <i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+
+          <div class="windsock-controls">
+            <label class="slider-label" for="sock-slider">
+              風勢大小
+              <strong id="sock-label">中等風</strong>
+            </label>
+            <input id="sock-slider" type="range" min="0" max="2" value="1" step="1" />
+            <div class="preset-row">
+              <button class="preset-button" type="button" data-sock="0">微風</button>
+              <button class="preset-button" type="button" data-sock="1">中等風</button>
+              <button class="preset-button" type="button" data-sock="2">強風</button>
+            </div>
+            <div class="windsock-note">
+              <span id="sock-status">袋身有撐起來，但還沒完全水平。</span>
+              <p id="sock-text">這通常表示風不小，但還沒有強到把風向袋整個拉平。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你會不會先看天氣再飛？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把風、雲和能見度連在一起。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十二課完成</p>
+        <h2>你現在已經知道，飛行前先看天氣，不只是看會不會下雨。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>起飛前先看風，落地前先看雲，心裡就會更有底。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

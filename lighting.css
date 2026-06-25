@@ -546,7 +546,7 @@
   width: 72%;
   height: 3px;
   background: var(--light-yellow);
-  transform: rotate(-8deg);
+  transform: rotate(8deg);
   transform-origin: left center;
 }
 
