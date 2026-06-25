@@ -16,7 +16,7 @@
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--ink-soft);
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -65,7 +65,7 @@
 .duel-heading > p {
   margin-bottom: 3px;
   color: rgba(255, 253, 247, 0.65);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -95,7 +95,7 @@
   padding: 7px 9px;
   color: var(--paper);
   background: var(--orange-dark);
-  font-size: 9px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.12em;
 }
@@ -113,7 +113,7 @@
 .duel-card header p {
   margin: 1px 0 0;
   color: var(--ink-soft);
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .duel-photo {
@@ -132,7 +132,7 @@
   display: block;
   padding: 13px 24px;
   color: var(--ink-soft);
-  font-size: 9px;
+  font-size: 16px;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -213,7 +213,7 @@
 
 .focus-explanation span {
   color: #f3d158;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.13em;
 }
@@ -227,7 +227,7 @@
 .focus-explanation p {
   margin: 0;
   color: rgba(255, 253, 247, 0.68);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -258,14 +258,14 @@
 
 .difference-row > span {
   color: var(--orange-dark);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 800;
 }
 
 .difference-row p,
 .difference-row strong {
   margin: 0;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -282,7 +282,7 @@
   max-width: 760px;
   margin: 25px 0 0 auto;
   color: var(--ink-soft);
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -320,7 +320,7 @@
 .common-grid p {
   margin-bottom: 0;
   color: var(--ink-soft);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -352,7 +352,7 @@
 
 #challenge-progress {
   color: var(--orange-dark);
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: 0.12em;
 }
@@ -396,7 +396,7 @@
   min-height: 28px;
   margin: 18px 0 8px;
   color: var(--ink-soft);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -417,7 +417,7 @@
 }
 
 .course-finish p {
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: 0.13em;
 }
@@ -427,7 +427,7 @@
   margin-top: 30px;
   padding-bottom: 6px;
   border-bottom: 1px solid currentColor;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -477,7 +477,7 @@
   }
 
   .lesson-home span {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .compare-hero {
@@ -526,7 +526,7 @@
     display: block;
     margin-bottom: 3px;
     color: var(--ink-soft);
-    font-size: 9px;
+    font-size: 16px;
     font-weight: 800;
   }
 

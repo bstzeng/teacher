@@ -22,7 +22,7 @@
   display: inline-block;
   margin-bottom: 28px;
   color: var(--ink-soft);
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -65,7 +65,7 @@
 
 .aviation-summary span {
   color: var(--ink-soft);
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -91,7 +91,7 @@
   top: 35px;
   left: 38px;
   color: var(--aviation-yellow);
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: 0.2em;
 }
@@ -155,7 +155,7 @@
   position: absolute;
   right: 35px;
   bottom: 30px;
-  font-size: 9px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.18em;
 }
@@ -184,7 +184,7 @@
 
 .course-heading > p {
   color: rgba(255, 255, 255, 0.65);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.85;
 }
 
@@ -239,7 +239,7 @@
 .course-content > p {
   margin: 0 0 7px;
   color: var(--orange-dark);
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -251,7 +251,7 @@
 
 .course-content > span {
   color: var(--ink-soft);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -266,7 +266,7 @@
   padding: 6px 9px;
   border: 1px solid rgba(25, 53, 46, 0.22);
   border-radius: 999px;
-  font-size: 9px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -278,7 +278,7 @@
   justify-content: space-between;
   color: var(--paper);
   background: var(--aviation-blue);
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -315,7 +315,7 @@
 
 .route-guide li span {
   color: var(--orange-dark);
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.12em;
 }
