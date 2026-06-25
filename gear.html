@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第二十三課：認識起落架和輪子怎麼工作，了解支撐、收放、轉向和煞車各自在做什麼。"
+    />
+    <title>起落架和輪子怎麼工作｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="gear.css?v=20260625-new" />
+    <script src="gear.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header gear-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#parts">先認部位</a>
+        <a href="#jobs">看工作</a>
+        <a href="#simulator">互動觀察</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="engine.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="gear-hero">
+        <div class="gear-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第二十三課</p>
+          <h1>飛機不是只有翅膀和發動機，<em>它還要靠起落架才有辦法在地面站穩、轉彎和停下來。</em></h1>
+          <p class="hero-intro">
+            起落架就像飛機的腳。它不只負責撐住重量，還要幫忙滑行、轉向、吸收落地時的衝擊，
+            有些輪子還會一起幫忙煞車。
+          </p>
+          <div class="gear-summary" aria-label="本課重點">
+            <div><strong>3</strong><span>個常見部位</span></div>
+            <div><strong>4</strong><span>個主要工作</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#parts">
+            開始看起落架 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="gear-hero-visual" aria-hidden="true">
+          <span class="visual-code">STAND · ROLL · TURN · STOP</span>
+          <div class="gear-scene">
+            <div class="body"></div>
+            <div class="strut nose"></div>
+            <div class="strut main"></div>
+            <div class="wheel nose-wheel"></div>
+            <div class="wheel main-left"></div>
+            <div class="wheel main-right"></div>
+          </div>
+          <div class="gear-note">GROUND READY</div>
+          <p class="visual-caption">飛機在地上的很多事情，都靠它們幫忙</p>
+        </div>
+      </section>
+
+      <section class="parts-section" id="parts" aria-labelledby="parts-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先認部位</p>
+            <h2 id="parts-title">起落架最容易先看懂哪幾個地方？</h2>
+          </div>
+          <p>先從前輪和主輪開始認，這樣後面看工作分配就會很順。</p>
+        </div>
+
+        <div class="parts-layout">
+          <div class="part-buttons" role="tablist" aria-label="選擇起落架部位">
+            <button class="part-button is-active" type="button" data-part="nose">前起落架</button>
+            <button class="part-button" type="button" data-part="main">主起落架</button>
+            <button class="part-button" type="button" data-part="shock">避震支柱</button>
+          </div>
+
+          <aside class="part-card" aria-live="polite">
+            <p class="part-kicker" id="part-kicker">NOSE GEAR</p>
+            <h3 id="part-title">前起落架</h3>
+            <p id="part-text">
+              前起落架通常在飛機前面，常常負責地面轉向。你在滑行時看到飛機慢慢轉彎，常常就是它在幫忙。
+            </p>
+            <div class="part-facts">
+              <div><span>小朋友版記法</span><strong id="part-memory">前輪很像方向盤在地上的幫手。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="jobs-section" id="jobs" aria-labelledby="jobs-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看工作</p>
+            <h2 id="jobs-title">起落架到底在忙哪些事情？</h2>
+          </div>
+          <p>你可以把它想成飛機的地面團隊：有人負責撐、有人負責轉、有人負責吸震、有人負責停。</p>
+        </div>
+
+        <div class="job-grid">
+          <button class="job-card is-active" type="button" data-job="support">
+            <span>第一件</span>
+            <strong>撐住重量</strong>
+          </button>
+          <button class="job-card" type="button" data-job="turn">
+            <span>第二件</span>
+            <strong>幫忙轉向</strong>
+          </button>
+          <button class="job-card" type="button" data-job="shock">
+            <span>第三件</span>
+            <strong>吸收落地衝擊</strong>
+          </button>
+          <button class="job-card" type="button" data-job="brake">
+            <span>第四件</span>
+            <strong>幫忙煞車</strong>
+          </button>
+        </div>
+
+        <div class="job-explainer" aria-live="polite">
+          <p class="part-kicker" id="job-kicker">SUPPORT</p>
+          <h3 id="job-title">撐住重量</h3>
+          <p id="job-text">
+            飛機落在地上時，整架飛機的重量要先被起落架接住，所以最基本的工作就是穩穩把飛機撐好。
+          </p>
+          <div class="job-note">
+            <span>一句記住</span>
+            <strong id="job-memory">如果沒有起落架，飛機在地上根本沒辦法正常站著。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動觀察</p>
+            <h2 id="simulator-title">不同地面情境時，哪個工作最明顯？</h2>
+          </div>
+          <p>按按看滑行、落地、停下來時，觀察起落架哪個任務最忙。</p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="simulator-controls">
+            <p class="simulator-label">選一個地面情境</p>
+            <div class="mode-buttons">
+              <button class="mode-button is-active" type="button" data-mode="taxi">滑行中</button>
+              <button class="mode-button" type="button" data-mode="landing">剛落地</button>
+              <button class="mode-button" type="button" data-mode="stop">準備停好</button>
+            </div>
+            <div class="mode-bars" aria-hidden="true">
+              <div class="mode-bar">
+                <span>轉向感</span>
+                <i id="bar-turn"></i>
+              </div>
+              <div class="mode-bar">
+                <span>吸震感</span>
+                <i id="bar-shock"></i>
+              </div>
+              <div class="mode-bar">
+                <span>煞車感</span>
+                <i id="bar-brake"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-card" aria-live="polite">
+            <p class="part-kicker" id="sim-kicker">TAXI MODE</p>
+            <h3 id="sim-title">滑行中</h3>
+            <p id="sim-text">
+              滑行時最容易感覺到的是轉向工作，因為飛機要跟著滑行道慢慢轉彎、往正確方向前進。
+            </p>
+            <div class="job-note">
+              <span>一句記住</span>
+              <strong id="sim-memory">滑行時最像在地上開很大的車，方向控制就很重要。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道起落架不只是輪子了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把起落架的幾個主要工作分清楚。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十三課完成</p>
+        <h2>現在你知道，起落架不只是輪子，而是飛機在地面上站穩、轉彎、落地和停下來的重要幫手。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>飛機在地上的每一步，也都有自己的小隊伍在幫忙。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
