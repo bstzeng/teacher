@@ -237,6 +237,7 @@
 .course-start { background: #e7ddd6; }
 .course-pushback { background: #dfe6dc; }
 .course-fueling { background: #e7e2d8; }
+.course-crew { background: #e5dfeb; }
 
 .course-number {
   display: flex;

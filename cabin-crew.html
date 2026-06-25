@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第三十課：認識空服員起飛前在忙什麼，看懂安全檢查、客艙確認和起飛前準備。"
+    />
+    <title>空服員起飛前在忙什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="cabin-crew.css?v=20260625-new" />
+    <script src="cabin-crew.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header crew-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#basics">先認識</a>
+        <a href="#steps">看流程</a>
+        <a href="#simulator">互動觀察</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="fueling.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="crew-hero">
+        <div class="crew-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第三十課</p>
+          <h1>空服員在起飛前不是在等飛機動，<em>而是在把整個客艙準備到可以安全出發。</em></h1>
+          <p class="hero-intro">
+            很多人以為空服員主要是在飛機上送餐、送飲料，
+            其實在起飛前，他們已經在做很多重要工作。
+            包括看乘客有沒有坐好、行李有沒有放穩、逃生門附近有沒有準備好，
+            以及整個客艙是不是已經安全到能夠起飛。
+          </p>
+          <div class="crew-summary" aria-label="本課重點">
+            <div><strong>3</strong><span>個主要任務</span></div>
+            <div><strong>4</strong><span>段起飛前流程</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#basics">
+            開始看客艙準備 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="crew-hero-visual" aria-hidden="true">
+          <span class="visual-code">CABIN · SAFETY · READY</span>
+          <div class="crew-scene">
+            <div class="cabin-shell"></div>
+            <div class="door"></div>
+            <div class="seat seat-one"></div>
+            <div class="seat seat-two"></div>
+            <div class="seat seat-three"></div>
+            <div class="crew-person"></div>
+            <div class="checklist"></div>
+          </div>
+          <div class="crew-note">READY FOR TAKEOFF</div>
+          <p class="visual-caption">不是等飛機動起來，準備早就開始了</p>
+        </div>
+      </section>
+
+      <section class="basics-section" id="basics" aria-labelledby="basics-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先認識</p>
+            <h2 id="basics-title">空服員起飛前最重要的三件事是什麼？</h2>
+          </div>
+          <p>先記住：起飛前最重要的關鍵字不是服務，而是安全、確認和準備。</p>
+        </div>
+
+        <div class="basics-layout">
+          <div class="basic-buttons" role="tablist" aria-label="選擇起飛前任務">
+            <button class="basic-button is-active" type="button" data-basic="cabin">看客艙有沒有整理好</button>
+            <button class="basic-button" type="button" data-basic="passengers">看乘客有沒有準備好</button>
+            <button class="basic-button" type="button" data-basic="report">把狀況回報完成</button>
+          </div>
+
+          <aside class="basic-card" aria-live="polite">
+            <p class="basic-kicker" id="basic-kicker">CABIN CHECK</p>
+            <h3 id="basic-title">看客艙有沒有整理好</h3>
+            <p id="basic-text">
+              空服員會先確認座位區、置物櫃、走道和工作區是不是已經整理到可以安全起飛，
+              因為飛機一加速，沒有固定好的東西可能就會變成麻煩。
+            </p>
+            <div class="basic-note">
+              <div><span>小朋友版記法</span><strong id="basic-memory">像校車出發前先收好東西，飛機也要先把客艙整理穩穩的。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="steps-section" id="steps" aria-labelledby="steps-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看流程</p>
+            <h2 id="steps-title">空服員通常怎麼一路準備到起飛？</h2>
+          </div>
+          <p>你可以把它想成一場客艙整隊：先讓大家上機，再把整個空間和每個人都確認好。</p>
+        </div>
+
+        <div class="step-grid">
+          <button class="step-card is-active" type="button" data-step="boarding">
+            <span>第一步</span>
+            <strong>協助大家登機</strong>
+          </button>
+          <button class="step-card" type="button" data-step="secure">
+            <span>第二步</span>
+            <strong>確認客艙固定好</strong>
+          </button>
+          <button class="step-card" type="button" data-step="briefing">
+            <span>第三步</span>
+            <strong>提醒安全重點</strong>
+          </button>
+          <button class="step-card" type="button" data-step="ready">
+            <span>第四步</span>
+            <strong>回報可以起飛</strong>
+          </button>
+        </div>
+
+        <div class="step-explainer" aria-live="polite">
+          <p class="basic-kicker" id="step-kicker">BOARDING</p>
+          <h3 id="step-title">協助大家登機</h3>
+          <p id="step-text">
+            一開始空服員會迎接乘客、幫忙找到座位、留意需要特別幫忙的人，
+            也會一邊觀察客艙的狀況是不是順利。
+          </p>
+          <div class="step-note">
+            <span>一句記住</span>
+            <strong id="step-memory">登機不是只有說歡迎光臨，還是在偷偷做很多觀察。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動觀察</p>
+            <h2 id="simulator-title">起飛前的哪個時刻，空服員最忙什麼？</h2>
+          </div>
+          <p>按按看不同時刻，觀察空服員比較像在整理客艙、提醒乘客，還是做最後回報。</p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="simulator-controls">
+            <p class="simulator-label">選一個時刻</p>
+            <div class="mode-buttons">
+              <button class="mode-button is-active" type="button" data-mode="boarding">登機中</button>
+              <button class="mode-button" type="button" data-mode="closing">關門前</button>
+              <button class="mode-button" type="button" data-mode="taxi">滑行準備</button>
+            </div>
+            <div class="mode-bars" aria-hidden="true">
+              <div class="mode-bar">
+                <span>整理客艙感</span>
+                <i id="bar-cabin"></i>
+              </div>
+              <div class="mode-bar">
+                <span>提醒乘客感</span>
+                <i id="bar-passenger"></i>
+              </div>
+              <div class="mode-bar">
+                <span>最後回報感</span>
+                <i id="bar-report"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-card" aria-live="polite">
+            <p class="basic-kicker" id="sim-kicker">BOARDING TIME</p>
+            <h3 id="sim-title">登機中</h3>
+            <p id="sim-text">
+              乘客一個個上機時，空服員要一邊協助座位和行李，一邊看整個客艙是不是慢慢變整齊、順利。
+            </p>
+            <div class="step-note">
+              <span>一句記住</span>
+              <strong id="sim-memory">看起來像在招呼大家，其實也是在幫客艙整隊。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道空服員起飛前不是在發呆了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能分清楚空服員在起飛前做的安全準備。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第三十課完成</p>
+        <h2>現在你知道，空服員在起飛前不是只在招呼乘客，而是在替整個客艙做最後的安全準備。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>飛機起飛前，客艙裡也有一場安靜又重要的準備。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
