@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十五課：認識飛機怎麼導航、航點是什麼，還有常見導航工具。"
+    />
+    <title>飛機怎麼導航｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="nav.css?v=20260625-new" />
+    <script src="nav.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header nav-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#map">看航線</a>
+        <a href="#tools">看工具</a>
+        <a href="#plan">排航路</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="atc.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="nav-hero">
+        <div class="nav-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十五課</p>
+          <h1>飛機不是亂飛，<em>它其實一直知道自己要去哪裡。</em></h1>
+          <p class="hero-intro">
+            飛機在天上不是只靠「往前飛」就好，它需要知道自己在哪裡、下一個點在哪裡，
+            還有該沿著哪一條路走。這一課會帶你認識航點、航路，還有飛機常用的導航方式。
+          </p>
+          <div class="nav-summary" aria-label="本課重點">
+            <div><strong>3</strong><span>種導航工具</span></div>
+            <div><strong>1</strong><span>條航線互動圖</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#map">
+            開始看航路 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="nav-hero-visual" aria-hidden="true">
+          <span class="visual-code">ROUTE · WAYPOINT · GPS</span>
+          <div class="sky-grid">
+            <div class="route-line route-one"></div>
+            <div class="route-line route-two"></div>
+            <div class="waypoint wp-a">A</div>
+            <div class="waypoint wp-b">B</div>
+            <div class="waypoint wp-c">C</div>
+            <div class="waypoint wp-d">D</div>
+            <div class="nav-plane">✈</div>
+          </div>
+          <p class="visual-caption">飛機會沿著航路，一個點一個點往前走</p>
+        </div>
+      </section>
+
+      <section class="map-section" id="map" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先看航線</p>
+            <h2 id="map-title">你可以把天空想成有很多看不見的路</h2>
+          </div>
+          <p>
+            飛機常常不是直直飛到目的地，而是沿著一串航點前進。
+            點不同，轉彎不同，航路也就不同。
+          </p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-card">
+            <div class="route-map" id="route-map" aria-hidden="true">
+              <div class="route-segment seg-a"></div>
+              <div class="route-segment seg-b"></div>
+              <div class="route-segment seg-c"></div>
+              <button class="waypoint-button is-active" type="button" data-waypoint="alpha">ALFA</button>
+              <button class="waypoint-button" type="button" data-waypoint="bravo">BRAVO</button>
+              <button class="waypoint-button" type="button" data-waypoint="charlie">CHARLIE</button>
+              <button class="waypoint-button" type="button" data-waypoint="delta">DELTA</button>
+              <div class="route-plane" id="route-plane">✈</div>
+            </div>
+          </div>
+
+          <aside class="map-detail" aria-live="polite">
+            <p class="detail-kicker" id="waypoint-kicker">航點 1</p>
+            <h3 id="waypoint-title">ALFA</h3>
+            <p id="waypoint-text">
+              這可以想成天空中的一個「路標」。飛機先飛到這裡，再決定下一段要往哪裡去。
+            </p>
+            <div class="detail-box">
+              <span>先記住</span>
+              <strong id="waypoint-memory">航點像天空裡的轉彎點和集合點。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="tools-section" id="tools" aria-labelledby="tools-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">再看工具</p>
+            <h2 id="tools-title">飛機怎麼知道自己在哪裡？</h2>
+          </div>
+          <p>
+            不同時代、不同地方會用不同方法。你不用一次學很深，只要先抓住每種方法在做什麼。
+          </p>
+        </div>
+
+        <div class="tools-layout">
+          <div class="tool-buttons" role="tablist" aria-label="選擇導航工具">
+            <button class="tool-button is-active" type="button" data-tool="gps">GPS / 衛星導航</button>
+            <button class="tool-button" type="button" data-tool="vor">VOR / 地面導航台</button>
+            <button class="tool-button" type="button" data-tool="fms">FMS / 飛行管理系統</button>
+          </div>
+
+          <aside class="tool-card" aria-live="polite">
+            <p class="detail-kicker" id="tool-kicker">SATELLITE</p>
+            <h3 id="tool-title">GPS / 衛星導航</h3>
+            <p id="tool-text">
+              飛機可以用衛星訊號知道自己大概在地圖上的哪裡，很像手機地圖會定位你的位置。
+            </p>
+            <div class="tool-facts">
+              <div><span>你可以把它想成</span><strong id="tool-idea">天空版定位系統</strong></div>
+              <div><span>它幫忙什麼</span><strong id="tool-job">知道現在大概在哪裡</strong></div>
+              <div><span>一句記憶法</span><strong id="tool-memory">先知道自己在哪，才知道要往哪。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="plan-section" id="plan" aria-labelledby="plan-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">排航路</p>
+            <h2 id="plan-title">如果你是飛機，你會怎麼一路飛到目的地？</h2>
+          </div>
+          <p>
+            試著按順序排出一條簡化航路。你會發現，導航不是只看終點，還要看中間怎麼接。
+          </p>
+        </div>
+
+        <div class="plan-layout">
+          <div class="plan-buttons">
+            <button class="plan-button" type="button" data-leg="departure">起飛離場</button>
+            <button class="plan-button" type="button" data-leg="waypoint">飛往航點</button>
+            <button class="plan-button" type="button" data-leg="airway">進入航路</button>
+            <button class="plan-button" type="button" data-leg="arrival">準備進場</button>
+          </div>
+
+          <div class="plan-card" aria-live="polite">
+            <p class="detail-kicker">你的導航進度</p>
+            <h3 id="plan-title-card">還沒開始排</h3>
+            <p id="plan-text">先按第一步，看看一條完整航路會怎麼慢慢接起來。</p>
+            <div class="plan-progress">
+              <span>目前順序</span>
+              <strong id="plan-sequence">—</strong>
+            </div>
+            <button class="reset-button" id="plan-reset" type="button">重新排一次</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道飛機怎麼找路了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你有沒有把航點、航路和導航工具連起來。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十五課完成</p>
+        <h2>現在你知道，飛機不是憑感覺飛，而是沿著航點和航路一步一步前進。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>先知道自己在哪裡，再知道下一步往哪裡去。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
