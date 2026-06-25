@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第二十課：認識飛機落地後怎麼減速停下來，了解反推力、擾流板和煞車各自做什麼。"
+    />
+    <title>飛機怎麼減速停下來｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="braking.css?v=20260625-new" />
+    <script src="braking.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header braking-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#tools">減速工具</a>
+        <a href="#sequence">減速順序</a>
+        <a href="#simulator">互動練習</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="cargo.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="braking-hero">
+        <div class="braking-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第二十課</p>
+          <h1>飛機落地後不是立刻停住，<em>而是大家一起慢慢幫它減速。</em></h1>
+          <p class="hero-intro">
+            飛機落地時速度還很快，不會只靠一種方法停下來。
+            這一課我們用最容易懂的方式，認識反推力、擾流板和輪子煞車怎麼一起工作。
+          </p>
+          <div class="braking-summary" aria-label="本課重點">
+            <div><strong>3</strong><span>個主要工具</span></div>
+            <div><strong>1</strong><span>段落地減速流程</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#tools">
+            開始認識 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="braking-hero-visual" aria-hidden="true">
+          <span class="visual-code">LAND · SLOW DOWN · STOP</span>
+          <div class="runway-strip"></div>
+          <div class="airplane-body">
+            <div class="spoiler spoiler-one"></div>
+            <div class="spoiler spoiler-two"></div>
+            <div class="engine engine-left"></div>
+            <div class="engine engine-right"></div>
+            <div class="wheel wheel-left"></div>
+            <div class="wheel wheel-right"></div>
+          </div>
+          <div class="speed-cloud">140 kt → 20 kt</div>
+          <p class="visual-caption">不是一個人煞車，是三個幫手一起上場</p>
+        </div>
+      </section>
+
+      <section class="tools-section" id="tools" aria-labelledby="tools-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">三個工具</p>
+            <h2 id="tools-title">飛機常用哪三種方法減速？</h2>
+          </div>
+          <p>先記住名字和工作內容，等一下就更容易看懂整個落地流程。</p>
+        </div>
+
+        <div class="tools-layout">
+          <div class="tool-buttons" role="tablist" aria-label="選擇減速工具">
+            <button class="tool-button is-active" type="button" data-tool="spoiler">擾流板</button>
+            <button class="tool-button" type="button" data-tool="reverse">反推力</button>
+            <button class="tool-button" type="button" data-tool="brake">輪子煞車</button>
+          </div>
+
+          <aside class="tool-card" aria-live="polite">
+            <p class="tool-kicker" id="tool-kicker">SPOILER</p>
+            <h3 id="tool-title">擾流板</h3>
+            <p id="tool-text">
+              飛機一碰到地面，機翼上方的擾流板會彈起來，幫忙把升力趕快減少，讓重量更確實壓到輪子上。
+            </p>
+            <div class="tool-facts">
+              <div><span>小朋友版記法</span><strong id="tool-memory">先讓飛機乖乖坐好，輪子才比較好工作。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="sequence-section" id="sequence" aria-labelledby="sequence-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">減速順序</p>
+            <h2 id="sequence-title">落地後通常會怎麼接力？</h2>
+          </div>
+          <p>你可以把它想成接力賽：一落地先做一點，滑慢後再換別人接手更多。</p>
+        </div>
+
+        <div class="sequence-grid">
+          <button class="sequence-card is-active" type="button" data-stage="touchdown">
+            <span>第一步</span>
+            <strong>剛接地</strong>
+          </button>
+          <button class="sequence-card" type="button" data-stage="rolling">
+            <span>第二步</span>
+            <strong>高速滑跑</strong>
+          </button>
+          <button class="sequence-card" type="button" data-stage="slow">
+            <span>第三步</span>
+            <strong>慢下來後</strong>
+          </button>
+        </div>
+
+        <div class="sequence-explainer" aria-live="polite">
+          <p class="tool-kicker" id="stage-kicker">TOUCHDOWN</p>
+          <h3 id="stage-title">剛接地</h3>
+          <p id="stage-text">
+            剛接地時，最重要的是讓飛機穩穩壓在跑道上，所以擾流板會很快幫忙。
+          </p>
+          <div class="sequence-note">
+            <span>這時誰最忙</span>
+            <strong id="stage-memory">擾流板先幫飛機「坐穩」，其他工具再一起接力。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動練習</p>
+            <h2 id="simulator-title">不同速度時，哪個工具比較重要？</h2>
+          </div>
+          <p>按下按鈕試試看，想想看現在是剛落地、高速，還是已經快停住。</p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="simulator-controls">
+            <p class="simulator-label">選一個速度情境</p>
+            <div class="speed-buttons">
+              <button class="speed-button is-active" type="button" data-speed="fast">140 節左右</button>
+              <button class="speed-button" type="button" data-speed="medium">80 節左右</button>
+              <button class="speed-button" type="button" data-speed="slow">20 節左右</button>
+            </div>
+            <div class="tool-bars" aria-hidden="true">
+              <div class="tool-bar">
+                <span>擾流板</span>
+                <i id="bar-spoiler"></i>
+              </div>
+              <div class="tool-bar">
+                <span>反推力</span>
+                <i id="bar-reverse"></i>
+              </div>
+              <div class="tool-bar">
+                <span>輪子煞車</span>
+                <i id="bar-brake"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-card" aria-live="polite">
+            <p class="tool-kicker" id="sim-kicker">FAST ROLL</p>
+            <h3 id="sim-title">140 節左右</h3>
+            <p id="sim-text">
+              這時速度還很快，通常會看到擾流板和反推力都很重要，輪子煞車也會一起工作。
+            </p>
+            <div class="sequence-note">
+              <span>一句記住</span>
+              <strong id="sim-memory">速度很快時，通常會是三種工具一起幫忙。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道飛機怎麼慢下來了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把三個減速幫手分清楚。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十課完成</p>
+        <h2>現在你知道，飛機停下來不是只靠煞車，而是擾流板、反推力和輪子一起合作。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>先坐穩、再減速、最後慢慢停好。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
