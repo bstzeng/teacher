@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="互動走過一趟民航航班從航前準備、推離、起飛、巡航到落地的完整流程。" />
+    <title>一趟航班的完整流程｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="flight.css" />
+    <script src="flight.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header flight-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a>
+      <nav class="desktop-nav" aria-label="課程選單"><a href="#journey">航班旅程</a><a href="#roles">誰在合作</a><a href="#challenge">流程挑戰</a></nav>
+      <a class="header-cta lesson-home" href="controls.html">上一課 <span aria-hidden="true">←</span></a>
+    </header>
+
+    <main>
+      <section class="flight-hero">
+        <div>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第八課</p>
+          <p class="lesson-chip">互動旅程 · 約 18 分鐘</p>
+          <h1>一趟航班，<em>不是起飛後才開始。</em></h1>
+          <p class="hero-intro">乘客走進客艙之前，航班早已開始準備。從飛行計畫、裝載和加油，到落地後再次停妥，每個階段都有人交接、確認與監控。</p>
+          <a class="button button-primary" href="#journey">跟著航班出發 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-flight-board" aria-hidden="true">
+          <span>MM 808</span><strong>TPE</strong><i>→</i><strong>KHH</strong>
+          <div class="board-line"></div>
+          <p>BOARDING · ON TIME</p>
+          <b>✈</b>
+        </div>
+      </section>
+
+      <section class="journey-section" id="journey" aria-labelledby="journey-title">
+        <div class="journey-heading">
+          <div><p class="section-kicker">從登機門到登機門</p><h2 id="journey-title">點選階段，跟著飛機走完整趟旅程</h2></div>
+          <p>以一趟短程客運航班為例。實際程序會因機型、航空公司、機場、天氣與航管指示而不同。</p>
+        </div>
+
+        <div class="journey-map">
+          <div class="flight-path" aria-hidden="true">
+            <svg viewBox="0 0 1100 330" preserveAspectRatio="none">
+              <path d="M45 270C130 270 145 250 210 250C280 250 300 115 405 90C500 68 610 68 705 90C810 115 825 250 900 250C965 250 980 270 1055 270"/>
+            </svg>
+            <div class="moving-plane" id="moving-plane">✈</div>
+            <span class="ground-label origin">出發機場</span><span class="sky-label">巡航高度</span><span class="ground-label destination">目的地機場</span>
+          </div>
+          <div class="phase-progress"><span id="phase-progress-fill"></span></div>
+        </div>
+
+        <div class="phase-tabs" aria-label="航班十個階段">
+          <button class="phase-tab is-active" data-phase="0" type="button"><span>01</span>航前準備</button>
+          <button class="phase-tab" data-phase="1" type="button"><span>02</span>登機關門</button>
+          <button class="phase-tab" data-phase="2" type="button"><span>03</span>推離啟動</button>
+          <button class="phase-tab" data-phase="3" type="button"><span>04</span>滑行</button>
+          <button class="phase-tab" data-phase="4" type="button"><span>05</span>起飛</button>
+          <button class="phase-tab" data-phase="5" type="button"><span>06</span>爬升</button>
+          <button class="phase-tab" data-phase="6" type="button"><span>07</span>巡航</button>
+          <button class="phase-tab" data-phase="7" type="button"><span>08</span>下降進場</button>
+          <button class="phase-tab" data-phase="8" type="button"><span>09</span>落地</button>
+          <button class="phase-tab" data-phase="9" type="button"><span>10</span>滑回停妥</button>
+        </div>
+
+        <div class="phase-detail" aria-live="polite">
+          <div class="phase-main">
+            <span id="phase-number">PHASE 01 / 10</span>
+            <p id="phase-english">PRE-FLIGHT</p>
+            <h3 id="phase-title">航前準備</h3>
+            <p id="phase-description">機組確認天氣、航路、油量、載重和備降機場；地勤同步加油、裝行李、補餐與檢查外觀。所有資料最後要符合飛機性能與重心限制。</p>
+            <div class="phase-facts">
+              <div><span>飛機狀態</span><strong id="aircraft-state">停在登機門，使用地面電源或 APU</strong></div>
+              <div><span>關鍵確認</span><strong id="phase-check">飛行計畫、燃油、載重平衡、外部檢查</strong></div>
+            </div>
+          </div>
+          <aside class="perspective-panel">
+            <div><span>駕駛艙正在做什麼？</span><p id="cockpit-view">輸入航路、檢查系統、計算起飛資料並完成檢查單。</p></div>
+            <div><span>乘客可能感覺到什麼？</span><p id="passenger-view">還沒登機，但客艙、行李與餐飲已經在準備。</p></div>
+            <div><span>前面課程的連結</span><p id="lesson-link">APU、機身貨艙與駕駛艙系統都在這個階段開始工作。</p></div>
+          </aside>
+        </div>
+
+        <div class="phase-navigation">
+          <button id="phase-previous" type="button" disabled>← 上一階段</button>
+          <button id="phase-next" type="button">下一階段 →</button>
+        </div>
+      </section>
+
+      <section class="changes-section" aria-labelledby="changes-title">
+        <div class="changes-heading"><p class="section-kicker">沿途會改變的東西</p><h2 id="changes-title">同一架飛機，設定會一路變化</h2></div>
+        <div class="changes-grid">
+          <article><span>推力</span><div class="change-bars thrust-bars"><i></i><i></i><i></i><i></i></div><h3>不是一直全力運轉</h3><p>起飛需要高推力；爬升後逐漸減少；下降時可能接近慢車，進場又會小幅調整。</p></article>
+          <article><span>襟翼與起落架</span><div class="configuration-plane">✈<i></i></div><h3>只在需要時伸出</h3><p>起降低速時使用襟翼；離地後逐步收起。起落架在正爬升建立後收起，落地前再放下。</p></article>
+          <article><span>高度與速度</span><div class="altitude-profile"><i></i></div><h3>每個階段都有目標</h3><p>航管、程序與性能共同決定高度和速度，機組持續監控是否符合限制。</p></article>
+        </div>
+      </section>
+
+      <section class="roles-section" id="roles" aria-labelledby="roles-title">
+        <div class="roles-copy"><p class="section-kicker">一趟航班不是兩位飛行員完成的</p><h2 id="roles-title">地面與空中，一直有人接力</h2><p>不同團隊在不同時間接手，透過標準程序和通訊，把飛機安全地送到下一個階段。</p></div>
+        <div class="role-list">
+          <article><span>01</span><h3>簽派與運務</h3><p>規劃航路、天氣、油量和航班文件，協調載重與時間。</p></article>
+          <article><span>02</span><h3>機坪與地勤</h3><p>推離、行李、加油、配餐、空橋和地面安全都需要協作。</p></article>
+          <article><span>03</span><h3>客艙組員</h3><p>確認客艙安全、執行安全示範、照顧乘客並處理緊急狀況。</p></article>
+          <article><span>04</span><h3>飛行員</h3><p>操作與監控飛機、管理自動化、做決策並與所有單位溝通。</p></article>
+          <article><span>05</span><h3>航空管制</h3><p>從地面、塔台、近場到區域管制，提供許可、排序與間隔。</p></article>
+        </div>
+      </section>
+
+      <section class="decision-section" aria-labelledby="decision-title">
+        <div class="decision-copy"><p class="section-kicker">機長決策台</p><h2 id="decision-title">不是照流程按下去就好</h2><p>航班每前進一階段，都必須先確認條件適合。選擇一個情境，看看流程可能怎麼改變。</p></div>
+        <div class="decision-lab">
+          <div class="scenario-buttons">
+            <button class="is-active" data-scenario="normal" type="button">天氣良好</button>
+            <button data-scenario="storm" type="button">前方雷雨</button>
+            <button data-scenario="runway" type="button">跑道暫時關閉</button>
+            <button data-scenario="technical" type="button">起飛前警告訊息</button>
+          </div>
+          <div class="scenario-result" aria-live="polite">
+            <span id="scenario-status">照計畫繼續</span>
+            <h3 id="scenario-title">條件正常，仍然持續監控</h3>
+            <p id="scenario-text">即使一切正常，機組仍會在每個階段重新檢查天氣、燃油、飛機狀態和下一步計畫。</p>
+            <strong id="scenario-action">可能行動：繼續、確認、交叉檢查</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="challenge-section flight-challenge" id="challenge" aria-labelledby="challenge-title">
+        <div class="challenge-copy"><p class="section-kicker">航班流程挑戰</p><h2 id="challenge-title">這件事通常發生在哪個階段？</h2><p>共五題，將工作、飛機設定與航班階段連起來。</p></div>
+        <div class="challenge-card"><p id="challenge-progress">第 1 題，共 5 題</p><h3 id="challenge-question"></h3><div class="challenge-options" id="challenge-options"></div><p id="challenge-feedback" aria-live="polite"></p><button class="button button-primary" id="challenge-next" type="button" hidden>下一題 <span aria-hidden="true">→</span></button></div>
+      </section>
+
+      <section class="course-finish"><p>第八課完成</p><h2>你已經把前七堂課，串成一趟真正的航班。</h2><a href="aviation.html">回到航空課程 →</a></section>
+    </main>
+    <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a><p>每一次抵達，都來自許多人的交接。</p><p>© <span id="current-year"></span> 慢慢學</p></footer>
+  </body>
+</html>

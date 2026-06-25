@@ -215,6 +215,7 @@
 .course-chart { background: #e7e2c8; }
 .course-forces { background: #d9e8ef; }
 .course-controls { background: #eadde7; }
+.course-flight { background: #f1e6cf; }
 
 .course-number {
   display: flex;
