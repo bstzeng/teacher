@@ -218,6 +218,7 @@
 .course-flight { background: #f1e6cf; }
 .course-runway { background: #dfe9dd; }
 .course-taxiway { background: #e2e7d7; }
+.course-lights { background: #e6dfec; }
 
 .course-number {
   display: flex;

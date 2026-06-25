@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十一課：認識機場燈光系統、跑道燈、滑行道燈與 PAPI。"
+    />
+    <title>機場燈光系統｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="lighting.css?v=20260625-readable" />
+    <script src="lighting.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header lighting-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#families">看燈光</a>
+        <a href="#papi">玩 PAPI</a>
+        <a href="#memory">快速記住</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="taxiway.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="lighting-hero">
+        <div class="lighting-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十一課</p>
+          <h1>天黑之後，<em>燈光就是機場的語言。</em></h1>
+          <p class="hero-intro">
+            晚上或能見度不好時，飛機不是靠猜路，而是靠顏色和位置來分辨跑道、滑行道和進場方向。
+            這一堂我們把夜間機場拆成幾種最常見的燈，讓你一眼就看得懂。
+          </p>
+          <div class="lighting-summary" aria-label="本課重點">
+            <div><strong>4</strong><span>類主要燈光</span></div>
+            <div><strong>2</strong><span>種地面顏色</span></div>
+            <div><strong>1</strong><span>個 PAPI 練習</span></div>
+          </div>
+          <a class="button button-primary" href="#families">
+            開始看夜間機場 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="lighting-hero-visual" aria-hidden="true">
+          <span class="visual-code">NIGHT AIRPORT</span>
+          <div class="hero-sky"></div>
+          <div class="hero-runway">
+            <i class="runway-light left"></i><i class="runway-light left"></i><i class="runway-light left"></i>
+            <i class="runway-light right"></i><i class="runway-light right"></i><i class="runway-light right"></i>
+            <span class="runway-dashes"></span>
+          </div>
+          <div class="hero-taxiway">
+            <i class="taxi-edge blue one"></i><i class="taxi-edge blue two"></i><i class="taxi-edge blue three"></i>
+            <i class="taxi-center green one"></i><i class="taxi-center green two"></i><i class="taxi-center green three"></i>
+          </div>
+          <div class="hero-papi">
+            <span class="white"></span><span class="white"></span><span class="red"></span><span class="red"></span>
+          </div>
+          <p class="visual-caption">白色像跑道，藍綠像滑行道，紅白像下滑道提示</p>
+        </div>
+      </section>
+
+      <section class="families-section" id="families" aria-labelledby="families-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">燈光家族</p>
+            <h2 id="families-title">先分清楚誰在說什麼</h2>
+          </div>
+          <p>
+            不同燈光的工作不一樣。有些在說「這裡是跑道」，有些在說「沿著這條地面路走」，
+            還有一些在提醒你進場角度太高還是太低。
+          </p>
+        </div>
+
+        <div class="families-layout">
+          <div class="night-stage">
+            <div class="night-card is-runway" id="night-card">
+              <div class="night-strip runway-mode">
+                <span class="edge edge-left"></span>
+                <span class="edge edge-right"></span>
+                <span class="center"></span>
+              </div>
+              <div class="night-strip taxi-mode" hidden>
+                <span class="blue-edge left"></span>
+                <span class="blue-edge right"></span>
+                <span class="green-center"></span>
+              </div>
+              <div class="night-strip threshold-mode" hidden>
+                <span class="flash left"></span>
+                <span class="flash right"></span>
+                <span class="threshold-bar"></span>
+              </div>
+              <div class="night-strip approach-mode" hidden>
+                <span class="lead one"></span><span class="lead two"></span><span class="lead three"></span>
+                <span class="papi-demo">
+                  <i class="white"></i><i class="white"></i><i class="red"></i><i class="red"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="family-buttons" aria-label="選擇燈光種類">
+              <button class="family-button is-active" type="button" data-family="runway">跑道燈</button>
+              <button class="family-button" type="button" data-family="taxi">滑行道燈</button>
+              <button class="family-button" type="button" data-family="threshold">跑道端與辨識燈</button>
+              <button class="family-button" type="button" data-family="approach">進場燈與 PAPI</button>
+            </div>
+          </div>
+
+          <aside class="family-explainer" aria-live="polite">
+            <p class="explainer-kicker" id="family-kicker">機場燈光</p>
+            <h3 id="family-title">跑道燈</h3>
+            <p id="family-text">
+              跑道邊燈通常是白色，用來把跑道邊界畫出來。接近跑道末端時，部分邊燈會改成黃色，提醒飛機快到尾端了。
+            </p>
+            <div class="family-memory">
+              <span>先記住</span>
+              <strong id="family-remember">白色常讓你認出跑道，藍色和綠色更常出現在滑行道。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="papi-section" id="papi" aria-labelledby="papi-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">PAPI 練習</p>
+            <h2 id="papi-title">看四盞燈，判斷你高還是低</h2>
+          </div>
+          <p>
+            PAPI 是跑道旁邊的下滑道提示燈。飛機在進場時會看這四盞燈的紅白組合，
+            來判斷自己是不是維持在合適的下滑角。
+          </p>
+        </div>
+
+        <div class="papi-layout">
+          <div class="papi-visual">
+            <div class="papi-lights" id="papi-lights" aria-hidden="true">
+              <span class="lamp white"></span>
+              <span class="lamp white"></span>
+              <span class="lamp red"></span>
+              <span class="lamp red"></span>
+            </div>
+            <div class="papi-slope">
+              <i class="aircraft-icon">✈</i>
+              <span class="slope-line"></span>
+            </div>
+          </div>
+
+          <div class="papi-controls">
+            <label class="slider-label" for="approach-slider">
+              進場高度感覺
+              <strong id="approach-label">剛剛好</strong>
+            </label>
+            <input id="approach-slider" type="range" min="0" max="2" value="1" step="1" />
+            <div class="preset-row">
+              <button class="preset-button" type="button" data-level="0">太高</button>
+              <button class="preset-button" type="button" data-level="1">剛剛好</button>
+              <button class="preset-button" type="button" data-level="2">太低</button>
+            </div>
+            <div class="papi-status" aria-live="polite">
+              <span id="papi-status">2 白 2 紅</span>
+              <p id="papi-text">這通常表示進場角度大致正確，是最常見也最想看到的組合。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="memory-section" id="memory" aria-labelledby="memory-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">快速記住</p>
+            <h2 id="memory-title">先背顏色，再背用途</h2>
+          </div>
+          <p>
+            如果一開始記不住全部系統，先把顏色和大方向抓住，就已經很有用了。
+            之後再慢慢把每一種燈光細節補上。
+          </p>
+        </div>
+
+        <div class="memory-grid">
+          <article>
+            <span>白色</span>
+            <h3>多半和跑道有關</h3>
+            <p>跑道邊燈、部分進場燈和跑道中心相關燈號，常常都以白色為主。</p>
+          </article>
+          <article>
+            <span>藍色</span>
+            <h3>多半在滑行道邊</h3>
+            <p>藍色邊燈很適合拿來提醒「這是地面的路，不是跑道本體」。</p>
+          </article>
+          <article>
+            <span>綠色</span>
+            <h3>常當成地面引導線</h3>
+            <p>滑行道中心燈常用綠色，讓飛機在夜間更容易沿線前進。</p>
+          </article>
+          <article>
+            <span>紅白</span>
+            <h3>常出現在進場提示</h3>
+            <p>PAPI 最有名的就是紅白組合，直接告訴你進場角度高低。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你會不會看夜間機場了？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把顏色、用途和進場提示串起來。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十一課完成</p>
+        <h2>你現在已經能用顏色和位置，看懂夜間機場最常見的燈光。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>晚上看燈光，白藍綠紅各有自己的工作。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
