@@ -213,6 +213,8 @@
 .course-compare { background: #f2ded1; }
 .course-hardware { background: #dceae8; }
 .course-chart { background: #e7e2c8; }
+.course-forces { background: #d9e8ef; }
+.course-controls { background: #eadde7; }
 
 .course-number {
   display: flex;

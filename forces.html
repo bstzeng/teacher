@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="互動認識飛機的升力、重力、推力、阻力、迎角與失速。" />
+    <title>飛機為什麼飛得起來｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="forces.css" />
+    <script src="forces.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header forces-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#forces">四種力</a><a href="#lab">風洞實驗</a><a href="#challenge">觀念挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="chart.html">上一課 <span aria-hidden="true">←</span></a>
+    </header>
+
+    <main>
+      <section class="forces-hero">
+        <div>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第六課</p>
+          <p class="lesson-chip">互動實驗 · 約 16 分鐘</p>
+          <h1>飛機很重，<em>為什麼不會掉下來？</em></h1>
+          <p class="hero-intro">答案不是「因為有引擎」這麼簡單。飛行是四種力暫時取得平衡，再由飛行員刻意打破平衡、改變方向的結果。</p>
+          <a class="button button-primary" href="#forces">看看四種力 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-force-diagram" aria-hidden="true">
+          <div class="mini-plane">✈</div>
+          <span class="force-arrow force-up">↑<b>升力</b></span>
+          <span class="force-arrow force-down">↓<b>重力</b></span>
+          <span class="force-arrow force-forward">→<b>推力</b></span>
+          <span class="force-arrow force-back">←<b>阻力</b></span>
+        </div>
+      </section>
+
+      <section class="four-forces" id="forces" aria-labelledby="forces-title">
+        <div class="forces-heading">
+          <p class="section-kicker">飛行的四個方向</p>
+          <h2 id="forces-title">不是只有升力，四種力一直在拔河</h2>
+          <p>平飛時，上下與前後大致平衡；爬升、下降或加速時，平衡就會改變。</p>
+        </div>
+        <div class="force-cards">
+          <article><span>↑</span><p>LIFT</p><h3>升力</h3><strong>主要來自機翼</strong><small>垂直於相對氣流，支撐飛機重量。速度、空氣密度、翼面積與升力係數都會影響它。</small></article>
+          <article><span>↓</span><p>WEIGHT</p><h3>重力</h3><strong>指向地心</strong><small>飛機、燃油、乘客與貨物的總重量都算在內。重量越大，需要的升力也越多。</small></article>
+          <article><span>→</span><p>THRUST</p><h3>推力</h3><strong>由發動機提供</strong><small>讓飛機克服阻力並維持速度。推力大於阻力時通常會加速，反之則減速。</small></article>
+          <article><span>←</span><p>DRAG</p><h3>阻力</h3><strong>阻擋前進</strong><small>來自飛機外型、摩擦與製造升力的代價。起落架和襟翼伸出時，阻力會明顯增加。</small></article>
+        </div>
+      </section>
+
+      <section class="lab-section" id="lab" aria-labelledby="lab-title">
+        <div class="lab-heading">
+          <div><p class="section-kicker">互動風洞</p><h2 id="lab-title">改變三件事，觀察機翼怎麼回應</h2></div>
+          <p>這是用來理解趨勢的簡化模型，不代表特定機型的真實飛行性能。</p>
+        </div>
+        <div class="wind-lab">
+          <div class="wind-stage" id="wind-stage">
+            <div class="air-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="wing-wrap" id="wing-wrap">
+              <div class="wing-profile"><span id="flap-visual"></span></div>
+              <i class="chord-line"></i>
+            </div>
+            <div class="flow-arrow">相對氣流 →</div>
+            <div class="angle-mark"><span id="angle-readout">6°</span></div>
+            <div class="stall-cloud" id="stall-cloud" aria-hidden="true">≈ ≋ ≈</div>
+            <div class="lab-status" id="lab-status"><span>穩定飛行</span><strong>升力足以支撐飛機</strong></div>
+          </div>
+          <aside class="lab-controls">
+            <label>
+              <span><b>速度</b><output id="speed-output">230 km/h</output></span>
+              <input id="speed-control" type="range" min="120" max="340" value="230" step="5" />
+              <small>速度增加，流過機翼的空氣更多，升力與阻力都會上升。</small>
+            </label>
+            <label>
+              <span><b>迎角</b><output id="aoa-output">6°</output></span>
+              <input id="aoa-control" type="range" min="0" max="20" value="6" step="1" />
+              <small>迎角是翼弦與相對氣流的夾角，不等於機頭相對地平線的角度。</small>
+            </label>
+            <label>
+              <span><b>襟翼</b><output id="flap-output">收起</output></span>
+              <input id="flap-control" type="range" min="0" max="3" value="0" step="1" />
+              <small>襟翼增加翼面彎度，使低速升力增加，但也帶來更多阻力。</small>
+            </label>
+            <div class="meter-grid">
+              <div><span>升力</span><i><b id="lift-meter"></b></i><strong id="lift-value">72%</strong></div>
+              <div><span>阻力</span><i><b id="drag-meter"></b></i><strong id="drag-value">32%</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="aoa-section" aria-labelledby="aoa-title">
+        <div class="aoa-copy">
+          <p class="section-kicker">最容易誤會的觀念</p>
+          <h2 id="aoa-title">失速看迎角，不只看速度</h2>
+          <p>迎角增加時，升力通常先增加；超過臨界迎角後，氣流大範圍分離，升力突然下降、阻力增加，這就是失速。</p>
+        </div>
+        <div class="aoa-steps">
+          <article><span>01</span><div class="flow-demo attached"><i></i></div><h3>氣流貼附</h3><p>迎角較小，空氣順著翼面流動。</p></article>
+          <article><span>02</span><div class="flow-demo strong"><i></i></div><h3>升力增加</h3><p>迎角增加，升力提高，同時阻力也增加。</p></article>
+          <article><span>03</span><div class="flow-demo separated"><i></i></div><h3>氣流分離</h3><p>超過臨界迎角，升力不升反降。</p></article>
+        </div>
+      </section>
+
+      <section class="truth-section">
+        <div><span>常見誤會</span><h2>「失速」不是引擎熄火</h2></div>
+        <p>航空中的 stall 指機翼因迎角過大而無法維持正常升力。即使引擎仍在運轉也可能失速；反過來，引擎停止時，只要保持適當速度與迎角，飛機仍能滑翔。</p>
+      </section>
+
+      <section class="challenge-section forces-challenge" id="challenge" aria-labelledby="challenge-title">
+        <div class="challenge-copy"><p class="section-kicker">飛行原理挑戰</p><h2 id="challenge-title">哪個說法比較接近真相？</h2><p>共五題，檢查你是否掌握四種力、迎角與失速。</p></div>
+        <div class="challenge-card">
+          <p id="challenge-progress">第 1 題，共 5 題</p><h3 id="challenge-question"></h3>
+          <div class="challenge-options" id="challenge-options"></div><p id="challenge-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="challenge-next" type="button" hidden>下一題 <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+
+      <section class="next-course"><p>下一站・第七課</p><h2>知道力怎麼作用後，來親手控制飛機。</h2><a href="controls.html">飛機如何轉彎和升降 →</a></section>
+    </main>
+    <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a><p>飛行，是力量與氣流的平衡。</p><p>© <span id="current-year"></span> 慢慢學</p></footer>
+  </body>
+</html>

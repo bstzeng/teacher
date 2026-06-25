@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="互動認識飛機的滾轉、俯仰、偏航與協調轉彎。" />
+    <title>飛機如何轉彎和升降｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="controls.css" />
+    <script src="controls.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header control-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a>
+      <nav class="desktop-nav" aria-label="課程選單"><a href="#axes">三個軸</a><a href="#console">控制台</a><a href="#turn">協調轉彎</a></nav>
+      <a class="header-cta lesson-home" href="forces.html">上一課 <span aria-hidden="true">←</span></a>
+    </header>
+    <main>
+      <section class="control-hero">
+        <div>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第七課</p>
+          <p class="lesson-chip">互動操縱 · 約 16 分鐘</p>
+          <h1>飛機不是轉方向，<em>而是繞著三條軸旋轉。</em></h1>
+          <p class="hero-intro">飛行員不會只靠一個控制面完成轉彎。副翼先讓飛機傾斜，方向舵協調機頭，升降舵再幫忙維持高度。</p>
+          <a class="button button-primary" href="#axes">認識三個軸 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="axis-hero" aria-hidden="true">
+          <div class="axis-plane">✈</div><i class="axis-x"></i><i class="axis-y"></i><i class="axis-z"></i>
+          <span class="label-roll">ROLL</span><span class="label-pitch">PITCH</span><span class="label-yaw">YAW</span>
+        </div>
+      </section>
+
+      <section class="axes-section" id="axes" aria-labelledby="axes-title">
+        <div class="axes-heading"><p class="section-kicker">三個方向</p><h2 id="axes-title">同一架飛機，可以做三種旋轉</h2><p>點選動作，觀察飛機繞哪一條軸旋轉，以及主要使用哪個控制面。</p></div>
+        <div class="axis-workspace">
+          <div class="axis-stage">
+            <div class="horizon"><span></span></div>
+            <div class="demo-plane" id="demo-plane"><span>✈</span></div>
+            <div class="axis-path" id="axis-path"></div>
+          </div>
+          <aside class="axis-info" aria-live="polite"><span id="axis-label">ROLL · 縱軸</span><h3 id="axis-title">滾轉</h3><strong id="axis-control">主要控制：副翼</strong><p id="axis-text">左右副翼反向動作，讓一側機翼升力增加、另一側減少，飛機便向左或向右傾斜。</p></aside>
+        </div>
+        <div class="axis-buttons"><button class="is-active" data-axis="roll" type="button">滾轉 ROLL</button><button data-axis="pitch" type="button">俯仰 PITCH</button><button data-axis="yaw" type="button">偏航 YAW</button></div>
+      </section>
+
+      <section class="console-section" id="console" aria-labelledby="console-title">
+        <div class="console-heading"><div><p class="section-kicker">你的飛行控制台</p><h2 id="console-title">移動控制面，看飛機姿態怎麼改變</h2></div><p>三個滑桿可以同時使用。實際飛行反應還會受到速度、配平與飛機設計影響，本模型用來理解方向。</p></div>
+        <div class="control-console">
+          <div class="attitude-display">
+            <div class="artificial-horizon" id="artificial-horizon"><div class="sky"></div><div class="ground"></div><i></i><span class="aircraft-symbol">— ◆ —</span></div>
+            <div class="attitude-values"><span>ROLL <b id="roll-value">0°</b></span><span>PITCH <b id="pitch-value">0°</b></span><span>YAW <b id="yaw-value">0°</b></span></div>
+          </div>
+          <aside class="surface-controls">
+            <label><span><b>副翼 Aileron</b><output id="aileron-output">中立</output></span><input id="aileron-control" type="range" min="-30" max="30" value="0" /><small>左側代表向左滾轉，右側代表向右滾轉。</small></label>
+            <label><span><b>升降舵 Elevator</b><output id="elevator-output">中立</output></span><input id="elevator-control" type="range" min="-20" max="20" value="0" /><small>往後帶桿使機頭上仰；向前推桿使機頭下俯。</small></label>
+            <label><span><b>方向舵 Rudder</b><output id="rudder-output">中立</output></span><input id="rudder-control" type="range" min="-25" max="25" value="0" /><small>踩左或右踏板，控制機頭沿垂直軸偏航。</small></label>
+            <button id="controls-reset" type="button">全部回到中立</button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="turn-section" id="turn" aria-labelledby="turn-title">
+        <div class="turn-copy"><p class="section-kicker">真正的轉彎</p><h2 id="turn-title">傾斜只是開始，還要讓轉彎協調</h2><p>飛機傾斜後，升力也跟著傾斜，其中一部分成為把飛機拉進彎道的向心力。方向舵用來修正不利偏航，升降舵則協助維持高度。</p></div>
+        <div class="turn-lab">
+          <div class="turn-view">
+            <div class="turn-plane" id="turn-plane">✈</div><div class="curve-line"></div>
+            <div class="ball-instrument"><span>轉彎協調球</span><div class="tube"><i id="slip-ball"></i></div><strong id="coordination-status">球在中央：協調轉彎</strong></div>
+          </div>
+          <div class="turn-controls">
+            <label><span><b>傾斜角</b><output id="bank-output">20° 右</output></span><input id="bank-control" type="range" min="-35" max="35" value="20" /></label>
+            <label><span><b>方向舵輸入</b><output id="turn-rudder-output">適量右舵</output></span><input id="turn-rudder-control" type="range" min="-35" max="35" value="16" /></label>
+            <p id="turn-advice">目前兩者搭配接近協調，乘客不會明顯被甩向側面。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="turn-sequence"><p class="section-kicker">進入一個平飛轉彎</p><div class="sequence-grid"><article><span>01</span><h3>看向轉彎方向</h3><p>先確認空域，再準備操作。</p></article><article><span>02</span><h3>副翼建立傾斜</h3><p>同時配合方向舵，避免機頭反向偏航。</p></article><article><span>03</span><h3>升降舵維持高度</h3><p>傾斜後垂直升力減少，需要適度增加迎角。</p></article><article><span>04</span><h3>反向操作改平</h3><p>到達目標方向前，平順地回正機翼與方向舵。</p></article></div></section>
+
+      <section class="challenge-section control-challenge" id="challenge" aria-labelledby="challenge-title">
+        <div class="challenge-copy"><p class="section-kicker">操縱觀念挑戰</p><h2 id="challenge-title">該動哪個控制面？</h2><p>共五題，判斷滾轉、俯仰、偏航與協調轉彎。</p></div>
+        <div class="challenge-card"><p id="challenge-progress">第 1 題，共 5 題</p><h3 id="challenge-question"></h3><div class="challenge-options" id="challenge-options"></div><p id="challenge-feedback" aria-live="polite"></p><button class="button button-primary" id="challenge-next" type="button" hidden>下一題 <span aria-hidden="true">→</span></button></div>
+      </section>
+      <section class="course-finish"><p>第七課完成</p><h2>你已經知道一個轉彎，為什麼需要三種控制。</h2><a href="aviation.html">回到航空課程 →</a></section>
+    </main>
+    <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a><p>平順的飛行，來自協調的控制。</p><p>© <span id="current-year"></span> 慢慢學</p></footer>
+  </body>
+</html>
