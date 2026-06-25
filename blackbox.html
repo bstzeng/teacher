@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第二十四課：認識黑盒子是什麼，了解它其實不是黑色，還會記錄飛行資料和駕駛艙聲音。"
+    />
+    <title>黑盒子是什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="blackbox.css?v=20260625-new" />
+    <script src="blackbox.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header blackbox-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#facts">先認識</a>
+        <a href="#records">記錄什麼</a>
+        <a href="#simulator">互動觀察</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="gear.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="blackbox-hero">
+        <div class="blackbox-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第二十四課</p>
+          <h1>黑盒子名字聽起來很神祕，<em>但它其實是幫大家把飛行過程記下來的重要幫手。</em></h1>
+          <p class="hero-intro">
+            很多人以為黑盒子是黑色、裡面只有一種資料，其實不是。
+            它通常做得很醒目，還會分別記下飛行資料和駕駛艙聲音，讓大家之後能回頭了解發生了什麼。
+          </p>
+          <div class="blackbox-summary" aria-label="本課重點">
+            <div><strong>2</strong><span>種主要記錄</span></div>
+            <div><strong>3</strong><span>個基本觀念</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#facts">
+            開始認識黑盒子 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="blackbox-hero-visual" aria-hidden="true">
+          <span class="visual-code">RECORD · PROTECT · FIND</span>
+          <div class="blackbox-scene">
+            <div class="recorder-box"></div>
+            <div class="handle"></div>
+            <div class="beacon"></div>
+            <div class="signal signal-one"></div>
+            <div class="signal signal-two"></div>
+          </div>
+          <div class="box-note">NOT REALLY BLACK</div>
+          <p class="visual-caption">名字叫黑盒子，工作是把重要線索留下來</p>
+        </div>
+      </section>
+
+      <section class="facts-section" id="facts" aria-labelledby="facts-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先認識</p>
+            <h2 id="facts-title">黑盒子最先要記住哪幾件事？</h2>
+          </div>
+          <p>先把幾個最常被搞混的地方分清楚，後面就會很好懂。</p>
+        </div>
+
+        <div class="facts-layout">
+          <div class="fact-buttons" role="tablist" aria-label="選擇黑盒子重點">
+            <button class="fact-button is-active" type="button" data-fact="color">其實不是黑色</button>
+            <button class="fact-button" type="button" data-fact="place">通常裝在哪</button>
+            <button class="fact-button" type="button" data-fact="purpose">為什麼重要</button>
+          </div>
+
+          <aside class="fact-card" aria-live="polite">
+            <p class="fact-kicker" id="fact-kicker">BRIGHT COLOR</p>
+            <h3 id="fact-title">其實不是黑色</h3>
+            <p id="fact-text">
+              黑盒子通常會做成很亮的橘色或橘紅色，因為這樣比較容易被找到。名字叫黑盒子，不代表它真的長得黑黑的。
+            </p>
+            <div class="fact-note">
+              <div><span>小朋友版記法</span><strong id="fact-memory">它不是要躲起來，而是要被趕快找到。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="records-section" id="records" aria-labelledby="records-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">記錄什麼</p>
+            <h2 id="records-title">黑盒子裡常見的兩種記錄是什麼？</h2>
+          </div>
+          <p>你可以把它想成兩位記錄員：一位記數字，一位記聲音。</p>
+        </div>
+
+        <div class="record-grid">
+          <button class="record-card is-active" type="button" data-record="fdr">
+            <span>第一種</span>
+            <strong>飛行資料</strong>
+          </button>
+          <button class="record-card" type="button" data-record="cvr">
+            <span>第二種</span>
+            <strong>駕駛艙聲音</strong>
+          </button>
+          <button class="record-card" type="button" data-record="search">
+            <span>第三個觀念</span>
+            <strong>找到後能做什麼</strong>
+          </button>
+        </div>
+
+        <div class="record-explainer" aria-live="polite">
+          <p class="fact-kicker" id="record-kicker">FLIGHT DATA</p>
+          <h3 id="record-title">飛行資料</h3>
+          <p id="record-text">
+            飛行資料記錄器會記下很多數字，例如高度、速度、方向和一些系統狀態，幫助大家知道飛機那時候在做什麼。
+          </p>
+          <div class="record-note">
+            <span>一句記住</span>
+            <strong id="record-memory">一個比較像記數字的筆記本。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動觀察</p>
+            <h2 id="simulator-title">不同情境時，哪種記錄最容易派上用場？</h2>
+          </div>
+          <p>按按看不同情境，看看是數字記錄比較重要，還是聲音記錄比較重要。</p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="simulator-controls">
+            <p class="simulator-label">選一個情境</p>
+            <div class="mode-buttons">
+              <button class="mode-button is-active" type="button" data-mode="normal">平常飛行</button>
+              <button class="mode-button" type="button" data-mode="confusing">情況複雜時</button>
+              <button class="mode-button" type="button" data-mode="search">事後調查</button>
+            </div>
+            <div class="mode-bars" aria-hidden="true">
+              <div class="mode-bar">
+                <span>數字資料的重要感</span>
+                <i id="bar-data"></i>
+              </div>
+              <div class="mode-bar">
+                <span>聲音記錄的重要感</span>
+                <i id="bar-voice"></i>
+              </div>
+              <div class="mode-bar">
+                <span>定位與找回的重要感</span>
+                <i id="bar-find"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-card" aria-live="polite">
+            <p class="fact-kicker" id="sim-kicker">NORMAL FLIGHT</p>
+            <h3 id="sim-title">平常飛行</h3>
+            <p id="sim-text">
+              平常飛行時，飛行資料會一直穩定地記錄很多數字。雖然你平常感覺不到它，但它其實一直在工作。
+            </p>
+            <div class="record-note">
+              <span>一句記住</span>
+              <strong id="sim-memory">黑盒子不是出事才開始工作，而是平常就在記。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道黑盒子在做什麼了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能分清楚它的顏色、記錄內容和用途。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十四課完成</p>
+        <h2>現在你知道，黑盒子不是神祕黑箱，而是幫大家把飛行過程好好記下來的重要記錄員。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>把線索留下來，大家才更能了解飛行發生了什麼。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

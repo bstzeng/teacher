@@ -231,6 +231,7 @@
 .course-flaps { background: #dde8ef; }
 .course-engine { background: #e8e1d8; }
 .course-gear { background: #dfe8e5; }
+.course-blackbox { background: #e6dfd8; }
 
 .course-number {
   display: flex;
