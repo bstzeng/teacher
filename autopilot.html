@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十六課：認識自動駕駛在飛行中能幫什麼忙、不能幫什麼忙。"
+    />
+    <title>自動駕駛在幫什麼忙｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="autopilot.css?v=20260625-new" />
+    <script src="autopilot.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header autopilot-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#modes">看模式</a>
+        <a href="#jobs">看幫忙內容</a>
+        <a href="#limits">看限制</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="nav.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="autopilot-hero">
+        <div class="autopilot-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十六課</p>
+          <h1>自動駕駛不是魔法，<em>它比較像很會幫忙的副手。</em></h1>
+          <p class="hero-intro">
+            很多人以為自動駕駛一開，飛行員就可以什麼都不管。
+            其實不是。自動駕駛很會幫忙保持方向、高度和速度，
+            但它不是自己想做什麼就做什麼，還是需要人來設定、監看和決定。
+          </p>
+          <div class="autopilot-summary" aria-label="本課重點">
+            <div><strong>4</strong><span>種常見模式</span></div>
+            <div><strong>3</strong><span>種最常幫的忙</span></div>
+            <div><strong>1</strong><span>個重要觀念</span></div>
+          </div>
+          <a class="button button-primary" href="#modes">
+            開始看模式 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="autopilot-hero-visual" aria-hidden="true">
+          <span class="visual-code">AP · HDG · ALT · SPD</span>
+          <div class="panel-scene">
+            <div class="panel-screen left"></div>
+            <div class="panel-screen right"></div>
+            <div class="mode-bar">
+              <span>HDG</span>
+              <span>ALT</span>
+              <span>SPD</span>
+              <span>AP</span>
+            </div>
+            <div class="panel-knob knob-one"></div>
+            <div class="panel-knob knob-two"></div>
+            <div class="panel-knob knob-three"></div>
+          </div>
+          <p class="visual-caption">自動駕駛最常做的是幫忙穩穩飛，不是自己決定去哪裡</p>
+        </div>
+      </section>
+
+      <section class="modes-section" id="modes" aria-labelledby="modes-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先看模式</p>
+            <h2 id="modes-title">自動駕駛最常幫忙守住哪些東西？</h2>
+          </div>
+          <p>
+            你可以先把它想成「幫忙維持某個目標」。
+            例如幫你守方向、守高度、守速度。
+          </p>
+        </div>
+
+        <div class="modes-layout">
+          <div class="mode-buttons" role="tablist" aria-label="選擇自動駕駛模式">
+            <button class="mode-button is-active" type="button" data-mode="heading">航向模式</button>
+            <button class="mode-button" type="button" data-mode="altitude">高度模式</button>
+            <button class="mode-button" type="button" data-mode="speed">速度模式</button>
+            <button class="mode-button" type="button" data-mode="approach">進場模式</button>
+          </div>
+
+          <aside class="mode-card" aria-live="polite">
+            <p class="mode-kicker" id="mode-kicker">HDG MODE</p>
+            <h3 id="mode-title">航向模式</h3>
+            <p id="mode-text">
+              如果飛行員先設定一個要飛的方向，自動駕駛可以幫忙把飛機穩穩地轉到那個方向，再保持住。
+            </p>
+            <div class="mode-facts">
+              <div><span>它像在幫忙</span><strong id="mode-job">把方向盤固定在目標方向</strong></div>
+              <div><span>你要記住</span><strong id="mode-memory">不是自己選方向，是照著設定去做。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="jobs-section" id="jobs" aria-labelledby="jobs-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">再看幫忙內容</p>
+            <h2 id="jobs-title">自動駕駛到底是在幫「做事」，還是在幫「顧住目標」？</h2>
+          </div>
+          <p>
+            更準確地說，它常常是在幫忙顧住已經決定好的目標，讓飛機不要一直漂掉。
+          </p>
+        </div>
+
+        <div class="jobs-grid">
+          <button class="job-card is-active" type="button" data-job="steady">
+            <span>穩定飛行</span>
+            <strong>幫忙保持平穩</strong>
+          </button>
+          <button class="job-card" type="button" data-job="reduce">
+            <span>減少負擔</span>
+            <strong>讓飛行員少一直修正</strong>
+          </button>
+          <button class="job-card" type="button" data-job="precision">
+            <span>精準控制</span>
+            <strong>更穩地守速度高度</strong>
+          </button>
+        </div>
+
+        <div class="job-explainer" aria-live="polite">
+          <p class="mode-kicker" id="job-kicker">STEADY FLIGHT</p>
+          <h3 id="job-title">幫忙保持平穩</h3>
+          <p id="job-text">
+            飛機在空中需要一直小小地修正。自動駕駛很擅長幫忙做這種穩穩的小修正。
+          </p>
+          <div class="job-plain">
+            <span>翻成白話</span>
+            <strong id="job-memory">它像一個很專心、很會守住目標的助手。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="limits-section" id="limits" aria-labelledby="limits-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">最後看限制</p>
+            <h2 id="limits-title">它很厲害，但不是什麼都會自己做</h2>
+          </div>
+          <p>
+            這裡最重要的一句話是：自動駕駛會執行，不代表它會自己判斷所有事情。
+          </p>
+        </div>
+
+        <div class="limits-layout">
+          <div class="limits-list">
+            <button class="limit-button is-active" type="button" data-limit="set">要先有人設定</button>
+            <button class="limit-button" type="button" data-limit="watch">要一直有人監看</button>
+            <button class="limit-button" type="button" data-limit="weather">碰到狀況還是要人決定</button>
+          </div>
+
+          <div class="limit-card" aria-live="polite">
+            <p class="mode-kicker" id="limit-kicker">SET FIRST</p>
+            <h3 id="limit-title">要先有人設定</h3>
+            <p id="limit-text">
+              自動駕駛不是自己醒來就知道要飛哪裡。飛行員要先給它目標，它才知道要幫忙守什麼。
+            </p>
+            <div class="job-plain">
+              <span>一句重點</span>
+              <strong id="limit-memory">它很會執行，但不是自己發號施令。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你現在會不會把自動駕駛想對了？</h2>
+          </div>
+          <p>共五題，答完看看你能不能分清楚它會幫什麼、又不會自己決定什麼。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十六課完成</p>
+        <h2>現在你知道，自動駕駛比較像很會守住目標的助手，而不是自己想飛去哪裡的機器人。</h2>
+        <a href="turbulence.html">下一站・第十七課：去看亂流、風切、重飛 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>會幫忙，不代表會自己做主，這就是自動駕駛最重要的觀念。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

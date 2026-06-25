@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十七課：認識亂流、風切和重飛是什麼，還有為什麼它們不是飛機壞掉。"
+    />
+    <title>亂流、風切、重飛是什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="turbulence.css?v=20260625-new" />
+    <script src="turbulence.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header turbulence-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#concepts">看三個概念</a>
+        <a href="#scenes">看情境</a>
+        <a href="#goaround">看重飛</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="autopilot.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="turbulence-hero">
+        <div class="turbulence-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十七課</p>
+          <h1>飛機抖一下，<em>不一定代表出事。</em></h1>
+          <p class="hero-intro">
+            很多人一遇到亂流就會緊張，但飛機在空中本來就會遇到不同的風。
+            這一課會把「亂流」「風切」還有「重飛」分清楚，讓你知道什麼是正常現象，
+            什麼又是飛行員會特別小心處理的情況。
+          </p>
+          <div class="turbulence-summary" aria-label="本課重點">
+            <div><strong>3</strong><span>個重要觀念</span></div>
+            <div><strong>1</strong><span>個重飛流程</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#concepts">
+            開始看情況 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="turbulence-hero-visual" aria-hidden="true">
+          <span class="visual-code">TURBULENCE · WINDSHEAR · GO-AROUND</span>
+          <div class="sky-scene">
+            <div class="cloud cloud-one"></div>
+            <div class="cloud cloud-two"></div>
+            <div class="wind wave-one"></div>
+            <div class="wind wave-two"></div>
+            <div class="storm-column"></div>
+            <div class="scene-plane">✈</div>
+          </div>
+          <p class="visual-caption">有些是晃一下，有些要更小心，但都不是「飛機突然不會飛」</p>
+        </div>
+      </section>
+
+      <section class="concepts-section" id="concepts" aria-labelledby="concepts-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先分清楚</p>
+            <h2 id="concepts-title">亂流、風切、重飛，根本不是同一件事</h2>
+          </div>
+          <p>先把三個名詞拆開，你後面看情境就會輕鬆很多。</p>
+        </div>
+
+        <div class="concepts-layout">
+          <div class="concept-buttons" role="tablist" aria-label="選擇概念">
+            <button class="concept-button is-active" type="button" data-concept="turbulence">亂流</button>
+            <button class="concept-button" type="button" data-concept="windshear">風切</button>
+            <button class="concept-button" type="button" data-concept="goaround">重飛</button>
+          </div>
+
+          <aside class="concept-card" aria-live="polite">
+            <p class="concept-kicker" id="concept-kicker">TURBULENCE</p>
+            <h3 id="concept-title">亂流</h3>
+            <p id="concept-text">
+              亂流可以先想成空氣不太平，像飛機正在穿過一段比較顛簸的路。
+            </p>
+            <div class="concept-facts">
+              <div><span>你可以把它想成</span><strong id="concept-idea">空中的坑洞和波浪</strong></div>
+              <div><span>重點記住</span><strong id="concept-memory">晃，不代表飛機壞掉。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="scenes-section" id="scenes" aria-labelledby="scenes-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">再看情境</p>
+            <h2 id="scenes-title">不同情況下，飛行員在意的事也不一樣</h2>
+          </div>
+          <p>按不同情境看看，什麼時候只是顛一點，什麼時候需要更提高注意。</p>
+        </div>
+
+        <div class="scene-grid">
+          <button class="scene-card is-active" type="button" data-scene="light">
+            <span>情境 1</span>
+            <strong>巡航中有點顛</strong>
+          </button>
+          <button class="scene-card" type="button" data-scene="storm">
+            <span>情境 2</span>
+            <strong>前方有對流雲</strong>
+          </button>
+          <button class="scene-card" type="button" data-scene="landing">
+            <span>情境 3</span>
+            <strong>快落地時風變很快</strong>
+          </button>
+        </div>
+
+        <div class="scene-explainer" aria-live="polite">
+          <p class="concept-kicker" id="scene-kicker">LIGHT TURBULENCE</p>
+          <h3 id="scene-title">巡航中有點顛</h3>
+          <p id="scene-text">
+            這通常比較像遇到普通亂流，飛機會晃一下，但不代表飛機突然壞掉或失去控制。
+          </p>
+          <div class="scene-note">
+            <span>你要記住</span>
+            <strong id="scene-memory">會顛，是因為空氣在動，不是因為飛機突然不會飛。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="goaround-section" id="goaround" aria-labelledby="goaround-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看重飛</p>
+            <h2 id="goaround-title">重飛不是失敗，而是很正常的安全決定</h2>
+          </div>
+          <p>如果落地條件不夠好，就先不要硬落。重飛就是「我們再來一次」。</p>
+        </div>
+
+        <div class="goaround-layout">
+          <ol class="goaround-steps">
+            <li><button class="go-button is-active" type="button" data-go="unstable">1. 落地條件不理想</button></li>
+            <li><button class="go-button" type="button" data-go="power">2. 加油門重新爬升</button></li>
+            <li><button class="go-button" type="button" data-go="climb">3. 按程序離開跑道前方</button></li>
+            <li><button class="go-button" type="button" data-go="retry">4. 再排一次進場</button></li>
+          </ol>
+
+          <div class="goaround-card" aria-live="polite">
+            <p class="concept-kicker" id="go-kicker">UNSTABLE APPROACH</p>
+            <h3 id="go-title">落地條件不理想</h3>
+            <p id="go-text">
+              如果飛機速度、高度、方向或風況不夠穩定，飛行員就可能決定不要勉強落地。
+            </p>
+            <div class="scene-note">
+              <span>一句重點</span>
+              <strong id="go-memory">重飛是安全選擇，不是丟臉選擇。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你現在會不會把三件事分開了？</h2>
+          </div>
+          <p>共五題，答完看看你會不會把亂流、風切和重飛分清楚。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十七課完成</p>
+        <h2>現在你知道，顛簸、風變化和重飛是不同事情，而且安全決定常常就是再來一次。</h2>
+        <a href="cabin.html">下一站・第十八課：去看客艙安全設備 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>先分清楚，再理解，就不容易被飛機顛一下嚇到。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

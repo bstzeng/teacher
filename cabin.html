@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十八課：認識客艙裡常見的安全設備，知道它們什麼時候會用到。"
+    />
+    <title>客艙裡的安全設備｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="cabin.css?v=20260625-new" />
+    <script src="cabin.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header cabin-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#map">看客艙地圖</a>
+        <a href="#items">看設備</a>
+        <a href="#situations">看情境</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="turbulence.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="cabin-hero">
+        <div class="cabin-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十八課</p>
+          <h1>客艙裡很多東西，<em>不是裝飾，是安全用的。</em></h1>
+          <p class="hero-intro">
+            安全帶、氧氣面罩、救生衣、緊急出口燈，還有乘客前面那張安全卡，
+            它們平常看起來很安靜，但真的需要時，每一樣都有自己的工作。
+          </p>
+          <div class="cabin-summary" aria-label="本課重點">
+            <div><strong>6</strong><span>種常見設備</span></div>
+            <div><strong>3</strong><span>種常見情境</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#map">
+            開始看客艙 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="cabin-hero-visual" aria-hidden="true">
+          <span class="visual-code">SEAT BELT · OXYGEN · LIFE VEST</span>
+          <div class="cabin-scene">
+            <div class="seat-row top"></div>
+            <div class="seat-row middle"></div>
+            <div class="seat-row bottom"></div>
+            <div class="aisle"></div>
+            <div class="exit-sign">EXIT</div>
+            <div class="mask left"></div>
+            <div class="mask right"></div>
+          </div>
+          <p class="visual-caption">平常不一定會用到，但知道它們在哪裡很重要</p>
+        </div>
+      </section>
+
+      <section class="map-section" id="map" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先看位置</p>
+            <h2 id="map-title">客艙裡的重要設備，通常藏在哪裡？</h2>
+          </div>
+          <p>先認位置，再認用途，之後看到安全示範就會更有感覺。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="cabin-map" aria-hidden="true">
+            <button class="map-button is-active" type="button" data-item="belt">安全帶</button>
+            <button class="map-button" type="button" data-item="card">安全卡</button>
+            <button class="map-button" type="button" data-item="mask">氧氣面罩</button>
+            <button class="map-button" type="button" data-item="vest">救生衣</button>
+            <button class="map-button" type="button" data-item="light">逃生燈</button>
+            <button class="map-button" type="button" data-item="exit">緊急出口</button>
+          </div>
+
+          <aside class="map-detail" aria-live="polite">
+            <p class="detail-kicker" id="item-kicker">SAFETY ITEM</p>
+            <h3 id="item-title">安全帶</h3>
+            <p id="item-text">
+              安全帶最常用，也最容易忽略。它的工作就是在顛簸、起飛、落地時，把你穩穩留在座位上。
+            </p>
+            <div class="detail-box">
+              <span>先記住</span>
+              <strong id="item-memory">最常用、最重要、也最不該偷懶的，就是安全帶。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="items-section" id="items" aria-labelledby="items-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">再看設備</p>
+            <h2 id="items-title">每一樣東西，到底是做什麼的？</h2>
+          </div>
+          <p>不是每一樣都天天用得到，但知道它們的工作，遇到時就不會那麼慌。</p>
+        </div>
+
+        <div class="item-grid">
+          <button class="item-card is-active" type="button" data-card="belt">
+            <span>安全帶</span>
+            <strong>防止你被晃起來</strong>
+          </button>
+          <button class="item-card" type="button" data-card="mask">
+            <span>氧氣面罩</span>
+            <strong>幫助你先正常呼吸</strong>
+          </button>
+          <button class="item-card" type="button" data-card="vest">
+            <span>救生衣</span>
+            <strong>水上迫降時才用</strong>
+          </button>
+        </div>
+
+        <div class="item-explainer" aria-live="polite">
+          <p class="detail-kicker" id="card-kicker">SEAT BELT</p>
+          <h3 id="card-title">安全帶</h3>
+          <p id="card-text">
+            飛機遇到亂流時，最容易先派上用場的就是安全帶。它不是只有起飛落地才重要。
+          </p>
+          <div class="detail-box dark">
+            <span>翻成白話</span>
+            <strong id="card-memory">顛一下時，安全帶就是讓你不要離開椅子的那一條。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="situations-section" id="situations" aria-labelledby="situations-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看情境</p>
+            <h2 id="situations-title">什麼情況下，哪一樣設備最重要？</h2>
+          </div>
+          <p>按不同情況看看，哪一樣設備會先變成主角。</p>
+        </div>
+
+        <div class="situation-layout">
+          <div class="situation-buttons">
+            <button class="situation-button is-active" type="button" data-situation="bumpy">突然顛一下</button>
+            <button class="situation-button" type="button" data-situation="lowoxygen">客艙需要更多氧氣</button>
+            <button class="situation-button" type="button" data-situation="evacuate">要快速離開飛機</button>
+          </div>
+
+          <div class="situation-card" aria-live="polite">
+            <p class="detail-kicker" id="situation-kicker">BUMPY AIR</p>
+            <h3 id="situation-title">突然顛一下</h3>
+            <p id="situation-text">
+              這時候最重要的通常是安全帶。它可以讓你不要因為突然的上下晃動撞到座位或天花板。
+            </p>
+            <div class="detail-box">
+              <span>你要記住</span>
+              <strong id="situation-memory">安全帶亮了，真的就要繫好，不是提醒好看而已。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道客艙安全設備在做什麼了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把設備和情況連起來。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十八課完成</p>
+        <h2>現在你知道，客艙裡很多平常不起眼的東西，其實都是在幫大家多一層安全。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>知道它在哪裡、怎麼用，平常就會更安心。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

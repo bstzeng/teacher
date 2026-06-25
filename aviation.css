@@ -223,6 +223,9 @@
 .course-airline { background: #efe5d9; }
 .course-atc { background: #dde7ea; }
 .course-nav { background: #dde9df; }
+.course-autopilot { background: #e6dfd5; }
+.course-turbulence { background: #e7dfeb; }
+.course-cabin { background: #e5e3d7; }
 
 .course-number {
   display: flex;
