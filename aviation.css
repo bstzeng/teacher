@@ -221,6 +221,7 @@
 .course-lights { background: #e6dfec; }
 .course-weather { background: #dce8ef; }
 .course-airline { background: #efe5d9; }
+.course-atc { background: #dde7ea; }
 
 .course-number {
   display: flex;

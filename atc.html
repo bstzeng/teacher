@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十四課：認識塔台、近場、區管在航班不同階段扮演的角色。"
+    />
+    <title>塔台、近場、區管在做什麼？｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="atc.css?v=20260625-new" />
+    <script src="atc.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header atc-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#roles">看角色</a>
+        <a href="#journey">跟著航班走</a>
+        <a href="#radio">聽懂對話</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="airline.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="atc-hero">
+        <div class="atc-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十四課</p>
+          <h1>飛機不是自己飛，<em>一路上都有人在幫忙。</em></h1>
+          <p class="hero-intro">
+            一架飛機從停機坪到高空，不會只跟一個人說話。
+            在不同階段，會換成不同的航管單位接手：地面、塔台、近場，還有區管。
+            這一課會把這條接力路線講清楚。
+          </p>
+          <div class="atc-summary" aria-label="本課重點">
+            <div><strong>4</strong><span>種主要角色</span></div>
+            <div><strong>1</strong><span>條完整接力路線</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#roles">
+            開始認角色 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="atc-hero-visual" aria-hidden="true">
+          <span class="visual-code">GROUND · TOWER · APPROACH · CENTER</span>
+          <div class="control-scene">
+            <div class="scene-airport"></div>
+            <div class="scene-tower"></div>
+            <div class="scene-radar radar-one"></div>
+            <div class="scene-radar radar-two"></div>
+            <div class="scene-plane plane-ground">✈</div>
+            <div class="scene-plane plane-climb">✈</div>
+            <div class="scene-plane plane-cruise">✈</div>
+          </div>
+          <p class="visual-caption">不同地方的航管，像接力賽一樣輪流幫忙</p>
+        </div>
+      </section>
+
+      <section class="roles-section" id="roles" aria-labelledby="roles-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先認角色</p>
+            <h2 id="roles-title">誰在什麼地方幫忙飛機？</h2>
+          </div>
+          <p>
+            你可以先把它想成四個不同工作站。飛機到了不同地方，就會換不同的人接手。
+          </p>
+        </div>
+
+        <div class="roles-layout">
+          <div class="role-buttons" role="tablist" aria-label="選擇航管角色">
+            <button class="role-button is-active" type="button" data-role="ground">地面管制</button>
+            <button class="role-button" type="button" data-role="tower">塔台</button>
+            <button class="role-button" type="button" data-role="approach">近場管制</button>
+            <button class="role-button" type="button" data-role="center">區域管制</button>
+          </div>
+
+          <aside class="role-card" aria-live="polite">
+            <p class="role-kicker" id="role-kicker">GROUND</p>
+            <h3 id="role-title">地面管制</h3>
+            <p id="role-text">
+              地面管制主要管飛機在地面怎麼移動，例如從停機坪推出、滑行到跑道附近。
+            </p>
+            <div class="role-facts">
+              <div><span>你會在這裡看到</span><strong id="role-place">停機坪、滑行道、等待線</strong></div>
+              <div><span>它最常做的事</span><strong id="role-job">告訴飛機從哪裡滑去跑道</strong></div>
+              <div><span>一句記憶法</span><strong id="role-memory">地上找路，先找地面管制。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="journey-section" id="journey" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">跟著航班走</p>
+            <h2 id="journey-title">一趟飛行，會怎麼把航管一個個接起來？</h2>
+          </div>
+          <p>
+            按順序點下去，你就會看到同一架飛機怎麼從停機坪，一路交給不同單位。
+          </p>
+        </div>
+
+        <div class="journey-layout">
+          <ol class="journey-steps" id="journey-steps">
+            <li><button class="journey-button is-active" type="button" data-step="pushback">1. 推出與滑行</button></li>
+            <li><button class="journey-button" type="button" data-step="takeoff">2. 起飛前後</button></li>
+            <li><button class="journey-button" type="button" data-step="climb">3. 離場爬升</button></li>
+            <li><button class="journey-button" type="button" data-step="cruise">4. 高空巡航</button></li>
+            <li><button class="journey-button" type="button" data-step="arrival">5. 進場落地</button></li>
+          </ol>
+
+          <div class="journey-card" aria-live="polite">
+            <p class="role-kicker" id="journey-kicker">GROUND → TOWER</p>
+            <h3 id="journey-title-card">推出與滑行</h3>
+            <p id="journey-text">
+              飛機準備離開停機坪時，會先和地面管制聯絡，確認怎麼推、怎麼滑，接近跑道後再交給塔台。
+            </p>
+            <div class="handoff-box">
+              <span>你要記住</span>
+              <strong id="journey-memory">飛機移動到哪裡，幫忙的人就可能換一位。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="radio-section" id="radio" aria-labelledby="radio-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">聽懂對話</p>
+            <h2 id="radio-title">他們都在說什麼？其實大意很單純</h2>
+          </div>
+          <p>
+            真正的無線電通話會很簡短，但你可以先學會聽懂「誰在叫誰、要做什麼」。
+          </p>
+        </div>
+
+        <div class="radio-grid">
+          <button class="radio-card is-active" type="button" data-radio="ground">
+            <span>地面</span>
+            <strong>請問我要走哪一條滑行道？</strong>
+          </button>
+          <button class="radio-card" type="button" data-radio="tower">
+            <span>塔台</span>
+            <strong>我現在可以進跑道起飛嗎？</strong>
+          </button>
+          <button class="radio-card" type="button" data-radio="approach">
+            <span>近場</span>
+            <strong>我要怎麼排隊進場？</strong>
+          </button>
+          <button class="radio-card" type="button" data-radio="center">
+            <span>區管</span>
+            <strong>高空要飛哪個方向和高度？</strong>
+          </button>
+        </div>
+
+        <div class="radio-explainer" aria-live="polite">
+          <p class="role-kicker" id="radio-kicker">GROUND EXAMPLE</p>
+          <h3 id="radio-title-card">地面對話</h3>
+          <p id="radio-text">
+            這時候的大意通常是：「我準備好了，請告訴我該從哪條路滑去跑道附近。」
+          </p>
+          <div class="radio-translation">
+            <span>翻成白話</span>
+            <strong id="radio-plain">地面管制像是在機場地面幫飛機導航。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你會不會把不同航管的工作分開了？</h2>
+          </div>
+          <p>共五題，答完看看你能不能說出每一段是誰在幫忙。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十四課完成</p>
+        <h2>現在你知道，一架飛機一路上不是只跟一個人說話，而是有人輪流接手。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>地面找路、跑道起飛、高空巡航，都有不同人照顧。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

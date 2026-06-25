@@ -1,0 +1,155 @@
+:root {
+  --atc-ink: #17364a;
+  --atc-ink-soft: #586d7a;
+  --atc-paper: #fffdf7;
+  --atc-cream: #ebe4d7;
+  --atc-sky: #d8ebf0;
+  --atc-blue: #194b63;
+  --atc-yellow: #efc763;
+  --atc-orange: #d8743c;
+  --atc-line: rgba(23, 54, 74, 0.16);
+}
+
+.atc-header { background: rgba(255, 253, 247, 0.94); }
+.atc-hero { display:grid; grid-template-columns:1.02fr .98fr; align-items:center; gap:80px; min-height:700px; padding:100px max(24px,calc((100% - 1180px) / 2)) 96px; overflow:hidden; }
+.breadcrumb { display:inline-block; margin-bottom:28px; color:var(--ink-soft); font-size:15px; font-weight:700; }
+.atc-hero h1 { max-width:730px; margin:24px 0; font-family:"Newsreader","Noto Sans TC",serif; font-size:clamp(58px,7vw,92px); line-height:.96; letter-spacing:-.055em; }
+.atc-hero h1 em { display:block; color:var(--orange-dark); font-style:italic; }
+.atc-hero .hero-intro { max-width:620px; }
+.atc-summary { display:flex; flex-wrap:wrap; gap:28px; margin:35px 0; }
+.atc-summary div { display:flex; align-items:baseline; gap:7px; }
+.atc-summary strong { color:var(--atc-blue); font-family:"Newsreader",serif; font-size:30px; }
+.atc-summary span { color:var(--ink-soft); font-size:16px; font-weight:700; }
+
+.atc-hero-visual { position:relative; min-height:530px; overflow:hidden; color:var(--atc-paper); background:linear-gradient(180deg,#cce7f1 0%,#8ebfd3 48%,#365872 100%); box-shadow:22px 24px 0 var(--atc-yellow); transform:rotate(2deg); }
+.atc-hero-visual::before { position:absolute; inset:20px; border:1px solid rgba(255,255,255,.22); content:""; }
+.visual-code { position:absolute; top:35px; left:38px; color:var(--atc-blue); font-size:15px; font-weight:800; letter-spacing:.18em; }
+.control-scene { position:absolute; inset:84px 38px 88px; }
+.scene-airport { position:absolute; right:24px; bottom:18px; left:20px; height:86px; background:rgba(23,54,74,.68); }
+.scene-tower { position:absolute; left:70px; bottom:104px; width:36px; height:130px; background:rgba(23,54,74,.78); }
+.scene-tower::before { position:absolute; left:-18px; top:-26px; width:72px; height:32px; background:rgba(23,54,74,.86); content:""; }
+.scene-radar { position:absolute; border:1px solid rgba(255,255,255,.28); border-radius:50%; }
+.radar-one { left:150px; top:70px; width:220px; height:220px; }
+.radar-two { right:26px; top:22px; width:160px; height:160px; }
+.scene-plane { position:absolute; color:var(--atc-yellow); font-size:56px; }
+.plane-ground { left:160px; bottom:36px; transform:rotate(8deg); }
+.plane-climb { left:250px; top:170px; transform:rotate(-30deg); }
+.plane-cruise { right:70px; top:52px; transform:rotate(-6deg); }
+.visual-caption { position:absolute; right:34px; bottom:24px; left:34px; color:var(--atc-blue); font-size:16px; font-weight:800; letter-spacing:.14em; }
+
+.roles-section,
+.radio-section,
+.quiz-section { padding:110px max(24px,calc((100% - 1180px) / 2)); }
+.roles-section { background:var(--atc-paper); }
+.journey-section { padding:110px max(24px,calc((100% - 1180px) / 2)); color:var(--atc-paper); background:var(--atc-blue); }
+.journey-section .section-heading>p { color:rgba(255,253,247,.72); }
+.radio-section { background:var(--atc-cream); }
+.quiz-section { background:var(--atc-sky); }
+
+.roles-layout,
+.journey-layout { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.role-buttons,
+.role-card,
+.journey-steps,
+.journey-card,
+.radio-card,
+.radio-explainer,
+.quiz-card { box-shadow:12px 14px 0 rgba(23,54,74,.08); }
+
+.role-buttons,
+.role-card,
+.journey-card,
+.radio-explainer,
+.quiz-card { padding:34px; border:1px solid var(--atc-line); background:#fff; }
+.journey-card { border-color:rgba(255,255,255,.16); background:rgba(255,255,255,.08); }
+
+.role-button,
+.journey-button,
+.radio-card,
+.quiz-option { font:inherit; }
+
+.role-button { display:block; width:100%; min-height:64px; margin-bottom:10px; padding:0 18px; color:var(--atc-ink); background:#fff; border:1px solid var(--atc-line); font-size:16px; font-weight:800; text-align:left; cursor:pointer; }
+.role-button.is-active,
+.role-button:hover,
+.role-button:focus-visible { color:var(--atc-paper); background:var(--atc-blue); }
+
+.role-kicker,
+.quiz-card>p:first-child { margin:0 0 18px; color:var(--atc-orange); font-size:15px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+.journey-card .role-kicker,
+.radio-explainer .role-kicker { color:var(--atc-yellow); }
+.role-card h3,
+.journey-card h3,
+.radio-explainer h3 { margin:0 0 16px; font-family:"Newsreader","Noto Sans TC",serif; font-size:34px; line-height:1.05; }
+.role-card>p:nth-of-type(2),
+.journey-card>p:nth-of-type(2),
+.radio-explainer>p:nth-of-type(2) { margin:0; font-size:16px; line-height:1.9; }
+.journey-card>p:nth-of-type(2),
+.radio-explainer>p:nth-of-type(2) { color:rgba(255,253,247,.82); }
+
+.role-facts,
+.handoff-box,
+.radio-translation { display:grid; gap:12px; margin-top:26px; }
+.role-facts div,
+.handoff-box,
+.radio-translation { padding:18px 18px 16px; background:#f5f1e8; }
+.journey-card .handoff-box,
+.radio-explainer .radio-translation { background:rgba(255,255,255,.1); }
+.role-facts span,
+.handoff-box span,
+.radio-translation span { display:block; color:var(--atc-orange); font-size:15px; font-weight:800; letter-spacing:.14em; }
+.journey-card .handoff-box span,
+.radio-explainer .radio-translation span { color:var(--atc-yellow); }
+.role-facts strong,
+.handoff-box strong,
+.radio-translation strong { display:block; margin-top:10px; font-size:17px; line-height:1.8; }
+
+.journey-steps { display:grid; gap:10px; margin:0; padding:0; list-style:none; }
+.journey-button { width:100%; min-height:64px; padding:0 18px; color:var(--atc-paper); background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); font-size:16px; font-weight:800; text-align:left; cursor:pointer; }
+.journey-button.is-active,
+.journey-button:hover,
+.journey-button:focus-visible { color:var(--atc-blue); background:var(--atc-paper); }
+
+.radio-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-bottom:18px; }
+.radio-card { display:grid; gap:10px; padding:22px 20px; color:var(--atc-ink); background:#fff; border:1px solid var(--atc-line); text-align:left; cursor:pointer; }
+.radio-card span { color:var(--atc-orange); font-size:15px; font-weight:800; letter-spacing:.14em; }
+.radio-card strong { font-size:20px; line-height:1.6; }
+.radio-card.is-active,
+.radio-card:hover,
+.radio-card:focus-visible { color:var(--atc-paper); background:var(--atc-blue); }
+.radio-card.is-active span,
+.radio-card:hover span,
+.radio-card:focus-visible span { color:var(--atc-yellow); }
+.radio-explainer { color:var(--atc-paper); border-color:rgba(255,255,255,.14); background:var(--atc-blue); }
+
+.quiz-card h3 { min-height:92px; margin:28px 0 22px; font-family:"Newsreader","Noto Sans TC",serif; font-size:30px; line-height:1.3; }
+.quiz-options { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+.quiz-option { min-height:62px; padding:12px 14px; color:var(--atc-ink); background:transparent; border:1px solid rgba(23,54,74,.22); font-size:16px; font-weight:800; cursor:pointer; }
+.quiz-option:hover:not(:disabled),
+.quiz-option:focus-visible { background:#edf6f9; border-color:var(--atc-orange); }
+.quiz-option.is-correct { color:#194f3d; background:#d7ecdf; border-color:#194f3d; }
+.quiz-option.is-wrong { color:#8c3028; background:#f4d8d5; border-color:#8c3028; }
+#quiz-feedback { min-height:54px; margin:20px 0 0; color:var(--atc-ink-soft); font-size:16px; line-height:1.8; }
+
+.course-finish { padding:92px max(24px,calc((100% - 950px) / 2)); text-align:center; background:var(--atc-yellow); }
+.course-finish>p { color:var(--orange-dark); font-size:16px; font-weight:800; letter-spacing:.15em; }
+.course-finish h2 { margin:20px auto 30px; max-width:820px; font-family:"Newsreader","Noto Sans TC",serif; font-size:clamp(38px,4.5vw,60px); line-height:1.08; }
+.course-finish a { padding-bottom:5px; border-bottom:1px solid currentColor; font-size:16px; font-weight:800; }
+footer .footer-brand { margin-bottom:6px; }
+
+@media (max-width:980px){
+  .atc-hero,.roles-layout,.journey-layout{grid-template-columns:1fr}
+  .atc-hero{padding-top:125px}
+}
+@media (max-width:680px){
+  .atc-header .desktop-nav{display:none}
+  .atc-hero{min-height:auto;gap:55px;padding-top:108px}
+  .atc-hero h1{font-size:50px}
+  .atc-summary{gap:18px;justify-content:space-between}
+  .atc-summary div{align-items:flex-start;flex-direction:column;gap:0}
+  .atc-hero-visual{min-height:360px;box-shadow:10px 12px 0 var(--atc-yellow)}
+  .roles-section,.journey-section,.radio-section,.quiz-section{padding-top:80px;padding-bottom:85px}
+  .role-buttons,.role-card,.journey-card,.radio-explainer,.quiz-card{padding:26px 22px}
+  .radio-grid,.quiz-options{grid-template-columns:1fr}
+  .quiz-card h3{min-height:auto;font-size:26px}
+  .course-finish{padding-top:82px;padding-bottom:82px}
+}
