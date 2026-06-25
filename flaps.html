@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第二十一課：認識襟翼和縫翼在起飛與降落時做什麼，了解它們為什麼能幫飛機慢慢飛。"
+    />
+    <title>襟翼和縫翼在做什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="flaps.css?v=20260625-new" />
+    <script src="flaps.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header flaps-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#parts">先認位置</a>
+        <a href="#moments">看什麼時候用</a>
+        <a href="#simulator">互動觀察</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="braking.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="flaps-hero">
+        <div class="flaps-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第二十一課</p>
+          <h1>飛機不是每次都用同一片翅膀，<em>起飛和降落時它會把翅膀變一點點。</em></h1>
+          <p class="hero-intro">
+            你看到機翼後面伸出來的板子，常常就是襟翼；前面打開一點點的部分，常常就是縫翼。
+            它們會幫飛機在比較慢的速度下，還是能安全地飛。
+          </p>
+          <div class="flaps-summary" aria-label="本課重點">
+            <div><strong>2</strong><span>個主要幫手</span></div>
+            <div><strong>3</strong><span>個常見時機</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#parts">
+            開始看機翼 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="flaps-hero-visual" aria-hidden="true">
+          <span class="visual-code">WING · FLAPS · SLATS</span>
+          <div class="wing-scene">
+            <div class="wing-main"></div>
+            <div class="slat-piece"></div>
+            <div class="flap-piece"></div>
+            <div class="air-line air-one"></div>
+            <div class="air-line air-two"></div>
+            <div class="air-line air-three"></div>
+          </div>
+          <div class="speed-note">FAST → SLOWER</div>
+          <p class="visual-caption">把機翼變得更會抓住空氣</p>
+        </div>
+      </section>
+
+      <section class="parts-section" id="parts" aria-labelledby="parts-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先認位置</p>
+            <h2 id="parts-title">襟翼和縫翼分別在哪裡？</h2>
+          </div>
+          <p>先知道誰在前面、誰在後面，之後比較不會搞混。</p>
+        </div>
+
+        <div class="parts-layout">
+          <div class="part-buttons" role="tablist" aria-label="選擇機翼部位">
+            <button class="part-button is-active" type="button" data-part="flap">襟翼</button>
+            <button class="part-button" type="button" data-part="slat">縫翼</button>
+            <button class="part-button" type="button" data-part="clean">收起來時</button>
+          </div>
+
+          <aside class="part-card" aria-live="polite">
+            <p class="part-kicker" id="part-kicker">FLAP</p>
+            <h3 id="part-title">襟翼</h3>
+            <p id="part-text">
+              襟翼大多在機翼後面。放出來時，會讓機翼形狀改變，幫飛機在較慢速度下也能產生更多升力。
+            </p>
+            <div class="part-facts">
+              <div><span>小朋友版記法</span><strong id="part-memory">後面拉出一點，像把翅膀變大一點。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="moments-section" id="moments" aria-labelledby="moments-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看使用時機</p>
+            <h2 id="moments-title">什麼時候會把它們放出來？</h2>
+          </div>
+          <p>不是整趟飛行都打開。巡航時通常收起來，起飛和降落才會比較常看到。</p>
+        </div>
+
+        <div class="moment-grid">
+          <button class="moment-card is-active" type="button" data-moment="takeoff">
+            <span>第一種</span>
+            <strong>起飛前後</strong>
+          </button>
+          <button class="moment-card" type="button" data-moment="cruise">
+            <span>第二種</span>
+            <strong>高空巡航</strong>
+          </button>
+          <button class="moment-card" type="button" data-moment="landing">
+            <span>第三種</span>
+            <strong>降落進場</strong>
+          </button>
+        </div>
+
+        <div class="moment-explainer" aria-live="polite">
+          <p class="part-kicker" id="moment-kicker">TAKEOFF</p>
+          <h3 id="moment-title">起飛前後</h3>
+          <p id="moment-text">
+            起飛時飛機還不夠快，所以常會放出一部分襟翼，幫助飛機在比較短的時間裡建立足夠升力。
+          </p>
+          <div class="moment-note">
+            <span>一句記住</span>
+            <strong id="moment-memory">速度還不夠快時，機翼就先變得比較會抓空氣。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動觀察</p>
+            <h2 id="simulator-title">不同飛行階段，機翼會長得一樣嗎？</h2>
+          </div>
+          <p>按按看不同情境，觀察襟翼和縫翼是不是都一樣大。</p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="simulator-controls">
+            <p class="simulator-label">選一個飛行階段</p>
+            <div class="mode-buttons">
+              <button class="mode-button is-active" type="button" data-mode="takeoff">起飛</button>
+              <button class="mode-button" type="button" data-mode="cruise">巡航</button>
+              <button class="mode-button" type="button" data-mode="landing">降落</button>
+            </div>
+            <div class="mode-bars" aria-hidden="true">
+              <div class="mode-bar">
+                <span>襟翼開度</span>
+                <i id="bar-flap"></i>
+              </div>
+              <div class="mode-bar">
+                <span>縫翼開度</span>
+                <i id="bar-slat"></i>
+              </div>
+              <div class="mode-bar">
+                <span>飛行速度感覺</span>
+                <i id="bar-speed"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-card" aria-live="polite">
+            <p class="part-kicker" id="sim-kicker">TAKEOFF CONFIG</p>
+            <h3 id="sim-title">起飛模式</h3>
+            <p id="sim-text">
+              起飛時常常只放出一部分，因為需要更多升力，但又不希望阻力太大。
+            </p>
+            <div class="moment-note">
+              <span>一句記住</span>
+              <strong id="sim-memory">起飛像是先開一點點幫忙，不是一次全開。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經認識這對機翼幫手了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能分出襟翼、縫翼和它們的時機。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十一課完成</p>
+        <h2>現在你知道，飛機可以靠襟翼和縫翼把機翼變得更適合慢速飛行。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>同一片機翼，也可以在不同時候做不同工作。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

@@ -228,6 +228,7 @@
 .course-cabin { background: #e5e3d7; }
 .course-cargo { background: #dde5ec; }
 .course-braking { background: #e8dfd2; }
+.course-flaps { background: #dde8ef; }
 
 .course-number {
   display: flex;
