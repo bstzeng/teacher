@@ -226,6 +226,7 @@
 .course-autopilot { background: #e6dfd5; }
 .course-turbulence { background: #e7dfeb; }
 .course-cabin { background: #e5e3d7; }
+.course-cargo { background: #dde5ec; }
 
 .course-number {
   display: flex;

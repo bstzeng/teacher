@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十九課：認識行李、貨艙與載重平衡，了解東西放哪裡為什麼很重要。"
+    />
+    <title>行李、貨艙與載重平衡｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="cargo.css?v=20260625-new" />
+    <script src="cargo.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header cargo-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#holds">看貨艙</a>
+        <a href="#balance">看平衡</a>
+        <a href="#game">玩配重</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="cabin.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="cargo-hero">
+        <div class="cargo-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十九課</p>
+          <h1>飛機不是只看有沒有裝滿，<em>還要看東西放在哪裡。</em></h1>
+          <p class="hero-intro">
+            行李和貨物不是隨便塞進去就好。太前面、太後面、太重或分布不平均，
+            都會影響飛機的平衡。這一課會把「載重平衡」講成好懂的擺積木故事。
+          </p>
+          <div class="cargo-summary" aria-label="本課重點">
+            <div><strong>3</strong><span>個主要區域</span></div>
+            <div><strong>1</strong><span>個配重小遊戲</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#holds">
+            開始看貨艙 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="cargo-hero-visual" aria-hidden="true">
+          <span class="visual-code">BAGGAGE · CARGO · BALANCE</span>
+          <div class="cargo-scene">
+            <div class="fuselage"></div>
+            <div class="cargo-box front"></div>
+            <div class="cargo-box center"></div>
+            <div class="cargo-box rear"></div>
+            <div class="balance-line"></div>
+          </div>
+          <p class="visual-caption">裝得下不夠，還要裝得平衡</p>
+        </div>
+      </section>
+
+      <section class="holds-section" id="holds" aria-labelledby="holds-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先看區域</p>
+            <h2 id="holds-title">行李和貨物通常不只放一個地方</h2>
+          </div>
+          <p>飛機肚子裡的空間會分前面、中間、後面，怎麼分配很重要。</p>
+        </div>
+
+        <div class="holds-layout">
+          <div class="hold-buttons" role="tablist" aria-label="選擇貨艙位置">
+            <button class="hold-button is-active" type="button" data-hold="front">前貨艙</button>
+            <button class="hold-button" type="button" data-hold="center">中間區域</button>
+            <button class="hold-button" type="button" data-hold="rear">後貨艙</button>
+          </div>
+
+          <aside class="hold-card" aria-live="polite">
+            <p class="hold-kicker" id="hold-kicker">FRONT HOLD</p>
+            <h3 id="hold-title">前貨艙</h3>
+            <p id="hold-text">
+              前貨艙是飛機前半段的重要配重區之一。東西放在這裡，會影響飛機前後平衡。
+            </p>
+            <div class="hold-facts">
+              <div><span>你要記住</span><strong id="hold-memory">不是只有有沒有裝，還要看裝在哪裡。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="balance-section" id="balance" aria-labelledby="balance-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">再看平衡</p>
+            <h2 id="balance-title">太前面或太後面，為什麼不行？</h2>
+          </div>
+          <p>你可以先把飛機想成翹翹板。東西放的位置不對，整體感覺就會不一樣。</p>
+        </div>
+
+        <div class="balance-grid">
+          <button class="balance-card is-active" type="button" data-balance="center">
+            <span>平衡剛好</span>
+            <strong>飛起來比較舒服</strong>
+          </button>
+          <button class="balance-card" type="button" data-balance="frontheavy">
+            <span>太前面</span>
+            <strong>前面太重</strong>
+          </button>
+          <button class="balance-card" type="button" data-balance="rearheavy">
+            <span>太後面</span>
+            <strong>後面太重</strong>
+          </button>
+        </div>
+
+        <div class="balance-explainer" aria-live="polite">
+          <p class="hold-kicker" id="balance-kicker">GOOD BALANCE</p>
+          <h3 id="balance-title-card">平衡剛好</h3>
+          <p id="balance-text">
+            飛機最喜歡的狀態不是「隨便平均」，而是落在合適範圍內，讓操縱和性能都比較正常。
+          </p>
+          <div class="balance-note">
+            <span>翻成白話</span>
+            <strong id="balance-memory">不是越多越好，也不是越平均越好，而是要在安全範圍裡。</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-section" id="game" aria-labelledby="game-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">玩配重</p>
+            <h2 id="game-title">試著把三箱行李放進正確位置</h2>
+          </div>
+          <p>按不同位置放放看，觀察目前結果是太前、太後，還是剛剛好。</p>
+        </div>
+
+        <div class="game-layout">
+          <div class="game-controls">
+            <div class="bag-row">
+              <span>小箱子</span>
+              <div class="bag-buttons">
+                <button class="bag-button" type="button" data-bag="small" data-slot="front">放前面</button>
+                <button class="bag-button" type="button" data-bag="small" data-slot="center">放中間</button>
+                <button class="bag-button" type="button" data-bag="small" data-slot="rear">放後面</button>
+              </div>
+            </div>
+            <div class="bag-row">
+              <span>中箱子</span>
+              <div class="bag-buttons">
+                <button class="bag-button" type="button" data-bag="medium" data-slot="front">放前面</button>
+                <button class="bag-button" type="button" data-bag="medium" data-slot="center">放中間</button>
+                <button class="bag-button" type="button" data-bag="medium" data-slot="rear">放後面</button>
+              </div>
+            </div>
+            <div class="bag-row">
+              <span>大箱子</span>
+              <div class="bag-buttons">
+                <button class="bag-button" type="button" data-bag="large" data-slot="front">放前面</button>
+                <button class="bag-button" type="button" data-bag="large" data-slot="center">放中間</button>
+                <button class="bag-button" type="button" data-bag="large" data-slot="rear">放後面</button>
+              </div>
+            </div>
+            <button class="reset-button" id="cargo-reset" type="button">重新配一次</button>
+          </div>
+
+          <div class="game-card" aria-live="polite">
+            <p class="hold-kicker">目前結果</p>
+            <h3 id="game-title-card">還沒開始</h3>
+            <p id="game-text">先把三個箱子放進去，看看現在的感覺是太前、太後，還是剛剛好。</p>
+            <div class="balance-note">
+              <span>目前配置</span>
+              <strong id="game-memory">—</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你已經知道為什麼貨艙不能亂放了嗎？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把「重量」和「位置」一起想到。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十九課完成</p>
+        <h2>現在你知道，飛機裝行李不是只看有沒有空位，而是要看重量放在哪裡才安全。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>裝得下很重要，裝得平衡更重要。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
