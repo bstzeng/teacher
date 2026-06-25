@@ -1,0 +1,793 @@
+:root {
+  --taxi-ink: #18313a;
+  --taxi-ink-soft: #50666d;
+  --taxi-paper: #fffdf7;
+  --taxi-cream: #f2eee1;
+  --taxi-blue: #174759;
+  --taxi-sky: #d8ecee;
+  --taxi-yellow: #efc558;
+  --taxi-orange: #d66d35;
+  --taxi-red: #c54239;
+  --taxi-line: rgba(24, 49, 58, 0.18);
+}
+
+.taxiway-header {
+  background: rgba(255, 253, 247, 0.94);
+}
+
+.taxiway-hero {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  align-items: center;
+  gap: 80px;
+  min-height: 700px;
+  padding: 100px max(24px, calc((100% - 1180px) / 2)) 96px;
+  overflow: hidden;
+}
+
+.breadcrumb {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.taxiway-hero h1 {
+  max-width: 730px;
+  margin: 24px 0;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(58px, 7vw, 92px);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.taxiway-hero h1 em {
+  display: block;
+  color: var(--orange-dark);
+  font-style: italic;
+}
+
+.taxiway-hero .hero-intro {
+  max-width: 620px;
+}
+
+.taxiway-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin: 35px 0;
+}
+
+.taxiway-summary div {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.taxiway-summary strong {
+  color: var(--taxi-blue);
+  font-family: "Newsreader", serif;
+  font-size: 30px;
+}
+
+.taxiway-summary span {
+  color: var(--ink-soft);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.taxiway-hero-visual {
+  position: relative;
+  min-height: 530px;
+  overflow: hidden;
+  color: var(--taxi-paper);
+  background: var(--taxi-blue);
+  box-shadow: 22px 24px 0 var(--taxi-yellow);
+  transform: rotate(2deg);
+}
+
+.taxiway-hero-visual::before {
+  position: absolute;
+  inset: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  content: "";
+}
+
+.visual-code {
+  position: absolute;
+  top: 35px;
+  left: 38px;
+  color: var(--taxi-yellow);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.mini-airport {
+  position: absolute;
+  inset: 78px 48px 88px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #314751 0 64%, #a37f53 64% 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.apron {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 42%;
+  height: 45%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.taxiway-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: rgba(239, 197, 88, 0.92);
+  transform: translateY(-50%);
+}
+
+.taxiway-branch {
+  position: absolute;
+  width: 38%;
+  height: 6px;
+  background: rgba(239, 197, 88, 0.92);
+  transform-origin: left center;
+}
+
+.taxiway-branch-a {
+  top: 50%;
+  left: 24%;
+  transform: translateY(-50%) rotate(-34deg);
+}
+
+.taxiway-branch-b {
+  top: 50%;
+  left: 42%;
+  transform: translateY(-50%) rotate(32deg);
+}
+
+.hold-short {
+  position: absolute;
+  width: 78px;
+  height: 26px;
+  border-top: 5px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.9);
+}
+
+.hold-short::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid rgba(255, 255, 255, 0.9);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.hold-short-a {
+  top: 24%;
+  left: 58%;
+  transform: rotate(90deg);
+}
+
+.hold-short-b {
+  bottom: 24%;
+  left: 10%;
+  transform: rotate(90deg);
+}
+
+.plane-dot {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  color: var(--taxi-yellow);
+  font-size: 78px;
+  transform: translate(-50%, -50%) rotate(-18deg);
+}
+
+.visual-caption {
+  position: absolute;
+  right: 34px;
+  bottom: 28px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.map-section {
+  padding: 110px max(24px, calc((100% - 1180px) / 2));
+  color: var(--taxi-paper);
+  background: var(--taxi-blue);
+}
+
+.map-section .section-heading > p,
+.guide-section .section-heading > p {
+  color: rgba(255, 253, 247, 0.68);
+}
+
+.signs-section .section-heading > p,
+.quiz-section .section-heading > p {
+  color: var(--ink-soft);
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: 1.04fr 0.96fr;
+  gap: 18px;
+}
+
+.map-panel,
+.map-explainer,
+.sign-board,
+.sign-explainer,
+.quiz-card {
+  box-shadow: 12px 14px 0 rgba(255, 255, 255, 0.08);
+}
+
+.map-panel {
+  padding: 34px;
+  color: var(--taxi-ink);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.airport-diagram {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #314852 0%, #223740 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.apron-block {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 42%;
+  height: 36%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.taxi-lane {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: rgba(239, 197, 88, 0.92);
+  transform: translateY(-50%);
+}
+
+.taxi-curve {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  width: 34%;
+  height: 6px;
+  background: rgba(239, 197, 88, 0.92);
+  transform-origin: left center;
+  transform: translateY(-50%) rotate(-32deg);
+}
+
+.taxi-curve.second {
+  left: 42%;
+  transform: translateY(-50%) rotate(33deg);
+}
+
+.hold-bar {
+  position: absolute;
+  top: 22%;
+  left: 58%;
+  width: 82px;
+  height: 26px;
+  border-top: 5px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.9);
+  transform: rotate(90deg);
+}
+
+.hold-bar::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid rgba(255, 255, 255, 0.9);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.hold-bar.second {
+  top: 56%;
+  left: 13%;
+}
+
+.edge-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.edge-line.top {
+  top: 24%;
+}
+
+.edge-line.bottom {
+  bottom: 24%;
+}
+
+.runway-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 28%;
+  height: 26%;
+  background: rgba(255, 253, 247, 0.18);
+}
+
+.runway-text {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  color: var(--taxi-yellow);
+  font-family: "Newsreader", serif;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.map-hotspot {
+  position: absolute;
+  min-height: 44px;
+  padding: 0 12px;
+  color: var(--taxi-paper);
+  background: rgba(23, 71, 89, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.map-hotspot.is-active,
+.map-hotspot:hover,
+.map-hotspot:focus-visible {
+  color: var(--taxi-ink);
+  background: var(--taxi-yellow);
+}
+
+.hotspot-centerline {
+  top: 46%;
+  left: 18%;
+}
+
+.hotspot-edge {
+  top: 17%;
+  left: 20%;
+}
+
+.hotspot-hold {
+  top: 24%;
+  right: 18%;
+}
+
+.hotspot-runway {
+  bottom: 12%;
+  right: 15%;
+}
+
+.map-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.map-chips span {
+  padding: 6px 10px;
+  color: var(--taxi-paper);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.map-explainer {
+  padding: 36px 32px;
+  color: var(--taxi-paper);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.explainer-kicker,
+.quiz-card > p:first-child {
+  margin: 0 0 18px;
+  color: var(--taxi-yellow);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.map-explainer h3,
+.sign-explainer h3 {
+  margin: 0 0 16px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 34px;
+  line-height: 1.05;
+}
+
+.map-explainer > p:nth-of-type(2),
+.sign-explainer > p:nth-of-type(2) {
+  margin: 0;
+  color: var(--taxi-ink-soft);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.map-memory,
+.sign-memory {
+  margin-top: 28px;
+  padding: 20px 18px 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.map-memory span,
+.sign-memory span {
+  display: block;
+  color: var(--taxi-yellow);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.map-memory strong,
+.sign-memory strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.mark-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.mark-list article {
+  padding: 20px 18px 18px;
+  color: var(--taxi-ink);
+  background: var(--taxi-paper);
+}
+
+.mark-list article span,
+.guide-grid article span {
+  display: inline-block;
+  color: var(--taxi-orange);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.mark-list article h3,
+.guide-grid article h3 {
+  margin: 12px 0 10px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 24px;
+}
+
+.mark-list article p,
+.guide-grid article p {
+  margin: 0;
+  color: var(--taxi-ink-soft);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.signs-section {
+  padding: 110px max(24px, calc((100% - 1180px) / 2));
+  background: var(--taxi-cream);
+}
+
+.signs-layout {
+  display: grid;
+  grid-template-columns: 1.04fr 0.96fr;
+  gap: 18px;
+}
+
+.sign-board,
+.sign-explainer {
+  padding: 34px;
+  background: var(--taxi-paper);
+  border: 1px solid var(--taxi-line);
+}
+
+.sign-example {
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+  color: var(--taxi-paper);
+  background: #1d2430;
+  border: 1px solid rgba(24, 49, 58, 0.15);
+}
+
+.sign-example span {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.sign-example strong {
+  display: block;
+  font-family: "Newsreader", serif;
+  font-size: 86px;
+  line-height: 0.9;
+}
+
+.sign-example.direction {
+  background: var(--taxi-yellow);
+  color: var(--taxi-ink);
+}
+
+.sign-example.direction span {
+  color: var(--taxi-ink);
+}
+
+.sign-example.mandatory {
+  background: var(--taxi-red);
+  color: var(--taxi-paper);
+}
+
+.sign-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.sign-button {
+  min-height: 52px;
+  padding: 0 16px;
+  color: var(--taxi-ink);
+  background: transparent;
+  border: 1px solid rgba(24, 49, 58, 0.24);
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.sign-button.is-active,
+.sign-button:hover,
+.sign-button:focus-visible {
+  color: var(--taxi-paper);
+  background: var(--taxi-blue);
+}
+
+.guide-section {
+  padding: 110px max(24px, calc((100% - 1180px) / 2));
+  color: var(--taxi-paper);
+  background: var(--taxi-blue);
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.guide-grid article {
+  padding: 22px 20px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.quiz-section {
+  padding: 110px max(24px, calc((100% - 1180px) / 2));
+  background: var(--taxi-sky);
+}
+
+.quiz-card {
+  padding: 38px 34px;
+  background: var(--taxi-paper);
+  border: 1px solid rgba(24, 49, 58, 0.15);
+}
+
+.quiz-card h3 {
+  min-height: 92px;
+  margin: 28px 0 22px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.quiz-option {
+  min-height: 62px;
+  padding: 12px 14px;
+  color: var(--taxi-ink);
+  background: transparent;
+  border: 1px solid rgba(24, 49, 58, 0.22);
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.quiz-option:hover:not(:disabled),
+.quiz-option:focus-visible {
+  background: var(--taxi-sky);
+  border-color: var(--taxi-orange);
+}
+
+.quiz-option.is-correct {
+  color: #194f3d;
+  background: #d7ecdf;
+  border-color: #194f3d;
+}
+
+.quiz-option.is-wrong {
+  color: #8c3028;
+  background: #f4d8d5;
+  border-color: #8c3028;
+}
+
+#quiz-feedback {
+  min-height: 54px;
+  margin: 20px 0 0;
+  color: var(--taxi-ink-soft);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.course-finish {
+  padding: 92px max(24px, calc((100% - 950px) / 2));
+  text-align: center;
+  background: var(--taxi-yellow);
+}
+
+.course-finish > p {
+  color: var(--orange-dark);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.course-finish h2 {
+  margin: 20px auto 30px;
+  max-width: 820px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(38px, 4.5vw, 60px);
+  line-height: 1.08;
+}
+
+.course-finish a {
+  padding-bottom: 5px;
+  border-bottom: 1px solid currentColor;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+footer .footer-brand {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 980px) {
+  .taxiway-hero,
+  .map-grid,
+  .signs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .taxiway-hero {
+    padding-top: 125px;
+  }
+
+  .guide-grid,
+  .mark-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .taxiway-header .desktop-nav {
+    display: none;
+  }
+
+  .taxiway-hero {
+    min-height: auto;
+    gap: 55px;
+    padding-top: 108px;
+  }
+
+  .taxiway-hero h1 {
+    font-size: 50px;
+  }
+
+  .taxiway-summary {
+    gap: 18px;
+    justify-content: space-between;
+  }
+
+  .taxiway-summary div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .taxiway-hero-visual {
+    min-height: 360px;
+    box-shadow: 10px 12px 0 var(--taxi-yellow);
+  }
+
+  .mini-airport {
+    inset: 58px 18px 82px;
+  }
+
+  .plane-dot {
+    left: 16%;
+    font-size: 56px;
+  }
+
+  .taxiway-hero,
+  .map-section,
+  .signs-section,
+  .guide-section,
+  .quiz-section {
+    padding-top: 80px;
+    padding-bottom: 85px;
+  }
+
+  .map-panel,
+  .map-explainer,
+  .sign-board,
+  .sign-explainer,
+  .quiz-card {
+    padding: 26px 22px;
+  }
+
+  .airport-diagram {
+    min-height: 460px;
+  }
+
+  .map-explainer h3,
+  .sign-explainer h3 {
+    font-size: 28px;
+  }
+
+  .mark-list,
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sign-example strong {
+    font-size: 64px;
+  }
+
+  .quiz-options {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-card h3 {
+    min-height: auto;
+    font-size: 26px;
+  }
+
+  .course-finish {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+}

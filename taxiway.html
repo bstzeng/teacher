@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第十課：認識滑行道、地面標線與常見指示牌。"
+    />
+    <title>滑行道與地面標線｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="taxiway.css?v=20260625-readable" />
+    <script src="taxiway.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header taxiway-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#map">看地圖</a>
+        <a href="#marks">看標線</a>
+        <a href="#signs">看標誌</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="runway.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="taxiway-hero">
+        <div class="taxiway-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第十課</p>
+          <h1>離開跑道之後，<em>才輪到滑行道登場。</em></h1>
+          <p class="hero-intro">
+            飛機在地面移動時，最重要的是沿著正確的線走、在該停的地方停，
+            然後跟著顏色和標誌把路找對。這一堂會把機場地面當成一張大地圖來看。
+          </p>
+          <div class="taxiway-summary" aria-label="本課重點">
+            <div><strong>4</strong><span>種常見標線</span></div>
+            <div><strong>3</strong><span>種主要標誌</span></div>
+            <div><strong>1</strong><span>條安全路線觀念</span></div>
+          </div>
+          <a class="button button-primary" href="#map">
+            開始看地圖 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="taxiway-hero-visual" aria-hidden="true">
+          <span class="visual-code">GROUND MOVEMENT</span>
+          <div class="mini-airport">
+            <div class="apron"></div>
+            <div class="taxiway-line"></div>
+            <div class="taxiway-branch taxiway-branch-a"></div>
+            <div class="taxiway-branch taxiway-branch-b"></div>
+            <div class="hold-short hold-short-a"></div>
+            <div class="hold-short hold-short-b"></div>
+            <div class="plane-dot">✈</div>
+          </div>
+          <p class="visual-caption">沿著黃線走，遇到白線就先停</p>
+        </div>
+      </section>
+
+      <section class="map-section" id="map" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">地面動線</p>
+            <h2 id="map-title">先看你現在站在哪裡</h2>
+          </div>
+          <p>
+            滑行不是亂跑，而是照著地面標線、標誌和航管指示前進。
+            先認清路面上的幾個重點，才不會跑到不該去的地方。
+          </p>
+        </div>
+
+        <div class="map-grid">
+          <article class="map-panel">
+            <div class="airport-diagram" aria-label="滑行道示意圖">
+              <div class="apron-block"></div>
+              <div class="taxi-lane"></div>
+              <div class="taxi-curve"></div>
+              <div class="taxi-curve second"></div>
+              <div class="hold-bar"></div>
+              <div class="hold-bar second"></div>
+              <div class="edge-line top"></div>
+              <div class="edge-line bottom"></div>
+              <div class="runway-box"></div>
+              <div class="runway-text">RWY</div>
+              <button class="map-hotspot hotspot-centerline is-active" type="button" data-mark="centerline">
+                中心線
+              </button>
+              <button class="map-hotspot hotspot-edge" type="button" data-mark="edge">
+                邊線
+              </button>
+              <button class="map-hotspot hotspot-hold" type="button" data-mark="hold">
+                停等線
+              </button>
+              <button class="map-hotspot hotspot-runway" type="button" data-mark="runway">
+                跑道前方
+              </button>
+            </div>
+            <div class="map-chips" aria-hidden="true">
+              <span>黃色 = 滑行道</span>
+              <span>白色 = 跑道</span>
+              <span>先停再走</span>
+            </div>
+          </article>
+
+          <aside class="map-explainer" aria-live="polite">
+            <p class="explainer-kicker" id="map-kicker">滑行道地圖</p>
+            <h3 id="map-title-text">中心線</h3>
+            <p id="map-text">
+              黃色中心線會帶你沿著滑行道前進。飛行員會盡量讓鼻輪跟著這條線，
+              這樣才不會偏到別的方向。
+            </p>
+            <div class="map-memory">
+              <span>記住這一句</span>
+              <strong id="map-remember">黃色多半是給你「走」的，白色多半是提醒你「停」。</strong>
+            </div>
+          </aside>
+        </div>
+
+        <div class="mark-list" aria-label="常見標線整理">
+          <article>
+            <span>1</span>
+            <h3>中心線</h3>
+            <p>單一黃色實線，指引飛機沿著滑行道前進。</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>邊線</h3>
+            <p>把可用的滑行範圍和旁邊區域分開，避免偏出去。</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>停等線</h3>
+            <p>兩條實線配兩條虛線，通常表示接近跑道前要先停下。</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>跑道前方</h3>
+            <p>看到白色或紅白標誌，代表這裡與跑道安全有直接關係。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="signs-section" id="signs" aria-labelledby="signs-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">地面標誌</p>
+            <h2 id="signs-title">看懂三種最常見的牌子</h2>
+          </div>
+          <p>
+            不是只有地上的線，機場也會用不同顏色的牌子告訴你現在在哪裡、該往哪裡走，
+            或者這裡是不是不能隨便通過。
+          </p>
+        </div>
+
+        <div class="signs-layout">
+          <div class="sign-board" aria-label="機場標誌示意">
+            <div class="sign-example location" id="sign-example">
+              <span>使用中</span>
+              <strong>A</strong>
+            </div>
+            <div class="sign-buttons">
+              <button class="sign-button is-active" type="button" data-sign="location">位置標誌</button>
+              <button class="sign-button" type="button" data-sign="direction">方向標誌</button>
+              <button class="sign-button" type="button" data-sign="mandatory">強制指示標誌</button>
+            </div>
+          </div>
+
+          <aside class="sign-explainer" aria-live="polite">
+            <p class="explainer-kicker" id="sign-kicker">標誌解說</p>
+            <h3 id="sign-title">位置標誌</h3>
+            <p id="sign-text">
+              黑底黃字告訴你「你現在在哪裡」。如果看到 A、B、C 這類字母，就知道自己目前在那條滑行道上。
+            </p>
+            <div class="sign-memory">
+              <span>顏色記法</span>
+              <strong id="sign-remember">黑底黃字是位置或方向；紅底白字是必須先注意的地方。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="guide-section" aria-labelledby="guide-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">怎麼走才對</p>
+            <h2 id="guide-title">沿線、看牌、慢慢走</h2>
+          </div>
+          <p>
+            滑行時最重要的是三件事：先確認自己在正確的滑行道上，再看牌子找方向，
+            最後在停等線前一定要先停住。
+          </p>
+        </div>
+
+        <div class="guide-grid">
+          <article>
+            <span>01</span>
+            <h3>先找中心線</h3>
+            <p>鼻輪沿著黃線走，方向就比較不容易偏掉。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>再看標誌</h3>
+            <p>位置標誌告訴你現在在哪裡，方向標誌告訴你下一步往哪裡。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>停等線前先停</h3>
+            <p>白色停等線代表可能接近跑道或重要區域，沒有許可不能直接穿越。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你會不會在地面找路？</h2>
+          </div>
+          <p>共五題，答完看看你能不能分辨線條、標誌和停等位置。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十課完成</p>
+        <h2>你現在已經知道飛機在地面上，是怎麼安全找到路的。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>每一步都先看線，再看牌，最後才前進。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
