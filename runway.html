@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學航空主題第九課：看懂跑道編號、L/C/R 與跑道標線。"
+    />
+    <title>跑道上的數字代表什麼？｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260625-readable" />
+    <link rel="stylesheet" href="runway.css?v=20260625-readable" />
+    <script src="runway.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header runway-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#decoder">算跑道號碼</a>
+        <a href="#pairs">看 L / R</a>
+        <a href="#marks">看標線</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="flight.html">
+        上一課 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="runway-hero">
+        <div class="runway-hero-copy">
+          <a class="breadcrumb" href="aviation.html">主題首頁 / 航空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>航空主題・第九課</p>
+          <h1>跑道上的數字，<em>不是隨便寫的。</em></h1>
+          <p class="hero-intro">
+            先把磁方位角換成跑道編號，再看懂 L / C / R、閥標、中心線、瞄準點和位移門檻。
+            這一堂會讓你第一次真的「讀得懂」跑道。
+          </p>
+          <div class="runway-summary" aria-label="本課重點">
+            <div><strong>36</strong><span>個方向</span></div>
+            <div><strong>18</strong><span>對側差一半</span></div>
+            <div><strong>6</strong><span>個標線重點</span></div>
+          </div>
+          <a class="button button-primary" href="#decoder">
+            開始解碼 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="runway-hero-visual" aria-hidden="true">
+          <span class="visual-code">TPE / RCTP</span>
+          <div class="hero-compass">
+            <i class="hero-compass-ring"></i>
+            <span class="compass-label north">N</span>
+            <span class="compass-label east">E</span>
+            <span class="compass-label south">S</span>
+            <span class="compass-label west">W</span>
+            <div class="compass-needle" id="hero-needle"></div>
+            <div class="hero-runway-card">
+              <span>跑道編號</span>
+              <strong id="hero-runway-primary">05</strong>
+              <p id="hero-runway-opposite">對側 23</p>
+            </div>
+          </div>
+          <div class="hero-strip">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="visual-caption">以 05L / 23R 做示意</p>
+        </div>
+      </section>
+
+      <section class="decoder-section" id="decoder" aria-labelledby="decoder-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">磁方位角轉換</p>
+            <h2 id="decoder-title">把方向轉成跑道號碼</h2>
+          </div>
+          <p>
+            跑道號碼看的是磁方位角。先四捨五入到最接近的 10 度，再把最後一個 0 拿掉；
+            另一端的號碼則會相差 18。
+          </p>
+        </div>
+
+        <div class="decoder-grid">
+          <article class="decoder-panel">
+            <p class="panel-label">拖曳一下角度</p>
+            <label class="slider-label" for="heading-slider">
+              磁方位角
+              <strong id="heading-label">050°</strong>
+            </label>
+            <input
+              id="heading-slider"
+              type="range"
+              min="0"
+              max="360"
+              value="50"
+              step="5"
+            />
+            <div class="preset-row" aria-label="快速範例">
+              <button class="preset-button" type="button" data-heading="50">050°</button>
+              <button class="preset-button" type="button" data-heading="140">140°</button>
+              <button class="preset-button" type="button" data-heading="230">230°</button>
+              <button class="preset-button" type="button" data-heading="320">320°</button>
+            </div>
+            <p class="panel-note" id="decoder-note">
+              例如 050° 會顯示 05；230° 會顯示 23。這是教學示意，實際跑道使用仍以當地 AIP 和航管指示為準。
+            </p>
+          </article>
+
+          <aside class="decoder-result" aria-live="polite">
+            <div class="result-card">
+              <span>這一端</span>
+              <strong id="primary-runway">05</strong>
+              <p id="primary-explainer">050° 會先四捨五入到 050，再變成 05。</p>
+            </div>
+            <div class="result-arrow" aria-hidden="true">↔</div>
+            <div class="result-card secondary">
+              <span>對側</span>
+              <strong id="opposite-runway">23</strong>
+              <p id="opposite-explainer">同一條跑道換個方向看，會差 18。</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="pairs-section" id="pairs" aria-labelledby="pairs-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">平行跑道</p>
+            <h2 id="pairs-title">L / C / R 會跟著方向改變</h2>
+          </div>
+          <p>
+            同一條跑道如果有兩條或三條平行，就會加上 L、C、R。
+            看向這一端時是左邊，換到對側時，左右會互換。
+          </p>
+        </div>
+
+        <div class="pairs-layout">
+          <div class="pairs-visual">
+            <div class="pairs-track">
+              <span class="pairs-end" id="pair-left">05L</span>
+              <span class="pairs-line"></span>
+              <span class="pairs-end" id="pair-right">23R</span>
+            </div>
+            <p class="pairs-caption" id="pair-caption">
+              目前示範的是左側 L。換到另一端時，就會變成右側 R。
+            </p>
+          </div>
+
+          <div class="pairs-controls" aria-label="選擇側別">
+            <button class="pair-button is-active" type="button" data-side="L">左側 L</button>
+            <button class="pair-button" type="button" data-side="C">中間 C</button>
+            <button class="pair-button" type="button" data-side="R">右側 R</button>
+            <div class="pairs-note">
+              <span>記法提醒</span>
+              <strong id="pairs-note">05L / 23R 代表同一條平行跑道的兩端。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marks-section" id="marks" aria-labelledby="marks-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">跑道標線</p>
+            <h2 id="marks-title">點一下圖上的每一塊</h2>
+          </div>
+          <p>
+            這張圖把常見標線簡化成好讀的示意圖。你可以直接點圖上的區塊，
+            看看它們分別在提醒飛行員什麼。
+          </p>
+        </div>
+
+        <div class="marks-layout">
+          <div class="diagram-card">
+            <div class="runway-diagram" aria-label="跑道標線示意圖">
+              <div class="diagram-surface"></div>
+              <div class="diagram-centerline" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="diagram-threshold" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="diagram-aiming" aria-hidden="true">
+                <span></span><span></span>
+              </div>
+              <div class="diagram-touchdown" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="diagram-displaced" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="diagram-number left" id="diagram-left-number" aria-hidden="true">05</div>
+              <div class="diagram-number right" id="diagram-right-number" aria-hidden="true">23</div>
+              <button class="mark-hotspot hotspot-threshold is-active" type="button" data-mark="threshold">
+                閥標
+              </button>
+              <button class="mark-hotspot hotspot-designation" type="button" data-mark="designation">
+                跑道編號
+              </button>
+              <button class="mark-hotspot hotspot-centerline" type="button" data-mark="centerline">
+                中心線
+              </button>
+              <button class="mark-hotspot hotspot-aiming" type="button" data-mark="aiming">
+                瞄準點
+              </button>
+              <button class="mark-hotspot hotspot-touchdown" type="button" data-mark="touchdown">
+                接地區
+              </button>
+              <button class="mark-hotspot hotspot-displaced" type="button" data-mark="displaced">
+                位移門檻
+              </button>
+            </div>
+            <div class="mark-chips" aria-hidden="true">
+              <span>05L / 23R</span>
+              <span>簡化示意</span>
+              <span>點擊說明</span>
+            </div>
+          </div>
+
+          <aside class="marking-explainer" aria-live="polite">
+            <p class="explainer-kicker" id="mark-kicker">跑道標線</p>
+            <h3 id="mark-title">閥標</h3>
+            <p id="mark-text">
+              白色直條先告訴你跑道正式可用的起點。從這裡開始，飛機可以依程序離地或接地。
+            </p>
+            <div class="mark-memory">
+              <span>記住這一句</span>
+              <strong id="mark-remember">白色代表跑道，黃色通常是滑行道。</strong>
+            </div>
+          </aside>
+        </div>
+
+        <div class="mark-list" aria-label="快速整理">
+          <article>
+            <span>1</span>
+            <h3>跑道編號</h3>
+            <p>方向先告訴你 05、23、14、32 這些數字代表哪一端。</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>閥標</h3>
+            <p>白色條紋提醒你正式的起降位置在哪裡。</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>中心線</h3>
+            <p>飛機滑行與落地時，要盡量沿著中間保持對正。</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>瞄準點</h3>
+            <p>幫助飛行員把目標放在正確的著陸區域。</p>
+          </article>
+          <article>
+            <span>5</span>
+            <h3>接地區</h3>
+            <p>精密進場跑道上常見，用來提示建議的接地範圍。</p>
+          </article>
+          <article>
+            <span>6</span>
+            <h3>位移門檻</h3>
+            <p>箭頭表示前面一段不適合接地，但可用來滑行或從另一端起飛。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你會不會看跑道了？</h2>
+          </div>
+          <p>共五題，答完看看你能不能把方向、側別和標線全串起來。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第九課完成</p>
+        <h2>你現在已經會先看方向，再看標線和起降位置。</h2>
+        <a href="aviation.html">回到航空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>多看一眼跑道，起降就多一分把握。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
