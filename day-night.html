@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第八課：一天為什麼會有白天和晚上，用互動圖與真實圖片認識地球自轉和太陽光。"
+    />
+    <title>一天為什麼會有白天和晚上｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="day-night.css?v=20260626-space8" />
+    <script src="day-night.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header daynight-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#play">互動自轉</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="daynight-hero">
+        <div class="daynight-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第八課</p>
+          <h1>白天和晚上不是太陽在開燈關燈，<em>而是地球自己在轉。</em></h1>
+          <p class="hero-intro">
+            這堂課我們來看最重要的一個地球規律：地球一邊轉，一邊被太陽照，
+            所以轉到亮面的人是白天，轉到暗面的人就是晚上。
+          </p>
+          <div class="daynight-summary">
+            <div><strong>3</strong><span>個核心概念</span></div>
+            <div><strong>4</strong><span>種時間位置</span></div>
+            <div><strong>3</strong><span>張 NASA 圖片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始看白天和晚上 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="daynight-hero-visual" aria-hidden="true">
+          <span class="visual-code">SUNLIGHT · EARTH · ROTATION</span>
+          <div class="hero-sun"></div>
+          <div class="hero-earth"></div>
+          <div class="hero-shadow"></div>
+          <div class="hero-arrow"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">同一顆地球，一面亮、一面暗</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">一天有白天和晚上，通常是這三件事一起造成的</h2>
+          </div>
+          <p>先抓住這三個重點，就不會再以為是太陽繞著地球跑一圈才變成晚上。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-visual light-visual"></div>
+            <div class="idea-copy">
+              <p>01 · 太陽一直在照</p>
+              <h3>太陽像大燈，會一直照著地球的一半</h3>
+              <span>不是今天照、明天不照，而是同一時間本來就只會照到半顆地球。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual rotate-visual"></div>
+            <div class="idea-copy">
+              <p>02 · 地球自己在轉</p>
+              <h3>地球一邊轉，一邊把不同地方轉到亮面</h3>
+              <span>當你住的地方轉到面向太陽那邊，就是白天；轉到背面就是晚上。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual line-visual"></div>
+            <div class="idea-copy">
+              <p>03 · 所以白天晚上會輪流來</p>
+              <h3>不是太陽消失了，是你轉到另一邊了</h3>
+              <span>同一時間，地球上有些地方是白天，有些地方則已經是晚上。</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動自轉</p>
+            <h2 id="play-title">按一下，看看地球轉到哪一邊</h2>
+          </div>
+          <p>這裡用早上、中午、傍晚、半夜四個時刻，幫小朋友建立最基本的時間感覺。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-mode="morning">早上</button>
+            <button class="play-button" type="button" data-mode="noon">中午</button>
+            <button class="play-button" type="button" data-mode="evening">傍晚</button>
+            <button class="play-button" type="button" data-mode="night">半夜</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="play-scene" id="play-scene" data-mode="morning">
+              <div class="scene-sun"></div>
+              <div class="scene-earth"></div>
+              <div class="scene-shadow"></div>
+              <div class="scene-person" id="scene-person"></div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">MORNING</p>
+            <h3 id="play-name">早上</h3>
+            <p id="play-text">你住的地方正慢慢轉進亮面，所以天亮了，太陽看起來像要升起來。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">早上像剛剛轉到燈光前面。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動地圖</p>
+            <h2 id="map-title">點點看，白天和晚上的圖在說什麼</h2>
+          </div>
+          <p>只要知道太陽、地球亮面、暗面和自轉方向，整件事就會一下子變清楚。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-visual">
+            <svg class="map-svg" viewBox="0 0 760 480" role="img" aria-labelledby="map-svg-title map-svg-desc">
+              <title id="map-svg-title">白天與晚上互動圖</title>
+              <desc id="map-svg-desc">可點選太陽、地球亮面、暗面、自轉方向和地球上的人</desc>
+              <rect x="30" y="30" width="700" height="420" rx="38" fill="#0c1522" />
+              <circle cx="128" cy="240" r="52" fill="#ffd977" />
+              <circle cx="406" cy="240" r="96" fill="#2f5d8a" />
+              <path d="M 406 144 A 96 96 0 0 1 406 336 L 406 336 Z" fill="#162534" />
+              <circle cx="406" cy="240" r="96" fill="none" stroke="#8fd4ff" stroke-width="8" />
+              <path d="M 566 144 A 84 84 0 0 1 566 336" fill="none" stroke="#7ed7ff" stroke-width="6" />
+              <polygon points="560,144 584,154 564,168" fill="#7ed7ff" />
+              <circle cx="366" cy="190" r="10" fill="#ffffff" />
+
+              <g class="map-hotspot is-active" data-part="sun">
+                <circle cx="128" cy="166" r="22"></circle>
+                <text x="128" y="172">1</text>
+              </g>
+              <g class="map-hotspot" data-part="day">
+                <circle cx="350" cy="144" r="22"></circle>
+                <text x="350" y="150">2</text>
+              </g>
+              <g class="map-hotspot" data-part="night">
+                <circle cx="462" cy="144" r="22"></circle>
+                <text x="462" y="150">3</text>
+              </g>
+              <g class="map-hotspot" data-part="spin">
+                <circle cx="588" cy="214" r="22"></circle>
+                <text x="588" y="220">4</text>
+              </g>
+              <g class="map-hotspot" data-part="person">
+                <circle cx="366" cy="158" r="22"></circle>
+                <text x="366" y="164">5</text>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="map-card" aria-live="polite">
+            <p class="play-kicker" id="map-kicker">SUN</p>
+            <h3 id="map-name">太陽</h3>
+            <p id="map-text">太陽像一盞很遠很遠的大燈，會讓地球的一邊亮、另一邊暗。</p>
+            <div class="play-note">
+              <span>最簡單怎麼記</span>
+              <strong id="map-memory">先找太陽在哪邊，再看哪邊亮。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再看三張真的 NASA 圖片</h2>
+          </div>
+          <p>這些圖片能幫小朋友把「地球一半亮、一半暗」和真實太空照片連起來。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/iss048e002082/iss048e002082~large.jpg"
+              alt="從太空看到地球白天與夜晚交界"
+            />
+            <div class="photo-copy">
+              <p>01 · 真正的白天和晚上交界</p>
+              <h3>地球真的會同時有亮面和暗面</h3>
+              <span>這張照片很適合幫小朋友理解：不是全世界一起白天，也不是一起晚上。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-iss048e002082" target="_blank" rel="noreferrer">NASA「Earth Observation」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/art002e019570/art002e019570~large.jpg"
+              alt="月球表面的白天與黑夜交界"
+            />
+            <div class="photo-copy">
+              <p>02 · 其他天體也有白天和晚上</p>
+              <h3>只要會轉、會被太陽照，就會有亮面和暗面</h3>
+              <span>這張圖可以順便讓小朋友知道：白天和晚上不是地球專屬，月亮也有。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-art002e019570" target="_blank" rel="noreferrer">NASA「Crescent Moon Ahead of Flyby」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001596/GSFC_20171208_Archive_e001596~orig.jpg"
+              alt="NASA 夜間地球影像"
+            />
+            <div class="photo-copy">
+              <p>03 · 夜晚的地球也很有線索</p>
+              <h3>到了暗面，我們就會看到夜晚的樣子</h3>
+              <span>這張圖能幫小朋友連起來：轉到暗面時，就會進入夜晚世界。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e001596" target="_blank" rel="noreferrer">NASA「Waves in Airglow」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你有沒有看懂白天和晚上怎麼來的？</h2>
+          </div>
+          <p>這堂課最重要的就是記住：不是太陽繞一圈，而是地球自己在轉。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第八課完成</p>
+        <h2>現在你知道，白天和晚上會輪流出現，是因為地球自己在慢慢轉。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次看到日出日落，就會知道那其實是地球在轉，不是太陽在跑。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
