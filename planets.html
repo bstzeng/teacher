@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第十一課：用互動方式認識太陽系的八大行星，知道它們的順序、樣子和特色。"
+    />
+    <title>太陽系有哪些行星｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="planets.css?v=20260626-space11" />
+    <script src="planets.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header planets-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#explore">認識八大行星</a>
+        <a href="#order">順序地圖</a>
+        <a href="#photos">真實照片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="planets-hero">
+        <div class="planets-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第十一課</p>
+          <h1>太陽系不是只有地球，<em>還有八顆主要行星一起繞著太陽走。</em></h1>
+          <p class="hero-intro">
+            這堂課我們先不用背太多數字，先認識太陽系裡最常見的八大行星：
+            水星、金星、地球、火星、木星、土星、天王星、海王星。
+          </p>
+          <div class="planets-summary">
+            <div><strong>8</strong><span>顆主要行星</span></div>
+            <div><strong>2</strong><span>大行星家族</span></div>
+            <div><strong>3</strong><span>張 NASA 圖片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始認識行星 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="planets-hero-visual" aria-hidden="true">
+          <span class="visual-code">MERCURY · VENUS · EARTH · MARS · JUPITER · SATURN</span>
+          <div class="hero-sun"></div>
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-orbit orbit-three"></div>
+          <div class="hero-planet mercury"></div>
+          <div class="hero-planet venus"></div>
+          <div class="hero-planet earth"></div>
+          <div class="hero-planet mars"></div>
+          <div class="hero-planet jupiter"></div>
+          <div class="hero-planet saturn"></div>
+          <div class="hero-ring"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">每顆行星都在自己的軌道上，繞著太陽前進</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">先記住這三件事，就不容易搞混</h2>
+          </div>
+          <p>這堂課最重要的不是背很難的字，而是先知道太陽系裡的成員怎麼分。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-badge">01</div>
+            <h3>太陽在中間</h3>
+            <p>八大行星都不是亂飛，它們都在繞著太陽運動。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">02</div>
+            <h3>離太陽近的比較小</h3>
+            <p>前面四顆多半是岩石行星，後面四顆多半是很大的氣體或冰巨行星。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">03</div>
+            <h3>地球只是其中一顆</h3>
+            <p>我們住在地球上，但地球其實只是太陽系裡的一位成員。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="explore-section" id="explore" aria-labelledby="explore-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">認識八大行星</p>
+            <h2 id="explore-title">按一顆行星，就會跳出它的介紹</h2>
+          </div>
+          <p>先從樣子和一句印象開始，孩子會比較容易記住每顆行星的特色。</p>
+        </div>
+
+        <div class="explore-layout">
+          <div class="planet-selector" role="tablist" aria-label="八大行星選擇">
+            <button class="planet-chip is-active" type="button" data-planet="mercury">水星</button>
+            <button class="planet-chip" type="button" data-planet="venus">金星</button>
+            <button class="planet-chip" type="button" data-planet="earth">地球</button>
+            <button class="planet-chip" type="button" data-planet="mars">火星</button>
+            <button class="planet-chip" type="button" data-planet="jupiter">木星</button>
+            <button class="planet-chip" type="button" data-planet="saturn">土星</button>
+            <button class="planet-chip" type="button" data-planet="uranus">天王星</button>
+            <button class="planet-chip" type="button" data-planet="neptune">海王星</button>
+          </div>
+
+          <div class="explore-stage">
+            <div class="planet-showcase" id="planet-showcase" data-planet="mercury">
+              <div class="showcase-orbit orbit-a"></div>
+              <div class="showcase-orbit orbit-b"></div>
+              <div class="showcase-orbit orbit-c"></div>
+              <div class="showcase-sun"></div>
+              <div class="showcase-planet">
+                <span class="planet-ball" id="planet-ball"></span>
+                <span class="planet-ring" id="planet-ring" hidden></span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="planet-card" aria-live="polite">
+            <p class="planet-kicker" id="planet-kicker">PLANET 01</p>
+            <h3 id="planet-name">水星 Mercury</h3>
+            <p id="planet-text">水星最靠近太陽，看起來小小的，表面很像佈滿坑洞的大石頭球。</p>
+            <div class="planet-facts">
+              <div><span>位置</span><strong id="planet-order">第 1 顆</strong></div>
+              <div><span>家族</span><strong id="planet-family">岩石行星</strong></div>
+              <div><span>一句記住</span><strong id="planet-memory">離太陽最近的小行星。</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="order-section" id="order" aria-labelledby="order-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">順序地圖</p>
+            <h2 id="order-title">從太陽往外排，八大行星是這樣站的</h2>
+          </div>
+          <p>把順序看懂，就能知道誰靠太陽近、誰在很外面，也比較不容易把名字記反。</p>
+        </div>
+
+        <div class="order-layout">
+          <div class="order-track" aria-label="太陽系行星順序">
+            <button class="order-stop is-active" type="button" data-planet="mercury"><span>1</span><b>水星</b></button>
+            <button class="order-stop" type="button" data-planet="venus"><span>2</span><b>金星</b></button>
+            <button class="order-stop" type="button" data-planet="earth"><span>3</span><b>地球</b></button>
+            <button class="order-stop" type="button" data-planet="mars"><span>4</span><b>火星</b></button>
+            <button class="order-stop giant" type="button" data-planet="jupiter"><span>5</span><b>木星</b></button>
+            <button class="order-stop giant" type="button" data-planet="saturn"><span>6</span><b>土星</b></button>
+            <button class="order-stop giant" type="button" data-planet="uranus"><span>7</span><b>天王星</b></button>
+            <button class="order-stop giant" type="button" data-planet="neptune"><span>8</span><b>海王星</b></button>
+          </div>
+
+          <aside class="order-card" aria-live="polite">
+            <p class="planet-kicker" id="order-kicker">INNER PLANET</p>
+            <h3 id="order-name">水星在最前面</h3>
+            <p id="order-text">水星是離太陽最近的行星，所以一年也過得比較快。</p>
+            <div class="order-tags" id="order-tags">
+              <span>離太陽最近</span>
+              <span>岩石行星</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實照片</p>
+            <h2 id="photos-title">再看三張真的 NASA 行星圖片</h2>
+          </div>
+          <p>真實照片能幫孩子把「課本裡的名字」和「真的星球樣子」連在一起。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001545/GSFC_20171208_Archive_e001545~large.jpg"
+              alt="NASA 的水星假色照片"
+            />
+            <div class="photo-copy">
+              <p>01 · 水星</p>
+              <h3>小小的、坑坑洞洞的</h3>
+              <span>水星看起來很像一顆佈滿撞擊坑的岩石球，因為它是很靠近太陽的岩石行星。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e001545" target="_blank" rel="noreferrer">NASA「False Color View of Mercury」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA01371/PIA01371~orig.jpg"
+              alt="NASA 的木星照片"
+            />
+            <div class="photo-copy">
+              <p>02 · 木星</p>
+              <h3>很大，還有一條一條的雲帶</h3>
+              <span>木星是太陽系最大的行星，表面看到的不是地面，而是厚厚的大氣和雲。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA01371" target="_blank" rel="noreferrer">NASA「Voyager Picture of Jupiter」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA11593/PIA11593~orig.jpg"
+              alt="NASA 的土星環照片"
+            />
+            <div class="photo-copy">
+              <p>03 · 土星</p>
+              <h3>最容易一眼認出的，就是它的環</h3>
+              <span>土星的環很有名，也很適合讓孩子知道：不是每顆行星都長得一樣。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA11593" target="_blank" rel="noreferrer">NASA「Saturnscape After Equinox」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你有沒有認出這些行星？</h2>
+          </div>
+          <p>這堂課最重要的是記住：八大行星都在繞著太陽走，而且每顆都有自己的特色。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十一課完成</p>
+        <h2>現在你知道，地球只是太陽系裡的一顆行星，旁邊還有七位太空鄰居。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次抬頭看夜空時，也可以想想：那些亮點裡，有些就是我們的行星鄰居。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
