@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第九課：一年為什麼會有春夏秋冬，用互動圖與 NASA 圖片認識地球傾斜、公轉和四季。"
+    />
+    <title>一年為什麼會有春夏秋冬｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="seasons.css?v=20260626-space9" />
+    <script src="seasons.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header seasons-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#seasons-play">互動四季</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="seasons-hero">
+        <div class="seasons-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第九課</p>
+          <h1>春夏秋冬不是太陽忽冷忽熱，<em>而是地球斜斜地繞著太陽轉。</em></h1>
+          <p class="hero-intro">
+            這堂課我們要把白天晚上的概念再往前推一步：
+            地球不只會自轉，還會斜斜地公轉，所以一年裡每個地方收到的陽光會改變，
+            就有了春、夏、秋、冬。
+          </p>
+          <div class="seasons-summary">
+            <div><strong>4</strong><span>個季節位置</span></div>
+            <div><strong>5</strong><span>個重點部位</span></div>
+            <div><strong>3</strong><span>張 NASA 圖片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始看四季 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="seasons-hero-visual" aria-hidden="true">
+          <span class="visual-code">TILT · ORBIT · SEASONS</span>
+          <div class="hero-sun"></div>
+          <div class="hero-orbit"></div>
+          <div class="hero-earth earth-top"></div>
+          <div class="hero-earth earth-right"></div>
+          <div class="hero-earth earth-bottom"></div>
+          <div class="hero-earth earth-left"></div>
+          <div class="hero-axis"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">地球斜斜地繞太陽跑，一年就分成四季</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">四季最重要的是這三件事</h2>
+          </div>
+          <p>先記住這三件事，小朋友就不會把四季誤會成「地球一下遠一下近」而已。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-visual tilt-visual"></div>
+            <div class="idea-copy">
+              <p>01 · 地球是斜的</p>
+              <h3>地球的身體沒有站得直直的</h3>
+              <span>地球的自轉軸是傾斜的，所以一年裡有時北半球比較朝向太陽，有時南半球比較朝向太陽。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual orbit-visual"></div>
+            <div class="idea-copy">
+              <p>02 · 地球會繞太陽轉</p>
+              <h3>地球不是停在原地，而是一直公轉</h3>
+              <span>當地球跑到不同位置時，被太陽照到的角度和白天長短就會改變。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual light-visual"></div>
+            <div class="idea-copy">
+              <p>03 · 陽光分配不一樣</p>
+              <h3>哪一邊收到比較直的陽光，通常就比較熱</h3>
+              <span>陽光越直、白天越長，通常越像夏天；陽光越斜、白天越短，通常越像冬天。</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="myth-card">
+          <p class="myth-label">常見誤會</p>
+          <h3>四季不是因為地球忽然跑得很近、又忽然跑得很遠</h3>
+          <p>
+            真正影響最大的，是地球傾斜加上公轉，讓不同半球輪流比較朝向太陽。
+            所以北半球夏天時，南半球反而常常是冬天。
+          </p>
+        </div>
+      </section>
+
+      <section class="play-section" id="seasons-play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動四季</p>
+            <h2 id="play-title">按一下，看地球跑到哪個季節位置</h2>
+          </div>
+          <p>這裡先用北半球的感覺來理解四季，也順便讓孩子看到南半球會剛好相反。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-season="spring">春天</button>
+            <button class="play-button" type="button" data-season="summer">夏天</button>
+            <button class="play-button" type="button" data-season="autumn">秋天</button>
+            <button class="play-button" type="button" data-season="winter">冬天</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="orbit-scene" id="orbit-scene" data-season="spring">
+              <div class="orbit-sun"></div>
+              <div class="orbit-ring"></div>
+              <div class="mini-earth mini-top"></div>
+              <div class="mini-earth mini-right is-active"></div>
+              <div class="mini-earth mini-bottom"></div>
+              <div class="mini-earth mini-left"></div>
+              <div class="focus-earth">
+                <div class="focus-axis"></div>
+                <div class="focus-line north"></div>
+                <div class="focus-line south"></div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">SPRING</p>
+            <h3 id="play-name">春天</h3>
+            <p id="play-text">春分附近時，南北半球收到的陽光比較接近，白天和晚上也差不多長。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">春秋像在中間，南北半球比較平均。</strong>
+            </div>
+            <div class="play-dual">
+              <div>
+                <span>北半球</span>
+                <strong id="north-season">春天</strong>
+              </div>
+              <div>
+                <span>南半球</span>
+                <strong id="south-season">秋天</strong>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動圖解</p>
+            <h2 id="map-title">點點看，這張四季圖到底在說什麼</h2>
+          </div>
+          <p>把太陽、地球傾斜、自轉軸、北半球和公轉路線看懂，四季就會突然變簡單。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-visual">
+            <svg class="map-svg" viewBox="0 0 760 480" role="img" aria-labelledby="map-svg-title map-svg-desc">
+              <title id="map-svg-title">四季互動圖</title>
+              <desc id="map-svg-desc">可點選太陽、公轉路線、地球傾斜、北半球與南半球</desc>
+              <rect x="30" y="30" width="700" height="420" rx="38" fill="#10172a" />
+              <circle cx="182" cy="240" r="58" fill="#ffd766" />
+              <ellipse cx="470" cy="240" rx="170" ry="122" fill="none" stroke="#5b7397" stroke-width="6" stroke-dasharray="10 12" />
+              <circle cx="470" cy="240" r="88" fill="#2b608f" />
+              <path d="M 438 162 L 502 318" stroke="#fbe58b" stroke-width="7" stroke-linecap="round" />
+              <path d="M 470 152 C 455 172 452 187 452 208" fill="none" stroke="#8ce0ff" stroke-width="6" />
+              <path d="M 470 272 C 488 292 494 307 494 326" fill="none" stroke="#8ce0ff" stroke-width="6" />
+              <path d="M 640 240 A 170 122 0 0 1 639 250" fill="none" stroke="#f0f5ff" stroke-width="5" />
+              <polygon points="636,231 658,242 637,254" fill="#f0f5ff" />
+
+              <g class="map-hotspot is-active" data-part="sun">
+                <circle cx="182" cy="156" r="22"></circle>
+                <text x="182" y="162">1</text>
+              </g>
+              <g class="map-hotspot" data-part="orbit">
+                <circle cx="618" cy="182" r="22"></circle>
+                <text x="618" y="188">2</text>
+              </g>
+              <g class="map-hotspot" data-part="tilt">
+                <circle cx="418" cy="144" r="22"></circle>
+                <text x="418" y="150">3</text>
+              </g>
+              <g class="map-hotspot" data-part="north">
+                <circle cx="446" cy="200" r="22"></circle>
+                <text x="446" y="206">4</text>
+              </g>
+              <g class="map-hotspot" data-part="south">
+                <circle cx="516" cy="286" r="22"></circle>
+                <text x="516" y="292">5</text>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="map-card" aria-live="polite">
+            <p class="play-kicker" id="map-kicker">SUN</p>
+            <h3 id="map-name">太陽</h3>
+            <p id="map-text">太陽一直都在照，真正改變的是地球斜斜地轉到哪個位置。</p>
+            <div class="play-note">
+              <span>最簡單怎麼記</span>
+              <strong id="map-memory">先找太陽，再看哪一半比較朝向它。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再用 NASA 圖片把四季連起來</h2>
+          </div>
+          <p>這幾張圖可以讓孩子把「四季的規律」和真正從太空看到的地球樣子連起來。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001175/GSFC_20171208_Archive_e001175~orig.jpg"
+              alt="從太空看到春分夏至秋分冬至的地球日夜分界變化"
+            />
+            <div class="photo-copy">
+              <p>01 · 從太空看春分夏至秋分冬至</p>
+              <h3>日夜分界線真的會跟著季節改變</h3>
+              <span>這張最適合拿來說明：四季不是想像出來的，從太空看就看得到地球被照亮的方式在變。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e001175" target="_blank" rel="noreferrer">NASA「Seeing Equinoxes and Solstices from Space」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001436/GSFC_20171208_Archive_e001436~large.jpg"
+              alt="NASA 夏至時拍到的地球全景"
+            />
+            <div class="photo-copy">
+              <p>02 · 北半球夏至</p>
+              <h3>北半球比較朝向太陽時，常常就是夏天</h3>
+              <span>夏至附近，北半球通常白天比較長，收到的陽光也比較直接，所以常常更熱。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e001436" target="_blank" rel="noreferrer">NASA「Happy Summer Solstice Northern Hemisphere」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001807/GSFC_20171208_Archive_e001807~large.jpg"
+              alt="NASA 冬至時拍到的地球全景"
+            />
+            <div class="photo-copy">
+              <p>03 · 北半球冬至</p>
+              <h3>北半球比較背向太陽時，常常就是冬天</h3>
+              <span>冬至附近，北半球通常白天比較短，陽光也比較斜，所以常常比較冷。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e001807" target="_blank" rel="noreferrer">NASA「Winter Solstice Arrives in Northern Hemisphere」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你有沒有看懂四季是怎麼來的？</h2>
+          </div>
+          <p>這堂課最重要的是記住：四季主要和地球傾斜、公轉、陽光角度有關。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第九課完成</p>
+        <h2>現在你知道，春夏秋冬是地球斜斜地繞著太陽轉，讓不同地方輪流收到不同陽光。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次聽到春分、夏至、秋分、冬至，就會知道那是在說地球和太陽的位置。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
