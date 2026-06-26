@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第十七課：用互動方式分清楚彗星、小行星、流星、隕石的差別。"
+    />
+    <title>彗星、小行星、流星、隕石差在哪裡｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260627-space" />
+    <link rel="stylesheet" href="space-rocks.css?v=20260627-space17" />
+    <script src="space-rocks.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header rocks-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#play">互動比較</a>
+        <a href="#journey">掉下來的路</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="rocks-hero">
+        <div class="rocks-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第十七課</p>
+          <h1>名字看起來很像，<em>但彗星、小行星、流星、隕石其實不是同一件事。</em></h1>
+          <p class="hero-intro">
+            這堂課我們會一次分清楚四個常混在一起的名詞。
+            最簡單的記法是：在太空時、掉下來時、發亮時、落到地上時，名字會不一樣。
+          </p>
+          <div class="rocks-summary">
+            <div><strong>4</strong><span>個常混淆名詞</span></div>
+            <div><strong>1</strong><span>條掉下來的路</span></div>
+            <div><strong>3</strong><span>張 NASA 圖片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始分清楚 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="rocks-hero-visual" aria-hidden="true">
+          <span class="visual-code">COMET · ASTEROID · METEOR · METEORITE</span>
+          <div class="hero-comet"></div>
+          <div class="hero-tail"></div>
+          <div class="hero-asteroid"></div>
+          <div class="hero-meteor"></div>
+          <div class="hero-ground"></div>
+          <div class="hero-meteorite"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">在太空是一種名字，掉進大氣、落到地上又會換名字</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">先記住這三件事</h2>
+          </div>
+          <p>這堂課最重要的不是背定義，而是先抓到「它在哪裡」和「正在發生什麼事」。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-badge">01</div>
+            <h3>彗星常有尾巴</h3>
+            <p>彗星通常是冰和塵的天體，靠近太陽時容易拖出亮亮的尾巴。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">02</div>
+            <h3>小行星是在太空飛的石頭</h3>
+            <p>它還在太空裡時，我們通常叫它小行星，不叫流星。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">03</div>
+            <h3>流星和隕石是不同階段</h3>
+            <p>進大氣發亮時叫流星，真的落到地上後，才叫隕石。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動比較</p>
+            <h2 id="play-title">按一下，一次分清楚四個名字</h2>
+          </div>
+          <p>這區會用最直接的方式比較：它在哪裡、看起來像什麼、什麼時候換名字。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-mode="comet">彗星</button>
+            <button class="play-button" type="button" data-mode="asteroid">小行星</button>
+            <button class="play-button" type="button" data-mode="meteor">流星</button>
+            <button class="play-button" type="button" data-mode="meteorite">隕石</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="play-scene" id="play-scene" data-mode="comet">
+              <div class="scene-space-object" id="scene-object"></div>
+              <div class="scene-tail" id="scene-tail"></div>
+              <div class="scene-streak" id="scene-streak"></div>
+              <div class="scene-ground" id="scene-ground"></div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">COMET</p>
+            <h3 id="play-name">彗星常拖著尾巴</h3>
+            <p id="play-text">彗星是在太空裡的冰塊和塵土天體，靠近太陽時常常會拖出長長的尾巴。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">有尾巴、在太空，常常先想到彗星。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="journey-section" id="journey" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">掉下來的路</p>
+            <h2 id="journey-title">一顆太空石頭，掉下來時名字會怎麼變</h2>
+          </div>
+          <p>這條路很重要，因為孩子常常把小行星、流星、隕石全部叫成同一種。</p>
+        </div>
+
+        <div class="journey-layout">
+          <div class="journey-track">
+            <button class="journey-stop is-active" type="button" data-stage="space"><span>1</span><b>還在太空</b></button>
+            <button class="journey-stop" type="button" data-stage="air"><span>2</span><b>進入大氣</b></button>
+            <button class="journey-stop" type="button" data-stage="ground"><span>3</span><b>落到地上</b></button>
+          </div>
+
+          <aside class="journey-card" aria-live="polite">
+            <p class="play-kicker" id="journey-kicker">SPACE</p>
+            <h3 id="journey-name">還在太空時，不叫隕石</h3>
+            <p id="journey-text">一塊石頭還在太空飛時，通常會先被理解成小天體，不會先叫隕石。</p>
+            <div class="journey-tags" id="journey-tags">
+              <span>還在太空</span>
+              <span>還沒落地</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再看三張真的 NASA 圖片</h2>
+          </div>
+          <p>真實照片很適合讓孩子把四個名字和真實畫面連在一起。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA19102/PIA19102~orig.jpg"
+              alt="NASA 彗星照片"
+            />
+            <div class="photo-copy">
+              <p>01 · 彗星</p>
+              <h3>拖著尾巴的天體，很適合當彗星代表</h3>
+              <span>這張很適合讓孩子記住：在太空裡拖著亮尾巴的，很常就是彗星。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA19102" target="_blank" rel="noreferrer">NASA「NEOWISE Images Comet C/2014 Q2 Lovejoy」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/NHQ202108110003/NHQ202108110003~orig.jpg"
+              alt="NASA 流星雨照片"
+            />
+            <div class="photo-copy">
+              <p>02 · 流星</p>
+              <h3>在天空一閃而過的亮痕，就是流星這種感覺</h3>
+              <span>這張可以幫孩子把「流星」和「進入大氣發亮」連起來。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-NHQ202108110003" target="_blank" rel="noreferrer">NASA「Perseid Meteor Shower」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA03490/PIA03490~orig.jpg"
+              alt="NASA 隕石坑照片"
+            />
+            <div class="photo-copy">
+              <p>03 · 隕石留下的線索</p>
+              <h3>真的撞到地面時，就可能留下坑洞和掉下來的石頭</h3>
+              <span>這張很適合幫孩子理解：落到地上後，故事就從流星變成隕石或撞擊痕跡。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA03490" target="_blank" rel="noreferrer">NASA「Meteor Crater, AZ」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你分得清楚這四個名字了嗎？</h2>
+          </div>
+          <p>這堂課最重要的是記住：它在哪裡、是不是在發亮、是不是已經落地。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十七課完成</p>
+        <h2>現在你知道，彗星、小行星、流星、隕石不是四個亂取的名字，而是四種不同情況。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次看到流星或彗星的新聞時，你會更快知道它到底是哪一種太空小客人。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
