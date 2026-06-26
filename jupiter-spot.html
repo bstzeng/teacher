@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第十六課：用互動方式認識木星的大紅斑是什麼，知道它是一個很大的風暴。"
+    />
+    <title>木星的大紅斑是什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260627-space" />
+    <link rel="stylesheet" href="jupiter-spot.css?v=20260627-space16" />
+    <script src="jupiter-spot.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header spot-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#play">互動風暴</a>
+        <a href="#map">木星圖解</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="spot-hero">
+        <div class="spot-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第十六課</p>
+          <h1>木星上有一塊超有名的紅紅橢圓，<em>它其實是一個超大的風暴。</em></h1>
+          <p class="hero-intro">
+            這堂課我們來認識木星的大紅斑。它不是貼紙，也不是洞，
+            而是木星大氣裡一個很大、轉很久的風暴區。
+          </p>
+          <div class="spot-summary">
+            <div><strong>1</strong><span>個超有名風暴</span></div>
+            <div><strong>3</strong><span>個關鍵概念</span></div>
+            <div><strong>3</strong><span>張 NASA 圖片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始認識大紅斑 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="spot-hero-visual" aria-hidden="true">
+          <span class="visual-code">JUPITER · STORM · RED SPOT</span>
+          <div class="hero-jupiter"></div>
+          <div class="hero-band band-one"></div>
+          <div class="hero-band band-two"></div>
+          <div class="hero-band band-three"></div>
+          <div class="hero-spot"></div>
+          <div class="hero-swirl one"></div>
+          <div class="hero-swirl two"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">那塊紅紅的不是洞，而是一直轉的大風暴</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">先記住這三件事</h2>
+          </div>
+          <p>這堂課最重要的是先知道：大紅斑是風暴，不是固體、不是火山、也不是缺一塊。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-badge">01</div>
+            <h3>它是風暴</h3>
+            <p>大紅斑是木星大氣裡一直轉的風暴，所以看起來像一個大大的眼睛。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">02</div>
+            <h3>它在木星表面雲層區</h3>
+            <p>我們看到的不是岩石地面，而是木星外面的雲和氣體。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">03</div>
+            <h3>它很容易被認出</h3>
+            <p>因為它紅紅的、橢圓圓的，所以很多人一看木星就會先找它。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動風暴</p>
+            <h2 id="play-title">按一下，看看大紅斑可以怎麼理解</h2>
+          </div>
+          <p>先用孩子容易懂的畫面，把位置、旋轉、顏色和風暴感連在一起。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-mode="place">它在木星哪裡</button>
+            <button class="play-button" type="button" data-mode="storm">它是一個風暴</button>
+            <button class="play-button" type="button" data-mode="swirl">它一直在轉</button>
+            <button class="play-button" type="button" data-mode="spot">它為什麼很顯眼</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="play-scene" id="play-scene" data-mode="place">
+              <div class="scene-jupiter"></div>
+              <div class="scene-band one"></div>
+              <div class="scene-band two"></div>
+              <div class="scene-band three"></div>
+              <div class="scene-red-spot" id="scene-red-spot"></div>
+              <div class="scene-wind" id="scene-wind"></div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">PLACE</p>
+            <h3 id="play-name">先找到它的位置</h3>
+            <p id="play-text">大紅斑待在木星外面的雲帶區，看起來像木星身上一塊特別醒目的紅色橢圓。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">先看到紅紅的那塊，再記住它是風暴。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" id="map" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">木星圖解</p>
+            <h2 id="map-title">點點看，木星和大紅斑在說什麼</h2>
+          </div>
+          <p>只要把木星本體、雲帶、大紅斑和風的方向串起來，這課就會很清楚。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-visual">
+            <svg class="map-svg" viewBox="0 0 760 480" role="img" aria-labelledby="map-svg-title map-svg-desc">
+              <title id="map-svg-title">木星大紅斑互動圖</title>
+              <desc id="map-svg-desc">可點選木星本體、雲帶、大紅斑、旋轉風暴和顯眼位置</desc>
+              <rect x="30" y="30" width="700" height="420" rx="38" fill="#10172a" />
+              <circle cx="368" cy="240" r="146" fill="#d1a57a" />
+              <ellipse cx="368" cy="176" rx="124" ry="18" fill="#e5c8aa" opacity="0.95" />
+              <ellipse cx="368" cy="212" rx="132" ry="20" fill="#c98f63" opacity="0.95" />
+              <ellipse cx="368" cy="250" rx="142" ry="18" fill="#e7d2bf" opacity="0.95" />
+              <ellipse cx="368" cy="286" rx="132" ry="20" fill="#b8734b" opacity="0.95" />
+              <ellipse cx="472" cy="258" rx="52" ry="34" fill="#c15d43" />
+              <path d="M 432 258 C 450 238 485 238 505 258" fill="none" stroke="#efb29d" stroke-width="5" stroke-linecap="round" />
+              <path d="M 505 258 C 488 278 452 278 432 258" fill="none" stroke="#efb29d" stroke-width="5" stroke-linecap="round" />
+
+              <g class="map-hotspot is-active" data-part="planet">
+                <circle cx="304" cy="104" r="22"></circle>
+                <text x="304" y="110">1</text>
+              </g>
+              <g class="map-hotspot" data-part="bands">
+                <circle cx="214" cy="212" r="22"></circle>
+                <text x="214" y="218">2</text>
+              </g>
+              <g class="map-hotspot" data-part="spot">
+                <circle cx="540" cy="258" r="22"></circle>
+                <text x="540" y="264">3</text>
+              </g>
+              <g class="map-hotspot" data-part="storm">
+                <circle cx="472" cy="198" r="22"></circle>
+                <text x="472" y="204">4</text>
+              </g>
+              <g class="map-hotspot" data-part="eye">
+                <circle cx="604" cy="156" r="22"></circle>
+                <text x="604" y="162">5</text>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="map-card" aria-live="polite">
+            <p class="play-kicker" id="map-kicker">PLANET</p>
+            <h3 id="map-name">木星本體</h3>
+            <p id="map-text">我們看到的木星外表不是岩石地面，而是厚厚的大氣和雲帶。</p>
+            <div class="play-note">
+              <span>最簡單怎麼記</span>
+              <strong id="map-memory">先記住：木星外面看到的是雲。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再看三張真的 NASA 木星照片</h2>
+          </div>
+          <p>真實照片很適合讓孩子把示意圖和真正的木星大紅斑連在一起。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000103/GSFC_20171208_Archive_e000103~large.jpg"
+              alt="NASA 木星整體照片"
+            />
+            <div class="photo-copy">
+              <p>01 · 先看整顆木星</p>
+              <h3>先找到一條一條的雲帶，再找紅紅的大紅斑</h3>
+              <span>這張很適合先建立全貌：木星本來就有很多雲帶，大紅斑就待在其中一帶。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000103" target="_blank" rel="noreferrer">NASA「Hubble Takes Close-up Portrait of Jupiter」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001093/GSFC_20171208_Archive_e001093~orig.jpg"
+              alt="NASA 木星大紅斑照片"
+            />
+            <div class="photo-copy">
+              <p>02 · 大紅斑很顯眼</p>
+              <h3>它像一顆紅紅的大眼睛，其實是風暴區</h3>
+              <span>這張很適合讓孩子直接把「大紅斑」和「大風暴」畫上等號。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e001093" target="_blank" rel="noreferrer">NASA「Hubble Shows Jupiter's Great Red Spot is Smaller than Ever」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000537/GSFC_20171208_Archive_e000537~orig.jpg"
+              alt="NASA 木星大紅斑與雲帶照片"
+            />
+            <div class="photo-copy">
+              <p>03 · 風暴和周圍雲帶</p>
+              <h3>大紅斑不是孤零零一塊，而是和周圍雲帶一起變化</h3>
+              <span>這張可以幫孩子理解：大紅斑不是貼上去的圖案，而是在木星大氣裡活動的一部分。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000537" target="_blank" rel="noreferrer">NASA「Planetary Portrait Captures New Changes in Jupiter's Great Red Spot」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你記住大紅斑的重點了嗎？</h2>
+          </div>
+          <p>這堂課最重要的是記住：大紅斑是一個超大的風暴，不是洞，也不是硬硬的一塊地面。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十六課完成</p>
+        <h2>現在你知道，木星的大紅斑不是洞，而是一個很大、很有名、會轉動的風暴區。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次看到木星時，你就會知道那顆紅紅的大眼睛，其實是一場超大的風暴。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

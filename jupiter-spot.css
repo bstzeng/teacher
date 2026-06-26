@@ -1,0 +1,469 @@
+.spot-hero,
+.idea-section,
+.play-section,
+.map-section,
+.photos-section,
+.quiz-section,
+.course-finish {
+  width: min(1160px, calc(100vw - 40px));
+  margin: 0 auto;
+}
+
+.spot-hero {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 32px;
+  align-items: center;
+  padding: 48px 0 28px;
+}
+
+.spot-hero-copy h1,
+.section-heading h2,
+.play-card h3,
+.map-card h3,
+.course-finish h2 {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+}
+
+.hero-intro,
+.section-heading p,
+.idea-card p,
+.play-card p,
+.map-card p,
+.photo-copy span,
+.quiz-card p,
+.visual-caption {
+  font-size: 1.12rem;
+  line-height: 1.8;
+}
+
+.spot-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.spot-summary div,
+.idea-card,
+.play-buttons,
+.play-stage,
+.play-card,
+.map-card,
+.photo-card,
+.quiz-card,
+.course-finish,
+.map-visual {
+  border: 1px solid rgba(117, 135, 201, 0.16);
+  box-shadow: 0 20px 50px rgba(14, 22, 43, 0.08);
+}
+
+.spot-summary div {
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244,247,255,0.96));
+  padding: 18px;
+  text-align: center;
+}
+
+.spot-summary strong {
+  display: block;
+  font-size: 2rem;
+  color: #21356f;
+}
+
+.spot-hero-visual {
+  position: relative;
+  min-height: 520px;
+  border-radius: 36px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #111a35 0%, #1a2a54 100%);
+}
+
+.visual-code {
+  position: absolute;
+  top: 24px;
+  left: 26px;
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  color: rgba(222, 231, 255, 0.72);
+}
+
+.hero-jupiter,
+.scene-jupiter {
+  position: absolute;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #e7d2b6 0%, #c99b6f 30%, #e2c3a2 50%, #b77248 72%, #e8d7be 100%);
+  box-shadow: inset -16px -18px 30px rgba(0,0,0,0.2), 0 12px 26px rgba(0,0,0,0.18);
+}
+
+.hero-jupiter {
+  width: 220px;
+  height: 220px;
+  left: 146px;
+  top: 134px;
+}
+
+.hero-band,
+.scene-band {
+  position: absolute;
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
+.hero-band.band-one {
+  width: 190px;
+  height: 24px;
+  left: 162px;
+  top: 192px;
+  background: #e7d2bf;
+}
+
+.hero-band.band-two {
+  width: 210px;
+  height: 28px;
+  left: 152px;
+  top: 234px;
+  background: #c8895f;
+}
+
+.hero-band.band-three {
+  width: 200px;
+  height: 24px;
+  left: 158px;
+  top: 282px;
+  background: #ebd8ca;
+}
+
+.hero-spot {
+  position: absolute;
+  width: 84px;
+  height: 54px;
+  left: 274px;
+  top: 244px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 35% 35%, #d67b61 0%, #bb533d 65%, #933224 100%);
+}
+
+.hero-swirl {
+  position: absolute;
+  border: 4px solid rgba(242, 194, 174, 0.75);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 999px;
+}
+
+.hero-swirl.one {
+  width: 72px;
+  height: 44px;
+  left: 278px;
+  top: 250px;
+  transform: rotate(12deg);
+}
+
+.hero-swirl.two {
+  width: 44px;
+  height: 28px;
+  left: 296px;
+  top: 258px;
+  transform: rotate(-20deg);
+}
+
+.hero-star {
+  position: absolute;
+  font-size: 1.5rem;
+  color: rgba(255,255,255,0.9);
+}
+
+.hero-star.one { right: 86px; top: 72px; }
+.hero-star.two { left: 120px; top: 96px; }
+
+.visual-caption {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  max-width: 280px;
+  color: #edf3ff;
+}
+
+.idea-section,
+.play-section,
+.map-section,
+.photos-section,
+.quiz-section,
+.course-finish {
+  padding: 42px 0 12px;
+}
+
+.idea-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.idea-card,
+.play-card,
+.map-card,
+.quiz-card,
+.course-finish {
+  border-radius: 30px;
+  background: rgba(255,255,255,0.98);
+  padding: 26px;
+}
+
+.idea-badge {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #ffd173, #ff9460);
+  color: #1d2442;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.idea-card h3,
+.photo-copy h3 {
+  font-size: 1.48rem;
+  margin-bottom: 10px;
+}
+
+.play-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr) 340px;
+  gap: 18px;
+}
+
+.play-buttons {
+  border-radius: 28px;
+  background: #f6f8ff;
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.play-button {
+  border: none;
+  border-radius: 18px;
+  padding: 16px 18px;
+  text-align: left;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #21356f;
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.play-button.is-active,
+.play-button:hover {
+  background: linear-gradient(135deg, #21356f, #435fc0);
+  color: #fff;
+}
+
+.play-stage,
+.map-visual {
+  border-radius: 30px;
+  background: linear-gradient(180deg, #131d39 0%, #1b2a51 100%);
+  padding: 18px;
+}
+
+.play-scene {
+  position: relative;
+  min-height: 430px;
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.scene-jupiter {
+  width: 200px;
+  height: 200px;
+  left: 138px;
+  top: 136px;
+}
+
+.scene-band.one {
+  width: 170px;
+  height: 22px;
+  left: 152px;
+  top: 188px;
+  background: #e7d2bf;
+}
+
+.scene-band.two {
+  width: 188px;
+  height: 26px;
+  left: 144px;
+  top: 226px;
+  background: #c8895f;
+}
+
+.scene-band.three {
+  width: 180px;
+  height: 22px;
+  left: 148px;
+  top: 272px;
+  background: #ebd8ca;
+}
+
+.scene-red-spot {
+  position: absolute;
+  width: 74px;
+  height: 48px;
+  left: 250px;
+  top: 234px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 35% 35%, #d67b61 0%, #bb533d 65%, #933224 100%);
+  box-shadow: 0 0 0 6px rgba(212, 124, 96, 0.15);
+}
+
+.scene-wind {
+  position: absolute;
+  left: 240px;
+  top: 224px;
+  width: 100px;
+  height: 68px;
+  border: 4px solid rgba(242, 194, 174, 0.75);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 999px;
+  opacity: 0.4;
+}
+
+.play-kicker,
+.section-kicker,
+.photo-copy p:first-child,
+#quiz-progress {
+  font-size: 1rem;
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 18px;
+}
+
+.map-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.map-hotspot circle {
+  fill: rgba(75, 104, 193, 0.9);
+  stroke: #fff;
+  stroke-width: 3;
+  cursor: pointer;
+}
+
+.map-hotspot text {
+  fill: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.map-hotspot.is-active circle,
+.map-hotspot:hover circle {
+  fill: #ff9a55;
+}
+
+.photo-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.photo-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  overflow: hidden;
+  border-radius: 34px;
+  background: #fff;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+  background: #0f1831;
+}
+
+.photo-copy {
+  padding: 26px;
+}
+
+.quiz-card {
+  max-width: 840px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.98);
+  padding: 26px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.quiz-option {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  padding: 18px 20px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: #edf3ff;
+  color: #21356f;
+  cursor: pointer;
+}
+
+.quiz-option:hover:not(:disabled) { background: #dfe8ff; }
+.quiz-option.correct { background: #dff7e7; color: #1f6a3c; }
+.quiz-option.wrong { background: #ffe3df; color: #b14e42; }
+#quiz-feedback { min-height: 30px; font-weight: 700; font-size: 0.98rem; }
+
+.course-finish {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.course-finish p {
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  color: #5f72af;
+}
+
+.course-finish a {
+  display: inline-flex;
+  margin-top: 10px;
+  color: #233975;
+  font-weight: 800;
+  font-size: 1.12rem;
+}
+
+@media (max-width: 1080px) {
+  .spot-hero,
+  .play-layout,
+  .map-layout,
+  .photo-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .idea-grid,
+  .spot-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .spot-hero-visual,
+  .play-scene {
+    min-height: 380px;
+  }
+
+  .photo-card img { min-height: 250px; }
+}
