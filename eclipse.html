@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第七課：月蝕和日蝕是怎麼發生的，用互動圖與真實照片認識太陽、地球、月亮排成一直線的情況。"
+    />
+    <title>月蝕和日蝕是怎麼發生的｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="eclipse.css?v=20260626-space7" />
+    <script src="eclipse.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header eclipse-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#play">互動比較</a>
+        <a href="#photos">真實照片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="eclipse-hero">
+        <div class="eclipse-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第七課</p>
+          <h1>月蝕和日蝕看起來很厲害，<em>其實就是誰剛好站在中間。</em></h1>
+          <p class="hero-intro">
+            這堂課我們把最容易搞混的兩個現象拆開來看：
+            日蝕是月亮擋住太陽，月蝕是地球的影子落到月亮上。
+          </p>
+          <div class="eclipse-summary">
+            <div><strong>2</strong><span>種主要蝕象</span></div>
+            <div><strong>4</strong><span>種排列情況</span></div>
+            <div><strong>3</strong><span>張 NASA 圖片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始看蝕象 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="eclipse-hero-visual" aria-hidden="true">
+          <span class="visual-code">SUN · EARTH · MOON · SHADOW</span>
+          <div class="hero-sun"></div>
+          <div class="hero-moon"></div>
+          <div class="hero-earth"></div>
+          <div class="hero-shadow"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <div class="hero-star three">✦</div>
+          <p class="visual-caption">重點就是：誰擋住了誰</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">日蝕和月蝕，最重要的是先分清楚這三件事</h2>
+          </div>
+          <p>如果先記住「誰在中間、誰被遮住、在哪裡看」，就不太會搞混了。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-visual solar-visual"></div>
+            <div class="idea-copy">
+              <p>01 · 日蝕</p>
+              <h3>月亮跑到太陽前面</h3>
+              <span>從地球看出去，月亮剛好擋住太陽，所以白天的太陽看起來像被咬掉。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual lunar-visual"></div>
+            <div class="idea-copy">
+              <p>02 · 月蝕</p>
+              <h3>地球的影子落到月亮上</h3>
+              <span>這次不是月亮擋太陽，而是月亮走進地球的影子裡，所以看起來變暗、變紅。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual line-visual"></div>
+            <div class="idea-copy">
+              <p>03 · 都要排很直</p>
+              <h3>太陽、地球、月亮要排得很接近一直線</h3>
+              <span>如果沒有排得夠準，就不會真的發生蝕象，所以不是每個月都會有。</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動比較</p>
+            <h2 id="play-title">按一下，看看到底是誰站在中間</h2>
+          </div>
+          <p>這裡用最簡單的排法，幫小朋友分清楚：日蝕、月蝕、沒排準、只是普通排排站。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-mode="solar">日蝕</button>
+            <button class="play-button" type="button" data-mode="lunar">月蝕</button>
+            <button class="play-button" type="button" data-mode="almost">差一點點</button>
+            <button class="play-button" type="button" data-mode="normal">普通排排站</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="play-scene" id="play-scene" data-mode="solar">
+              <div class="scene-sun"></div>
+              <div class="scene-earth"></div>
+              <div class="scene-moon" id="scene-moon"></div>
+              <div class="scene-shadow" id="scene-shadow"></div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">SOLAR ECLIPSE</p>
+            <h3 id="play-name">日蝕</h3>
+            <p id="play-text">月亮站到太陽和地球中間，從地球上看會覺得太陽被遮住一部分或大部分。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">日蝕是月亮擋太陽。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動地圖</p>
+            <h2 id="map-title">點點看，蝕象圖裡每個角色在做什麼</h2>
+          </div>
+          <p>只要搞懂太陽、地球、月亮和影子的工作，蝕象就不會再像魔術一樣難懂。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-visual">
+            <svg class="map-svg" viewBox="0 0 760 480" role="img" aria-labelledby="map-svg-title map-svg-desc">
+              <title id="map-svg-title">蝕象互動圖</title>
+              <desc id="map-svg-desc">可點選太陽、地球、月亮、影子和一直線排列</desc>
+              <rect x="30" y="30" width="700" height="420" rx="38" fill="#09111d" />
+              <circle cx="118" cy="240" r="54" fill="#ffd977" />
+              <circle cx="366" cy="240" r="50" fill="#2f5d8a" stroke="#8fd4ff" stroke-width="8" />
+              <circle cx="560" cy="180" r="28" fill="#ece8e1" stroke="#a7a19b" stroke-width="5" />
+              <polygon points="416,214 640,170 640,310 416,266" fill="rgba(31,43,58,.65)" />
+
+              <g class="map-hotspot is-active" data-part="sun">
+                <circle cx="118" cy="164" r="22"></circle>
+                <text x="118" y="170">1</text>
+              </g>
+              <g class="map-hotspot" data-part="earth">
+                <circle cx="366" cy="164" r="22"></circle>
+                <text x="366" y="170">2</text>
+              </g>
+              <g class="map-hotspot" data-part="moon">
+                <circle cx="596" cy="144" r="22"></circle>
+                <text x="596" y="150">3</text>
+              </g>
+              <g class="map-hotspot" data-part="shadow">
+                <circle cx="520" cy="294" r="22"></circle>
+                <text x="520" y="300">4</text>
+              </g>
+              <g class="map-hotspot" data-part="line">
+                <circle cx="276" cy="98" r="22"></circle>
+                <text x="276" y="104">5</text>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="map-card" aria-live="polite">
+            <p class="play-kicker" id="map-kicker">SUN</p>
+            <h3 id="map-name">太陽</h3>
+            <p id="map-text">太陽像一個超亮的大燈，蝕象其實就是誰把這盞燈的光擋住了。</p>
+            <div class="play-note">
+              <span>最簡單怎麼記</span>
+              <strong id="map-memory">有光，才會有影子，也才會有蝕象。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實照片</p>
+            <h2 id="photos-title">再看三張真的 NASA 圖片</h2>
+          </div>
+          <p>這幾張圖能幫小朋友把「示意圖」和「真實天空」連在一起看。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000011/GSFC_20171208_Archive_e000011~large.jpg"
+              alt="NASA 拍攝的日蝕"
+            />
+            <div class="photo-copy">
+              <p>01 · 真實日蝕</p>
+              <h3>白天的太陽真的會像被咬掉一塊</h3>
+              <span>這張照片很適合讓小朋友直接對上概念：月亮跑到前面時，太陽就會被遮住。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000011" target="_blank" rel="noreferrer">NASA「Solar Eclipse from NASA Goddard」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GRC-2025-C-01605/GRC-2025-C-01605~large.jpg"
+              alt="NASA 拍攝的月蝕血月合成圖"
+            />
+            <div class="photo-copy">
+              <p>02 · 真實月蝕</p>
+              <h3>月亮走進地球影子裡時，會慢慢變暗、變紅</h3>
+              <span>這張圖可以讓小朋友看到，月蝕不是一下子發生，而是會慢慢一格一格變化。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GRC-2025-C-01605" target="_blank" rel="noreferrer">NASA「Total Lunar Eclipse & Blood Moon 2025」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA21028/PIA21028~orig.jpg"
+              alt="太陽前方同時看到地球和月亮的蝕象示意"
+            />
+            <div class="photo-copy">
+              <p>03 · 影子和遮擋的概念</p>
+              <h3>這張圖很適合講：誰站在前面，誰就會擋住後面</h3>
+              <span>雖然這是從不同角度拍的特別畫面，但很適合幫小朋友理解「遮住」這件事本身。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA21028" target="_blank" rel="noreferrer">NASA「Double Eclipse」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你有沒有分清楚日蝕和月蝕？</h2>
+          </div>
+          <p>這堂課最重要的就是記住兩句：日蝕是月亮擋太陽，月蝕是地球影子落到月亮上。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第七課完成</p>
+        <h2>現在你知道，日蝕和月蝕其實不是魔法，而是太陽、地球、月亮剛好排成一直線。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次看到蝕象新聞，就會知道到底是誰站到了中間。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
