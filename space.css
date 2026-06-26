@@ -41,6 +41,7 @@
 .course-list { display:grid; gap:12px; }
 .course-card { display:grid; grid-template-columns:92px 1fr auto 170px; align-items:center; gap:30px; min-height:170px; padding:28px 30px; color:var(--ink); background:var(--paper); }
 .course-rocket { background:#e5e2ef; }
+.course-astronaut { background:#e5edf2; }
 .course-number { display:flex; align-items:center; gap:15px; }
 .course-number span { color:var(--orange-dark); font-family:"Newsreader",serif; font-size:31px; font-weight:700; }
 .course-number i { width:30px; height:1px; background:var(--ink); }
