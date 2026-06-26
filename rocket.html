@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="慢慢學太空主題第一課：火箭怎麼升空，用最簡單的方式認識推力、倒數、點火和分段。"
+      content="慢慢學太空主題第一課：火箭怎麼升空，用大量圖解與互動認識倒數、點火、推力、分段與火箭主要部位。"
     />
     <title>火箭怎麼升空｜慢慢學</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css?v=20260626-space" />
-    <link rel="stylesheet" href="rocket.css?v=20260626-space" />
+    <link rel="stylesheet" href="rocket.css?v=20260626-remake" />
     <script src="rocket.js" defer></script>
   </head>
   <body>
@@ -24,9 +24,9 @@
         <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
       </a>
       <nav class="desktop-nav" aria-label="課程選單">
-        <a href="#basics">先認識</a>
-        <a href="#steps">看流程</a>
-        <a href="#simulator">互動觀察</a>
+        <a href="#launch-map">升空大圖</a>
+        <a href="#timeline">起飛流程</a>
+        <a href="#parts">火箭構造</a>
         <a href="#quiz">小挑戰</a>
       </nav>
       <a class="header-cta lesson-home" href="space.html">
@@ -39,118 +39,235 @@
         <div class="rocket-hero-copy">
           <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
           <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第一課</p>
-          <h1>火箭不是突然飛起來，<em>而是靠很強很強的往下噴，才把自己往上推。</em></h1>
+          <h1>火箭不是忽然飛起來，<em>而是靠超強的往下噴，把自己往上推。</em></h1>
           <p class="hero-intro">
-            火箭升空看起來像魔法，其實是推力在工作。這堂課我們先不講很難的公式，
-            只先記住火箭怎麼倒數、點火、離開地面，還有為什麼它需要那麼大的力氣。
+            這堂課我們會用很多圖和互動，一起看懂火箭起飛前後到底發生了什麼。
+            你會看到發射台、火焰、煙霧、分段，還會知道火箭裡面哪些地方最重要。
           </p>
           <div class="rocket-summary">
-            <div><strong>3</strong><span>個主要觀念</span></div>
-            <div><strong>4</strong><span>段起飛流程</span></div>
-            <div><strong>5</strong><span>題小測驗</span></div>
+            <div><strong>4</strong><span>張主要圖解</span></div>
+            <div><strong>4</strong><span>段升空流程</span></div>
+            <div><strong>5</strong><span>題小挑戰</span></div>
           </div>
-          <a class="button button-primary" href="#basics">
+          <a class="button button-primary" href="#launch-map">
             開始看火箭起飛 <span aria-hidden="true">↓</span>
           </a>
         </div>
-        <div class="rocket-hero-visual" aria-hidden="true">
-          <span class="visual-code">COUNTDOWN · IGNITION · LIFT-OFF</span>
-          <div class="sky-ring ring-one"></div>
-          <div class="sky-ring ring-two"></div>
-          <div class="launch-rocket"></div>
-          <div class="launch-window"></div>
-          <div class="launch-fin left"></div>
-          <div class="launch-fin right"></div>
-          <div class="launch-fire"></div>
-          <div class="launch-smoke"></div>
-          <div class="pad"></div>
-          <div class="launch-tower"></div>
-          <div class="spark spark-a">✦</div>
-          <div class="spark spark-b">✦</div>
-          <p class="visual-caption">先往下噴，才會往上飛</p>
+
+        <div class="hero-stage" aria-hidden="true">
+          <div class="hero-sky"></div>
+          <div class="hero-cloud hero-cloud-one"></div>
+          <div class="hero-cloud hero-cloud-two"></div>
+          <div class="hero-ring hero-ring-one"></div>
+          <div class="hero-ring hero-ring-two"></div>
+          <div class="hero-tower"></div>
+          <div class="hero-rocket">
+            <div class="hero-window"></div>
+            <div class="hero-fin left"></div>
+            <div class="hero-fin right"></div>
+            <div class="hero-fire"></div>
+            <div class="hero-smoke"></div>
+          </div>
+          <div class="hero-ground"></div>
+          <span class="hero-note">COUNTDOWN → IGNITION → LIFT-OFF</span>
         </div>
       </section>
 
-      <section class="basics-section" id="basics" aria-labelledby="basics-title">
+      <section class="launch-map-section" id="launch-map" aria-labelledby="launch-map-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">先認識</p>
-            <h2 id="basics-title">火箭升空前，先記住哪三件事？</h2>
+            <p class="section-kicker">升空大圖</p>
+            <h2 id="launch-map-title">先用大圖看懂火箭起飛時最重要的四件事</h2>
           </div>
-          <p>不用先記很多名詞，先記住：需要燃料、需要很大的往下噴、而且通常不是一節到底。</p>
+          <p>每張圖都只講一個重點，讓小朋友先看懂「發射台、火焰、推力、分段」這些關鍵畫面。</p>
         </div>
-        <div class="basics-layout">
-          <div class="basic-buttons" role="tablist" aria-label="選擇火箭重點">
-            <button class="basic-button is-active" type="button" data-basic="fuel">需要很多燃料</button>
-            <button class="basic-button" type="button" data-basic="thrust">需要很大的推力</button>
-            <button class="basic-button" type="button" data-basic="stage">常常分成好幾段</button>
+
+        <div class="launch-grid">
+          <article class="launch-card">
+            <div class="launch-visual visual-pad">
+              <div class="mini-tower"></div>
+              <div class="mini-rocket"></div>
+              <div class="mini-ground"></div>
+            </div>
+            <div class="launch-copy">
+              <p>01 · 發射台</p>
+              <h3>火箭先站在發射台上</h3>
+              <span>升空前不會亂動。大家會先檢查很多事情，確定這次真的可以出發。</span>
+            </div>
+          </article>
+
+          <article class="launch-card">
+            <div class="launch-visual visual-fire">
+              <div class="fire-rocket"></div>
+              <div class="fire-flame"></div>
+              <div class="fire-cloud"></div>
+            </div>
+            <div class="launch-copy">
+              <p>02 · 點火</p>
+              <h3>火箭底下先噴出超大的火和氣</h3>
+              <span>這就是推力開始工作的畫面。先很用力往下噴，火箭才有機會往上走。</span>
+            </div>
+          </article>
+
+          <article class="launch-card">
+            <div class="launch-visual visual-up">
+              <div class="up-trail"></div>
+              <div class="up-rocket"></div>
+              <div class="up-cloud"></div>
+            </div>
+            <div class="launch-copy">
+              <p>03 · 升空</p>
+              <h3>推力夠大，火箭才真的離開地面</h3>
+              <span>不是點火就一定飛，要大到能把整支火箭往上推，它才會慢慢離開發射台。</span>
+            </div>
+          </article>
+
+          <article class="launch-card">
+            <div class="launch-visual visual-stage">
+              <div class="stage-rocket top"></div>
+              <div class="stage-rocket bottom"></div>
+              <div class="stage-spark"></div>
+            </div>
+            <div class="launch-copy">
+              <p>04 · 分段</p>
+              <h3>用完的部分可以分開</h3>
+              <span>很多火箭不會整支都一起飛到底。把用完的部分分掉，剩下的就能比較輕。</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="timeline-section" id="timeline" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動流程</p>
+            <h2 id="timeline-title">火箭怎麼一步一步起飛？</h2>
           </div>
-          <aside class="basic-card" aria-live="polite">
-            <p class="basic-kicker" id="basic-kicker">FUEL FIRST</p>
-            <h3 id="basic-title">需要很多燃料</h3>
-            <p id="basic-text">火箭要把自己和太空船一起往上推，所以需要帶很多燃料。你可以把它想成一支要用超大力跳起來的巨大機器。</p>
-            <div class="basic-note">
-              <div><span>小朋友版記法</span><strong id="basic-memory">火箭不是自己會飛，而是要先帶著很多能量出門。</strong></div>
+          <p>按不同步驟，畫面會一起改變。這一區會同時看到火箭位置、火焰大小和煙霧變化。</p>
+        </div>
+
+        <div class="timeline-layout">
+          <div class="timeline-buttons">
+            <button class="timeline-button is-active" type="button" data-step="countdown">倒數準備</button>
+            <button class="timeline-button" type="button" data-step="ignition">點火噴發</button>
+            <button class="timeline-button" type="button" data-step="liftoff">離開地面</button>
+            <button class="timeline-button" type="button" data-step="stage">分段前進</button>
+          </div>
+
+          <div class="timeline-stage">
+            <div class="timeline-scene" id="timeline-scene" data-scene="countdown">
+              <div class="scene-tower"></div>
+              <div class="scene-pad"></div>
+              <div class="scene-smoke" id="scene-smoke"></div>
+              <div class="scene-rocket" id="scene-rocket">
+                <div class="scene-window"></div>
+                <div class="scene-fin left"></div>
+                <div class="scene-fin right"></div>
+                <div class="scene-fire" id="scene-fire"></div>
+              </div>
+              <div class="scene-stage-piece" id="scene-stage-piece"></div>
+            </div>
+          </div>
+
+          <aside class="timeline-card" aria-live="polite">
+            <p class="timeline-kicker" id="timeline-kicker">COUNTDOWN</p>
+            <h3 id="timeline-name">倒數準備</h3>
+            <p id="timeline-text">火箭先站在發射台上，大家要做很多最後確認，所以才會從 10 一路倒數。</p>
+            <div class="timeline-note">
+              <span>一句記住</span>
+              <strong id="timeline-memory">倒數不是表演，是最後一次確認真的準備好了沒。</strong>
             </div>
           </aside>
         </div>
       </section>
 
-      <section class="steps-section" id="steps" aria-labelledby="steps-title">
+      <section class="parts-section" id="parts" aria-labelledby="parts-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">看流程</p>
-            <h2 id="steps-title">火箭通常怎麼一步一步升空？</h2>
+            <p class="section-kicker">火箭構造</p>
+            <h2 id="parts-title">火箭身上有哪些重要地方？</h2>
           </div>
-          <p>把升空想成一場很有秩序的出發：先準備、再點火、往上衝，最後把用完的部分丟掉。</p>
+          <p>點點看火箭不同部位。這裡會用一張大圖，帶小朋友把火箭當成一個有很多功能的機器來看。</p>
         </div>
-        <div class="step-grid">
-          <button class="step-card is-active" type="button" data-step="countdown"><span>第一步</span><strong>倒數準備</strong></button>
-          <button class="step-card" type="button" data-step="ignition"><span>第二步</span><strong>點火噴發</strong></button>
-          <button class="step-card" type="button" data-step="liftoff"><span>第三步</span><strong>離開地面</strong></button>
-          <button class="step-card" type="button" data-step="stage"><span>第四步</span><strong>分段前進</strong></button>
-        </div>
-        <div class="step-explainer" aria-live="polite">
-          <p class="basic-kicker" id="step-kicker">COUNTDOWN</p>
-          <h3 id="step-title">倒數準備</h3>
-          <p id="step-text">火箭不是說飛就飛。升空前要先檢查很多事情，所以大家才會聽到 10、9、8 的倒數聲。</p>
-          <div class="step-note">
-            <span>一句記住</span>
-            <strong id="step-memory">倒數不是表演，是最後確認準備好了沒。</strong>
+
+        <div class="parts-layout">
+          <div class="parts-visual">
+            <svg class="parts-svg" viewBox="0 0 420 620" role="img" aria-labelledby="parts-svg-title parts-svg-desc">
+              <title id="parts-svg-title">火箭主要部位互動圖</title>
+              <desc id="parts-svg-desc">可點選尖端、乘坐艙、燃料段、尾翼與噴嘴</desc>
+              <defs>
+                <linearGradient id="rocketBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ffffff" />
+                  <stop offset="100%" stop-color="#dce3ea" />
+                </linearGradient>
+              </defs>
+              <rect x="190" y="82" width="40" height="390" rx="20" fill="url(#rocketBody)" />
+              <polygon points="210,28 235,84 185,84" fill="#f5f7fa" />
+              <rect x="202" y="126" width="16" height="16" rx="8" fill="#6da7d9" stroke="#f1c86d" stroke-width="4" />
+              <polygon points="190,384 150,474 190,474" fill="#ef7047" />
+              <polygon points="230,384 230,474 270,474" fill="#ef7047" />
+              <rect x="196" y="472" width="28" height="28" rx="10" fill="#627786" />
+              <polygon points="210,500 186,560 234,560" fill="#f7b24d" />
+
+              <g class="part-hotspot" data-part="nose">
+                <circle cx="210" cy="48" r="22"></circle>
+                <text x="210" y="54">1</text>
+              </g>
+              <g class="part-hotspot" data-part="cabin">
+                <circle cx="210" cy="134" r="22"></circle>
+                <text x="210" y="140">2</text>
+              </g>
+              <g class="part-hotspot" data-part="fuel">
+                <circle cx="210" cy="250" r="22"></circle>
+                <text x="210" y="256">3</text>
+              </g>
+              <g class="part-hotspot" data-part="fins">
+                <circle cx="154" cy="430" r="22"></circle>
+                <text x="154" y="436">4</text>
+              </g>
+              <g class="part-hotspot" data-part="engine">
+                <circle cx="210" cy="518" r="22"></circle>
+                <text x="210" y="524">5</text>
+              </g>
+            </svg>
           </div>
+
+          <aside class="parts-card" aria-live="polite">
+            <p class="timeline-kicker" id="part-kicker">NOSE</p>
+            <h3 id="part-name">火箭尖端</h3>
+            <p id="part-text">火箭最上面尖尖的地方要幫忙切開前面的空氣，也讓整支火箭比較容易往上飛。</p>
+            <div class="timeline-note">
+              <span>最簡單怎麼記</span>
+              <strong id="part-memory">尖尖的前面，像幫火箭先開路。</strong>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <section class="simulator-section" id="simulator" aria-labelledby="simulator-title">
+      <section class="compare-section" id="compare" aria-labelledby="compare-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">互動觀察</p>
-            <h2 id="simulator-title">火箭在不同時刻，最重要的是什麼？</h2>
+            <p class="section-kicker">互動比較</p>
+            <h2 id="compare-title">哪個時候煙最多？哪個時候飛最高？</h2>
           </div>
-          <p>按按看不同時刻，看看是準備、噴發，還是往上衝最明顯。</p>
+          <p>這一區讓小朋友用按鈕比較不同時刻，不用懂公式，也能先看懂火箭狀態差在哪裡。</p>
         </div>
-        <div class="simulator-layout">
-          <div class="simulator-controls">
-            <p class="simulator-label">選一個時刻</p>
-            <div class="mode-buttons">
-              <button class="mode-button is-active" type="button" data-mode="before">點火前</button>
-              <button class="mode-button" type="button" data-mode="ignite">點火時</button>
-              <button class="mode-button" type="button" data-mode="after">升空後</button>
-            </div>
-            <div class="mode-bars" aria-hidden="true">
-              <div class="mode-bar"><span>準備感</span><i id="bar-ready"></i></div>
-              <div class="mode-bar"><span>噴發感</span><i id="bar-fire"></i></div>
-              <div class="mode-bar"><span>往上衝感</span><i id="bar-up"></i></div>
-            </div>
+
+        <div class="compare-layout">
+          <div class="compare-buttons">
+            <button class="compare-button is-active" type="button" data-mode="countdown">倒數</button>
+            <button class="compare-button" type="button" data-mode="ignition">點火</button>
+            <button class="compare-button" type="button" data-mode="climb">升空</button>
           </div>
-          <div class="simulator-card" aria-live="polite">
-            <p class="basic-kicker" id="sim-kicker">BEFORE IGNITION</p>
-            <h3 id="sim-title">點火前</h3>
-            <p id="sim-text">這時候火箭還站在發射台上，但大家其實已經忙著做最後確認，因為一升空就不能隨便停下來。</p>
-            <div class="step-note">
-              <span>一句記住</span>
-              <strong id="sim-memory">看起來很安靜，其實最像全班一起準備出發前的那一刻。</strong>
-            </div>
+          <div class="compare-bars">
+            <div class="compare-bar"><span>火焰大小</span><i id="compare-fire"></i></div>
+            <div class="compare-bar"><span>煙霧大小</span><i id="compare-smoke"></i></div>
+            <div class="compare-bar"><span>離地高度</span><i id="compare-height"></i></div>
+          </div>
+          <div class="compare-card" aria-live="polite">
+            <p class="timeline-kicker" id="compare-kicker">COUNTDOWN</p>
+            <h3 id="compare-name">倒數</h3>
+            <p id="compare-text">這時候火箭還沒有真的往上飛，所以看得到的是安靜地站著，等最後命令。</p>
           </div>
         </div>
       </section>
@@ -159,22 +276,25 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">小挑戰</p>
-            <h2 id="quiz-title">你已經知道火箭怎麼往上飛了嗎？</h2>
+            <h2 id="quiz-title">你已經知道火箭怎麼升空了嗎？</h2>
           </div>
-          <p>共五題，答完看看你有沒有記住推力、點火和分段這三個重點。</p>
+          <p>共五題，答完看看你有沒有記住推力、點火、分段和火箭的重要部位。</p>
         </div>
+
         <div class="quiz-card">
           <p id="quiz-progress">第 1 題，共 5 題</p>
           <h3 id="quiz-question"></h3>
           <div class="quiz-options" id="quiz-options"></div>
           <p id="quiz-feedback" aria-live="polite"></p>
-          <button class="button button-primary" id="quiz-next" type="button" hidden>下一題 <span aria-hidden="true">→</span></button>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
         </div>
       </section>
 
       <section class="course-finish">
         <p>第一課完成</p>
-        <h2>現在你知道，火箭不是突然往上飛，而是靠很大的往下噴，把自己推離地球。</h2>
+        <h2>現在你知道，火箭要靠很大的往下噴，才能把自己慢慢推離地球。</h2>
         <a href="space.html">回到太空主題 →</a>
       </section>
     </main>
@@ -183,7 +303,7 @@
       <a class="brand footer-brand" href="index.html">
         <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
       </a>
-      <p>抬頭看火箭時，也慢慢看懂它怎麼起飛。</p>
+      <p>先看懂火箭怎麼升空，再一起往宇宙更遠的地方走。</p>
       <p>© <span id="current-year"></span> 慢慢學</p>
     </footer>
   </body>

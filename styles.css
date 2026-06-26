@@ -542,12 +542,6 @@ h1 em {
   font-weight: 700;
 }
 
-.category-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .category-coming {
   display: grid;
   padding: 35px;
@@ -598,14 +592,6 @@ h1 em {
   background: var(--orange-dark);
 }
 
-.card-link-secondary {
-  border: 1px solid var(--line);
-}
-
-.card-link-secondary:hover {
-  border-color: var(--ink);
-  background: #f5f1e8;
-}
 
 .topic-card {
   min-height: 330px;
