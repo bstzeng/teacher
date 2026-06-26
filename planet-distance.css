@@ -1,0 +1,443 @@
+.distance-hero,
+.idea-section,
+.journey-section,
+.map-section,
+.photos-section,
+.quiz-section,
+.course-finish {
+  width: min(1160px, calc(100vw - 40px));
+  margin: 0 auto;
+}
+
+.distance-hero {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 32px;
+  align-items: center;
+  padding: 48px 0 28px;
+}
+
+.distance-hero-copy h1,
+.section-heading h2,
+.journey-card h3,
+.map-card h3,
+.course-finish h2 {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+}
+
+.hero-intro,
+.section-heading p,
+.idea-card p,
+.journey-card p,
+.map-card p,
+.photo-copy span,
+.quiz-card p,
+.visual-caption {
+  font-size: 1.12rem;
+  line-height: 1.8;
+}
+
+.distance-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.distance-summary div,
+.idea-card,
+.journey-buttons,
+.journey-stage,
+.journey-card,
+.map-track,
+.map-card,
+.photo-card,
+.quiz-card,
+.course-finish {
+  border: 1px solid rgba(117, 135, 201, 0.16);
+  box-shadow: 0 20px 50px rgba(14, 22, 43, 0.08);
+}
+
+.distance-summary div {
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244,247,255,0.96));
+  padding: 18px;
+  text-align: center;
+}
+
+.distance-summary strong {
+  display: block;
+  font-size: 2rem;
+  color: #21356f;
+}
+
+.distance-hero-visual {
+  position: relative;
+  min-height: 520px;
+  border-radius: 36px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #111a35 0%, #1a2a54 100%);
+}
+
+.visual-code {
+  position: absolute;
+  top: 24px;
+  left: 26px;
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  color: rgba(222, 231, 255, 0.72);
+}
+
+.hero-sun,
+.lane-sun {
+  position: absolute;
+  border-radius: 999px;
+  background: radial-gradient(circle at 35% 35%, #fff1ad 0%, #ffd15d 42%, #ff9537 100%);
+  box-shadow: 0 0 0 16px rgba(255, 196, 88, 0.16), 0 0 80px rgba(255, 166, 60, 0.35);
+}
+
+.hero-sun {
+  width: 138px;
+  height: 138px;
+  left: 40px;
+  top: 180px;
+}
+
+.hero-track {
+  position: absolute;
+  border: 1px dashed rgba(205, 221, 255, 0.22);
+  border-radius: 999px;
+}
+
+.hero-track.one { inset: 150px 180px 150px 110px; }
+.hero-track.two { inset: 126px 126px 126px 92px; }
+.hero-track.three { inset: 92px 68px 92px 62px; }
+.hero-track.four { inset: 52px 20px 52px 34px; }
+
+.hero-dot {
+  position: absolute;
+  border-radius: 999px;
+  box-shadow: inset -10px -10px 20px rgba(0,0,0,0.16);
+}
+
+.hero-dot.mercury { width: 18px; height: 18px; left: 214px; top: 214px; background: #c6b79e; }
+.hero-dot.earth { width: 28px; height: 28px; left: 282px; top: 170px; background: linear-gradient(135deg, #3da6ff, #2fbe78); }
+.hero-dot.jupiter { width: 48px; height: 48px; right: 116px; top: 300px; background: linear-gradient(180deg, #d4b28c, #bd8457 48%, #e6cfb1); }
+.hero-dot.neptune { width: 34px; height: 34px; right: 30px; top: 136px; background: linear-gradient(180deg, #7fc3ff, #306fe3); }
+
+.hero-star {
+  position: absolute;
+  font-size: 1.5rem;
+  color: rgba(255,255,255,0.9);
+}
+.hero-star.one { right: 86px; top: 80px; }
+.hero-star.two { right: 226px; top: 54px; }
+
+.visual-caption {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  max-width: 280px;
+  color: #edf3ff;
+}
+
+.idea-section,
+.journey-section,
+.map-section,
+.photos-section,
+.quiz-section,
+.course-finish {
+  padding: 42px 0 12px;
+}
+
+.idea-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.idea-card,
+.journey-card,
+.map-card,
+.quiz-card,
+.course-finish {
+  border-radius: 30px;
+  background: rgba(255,255,255,0.98);
+  padding: 26px;
+}
+
+.idea-badge {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #ffd173, #ff9460);
+  color: #1d2442;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.idea-card h3,
+.photo-copy h3 {
+  font-size: 1.48rem;
+  margin-bottom: 10px;
+}
+
+.journey-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr) 340px;
+  gap: 18px;
+}
+
+.journey-buttons {
+  border-radius: 28px;
+  background: #f6f8ff;
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.journey-button,
+.map-stop {
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.journey-button {
+  border-radius: 18px;
+  padding: 16px 18px;
+  text-align: left;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #21356f;
+  background: #fff;
+}
+
+.journey-button.is-active,
+.journey-button:hover {
+  background: linear-gradient(135deg, #21356f, #435fc0);
+  color: #fff;
+}
+
+.journey-stage {
+  border-radius: 30px;
+  background: linear-gradient(180deg, #131d39 0%, #1b2a51 100%);
+  padding: 18px;
+}
+
+.distance-lane {
+  position: relative;
+  min-height: 430px;
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.lane-sun {
+  width: 96px;
+  height: 96px;
+  left: 30px;
+  top: 168px;
+}
+
+.lane-line {
+  position: absolute;
+  left: 98px;
+  right: 40px;
+  top: 214px;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255,224,151,0.75), rgba(154,187,255,0.75));
+}
+
+.lane-marker {
+  position: absolute;
+  top: 186px;
+  left: 138px;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 35% 30%, #e5d6bb, #bfa989 60%, #8c775a);
+  box-shadow: inset -12px -12px 20px rgba(0,0,0,0.16), 0 14px 24px rgba(0,0,0,0.18);
+  transition: left 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.lane-note {
+  position: absolute;
+  top: 248px;
+  color: #dce7ff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.lane-note.near { left: 126px; }
+.lane-note.middle { left: calc(50% - 14px); }
+.lane-note.far { right: 44px; }
+
+.journey-kicker,
+.section-kicker,
+.photo-copy p:first-child,
+#quiz-progress {
+  font-size: 1rem;
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 18px;
+}
+
+.map-track {
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(243,247,255,0.98));
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.map-stop {
+  border-radius: 22px;
+  padding: 20px 12px;
+  background: #eef3ff;
+  color: #21356f;
+  min-height: 116px;
+}
+
+.map-stop span {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.map-stop b {
+  font-size: 1.16rem;
+}
+
+.map-stop.is-active,
+.map-stop:hover {
+  background: linear-gradient(135deg, #1f3369, #405bc0);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(44, 70, 145, 0.22);
+}
+
+.map-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.map-tags span {
+  border-radius: 999px;
+  background: #edf3ff;
+  padding: 10px 14px;
+  color: #21356f;
+  font-size: 0.98rem;
+}
+
+.photo-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.photo-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  overflow: hidden;
+  border-radius: 34px;
+  background: #fff;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+  background: #0f1831;
+}
+
+.photo-copy {
+  padding: 26px;
+}
+
+.quiz-card {
+  max-width: 840px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.98);
+  padding: 26px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.quiz-option {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  padding: 18px 20px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: #edf3ff;
+  color: #21356f;
+  cursor: pointer;
+}
+
+.quiz-option:hover:not(:disabled) { background: #dfe8ff; }
+.quiz-option.correct { background: #dff7e7; color: #1f6a3c; }
+.quiz-option.wrong { background: #ffe3df; color: #b14e42; }
+#quiz-feedback { min-height: 30px; font-weight: 700; font-size: 0.98rem; }
+
+.course-finish {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.course-finish p {
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  color: #5f72af;
+}
+
+.course-finish a {
+  display: inline-flex;
+  margin-top: 10px;
+  color: #233975;
+  font-weight: 800;
+  font-size: 1.12rem;
+}
+
+@media (max-width: 1080px) {
+  .distance-hero,
+  .journey-layout,
+  .map-layout,
+  .photo-card {
+    grid-template-columns: 1fr;
+  }
+
+  .map-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .idea-grid,
+  .distance-summary,
+  .map-track {
+    grid-template-columns: 1fr;
+  }
+
+  .distance-hero-visual,
+  .distance-lane {
+    min-height: 380px;
+  }
+
+  .photo-card img { min-height: 250px; }
+}

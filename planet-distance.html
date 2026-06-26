@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第十三課：用互動方式認識行星離太陽有多遠，知道誰很近、誰很遠。"
+    />
+    <title>行星離太陽有多遠｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="planet-distance.css?v=20260626-space13" />
+    <script src="planet-distance.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header distance-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#journey">距離互動</a>
+        <a href="#map">順序地圖</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="distance-hero">
+        <div class="distance-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第十三課</p>
+          <h1>行星不是排在一起，<em>有的離太陽很近，有的遠到像站在很後面。</em></h1>
+          <p class="hero-intro">
+            這堂課我們先不硬背公里數，而是先記住距離感：
+            水星很近，地球在中間附近，海王星超遠，越往外通常一圈也越大。
+          </p>
+          <div class="distance-summary">
+            <div><strong>8</strong><span>顆一起排</span></div>
+            <div><strong>1</strong><span>顆最近水星</span></div>
+            <div><strong>1</strong><span>顆最遠海王星</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始看距離 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="distance-hero-visual" aria-hidden="true">
+          <span class="visual-code">NEAR · MIDDLE · FAR</span>
+          <div class="hero-sun"></div>
+          <div class="hero-track one"></div>
+          <div class="hero-track two"></div>
+          <div class="hero-track three"></div>
+          <div class="hero-track four"></div>
+          <div class="hero-dot mercury"></div>
+          <div class="hero-dot earth"></div>
+          <div class="hero-dot jupiter"></div>
+          <div class="hero-dot neptune"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">越往外的行星，通常離太陽越遠</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">先記住這三件事</h2>
+          </div>
+          <p>這課先建立「近、比較遠、很遠」的感覺，小朋友就不容易混亂。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-badge">01</div>
+            <h3>水星最近</h3>
+            <p>水星排第一，所以它離太陽最近，也最快繞一圈。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">02</div>
+            <h3>地球不是最前也不是最後</h3>
+            <p>地球在第三個位置，所以比較像中間附近，不是極近也不是超遠。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">03</div>
+            <h3>海王星很遠</h3>
+            <p>海王星站在很外面，所以從太陽看過去，它就是後排最遠的那位。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="journey-section" id="journey" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">距離互動</p>
+            <h2 id="journey-title">按一顆行星，看看它站得離太陽多遠</h2>
+          </div>
+          <p>這裡用簡化的跑道圖，把「近」和「遠」做得一眼就能懂。</p>
+        </div>
+
+        <div class="journey-layout">
+          <div class="journey-buttons">
+            <button class="journey-button is-active" type="button" data-planet="mercury">水星</button>
+            <button class="journey-button" type="button" data-planet="venus">金星</button>
+            <button class="journey-button" type="button" data-planet="earth">地球</button>
+            <button class="journey-button" type="button" data-planet="mars">火星</button>
+            <button class="journey-button" type="button" data-planet="jupiter">木星</button>
+            <button class="journey-button" type="button" data-planet="saturn">土星</button>
+            <button class="journey-button" type="button" data-planet="uranus">天王星</button>
+            <button class="journey-button" type="button" data-planet="neptune">海王星</button>
+          </div>
+
+          <div class="journey-stage">
+            <div class="distance-lane" id="distance-lane" data-planet="mercury">
+              <div class="lane-sun"></div>
+              <div class="lane-line"></div>
+              <div class="lane-marker" id="lane-marker"></div>
+              <div class="lane-note near">近</div>
+              <div class="lane-note middle">中</div>
+              <div class="lane-note far">遠</div>
+            </div>
+          </div>
+
+          <aside class="journey-card" aria-live="polite">
+            <p class="journey-kicker" id="journey-kicker">NEAR</p>
+            <h3 id="journey-name">水星站很前面</h3>
+            <p id="journey-text">水星離太陽最近，所以如果把太陽系排成隊伍，它就像站在第一排最前面。</p>
+            <div class="journey-note">
+              <span>一句記住</span>
+              <strong id="journey-memory">最靠近太陽的是水星。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" id="map" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">順序地圖</p>
+            <h2 id="map-title">從太陽往外排，距離大概這樣增加</h2>
+          </div>
+          <p>先知道順序，再加上近遠感，就會更容易理解為什麼外側行星看起來那麼遙遠。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-track" aria-label="行星距離順序">
+            <button class="map-stop is-active" type="button" data-planet="mercury"><span>1</span><b>水星</b></button>
+            <button class="map-stop" type="button" data-planet="venus"><span>2</span><b>金星</b></button>
+            <button class="map-stop" type="button" data-planet="earth"><span>3</span><b>地球</b></button>
+            <button class="map-stop" type="button" data-planet="mars"><span>4</span><b>火星</b></button>
+            <button class="map-stop" type="button" data-planet="jupiter"><span>5</span><b>木星</b></button>
+            <button class="map-stop" type="button" data-planet="saturn"><span>6</span><b>土星</b></button>
+            <button class="map-stop" type="button" data-planet="uranus"><span>7</span><b>天王星</b></button>
+            <button class="map-stop" type="button" data-planet="neptune"><span>8</span><b>海王星</b></button>
+          </div>
+
+          <aside class="map-card" aria-live="polite">
+            <p class="journey-kicker" id="map-kicker">ORDER 1</p>
+            <h3 id="map-name">水星最近</h3>
+            <p id="map-text">只要記住水星、金星、地球、火星在前面，後面的木星到海王星就比較遠。</p>
+            <div class="map-tags" id="map-tags">
+              <span>最近</span>
+              <span>第一顆</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再看三張真的 NASA 圖片</h2>
+          </div>
+          <p>這幾張圖很適合把「遠近」和「真實太陽系」連起來。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA03153/PIA03153~orig.jpg"
+              alt="NASA 太陽系合成圖"
+            />
+            <div class="photo-copy">
+              <p>01 · 全家一起看</p>
+              <h3>先把太陽系成員都看到，距離順序會更好記</h3>
+              <span>這張圖很適合先建立全貌：大家都圍著太陽，但不是站在一樣近的地方。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA03153" target="_blank" rel="noreferrer">NASA「Solar System Montage - High Resolution 2001 Version」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001545/GSFC_20171208_Archive_e001545~orig.png"
+              alt="NASA 水星假色照片"
+            />
+            <div class="photo-copy">
+              <p>02 · 最近的水星</p>
+              <h3>離太陽最近的小行星鄰居</h3>
+              <span>水星站得最前面，所以很適合當作「距離起點」來記住。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e001545" target="_blank" rel="noreferrer">NASA「False Color View of Mercury」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA01491/PIA01491~orig.jpg"
+              alt="NASA 海王星與崔頓照片"
+            />
+            <div class="photo-copy">
+              <p>03 · 很遠的海王星</p>
+              <h3>站在最外面的深藍行星</h3>
+              <span>海王星是八大行星裡離太陽最遠的，所以很適合當「最後一站」來記。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA01491" target="_blank" rel="noreferrer">NASA「Neptune and Triton」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你記住哪顆最近、哪顆最遠了嗎？</h2>
+          </div>
+          <p>只要先記住幾個距離地標，後面的太陽系課程就會更容易接下去。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十三課完成</p>
+        <h2>現在你知道，水星最近，海王星最遠，而且越往外的行星通常站得越後面。</h2>
+        <a href="planet-types.html">前往第十四課：岩石行星和氣體巨行星差在哪裡 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次看到太陽系順序時，你會更快知道誰站前面、誰站後面。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

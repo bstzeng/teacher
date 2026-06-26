@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第十二課：用互動方式認識八大行星的大小差異，知道誰最大、誰最小。"
+    />
+    <title>行星誰最大誰最小｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="planet-sizes.css?v=20260626-space12" />
+    <script src="planet-sizes.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header size-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#play">互動比較</a>
+        <a href="#rank">大小排行</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="size-hero">
+        <div class="size-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第十二課</p>
+          <h1>行星不是差不多大，<em>有些像小彈珠，有些像超大球場。</em></h1>
+          <p class="hero-intro">
+            這堂課我們不先背難數字，先用眼睛認識大小感：
+            水星很小，地球是中等，木星超大，土星也很大，只是比較輕盈。
+          </p>
+          <div class="size-summary">
+            <div><strong>8</strong><span>顆一起比</span></div>
+            <div><strong>1</strong><span>顆最大木星</span></div>
+            <div><strong>1</strong><span>顆最小水星</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始比大小 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="size-hero-visual" aria-hidden="true">
+          <span class="visual-code">SMALL · MEDIUM · GIANT</span>
+          <div class="hero-ball mercury"></div>
+          <div class="hero-ball earth"></div>
+          <div class="hero-ball neptune"></div>
+          <div class="hero-ball saturn"></div>
+          <div class="hero-ring"></div>
+          <div class="hero-ball jupiter"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">只要把大小感抓到，行星就會更好記</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">先記住這三件事</h2>
+          </div>
+          <p>這課最重要的是先培養「大小感」，不是一開始就背直徑。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-badge">01</div>
+            <h3>最大的是木星</h3>
+            <p>木星大很多，所以在圖上通常一眼就會看出來它特別大。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">02</div>
+            <h3>最小的是水星</h3>
+            <p>水星很小，所以放進八大行星裡時，看起來會像小小一顆。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">03</div>
+            <h3>後面的大行星通常比較大</h3>
+            <p>木星、土星、天王星、海王星通常會比前面的岩石行星大很多。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動比較</p>
+            <h2 id="play-title">按一下，看看每顆行星大概有多大</h2>
+          </div>
+          <p>這裡不是超精密科學圖，而是幫小朋友先建立正確的大小印象。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-planet="mercury">水星</button>
+            <button class="play-button" type="button" data-planet="earth">地球</button>
+            <button class="play-button" type="button" data-planet="mars">火星</button>
+            <button class="play-button" type="button" data-planet="neptune">海王星</button>
+            <button class="play-button" type="button" data-planet="saturn">土星</button>
+            <button class="play-button" type="button" data-planet="jupiter">木星</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="compare-sky">
+              <div class="reference-earth">
+                <span></span>
+                <b>地球參考大小</b>
+              </div>
+              <div class="focus-planet-wrap">
+                <div class="focus-planet" id="focus-planet"></div>
+                <div class="focus-ring" id="focus-ring" hidden></div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">SMALL</p>
+            <h3 id="play-name">水星最小</h3>
+            <p id="play-text">水星是八大行星裡最小的，所以和木星相比時，會看起來差很多。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">最小的是水星，最大的是木星。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="rank-section" id="rank" aria-labelledby="rank-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">大小排行</p>
+            <h2 id="rank-title">從小到大，八大行星大概這樣排</h2>
+          </div>
+          <p>先用最直覺的順序記，之後學別的行星課也會更容易。</p>
+        </div>
+
+        <div class="rank-layout">
+          <div class="rank-chart" id="rank-chart" aria-label="行星大小排行">
+            <button class="rank-row is-active" type="button" data-planet="mercury"><span>1</span><b>水星</b><i class="bar mercury"></i></button>
+            <button class="rank-row" type="button" data-planet="mars"><span>2</span><b>火星</b><i class="bar mars"></i></button>
+            <button class="rank-row" type="button" data-planet="venus"><span>3</span><b>金星</b><i class="bar venus"></i></button>
+            <button class="rank-row" type="button" data-planet="earth"><span>4</span><b>地球</b><i class="bar earth"></i></button>
+            <button class="rank-row" type="button" data-planet="neptune"><span>5</span><b>海王星</b><i class="bar neptune"></i></button>
+            <button class="rank-row" type="button" data-planet="uranus"><span>6</span><b>天王星</b><i class="bar uranus"></i></button>
+            <button class="rank-row" type="button" data-planet="saturn"><span>7</span><b>土星</b><i class="bar saturn"></i></button>
+            <button class="rank-row" type="button" data-planet="jupiter"><span>8</span><b>木星</b><i class="bar jupiter"></i></button>
+          </div>
+
+          <aside class="rank-card" aria-live="polite">
+            <p class="play-kicker" id="rank-kicker">RANK 1</p>
+            <h3 id="rank-name">水星排最小</h3>
+            <p id="rank-text">水星雖然不小到看不見，但放到八大行星裡，它就是最小的那一顆。</p>
+            <div class="rank-tags" id="rank-tags">
+              <span>最小</span>
+              <span>岩石行星</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再看三張真的 NASA 圖片</h2>
+          </div>
+          <p>這幾張圖很適合幫孩子把「大小比較」和「真實行星」連在一起。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA03153/PIA03153~orig.jpg"
+              alt="NASA 太陽系行星合成圖"
+            />
+            <div class="photo-copy">
+              <p>01 · 一起看</p>
+              <h3>把太陽系成員放在一起看，更容易有大小感</h3>
+              <span>這張合成圖很適合課堂使用，因為孩子可以直接感覺出誰大誰小。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA03153" target="_blank" rel="noreferrer">NASA「Solar System Montage - High Resolution 2001 Version」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000103/GSFC_20171208_Archive_e000103~large.jpg"
+              alt="NASA 木星近照"
+            />
+            <div class="photo-copy">
+              <p>02 · 木星</p>
+              <h3>最大的行星，真的很有份量感</h3>
+              <span>木星不只大，表面雲帶也很明顯，所以很適合當「巨人代表」。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000103" target="_blank" rel="noreferrer">NASA「Hubble Takes Close-up Portrait of Jupiter」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA00405/PIA00405~orig.jpg"
+              alt="NASA 地球與月亮照片"
+            />
+            <div class="photo-copy">
+              <p>03 · 地球作為參考</p>
+              <h3>地球不算小，但放進太陽系裡也不是最大</h3>
+              <span>這張圖可以先幫孩子記住地球自己的樣子，再回頭和更大的行星比較。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA00405" target="_blank" rel="noreferrer">NASA「Earth Moon」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你記住誰最大誰最小了嗎？</h2>
+          </div>
+          <p>只要先記住幾個大小地標，之後行星就會越學越順。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十二課完成</p>
+        <h2>現在你知道，木星最大，水星最小，而且後面的巨行星通常比前面的岩石行星大很多。</h2>
+        <a href="planet-distance.html">前往第十三課：行星離太陽有多遠 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次看到行星圖時，你會更快分出哪顆是大個子、哪顆是小個子。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

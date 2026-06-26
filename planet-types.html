@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第十四課：用互動方式認識岩石行星和氣體巨行星的差別。"
+    />
+    <title>岩石行星和氣體巨行星差在哪裡｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="planet-types.css?v=20260626-space14" />
+    <script src="planet-types.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header types-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#compare">互動比較</a>
+        <a href="#group">行星分組</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="types-hero">
+        <div class="types-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第十四課</p>
+          <h1>行星不只大小不同，<em>它們還分成岩石派和巨行星派。</em></h1>
+          <p class="hero-intro">
+            這堂課我們來看兩大行星家族：
+            前面四顆比較像硬硬的岩石球，後面幾顆比較像超大的氣體或冰巨行星。
+          </p>
+          <div class="types-summary">
+            <div><strong>4</strong><span>顆岩石行星</span></div>
+            <div><strong>4</strong><span>顆巨行星</span></div>
+            <div><strong>2</strong><span>大類一起比</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始看差別 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="types-hero-visual" aria-hidden="true">
+          <span class="visual-code">ROCKY · GIANT · ICE</span>
+          <div class="hero-rock-group">
+            <div class="mini-ball mercury"></div>
+            <div class="mini-ball venus"></div>
+            <div class="mini-ball earth"></div>
+            <div class="mini-ball mars"></div>
+          </div>
+          <div class="hero-giant-group">
+            <div class="big-ball jupiter"></div>
+            <div class="big-ball saturn"></div>
+            <div class="saturn-ring"></div>
+            <div class="big-ball uranus"></div>
+            <div class="big-ball neptune"></div>
+          </div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">前面四顆偏硬，後面四顆偏大又厚</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">先記住這三件事</h2>
+          </div>
+          <p>這課最重要的是先建立兩大類的感覺，不用一開始背太多艱深名詞。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-badge">01</div>
+            <h3>前四顆比較像岩石球</h3>
+            <p>水星、金星、地球、火星比較小，也比較像有硬表面的星球。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">02</div>
+            <h3>後四顆通常很大</h3>
+            <p>木星、土星、天王星、海王星都比前面幾顆大很多。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">03</div>
+            <h3>不是每顆都能站上去走路</h3>
+            <p>岩石行星比較容易想像成地面，巨行星則不是像地球那樣硬硬的表面。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="compare-section" id="compare" aria-labelledby="compare-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動比較</p>
+            <h2 id="compare-title">按一下，看看兩大類行星差在哪裡</h2>
+          </div>
+          <p>這一區先用孩子最容易懂的方式，比表面、大小、位置和印象。</p>
+        </div>
+
+        <div class="compare-layout">
+          <div class="compare-buttons">
+            <button class="compare-button is-active" type="button" data-mode="rocky">岩石行星</button>
+            <button class="compare-button" type="button" data-mode="giant">氣體巨行星</button>
+            <button class="compare-button" type="button" data-mode="ice">冰巨行星</button>
+          </div>
+
+          <div class="compare-stage">
+            <div class="compare-scene" id="compare-scene" data-mode="rocky">
+              <div class="scene-floor"></div>
+              <div class="scene-rock-ball"></div>
+              <div class="scene-cloud-ball"></div>
+              <div class="scene-ring" id="scene-ring" hidden></div>
+            </div>
+          </div>
+
+          <aside class="compare-card" aria-live="polite">
+            <p class="compare-kicker" id="compare-kicker">ROCKY</p>
+            <h3 id="compare-name">岩石行星比較像硬球</h3>
+            <p id="compare-text">岩石行星通常比較小，而且比較容易想像成有硬硬外表的世界。</p>
+            <div class="compare-note">
+              <span>一句記住</span>
+              <strong id="compare-memory">前四顆多半是岩石行星。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="group-section" id="group" aria-labelledby="group-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">行星分組</p>
+            <h2 id="group-title">八大行星可以先這樣分兩邊</h2>
+          </div>
+          <p>先把分組看懂，後面學大小、距離、天氣和外表都會更容易連起來。</p>
+        </div>
+
+        <div class="group-layout">
+          <div class="group-board">
+            <button class="group-card is-active" type="button" data-mode="rocky"><span>前四顆</span><b>水星・金星・地球・火星</b></button>
+            <button class="group-card" type="button" data-mode="giant"><span>後兩顆大巨人</span><b>木星・土星</b></button>
+            <button class="group-card" type="button" data-mode="ice"><span>外側冰巨行星</span><b>天王星・海王星</b></button>
+          </div>
+
+          <aside class="group-info" aria-live="polite">
+            <p class="compare-kicker" id="group-kicker">GROUP A</p>
+            <h3 id="group-name">前四顆先放一起看</h3>
+            <p id="group-text">水星到火星排在前面，也比較容易先被歸成岩石行星家族。</p>
+            <div class="group-tags" id="group-tags">
+              <span>比較小</span>
+              <span>比較硬</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再看三張真的 NASA 圖片</h2>
+          </div>
+          <p>這幾張圖很適合幫孩子把「分類概念」和「真的星球樣子」連起來。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001545/GSFC_20171208_Archive_e001545~orig.png"
+              alt="NASA 水星假色照片"
+            />
+            <div class="photo-copy">
+              <p>01 · 岩石行星代表</p>
+              <h3>水星表面看起來就像坑坑洞洞的硬球</h3>
+              <span>這張很適合讓孩子理解：前面有些行星真的很像岩石世界。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e001545" target="_blank" rel="noreferrer">NASA「False Color View of Mercury」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000103/GSFC_20171208_Archive_e000103~large.jpg"
+              alt="NASA 木星近照"
+            />
+            <div class="photo-copy">
+              <p>02 · 氣體巨行星代表</p>
+              <h3>木星看起來更像厚厚雲層包住的大巨人</h3>
+              <span>木星很適合代表「後面那群又大又厚的大行星」。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000103" target="_blank" rel="noreferrer">NASA「Hubble Takes Close-up Portrait of Jupiter」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA11593/PIA11593~orig.jpg"
+              alt="NASA 土星環照片"
+            />
+            <div class="photo-copy">
+              <p>03 · 巨行星另一位代表</p>
+              <h3>土星讓孩子更容易記住：巨行星常常又大又特別</h3>
+              <span>土星的大環很有記憶點，也能幫孩子把巨行星和岩石行星區分開來。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA11593" target="_blank" rel="noreferrer">NASA「Saturnscape After Equinox」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你分得出兩大行星家族了嗎？</h2>
+          </div>
+          <p>只要先記住前四顆和後四顆的差別，太陽系就會突然清楚很多。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十四課完成</p>
+        <h2>現在你知道，前面四顆比較像岩石球，後面四顆則是比較大的巨行星家族。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次看到行星照片時，你會更快知道它比較像岩石世界，還是大巨人世界。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
