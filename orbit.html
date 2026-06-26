@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第三課：為什麼太空船會繞著地球跑，用圖片與互動認識重力、速度、軌道和小推進器。"
+    />
+    <title>太空船為什麼會繞著地球跑｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="orbit.css?v=20260626-space3" />
+    <script src="orbit.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header orbit-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#play">互動模擬</a>
+        <a href="#photos">真實照片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="orbit-hero">
+        <div class="orbit-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第三課</p>
+          <h1>太空船不是黏在天上，<em>它其實一直在往前掉，才會繞著地球跑。</em></h1>
+          <p class="hero-intro">
+            這堂課要把很難的「軌道」變成小朋友也能懂的畫面。
+            我們會用地球、重力、往前衝的速度，看看太空船為什麼不會馬上掉下來。
+          </p>
+          <div class="orbit-summary">
+            <div><strong>3</strong><span>個核心概念</span></div>
+            <div><strong>4</strong><span>種軌道結果</span></div>
+            <div><strong>3</strong><span>張真實照片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始看軌道 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="orbit-hero-visual" aria-hidden="true">
+          <span class="visual-code">GRAVITY · SPEED · ORBIT</span>
+          <div class="hero-earth"></div>
+          <div class="hero-atmosphere"></div>
+          <div class="hero-orbit-ring"></div>
+          <div class="hero-spacecraft"></div>
+          <div class="hero-thruster"></div>
+          <div class="hero-arrow"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <div class="hero-star three">✦</div>
+          <p class="visual-caption">一直往前，又一直被拉回來</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">太空船繞地球，需要同時發生三件事</h2>
+          </div>
+          <p>不是只有一個力量。要想像成「被地球拉」和「一直往前衝」同時發生，軌道才會出現。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-visual gravity-visual" aria-hidden="true">
+              <div class="mini-earth"></div>
+              <div class="mini-ship"></div>
+              <div class="pull-arrow"></div>
+            </div>
+            <div class="idea-copy">
+              <p>01 · 地球會拉</p>
+              <h3>重力一直把太空船往下拉</h3>
+              <span>只要靠近地球，就不可能完全不受影響。地球一直都想把東西拉回來。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual speed-visual" aria-hidden="true">
+              <div class="mini-earth"></div>
+              <div class="mini-ship"></div>
+              <div class="speed-arrow"></div>
+            </div>
+            <div class="idea-copy">
+              <p>02 · 太空船會往前衝</p>
+              <h3>不是停在上面，而是一直往前跑</h3>
+              <span>如果完全不往前，太空船只會掉下來。要有很快的前進速度，才有機會繞圈。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual orbit-visual" aria-hidden="true">
+              <div class="mini-earth"></div>
+              <div class="mini-ring"></div>
+              <div class="mini-ship orbiting"></div>
+            </div>
+            <div class="idea-copy">
+              <p>03 · 一直掉，但永遠差一點點</p>
+              <h3>這樣就變成我們看到的軌道</h3>
+              <span>你可以把它想成：它一直在掉向地球，可是地球是圓的，所以就一直錯過地面。</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動模擬</p>
+            <h2 id="play-title">如果速度不一樣，結果會差很多</h2>
+          </div>
+          <p>按下面四種情況，看看太空船會掉下來、穩穩繞圈，還是飛太快跑掉。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-mode="fall">幾乎不往前</button>
+            <button class="play-button" type="button" data-mode="slow">太慢</button>
+            <button class="play-button" type="button" data-mode="orbit">剛剛好</button>
+            <button class="play-button" type="button" data-mode="escape">太快</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="play-scene" id="play-scene" data-mode="fall">
+              <div class="scene-earth"></div>
+              <div class="scene-atmosphere"></div>
+              <div class="scene-ring"></div>
+              <div class="scene-path" id="scene-path"></div>
+              <div class="scene-ship" id="scene-ship"></div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">TOO LITTLE</p>
+            <h3 id="play-name">幾乎不往前</h3>
+            <p id="play-text">如果太空船只是被放在高處，卻沒有足夠往前衝，它就會很快掉回地球。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">軌道不是停住，是一直往前跑出來的。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動地圖</p>
+            <h2 id="map-title">點點看，軌道圖上每個東西在做什麼</h2>
+          </div>
+          <p>不用背專有名詞，先知道每個東西大概在扮演什麼角色就很夠了。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-visual">
+            <svg class="map-svg" viewBox="0 0 760 480" role="img" aria-labelledby="map-svg-title map-svg-desc">
+              <title id="map-svg-title">軌道互動圖</title>
+              <desc id="map-svg-desc">可點選地球、重力箭頭、前進方向、小推進器和軌道路線</desc>
+              <rect x="30" y="30" width="700" height="420" rx="38" fill="#08111e" />
+              <circle cx="250" cy="268" r="110" fill="#2f5d8a" stroke="#8fd4ff" stroke-width="10" />
+              <circle cx="250" cy="268" r="130" fill="none" stroke="rgba(143,212,255,.28)" stroke-width="18" />
+              <ellipse cx="310" cy="220" rx="250" ry="120" fill="none" stroke="#f0c668" stroke-width="5" stroke-dasharray="12 10" />
+              <rect x="510" y="156" width="92" height="40" rx="18" fill="#eef2f7" />
+              <rect x="592" y="148" width="18" height="56" rx="9" fill="#98aec2" />
+              <polygon points="604,170 640,160 640,192" fill="#ef8d5b" />
+              <line x1="420" y1="184" x2="340" y2="216" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+              <polygon points="338,216 352,205 349,224" fill="#ffffff" />
+              <line x1="510" y1="222" x2="600" y2="222" stroke="#7ed7ff" stroke-width="6" stroke-linecap="round" />
+              <polygon points="600,222 582,212 582,232" fill="#7ed7ff" />
+
+              <g class="map-hotspot is-active" data-part="earth">
+                <circle cx="210" cy="210" r="22"></circle>
+                <text x="210" y="216">1</text>
+              </g>
+              <g class="map-hotspot" data-part="gravity">
+                <circle cx="386" cy="196" r="22"></circle>
+                <text x="386" y="202">2</text>
+              </g>
+              <g class="map-hotspot" data-part="speed">
+                <circle cx="550" cy="248" r="22"></circle>
+                <text x="550" y="254">3</text>
+              </g>
+              <g class="map-hotspot" data-part="thruster">
+                <circle cx="632" cy="176" r="22"></circle>
+                <text x="632" y="182">4</text>
+              </g>
+              <g class="map-hotspot" data-part="track">
+                <circle cx="486" cy="116" r="22"></circle>
+                <text x="486" y="122">5</text>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="map-card" aria-live="polite">
+            <p class="play-kicker" id="map-kicker">EARTH</p>
+            <h3 id="map-name">地球</h3>
+            <p id="map-text">地球是整個故事的中心，因為重力就是從這裡把太空船拉回來。</p>
+            <div class="play-note">
+              <span>最簡單怎麼記</span>
+              <strong id="map-memory">地球一直在說：回來我這邊。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實照片</p>
+            <h2 id="photos-title">再看三張真的太空照片</h2>
+          </div>
+          <p>這些照片不是自己畫的，而是真的任務畫面，能幫小朋友把剛剛的概念跟真實太空連起來。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/KSC-20221116-PH-ILW01_0008/KSC-20221116-PH-ILW01_0008~large.jpg"
+              alt="Artemis I 火箭點火升空"
+            />
+            <div class="photo-copy">
+              <p>01 · 先把太空船送上去</p>
+              <h3>沒有先升空，就不會有軌道</h3>
+              <span>火箭先把太空船送到夠高、夠快的位置，後面才有辦法開始繞地球。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-KSC-20221116-PH-ILW01_0008" target="_blank" rel="noreferrer">NASA「Artemis I Liftoff」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/iss042e078481/iss042e078481~large.jpg"
+              alt="從國際太空站 Cupola 看到地球"
+            />
+            <div class="photo-copy">
+              <p>02 · 繞地球時看到的樣子</p>
+              <h3>在軌道上的人，真的會一直看見地球</h3>
+              <span>太空站和太空船繞著地球跑時，窗外常常就是一整片藍色地球。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-iss042e078481" target="_blank" rel="noreferrer">NASA「Exterior view of Cupola windows」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA23879/PIA23879~large.jpg"
+              alt="NASA 電推進 Hall thruster 發出藍色光"
+            />
+            <div class="photo-copy">
+              <p>03 · 小推進器也很重要</p>
+              <h3>有時候太空船會用小推進器慢慢修方向</h3>
+              <span>不是每次都像火箭那麼大力，有些太空船只需要小小推一下，就能慢慢改軌道。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA23879" target="_blank" rel="noreferrer">NASA「Ring of Firepower」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你有沒有抓到軌道的感覺？</h2>
+          </div>
+          <p>這堂課不用記公式，只要知道「重力一直拉、太空船一直往前」就很棒了。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第三課完成</p>
+        <h2>現在你知道，軌道不是漂在那裡，而是一直往前飛、又一直被地球拉著跑。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>看懂軌道之後，之後看月亮、太空站和衛星都會更容易。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
