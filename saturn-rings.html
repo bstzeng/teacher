@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第十五課：用互動方式認識土星的環是什麼、為什麼那麼特別。"
+    />
+    <title>土星的環是什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="saturn-rings.css?v=20260626-space15" />
+    <script src="saturn-rings.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header rings-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#play">互動土星環</a>
+        <a href="#map">環的圖解</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="rings-hero">
+        <div class="rings-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第十五課</p>
+          <h1>土星最有名的不是只有大，<em>還有一圈一圈漂亮的環。</em></h1>
+          <p class="hero-intro">
+            這堂課我們來認識土星環。它不是一整塊硬硬的圓盤，
+            而是很多冰塊、小石頭和碎片，排成很大的圈圈。
+          </p>
+          <div class="rings-summary">
+            <div><strong>1</strong><span>顆最會戴環的行星</span></div>
+            <div><strong>3</strong><span>個環的重點</span></div>
+            <div><strong>3</strong><span>張 NASA 圖片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始看土星環 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="rings-hero-visual" aria-hidden="true">
+          <span class="visual-code">RINGS · ICE · DUST</span>
+          <div class="hero-saturn"></div>
+          <div class="hero-ring outer"></div>
+          <div class="hero-ring inner"></div>
+          <div class="hero-specks"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">看起來像光圈，其實是很多碎片排成的大圈圈</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">先記住這三件事</h2>
+          </div>
+          <p>這堂課最重要的是先知道土星環不是一整片硬盤，而是一大群碎片。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-badge">01</div>
+            <h3>不是一整塊圓盤</h3>
+            <p>土星環看起來像一圈，其實是很多很多小東西排在一起。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">02</div>
+            <h3>主要是冰和碎石</h3>
+            <p>裡面有很多冰塊、塵埃和小石頭，所以才會反光、看起來很亮。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">03</div>
+            <h3>土星因此超好認</h3>
+            <p>因為環很大、很明顯，所以很多小朋友一眼就會記住土星。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動土星環</p>
+            <h2 id="play-title">按一下，看看土星環可以怎麼理解</h2>
+          </div>
+          <p>這裡先不講太深的物理，先用孩子能懂的畫面去認識它的組成和樣子。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-mode="shape">環的外型</button>
+            <button class="play-button" type="button" data-mode="pieces">很多碎片</button>
+            <button class="play-button" type="button" data-mode="light">亮亮反光</button>
+            <button class="play-button" type="button" data-mode="gap">不只一圈</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="play-scene" id="play-scene" data-mode="shape">
+              <div class="scene-planet"></div>
+              <div class="scene-ring outer"></div>
+              <div class="scene-ring middle"></div>
+              <div class="scene-ring inner"></div>
+              <div class="scene-particles" id="scene-particles"></div>
+              <div class="scene-shine" id="scene-shine"></div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">SHAPE</p>
+            <h3 id="play-name">先看外型</h3>
+            <p id="play-text">土星最容易記住的地方，就是它外面有一大圈很明顯的環。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">土星環看起來像帽子邊。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" id="map" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">環的圖解</p>
+            <h2 id="map-title">點點看，土星環到底在說什麼</h2>
+          </div>
+          <p>只要把土星本體、外圈、碎片和亮光這幾件事串起來，這課就抓到了。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-visual">
+            <svg class="map-svg" viewBox="0 0 760 480" role="img" aria-labelledby="map-svg-title map-svg-desc">
+              <title id="map-svg-title">土星環互動圖</title>
+              <desc id="map-svg-desc">可點選土星本體、環、碎片、亮面和環帶間隙</desc>
+              <rect x="30" y="30" width="700" height="420" rx="38" fill="#10172a" />
+              <ellipse cx="378" cy="240" rx="212" ry="62" fill="none" stroke="#e5d1a4" stroke-width="20" />
+              <ellipse cx="378" cy="240" rx="170" ry="46" fill="none" stroke="#d8bc85" stroke-width="14" />
+              <ellipse cx="378" cy="240" rx="132" ry="34" fill="none" stroke="#f0e1c0" stroke-width="10" />
+              <circle cx="378" cy="240" r="86" fill="#d8c08a" />
+              <circle cx="348" cy="214" r="10" fill="#fff2c4" opacity="0.7" />
+              <circle cx="216" cy="240" r="4" fill="#f8e9c0" />
+              <circle cx="242" cy="228" r="3" fill="#f8e9c0" />
+              <circle cx="518" cy="250" r="5" fill="#f8e9c0" />
+              <circle cx="552" cy="222" r="4" fill="#f8e9c0" />
+
+              <g class="map-hotspot is-active" data-part="planet">
+                <circle cx="378" cy="240" r="22"></circle>
+                <text x="378" y="246">1</text>
+              </g>
+              <g class="map-hotspot" data-part="ring">
+                <circle cx="542" cy="240" r="22"></circle>
+                <text x="542" y="246">2</text>
+              </g>
+              <g class="map-hotspot" data-part="pieces">
+                <circle cx="214" cy="210" r="22"></circle>
+                <text x="214" y="216">3</text>
+              </g>
+              <g class="map-hotspot" data-part="shine">
+                <circle cx="346" cy="182" r="22"></circle>
+                <text x="346" y="188">4</text>
+              </g>
+              <g class="map-hotspot" data-part="gaps">
+                <circle cx="604" cy="240" r="22"></circle>
+                <text x="604" y="246">5</text>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="map-card" aria-live="polite">
+            <p class="play-kicker" id="map-kicker">PLANET</p>
+            <h3 id="map-name">土星本體</h3>
+            <p id="map-text">中間那顆大大的球是土星，外面那幾圈才是我們說的土星環。</p>
+            <div class="play-note">
+              <span>最簡單怎麼記</span>
+              <strong id="map-memory">球是土星，圈圈是環。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再看三張真的 NASA 土星環照片</h2>
+          </div>
+          <p>真實照片很適合讓孩子把示意圖和真正的土星環連在一起。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA11593/PIA11593~orig.jpg"
+              alt="NASA 土星與土星環照片"
+            />
+            <div class="photo-copy">
+              <p>01 · 整體看土星</p>
+              <h3>先記住土星外面有一圈很大的環</h3>
+              <span>這張很適合當第一眼印象：土星不是只有球，外面還有超大的環。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA11593" target="_blank" rel="noreferrer">NASA「Saturnscape After Equinox」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA15501/PIA15501~orig.jpg"
+              alt="NASA 土星 F 環細節照片"
+            />
+            <div class="photo-copy">
+              <p>02 · 環不是平滑一片</p>
+              <h3>放大看時，會看到很多線條和紋路</h3>
+              <span>這能幫孩子理解：土星環不是一整塊塑膠圈，而是很多東西一起排出來的樣子。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA15501" target="_blank" rel="noreferrer">NASA「F Ring Patterns」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA15500/PIA15500~orig.jpg"
+              alt="NASA 土星 F 環亮亮碎片照片"
+            />
+            <div class="photo-copy">
+              <p>03 · 碎片在發亮</p>
+              <h3>亮亮的地方，常常和冰與反光有關</h3>
+              <span>這張很適合講「很多小碎片一起反光」，所以土星環才會那麼引人注意。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA15500" target="_blank" rel="noreferrer">NASA「Glittering Trail in Saturn F Ring」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你記住土星環的重點了嗎？</h2>
+          </div>
+          <p>這堂課最重要的是記住：土星環不是一整塊，而是很多冰和碎石排成的大圈圈。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十五課完成</p>
+        <h2>現在你知道，土星環不是一整塊圈，而是很多冰和碎石排成的超大環帶。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次看到土星時，你會知道它那頂漂亮的大帽子，其實是很多小碎片一起排成的。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
