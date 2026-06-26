@@ -7,7 +7,9 @@ const instruments = {
     description:
       "飛行員最常看的畫面。它把姿態、速度、高度、升降率與飛行模式集中在一起。",
     tip: "找找看藍色天空與棕色地面交界的「人工地平線」。",
-    visualClass: "visual-pfd",
+    photoX: "23%",
+    photoY: "44%",
+    photoZoom: "235%",
     howToRead:
       "先看中間藍天和棕地的交界線有沒有平平的，再看左右兩邊的速度和高度有沒有在你想要的位置。",
   },
@@ -19,7 +21,9 @@ const instruments = {
     description:
       "像飛機專用的導航地圖，顯示航路、方向、距離、氣象雷達與附近資訊。",
     tip: "畫面中央的飛機符號，會沿著規劃好的航線前進。",
-    visualClass: "visual-nd",
+    photoX: "35%",
+    photoY: "44%",
+    photoZoom: "235%",
     howToRead:
       "先找中間的小飛機，再看前面畫好的路線。重點不是每個符號都懂，而是先知道飛機正朝哪裡走。",
   },
@@ -31,7 +35,9 @@ const instruments = {
     description:
       "飛行員在這裡設定速度、航向、高度與升降方式，也能接通自動駕駛。",
     tip: "它是一整條橫向面板，位在主要螢幕正上方。",
-    visualClass: "visual-fcu",
+    photoX: "50%",
+    photoY: "28%",
+    photoZoom: "220%",
     howToRead:
       "把它想成飛機的『目標設定列』。先看速度、高度和航向數字，這些代表飛行員想讓飛機做到什麼。",
   },
@@ -43,7 +49,9 @@ const instruments = {
     description:
       "監看發動機、燃油、液壓、電力與其他飛機系統；異常時也會提示處理步驟。",
     tip: "兩個中央螢幕是整架飛機的「健康檢查中心」。",
-    visualClass: "visual-ecam",
+    photoX: "56%",
+    photoY: "46%",
+    photoZoom: "240%",
     howToRead:
       "平常先看有沒有特別跳出的警告或不正常顏色。它最像飛機自己的健康報告畫面。",
   },
@@ -55,7 +63,9 @@ const instruments = {
     description:
       "起飛後收起輪子、降落前放下輪子。旁邊的燈號會顯示起落架是否鎖定。",
     tip: "控制桿的握把通常做成小輪子的形狀，讓人不容易弄錯。",
-    visualClass: "visual-gear",
+    photoX: "70%",
+    photoY: "48%",
+    photoZoom: "255%",
     howToRead:
       "先記住它只有兩件大事：收輪子和放輪子。看燈號時，重點是確認起落架到底有沒有到位。",
   },
@@ -67,7 +77,9 @@ const instruments = {
     description:
       "Airbus 不在正前方放傳統駕駛盤，而是在左右側邊用小型控制桿操縱俯仰與滾轉。",
     tip: "機長的側桿在左窗旁，副駕駛的則在右窗旁。",
-    visualClass: "visual-sidestick",
+    photoX: "12%",
+    photoY: "61%",
+    photoZoom: "245%",
     howToRead:
       "它不是拿來看的，是拿來控制方向的。往前後會讓機頭低高，往左右會讓機翼傾斜。",
   },
@@ -79,7 +91,9 @@ const instruments = {
     description:
       "控制發動機推力。A320 的推力桿有固定檔位，自動推力通常不會讓桿子自己前後移動。",
     tip: "兩支黑色桿分別對應左右兩具發動機。",
-    visualClass: "visual-thrust",
+    photoX: "52%",
+    photoY: "80%",
+    photoZoom: "220%",
     howToRead:
       "把它想成飛機的『力氣大小桿』。往前通常代表更有推力，往後代表減少推力。",
   },
@@ -91,7 +105,9 @@ const instruments = {
     description:
       "用鍵盤與小螢幕輸入航路、性能與飛行計畫，是飛行管理系統的重要操作介面。",
     tip: "它很像一台有許多字母鍵的航空專用計算機。",
-    visualClass: "visual-mcdu",
+    photoX: "37%",
+    photoY: "72%",
+    photoZoom: "230%",
     howToRead:
       "先把它當成飛機的計畫輸入機。飛行員會在這裡把要飛去哪、怎麼飛，慢慢輸進去。",
   },
@@ -103,7 +119,9 @@ const instruments = {
     description:
       "管理電力、燃油、液壓、空調、防冰、燈光等系統。許多開關在正常飛行中不需頻繁操作。",
     tip: "Airbus 常用「黑暗駕駛艙」概念：正常時盡量不亮警告燈。",
-    visualClass: "visual-overhead",
+    photoX: "51%",
+    photoY: "9%",
+    photoZoom: "205%",
     howToRead:
       "不用一個開關一個開關背下來。先記住它是很多飛機系統的總開關區，正常時反而不會亂亮。",
   },
@@ -138,7 +156,12 @@ Object.entries(instruments).forEach(([key, item]) => {
       <span class="detail-zone-tag">${item.zone}</span>
     </div>
     <div class="detail-visual">
-      <div class="visual-screen ${item.visualClass}" aria-hidden="true"></div>
+      <div
+        class="detail-photo"
+        aria-hidden="true"
+        style="--photo-x:${item.photoX}; --photo-y:${item.photoY}; --photo-zoom:${item.photoZoom};"
+      ></div>
+      <div class="detail-photo-focus" aria-hidden="true"></div>
     </div>
     <div class="detail-copy">
       <h3>${item.name}</h3>
