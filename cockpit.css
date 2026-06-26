@@ -478,6 +478,41 @@
   font-weight: 800;
 }
 
+.zone-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.zone-preview-grid-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.zone-preview {
+  display: grid;
+  gap: 7px;
+}
+
+.zone-preview-photo {
+  min-height: 82px;
+  background-image:
+    linear-gradient(180deg, rgba(255,255,255,0.14) 0%, transparent 24%),
+    url("assets/cockpit/a320-cockpit.jpg");
+  background-repeat: no-repeat;
+  background-size: var(--photo-zoom) auto;
+  background-position: var(--photo-x) var(--photo-y);
+  border: 2px solid var(--ink);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.18);
+}
+
+.zone-preview span {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
+
 .mission-section {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
@@ -691,6 +726,11 @@
     gap: 15px;
     padding-top: 65px;
     padding-bottom: 65px;
+  }
+
+  .zone-preview-grid,
+  .zone-preview-grid-three {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
