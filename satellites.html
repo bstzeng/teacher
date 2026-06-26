@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第十九課：用互動方式認識什麼是衛星，還有月亮算哪一種。"
+    />
+    <title>衛星是什麼，月亮算哪一種｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260627-space" />
+    <link rel="stylesheet" href="satellites.css?v=20260627-space19" />
+    <script src="satellites.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header satellites-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#play">互動比較</a>
+        <a href="#map">環繞圖解</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="satellites-hero">
+        <div class="satellites-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第十九課</p>
+          <h1>衛星不是只有人造的，<em>月亮其實也是一種衛星。</em></h1>
+          <p class="hero-intro">
+            這堂課我們來分清楚：什麼叫衛星、月亮算哪一種，
+            還有天然衛星和人造衛星到底差在哪裡。
+          </p>
+          <div class="satellites-summary">
+            <div><strong>2</strong><span>種主要衛星</span></div>
+            <div><strong>1</strong><span>顆最熟悉的月亮</span></div>
+            <div><strong>3</strong><span>張 NASA 圖片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始認識衛星 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="satellites-hero-visual" aria-hidden="true">
+          <span class="visual-code">SATELLITE · MOON · ORBIT</span>
+          <div class="hero-earth"></div>
+          <div class="hero-orbit moon-orbit"></div>
+          <div class="hero-moon"></div>
+          <div class="hero-orbit sat-orbit"></div>
+          <div class="hero-satellite"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <p class="visual-caption">只要繞著比較大的天體走，就可能叫衛星</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">先記住這三件事</h2>
+          </div>
+          <p>這堂課先抓住「誰在繞誰」和「是不是人做的」，就不容易混淆。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-badge">01</div>
+            <h3>衛星是會繞著比較大的天體走</h3>
+            <p>只要一個天體一直繞著另一個比較大的天體運動，就可能被叫做衛星。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">02</div>
+            <h3>月亮是天然衛星</h3>
+            <p>月亮不是人造出來的，所以它是天然衛星，也是地球最熟悉的夥伴。</p>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-badge">03</div>
+            <h3>人造衛星是人送上去的</h3>
+            <p>像天氣衛星、導航衛星，這些是人類做出來，再送到太空中繞地球的。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動比較</p>
+            <h2 id="play-title">按一下，分清楚天然衛星和人造衛星</h2>
+          </div>
+          <p>先用最直接的方法看差別：是不是天然形成、繞誰走、我們平常怎麼認識它。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-mode="moon">月亮</button>
+            <button class="play-button" type="button" data-mode="natural">天然衛星</button>
+            <button class="play-button" type="button" data-mode="artificial">人造衛星</button>
+            <button class="play-button" type="button" data-mode="compare">一起比較</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="play-scene" id="play-scene" data-mode="moon">
+              <div class="scene-earth"></div>
+              <div class="scene-orbit moon-orbit"></div>
+              <div class="scene-moon" id="scene-moon"></div>
+              <div class="scene-orbit sat-orbit"></div>
+              <div class="scene-satellite" id="scene-satellite"></div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">MOON</p>
+            <h3 id="play-name">月亮就是地球的天然衛星</h3>
+            <p id="play-text">月亮一直繞著地球走，而且不是人造出來的，所以它是天然衛星。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">月亮是天然衛星，不是人造衛星。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" id="map" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">環繞圖解</p>
+            <h2 id="map-title">點點看，衛星關係圖在說什麼</h2>
+          </div>
+          <p>只要看懂地球、月亮和人造衛星的環繞關係，這堂課就會變得很直覺。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-visual">
+            <svg class="map-svg" viewBox="0 0 760 480" role="img" aria-labelledby="map-svg-title map-svg-desc">
+              <title id="map-svg-title">衛星互動圖</title>
+              <desc id="map-svg-desc">可點選地球、月亮、天然衛星、人造衛星和環繞路徑</desc>
+              <rect x="30" y="30" width="700" height="420" rx="38" fill="#10172a" />
+              <circle cx="324" cy="240" r="86" fill="#3974d6" />
+              <circle cx="306" cy="220" r="18" fill="#5dd28e" opacity="0.9" />
+              <ellipse cx="324" cy="240" rx="176" ry="98" fill="none" stroke="#d8e7ff" stroke-width="3" stroke-dasharray="9 8" />
+              <ellipse cx="324" cy="240" rx="120" ry="58" fill="none" stroke="#9db8ff" stroke-width="3" stroke-dasharray="9 8" />
+              <circle cx="484" cy="174" r="34" fill="#d9d9dc" />
+              <rect x="436" y="278" width="36" height="20" rx="8" fill="#d0d7e8" />
+              <rect x="426" y="282" width="12" height="12" rx="4" fill="#8fb2ff" />
+              <rect x="472" y="282" width="12" height="12" rx="4" fill="#8fb2ff" />
+              <rect x="446" y="268" width="16" height="10" rx="4" fill="#9cb9ff" />
+
+              <g class="map-hotspot is-active" data-part="earth">
+                <circle cx="244" cy="132" r="22"></circle>
+                <text x="244" y="138">1</text>
+              </g>
+              <g class="map-hotspot" data-part="moon">
+                <circle cx="526" cy="174" r="22"></circle>
+                <text x="526" y="180">2</text>
+              </g>
+              <g class="map-hotspot" data-part="natural">
+                <circle cx="582" cy="126" r="22"></circle>
+                <text x="582" y="132">3</text>
+              </g>
+              <g class="map-hotspot" data-part="artificial">
+                <circle cx="502" cy="308" r="22"></circle>
+                <text x="502" y="314">4</text>
+              </g>
+              <g class="map-hotspot" data-part="orbit">
+                <circle cx="372" cy="98" r="22"></circle>
+                <text x="372" y="104">5</text>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="map-card" aria-live="polite">
+            <p class="play-kicker" id="map-kicker">EARTH</p>
+            <h3 id="map-name">地球是被繞的那一邊</h3>
+            <p id="map-text">在這堂課裡，地球是比較大的主角，月亮和一些人造衛星都會繞著它走。</p>
+            <div class="play-note">
+              <span>最簡單怎麼記</span>
+              <strong id="map-memory">先看誰在中間，再看誰在繞。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再看三張真的 NASA 圖片</h2>
+          </div>
+          <p>真實照片很適合讓孩子知道：月亮不是孤單的例子，很多行星也有自己的衛星。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA00342/PIA00342~orig.jpg"
+              alt="NASA 地球與月亮圖片"
+            />
+            <div class="photo-copy">
+              <p>01 · 地球和月亮</p>
+              <h3>最容易懂的衛星例子，就是月亮繞著地球走</h3>
+              <span>這張很適合先讓孩子建立基本概念：月亮就是地球的天然衛星。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA00342" target="_blank" rel="noreferrer">NASA「The Earth & Moon」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA21431/PIA21431~orig.jpg"
+              alt="NASA 歐羅巴衛星圖片"
+            />
+            <div class="photo-copy">
+              <p>02 · 別的行星也有衛星</p>
+              <h3>木星也有自己的衛星，像歐羅巴就是其中一顆</h3>
+              <span>這張可以幫孩子知道：不是只有地球有月亮，很多行星都有自己的衛星家族。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA21431" target="_blank" rel="noreferrer">NASA「Highest-resolution Europa Image & Mosaic from Galileo」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA16177/PIA16177~orig.jpg"
+              alt="NASA 土星的衛星土衛六圖片"
+            />
+            <div class="photo-copy">
+              <p>03 · 土星也有衛星</p>
+              <h3>土衛六 Titan 也是天然衛星，而且很有名</h3>
+              <span>這張可以讓孩子建立更完整的感覺：天然衛星不只有月亮一個例子。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-PIA16177" target="_blank" rel="noreferrer">NASA「Glowing Titan」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你記住月亮算哪一種了嗎？</h2>
+          </div>
+          <p>這堂課最重要的是記住：月亮是天然衛星，而人造衛星則是人類送上去的。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十九課完成</p>
+        <h2>現在你知道，月亮是地球的天然衛星，而人造衛星則是人類做出來送上太空的。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>下次看到月亮時，你會知道它不只是夜空裡的亮球，它其實是地球最熟悉的天然衛星。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
