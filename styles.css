@@ -542,6 +542,12 @@ h1 em {
   font-weight: 700;
 }
 
+.category-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .category-coming {
   display: grid;
   padding: 35px;
@@ -570,6 +576,35 @@ h1 em {
 .category-coming > span:last-child {
   font-size: 15px;
   line-height: 1.75;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.card-link-primary {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.card-link-primary:hover {
+  background: var(--orange-dark);
+}
+
+.card-link-secondary {
+  border: 1px solid var(--line);
+}
+
+.card-link-secondary:hover {
+  border-color: var(--ink);
+  background: #f5f1e8;
 }
 
 .topic-card {
