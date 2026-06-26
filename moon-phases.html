@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第五課：月亮為什麼有陰晴圓缺，用互動圖與真實圖片認識太陽、地球、月亮和月相。"
+    />
+    <title>月亮為什麼有陰晴圓缺｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="moon-phases.css?v=20260626-space5" />
+    <script src="moon-phases.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header phase-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="課程選單">
+        <a href="#idea">先懂概念</a>
+        <a href="#play">互動月相</a>
+        <a href="#photos">真實圖片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta lesson-home" href="space.html">
+        主題首頁 <span aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="phase-hero">
+        <div class="phase-hero-copy">
+          <a class="breadcrumb" href="space.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第五課</p>
+          <h1>月亮不是自己變胖變瘦，<em>是我們看到亮的地方不一樣。</em></h1>
+          <p class="hero-intro">
+            這堂課會把「陰晴圓缺」講得很直覺：太陽一直照亮月亮的一半，
+            只是月亮繞著地球走時，我們每次看到的亮面角度不同。
+          </p>
+          <div class="phase-summary">
+            <div><strong>4</strong><span>個主要月相</span></div>
+            <div><strong>4</strong><span>種觀看角度</span></div>
+            <div><strong>3</strong><span>張 NASA 圖片</span></div>
+          </div>
+          <a class="button button-primary" href="#idea">
+            開始看月相 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="phase-hero-visual" aria-hidden="true">
+          <span class="visual-code">SUN · EARTH · MOON PHASE</span>
+          <div class="hero-sun"></div>
+          <div class="hero-earth"></div>
+          <div class="hero-ring"></div>
+          <div class="hero-moon half"></div>
+          <div class="hero-star one">✦</div>
+          <div class="hero-star two">✦</div>
+          <div class="hero-star three">✦</div>
+          <p class="visual-caption">月亮一直是圓的，變的是我們看到的亮面</p>
+        </div>
+      </section>
+
+      <section class="idea-section" id="idea" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先懂概念</p>
+            <h2 id="idea-title">月亮有陰晴圓缺，通常是這三件事一起造成的</h2>
+          </div>
+          <p>先抓住最重要的三句話，就不會把月相和月蝕搞混。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <div class="idea-visual" aria-hidden="true">
+              <div class="mini-sun"></div>
+              <div class="sunlight"></div>
+              <div class="mini-moon lit"></div>
+            </div>
+            <div class="idea-copy">
+              <p>01 · 太陽一直在照</p>
+              <h3>月亮本身不發光，是被太陽照亮的</h3>
+              <span>所以月亮亮亮的地方，其實是被太陽照到的那一面。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual" aria-hidden="true">
+              <div class="mini-earth"></div>
+              <div class="mini-ring"></div>
+              <div class="mini-moon orbiting"></div>
+            </div>
+            <div class="idea-copy">
+              <p>02 · 月亮一直在繞地球</p>
+              <h3>月亮的位置一變，我們看到的角度也變了</h3>
+              <span>這就是為什麼有時看到彎月，有時看到半月，有時看到滿月。</span>
+            </div>
+          </article>
+
+          <article class="idea-card">
+            <div class="idea-visual" aria-hidden="true">
+              <div class="moon-row new"></div>
+              <div class="moon-row half"></div>
+              <div class="moon-row full"></div>
+            </div>
+            <div class="idea-copy">
+              <p>03 · 月亮沒有真的變形</p>
+              <h3>它一直都是圓的</h3>
+              <span>看起來胖瘦不同，只是因為我們從地球看到的亮面比例變了。</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="play" aria-labelledby="play-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動月相</p>
+            <h2 id="play-title">按不同位置，看看月亮會變成什麼樣子</h2>
+          </div>
+          <p>這裡先用四個最重要的月相：新月、上弦月、滿月、下弦月。先看懂主幹就很夠了。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons">
+            <button class="play-button is-active" type="button" data-mode="new">新月</button>
+            <button class="play-button" type="button" data-mode="first">上弦月</button>
+            <button class="play-button" type="button" data-mode="full">滿月</button>
+            <button class="play-button" type="button" data-mode="last">下弦月</button>
+          </div>
+
+          <div class="play-stage">
+            <div class="play-scene" id="play-scene" data-mode="new">
+              <div class="scene-sun"></div>
+              <div class="scene-earth"></div>
+              <div class="scene-ring"></div>
+              <div class="scene-moon new" id="scene-moon"></div>
+            </div>
+          </div>
+
+          <aside class="play-card" aria-live="polite">
+            <p class="play-kicker" id="play-kicker">NEW MOON</p>
+            <h3 id="play-name">新月</h3>
+            <p id="play-text">這時候月亮亮的一面大多朝向太陽，不是朝向地球，所以我們很難看見它。</p>
+            <div class="play-note">
+              <span>一句記住</span>
+              <strong id="play-memory">看不太到，不代表月亮不見了。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動地圖</p>
+            <h2 id="map-title">點點看，月相圖上每個東西在做什麼</h2>
+          </div>
+          <p>只要先知道太陽、地球、月亮三者的位置關係，月相就會突然變很好懂。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-visual">
+            <svg class="map-svg" viewBox="0 0 760 480" role="img" aria-labelledby="map-svg-title map-svg-desc">
+              <title id="map-svg-title">月相互動圖</title>
+              <desc id="map-svg-desc">可點選太陽、地球、月亮、月球軌道和太陽光方向</desc>
+              <rect x="30" y="30" width="700" height="420" rx="38" fill="#0a1220" />
+              <circle cx="120" cy="244" r="52" fill="#ffd977" />
+              <circle cx="384" cy="244" r="58" fill="#2f5d8a" stroke="#8fd4ff" stroke-width="8" />
+              <ellipse cx="384" cy="244" rx="206" ry="126" fill="none" stroke="#f0c668" stroke-width="5" stroke-dasharray="12 10" />
+              <circle cx="552" cy="170" r="28" fill="#e8e6e0" stroke="#a6a09a" stroke-width="5" />
+              <line x1="176" y1="244" x2="520" y2="244" stroke="#ffe6a6" stroke-width="8" stroke-linecap="round" />
+
+              <g class="map-hotspot is-active" data-part="sun">
+                <circle cx="120" cy="166" r="22"></circle>
+                <text x="120" y="172">1</text>
+              </g>
+              <g class="map-hotspot" data-part="earth">
+                <circle cx="384" cy="166" r="22"></circle>
+                <text x="384" y="172">2</text>
+              </g>
+              <g class="map-hotspot" data-part="moon">
+                <circle cx="588" cy="134" r="22"></circle>
+                <text x="588" y="140">3</text>
+              </g>
+              <g class="map-hotspot" data-part="light">
+                <circle cx="250" cy="208" r="22"></circle>
+                <text x="250" y="214">4</text>
+              </g>
+              <g class="map-hotspot" data-part="track">
+                <circle cx="498" cy="92" r="22"></circle>
+                <text x="498" y="98">5</text>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="map-card" aria-live="polite">
+            <p class="play-kicker" id="map-kicker">SUN</p>
+            <h3 id="map-name">太陽</h3>
+            <p id="map-text">太陽像一盞超大的燈，一直照亮月亮的一半。月相故事就是從這裡開始的。</p>
+            <div class="play-note">
+              <span>最簡單怎麼記</span>
+              <strong id="map-memory">沒有太陽光，就沒有月相可以看。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實圖片</p>
+            <h2 id="photos-title">再看三張真的 NASA 月亮圖片</h2>
+          </div>
+          <p>這些圖片能幫小朋友把互動示意，和真實月亮的樣子連起來。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000864/GSFC_20171208_Archive_e000864~orig.jpg"
+              alt="NASA 月相總覽圖"
+            />
+            <div class="photo-copy">
+              <p>01 · 月相整體看</p>
+              <h3>一整個月，月亮會慢慢換樣子</h3>
+              <span>這張圖很適合先讓小朋友知道：月亮不是忽然變，而是慢慢一點一點變化。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000864" target="_blank" rel="noreferrer">NASA「Moon Phases 2015」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000868/GSFC_20171208_Archive_e000868~large.jpg"
+              alt="NASA 滿月圖片"
+            />
+            <div class="photo-copy">
+              <p>02 · 滿月真實長相</p>
+              <h3>滿月不是燈泡，是被太陽完整照到的那一面</h3>
+              <span>當月亮的位置剛好讓我們看到大部分亮面，就會看起來又圓又亮。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000868" target="_blank" rel="noreferrer">NASA「Full Moon」↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000496/GSFC_20171208_Archive_e000496~orig.png"
+              alt="從月球軌道附近看到地球升起"
+            />
+            <div class="photo-copy">
+              <p>03 · 換個角度看地月</p>
+              <h3>從月亮附近回頭看，地球也會像月亮一樣有不同角度</h3>
+              <span>這張圖能幫小朋友知道：角度一改，看到的亮面就會不同，這就是月相的核心。</span>
+              <p class="photo-source">
+                照片來源：
+                <a href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000496" target="_blank" rel="noreferrer">NASA「High-Resolution Earthrise Image」↗</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你有沒有看懂陰晴圓缺？</h2>
+          </div>
+          <p>這堂課最重要的不是背名稱，而是記住：月亮一直是圓的，變的是我們看到的亮面。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第五課完成</p>
+        <h2>現在你知道，月亮有陰晴圓缺，不是因為它變形，而是因為我們看到的亮面變了。</h2>
+        <a href="space.html">回到太空主題 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>看懂月相之後，晚上抬頭看月亮會變得更有意思。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
