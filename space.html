@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題，從火箭升空開始，之後一路認識太空任務、太陽系、銀河系和宇宙有多大。"
+    />
+    <title>太空主題｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-space" />
+    <link rel="stylesheet" href="space.css?v=20260626-space" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header space-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="太空主題選單">
+        <a href="#courses">全部課程</a>
+        <a href="#route">學習路線</a>
+      </nav>
+      <a class="header-cta" href="index.html">
+        所有主題 <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="space-hero">
+        <div class="space-hero-copy">
+          <a class="breadcrumb" href="index.html">主題首頁 / 太空</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>主題 02 · SPACE</p>
+          <h1>從火箭發射，<em>一路飛向宇宙。</em></h1>
+          <p class="hero-intro">
+            我們會先從火箭怎麼離開地球開始，之後再慢慢認識太空人、月亮、太陽系、
+            銀河系，最後看看宇宙到底有多大。現在先從第一課出發，看看火箭為什麼能往上飛。
+          </p>
+          <div class="space-summary">
+            <div><strong>1</strong><span>堂已上線</span></div>
+            <div><strong>32</strong><span>堂規劃中</span></div>
+            <div><strong>0</strong><span>基礎也能開始</span></div>
+          </div>
+          <a class="button button-primary" href="#courses">
+            進入第一課 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="space-visual" aria-hidden="true">
+          <span class="visual-code">LIFT-OFF / ORBIT / SPACE</span>
+          <div class="planet planet-one"></div>
+          <div class="planet planet-two"></div>
+          <div class="rocket-body"></div>
+          <div class="rocket-window"></div>
+          <div class="rocket-wing left"></div>
+          <div class="rocket-wing right"></div>
+          <div class="rocket-flame"></div>
+          <div class="rocket-trail"></div>
+          <div class="star star-one">✦</div>
+          <div class="star star-two">✦</div>
+          <div class="star star-three">✦</div>
+          <span class="visual-caption">LOOK UP · COUNTDOWN · EXPLORE</span>
+        </div>
+      </section>
+
+      <section class="course-section" id="courses" aria-labelledby="courses-title">
+        <div class="course-heading">
+          <div>
+            <p class="section-kicker">太空主題課程</p>
+            <h2 id="courses-title">先從離開地球開始</h2>
+          </div>
+          <p>這個主題會一路從火箭起飛講到宇宙尺度。現在先看第一課，確認整體風格是不是你喜歡的方向。</p>
+        </div>
+
+        <div class="course-list">
+          <article class="course-card course-rocket">
+            <div class="course-number"><span>01</span><i></i></div>
+            <div class="course-content">
+              <p>互動起飛</p>
+              <h3>火箭怎麼升空</h3>
+              <span>用最簡單的方式認識倒數、點火、推力和分段，知道火箭為什麼能往上飛。</span>
+            </div>
+            <div class="course-tags"><span>火箭</span><span>起飛</span></div>
+            <a href="rocket.html" aria-label="開始太空主題第一課：火箭怎麼升空">開始第一課 <b>→</b></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="route-guide" id="route" aria-labelledby="route-guide-title">
+        <div>
+          <p class="section-kicker">規劃中的學習路線</p>
+          <h2 id="route-guide-title">先上去，再越看越遠</h2>
+        </div>
+        <ol>
+          <li><span>起飛</span><strong>先看火箭怎麼升空</strong></li>
+          <li><span>任務</span><strong>認識太空人與太空生活</strong></li>
+          <li><span>鄰居</span><strong>先認識月亮和太陽</strong></li>
+          <li><span>地圖</span><strong>慢慢看懂太陽系</strong></li>
+          <li><span>放大</span><strong>一路看到銀河系與宇宙</strong></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>太空主題 · 先從第一堂火箭課開始</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

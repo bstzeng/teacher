@@ -368,8 +368,11 @@ h1 em {
 
 .topic-grid {
   display: grid;
-  grid-template-columns: 1.55fr 0.45fr;
   gap: 18px;
+}
+
+.topic-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .category-card {
@@ -386,12 +389,25 @@ h1 em {
   box-shadow: var(--shadow);
 }
 
+.space-category {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
 .category-visual {
   position: relative;
   min-height: 410px;
   overflow: hidden;
   color: var(--paper);
   background: #173e52;
+}
+
+.space-visual-card {
+  background: linear-gradient(180deg, #173057 0%, #0a1628 100%);
 }
 
 .category-visual::before {
@@ -446,6 +462,45 @@ h1 em {
   color: #efc256;
   font-size: 82px;
   transform: rotate(-18deg);
+}
+
+.space-orbit {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+
+.space-orbit.one {
+  top: 72px;
+  left: 40px;
+  width: 292px;
+  height: 292px;
+}
+
+.space-orbit.two {
+  top: 126px;
+  left: 92px;
+  width: 188px;
+  height: 188px;
+}
+
+.space-planet {
+  position: absolute;
+  right: 64px;
+  top: 102px;
+  width: 82px;
+  height: 82px;
+  background: radial-gradient(circle at 35% 35%, #f5c180 0%, #cb7e4b 68%, #8c4d31 100%);
+  border-radius: 50%;
+}
+
+.space-rocket {
+  position: absolute;
+  left: 132px;
+  top: 156px;
+  color: #efc256;
+  font-size: 76px;
+  transform: rotate(-10deg);
 }
 
 .category-copy {
@@ -764,11 +819,13 @@ footer p:last-child {
     gap: 28px;
   }
 
-  .topic-grid {
+  .topic-grid,
+  .topic-grid-two {
     grid-template-columns: 1fr;
   }
 
-  .aviation-category {
+  .aviation-category,
+  .space-category {
     grid-template-columns: 0.8fr 1.2fr;
   }
 
@@ -837,7 +894,8 @@ footer p:last-child {
     padding: 25px;
   }
 
-  .aviation-category {
+  .aviation-category,
+  .space-category {
     grid-template-columns: 1fr;
   }
 
