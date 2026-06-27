@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第二十六課：用互動方式認識為什麼我們看到遠方星星時，像是在看以前的樣子。"
+    />
+    <title>我們看到星星其實是在看過去嗎｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="seeing-the-past.css" />
+    <script src="seeing-the-past.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="看見過去課程選單">
+        <a href="#viewer">宇宙回看器</a>
+        <a href="#photos">真實照片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta" href="space.html">太空主題 ↗</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <a class="breadcrumb" href="space.html">太空主題 / 第二十六課</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第二十六課</p>
+          <h1>原來我們看著很遠的星星時，<em>也像在看它以前的樣子。</em></h1>
+          <p class="hero-intro">
+            上一課我們學到光年是在量距離。這一課再往前走一步：
+            因為光不是一下子就到，所以當我們看見很遠很遠的天體時，
+            其實看到的是它很久以前發出的光。
+          </p>
+
+          <div class="hero-stats">
+            <div><strong>5</strong><span>段回看時間</span></div>
+            <div><strong>4</strong><span>張 NASA 照片</span></div>
+            <div><strong>1</strong><span>個超重要概念</span></div>
+          </div>
+
+          <a class="button button-primary" href="#viewer">
+            開始回看宇宙 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="visual-code">LIGHT / LOOK BACK / TIME</span>
+          <div class="timeline-ring outer"></div>
+          <div class="timeline-ring inner"></div>
+          <div class="light-pulse one"></div>
+          <div class="light-pulse two"></div>
+          <div class="light-pulse three"></div>
+          <div class="earth-dot"></div>
+          <div class="star-dot near"></div>
+          <div class="star-dot far"></div>
+          <div class="galaxy-dot"></div>
+          <div class="spark one">✦</div>
+          <div class="spark two">✦</div>
+          <div class="spark three">✦</div>
+          <p class="visual-caption">距離越遠，光在路上花的時間越久，所以我們看到的畫面也越像以前。</p>
+        </div>
+      </section>
+
+      <section class="idea-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先記住</p>
+            <h2>不是宇宙在倒帶，是光正在路上旅行</h2>
+          </div>
+          <p>孩子最容易懂的關鍵，就是先記住下面這三件事。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <p>01</p>
+            <h3>光前進需要時間</h3>
+            <p>就算光非常非常快，也不是瞬間就到，所以我們看到的畫面會有一點點延遲。</p>
+          </article>
+          <article class="idea-card">
+            <p>02</p>
+            <h3>越遠，看見的越久以前</h3>
+            <p>月亮只有 1.3 秒前，太陽是 8 分鐘前，遠方星星和星系就會變成幾年、幾百萬年前。</p>
+          </article>
+          <article class="idea-card">
+            <p>03</p>
+            <h3>望遠鏡像時光相機</h3>
+            <p>望遠鏡不是讓時間倒退，而是幫我們接住那些花了很久才到的光。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="viewer-section" id="viewer">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">點點看</p>
+            <h2>宇宙回看器：你現在看到的是多久以前？</h2>
+          </div>
+          <p>按不同目標，看看我們其實是在看幾秒前、幾分鐘前、幾年前，甚至幾十億年前的光。</p>
+        </div>
+
+        <div class="viewer-layout">
+          <div class="viewer-buttons" role="tablist" aria-label="宇宙回看器目標">
+            <button class="viewer-button active" type="button" data-target="moon">月亮</button>
+            <button class="viewer-button" type="button" data-target="sun">太陽</button>
+            <button class="viewer-button" type="button" data-target="sirius">遠一點的恆星</button>
+            <button class="viewer-button" type="button" data-target="andromeda">仙女座</button>
+            <button class="viewer-button" type="button" data-target="deep">超深宇宙</button>
+          </div>
+
+          <div class="viewer-card">
+            <div class="viewer-map">
+              <div class="map-label">現在站在地球看</div>
+              <button class="map-node active node-earth" type="button" data-target="moon">地球看月亮</button>
+              <button class="map-node node-sun" type="button" data-target="sun">看太陽</button>
+              <button class="map-node node-sirius" type="button" data-target="sirius">看恆星</button>
+              <button class="map-node node-andromeda" type="button" data-target="andromeda">看仙女座</button>
+              <button class="map-node node-deep" type="button" data-target="deep">看深空</button>
+              <div class="signal-line line-moon"></div>
+              <div class="signal-line line-sun"></div>
+              <div class="signal-line line-sirius"></div>
+              <div class="signal-line line-andromeda"></div>
+              <div class="signal-line line-deep"></div>
+            </div>
+
+            <div class="viewer-copy">
+              <p class="mini-label">現在看到的是</p>
+              <h3 id="target-name">月亮</h3>
+              <p id="target-time">你看到的是大約 1.3 秒前離開月亮的光。</p>
+              <p id="target-text">所以你看到的月亮，不是「很久以前」，但也不是完全同一個瞬間。</p>
+              <div class="memory-box">
+                <strong id="target-memory">記法：距離越近，回看到的時間越短；距離越遠，回看到的時間越長。</strong>
+              </div>
+              <ul id="target-facts" class="fact-list">
+                <li>月亮的光到地球很快。</li>
+                <li>所以只是在看很短很短以前的樣子。</li>
+                <li>這能幫你先理解「看見過去」的起點。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ladder-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">一眼比較</p>
+            <h2>從月亮一路看到宇宙深處</h2>
+          </div>
+        </div>
+
+        <div class="ladder-grid">
+          <article>
+            <p>月亮</p>
+            <h3>1.3 秒前</h3>
+            <span>很近，所以幾乎像現在。</span>
+          </article>
+          <article>
+            <p>太陽</p>
+            <h3>8 分鐘前</h3>
+            <span>已經不是同一刻了。</span>
+          </article>
+          <article>
+            <p>附近恆星</p>
+            <h3>幾年前</h3>
+            <span>開始真的像在看以前。</span>
+          </article>
+          <article>
+            <p>仙女座</p>
+            <h3>250 萬年前</h3>
+            <span>看到的是非常久以前的光。</span>
+          </article>
+          <article>
+            <p>深空</p>
+            <h3>更久以前</h3>
+            <span>像在看很古老的宇宙。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">NASA 真實照片</p>
+            <h2>用真的畫面感覺「在看過去」</h2>
+          </div>
+          <p>這幾張圖會幫孩子把剛剛的時間感，和真正的天體畫面連在一起。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA26681/PIA26681~large.jpg"
+              alt="NASA 太陽照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>01 · 太陽</p>
+              <h3>看到太陽時，其實看到的是大約 8 分鐘前的太陽</h3>
+              <span>這是最適合孩子理解的第一個例子，因為既熟悉又不會太抽象。</span>
+              <a href="https://images.nasa.gov/details-PIA26681" target="_blank" rel="noreferrer">來源：NASA Image of Sun From NASA's Solar Dynamics Observatory ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA20468/PIA20468~large.jpg"
+              alt="NASA 星團照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>02 · 遠一點的星星</p>
+              <h3>看到更遠的星光時，就更像是在翻看宇宙以前的照片</h3>
+              <span>這張可以幫孩子把「幾年前的光」和真正的星光畫面連在一起。</span>
+              <a href="https://images.nasa.gov/details/PIA20468" target="_blank" rel="noreferrer">來源：NASA Hubble Unveils a Tapestry of Dazzling Diamond-Like Stars ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg"
+              alt="NASA 仙女座星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>03 · 仙女座</p>
+              <h3>看見仙女座時，我們看到的是很久很久以前離開那裡的光</h3>
+              <span>這能讓孩子真正感覺到：宇宙裡的「看見」跟日常生活很不一樣。</span>
+              <a href="https://images.nasa.gov/details/PIA04921" target="_blank" rel="noreferrer">來源：NASA Andromeda Galaxy ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001651/GSFC_20171208_Archive_e001651~large.jpg"
+              alt="NASA 極深空宇宙照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>04 · 更古老的宇宙</p>
+              <h3>深空照片裡很多小亮點，其實像是一張張很古老的宇宙快照</h3>
+              <span>這張最能幫孩子建立「望遠鏡也在幫我們看以前」的感覺。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e001651" target="_blank" rel="noreferrer">來源：NASA Hubble eXtreme Deep Field ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2>你知道什麼叫做「看見過去」了嗎？</h2>
+          </div>
+          <p>做完這五題，如果你能說出原因是「光在路上要花時間」，這課就成功了。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十六課完成</p>
+        <h2>現在你知道，當我們看著很遠很遠的宇宙時，也像是在看它以前留下來的光。</h2>
+        <div class="finish-actions">
+          <a href="space.html">回到太空主題 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>宇宙不是在倒帶，而是光從很遠很遠的地方，花了很久才來到我們眼前。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
