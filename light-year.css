@@ -1,0 +1,767 @@
+:root {
+  --bg: #07111d;
+  --panel: rgba(10, 20, 39, 0.84);
+  --line: rgba(171, 208, 255, 0.16);
+  --text: #f1f6ff;
+  --muted: #bfd0eb;
+  --gold: #ffd56e;
+  --cyan: #88ddff;
+  --pink: #ff98c1;
+  --purple: #bca9ff;
+  --mint: #9ee9c3;
+  --shadow: 0 26px 72px rgba(0, 0, 0, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(79, 121, 214, 0.24), transparent 34%),
+    linear-gradient(180deg, #09121f 0%, #040912 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 28px;
+  background: rgba(4, 9, 18, 0.74);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand,
+.desktop-nav,
+.header-cta,
+.button,
+.distance-button {
+  font-family: "Baloo 2", "Noto Sans TC", sans-serif;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #91d7ff, #7b7cff);
+  color: #06111d;
+}
+
+.desktop-nav {
+  display: inline-flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.08rem;
+}
+
+.desktop-nav a,
+.header-cta {
+  color: var(--muted);
+}
+
+.header-cta {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+main {
+  padding: 0 24px 56px;
+}
+
+section {
+  width: min(1150px, 100%);
+  margin: 0 auto 28px;
+}
+
+.hero,
+.idea-section,
+.distance-section,
+.formula-section,
+.photos-section,
+.compare-strip,
+.quiz-section,
+.course-finish {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.04fr 0.96fr;
+  gap: 28px;
+  padding: 34px;
+  margin-top: 28px;
+}
+
+.breadcrumb,
+.eyebrow,
+.section-kicker,
+.mini-label {
+  color: var(--gold);
+  letter-spacing: 0.06em;
+}
+
+.breadcrumb {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.eyebrow,
+.section-kicker,
+.mini-label {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.eyebrow span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  border-radius: 999px;
+  background: var(--gold);
+}
+
+.hero h1,
+.section-heading h2,
+.course-finish h2,
+.quiz-card h3,
+.photo-copy h3,
+.distance-copy h3,
+.idea-card h3,
+.scale-steps h3 {
+  margin: 0;
+  font-family: "Baloo 2", "Noto Sans TC", sans-serif;
+  line-height: 1.2;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.hero h1 em {
+  color: var(--cyan);
+  font-style: normal;
+}
+
+.hero-intro,
+.section-heading p,
+.idea-card p:last-child,
+.photo-copy span,
+.distance-copy p,
+.formula-card p,
+.scale-steps span {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.08rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.hero-stats div,
+.idea-card,
+.distance-card,
+.formula-card,
+.photo-card,
+.quiz-card,
+.scale-steps article {
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-stats div {
+  padding: 16px;
+}
+
+.hero-stats strong {
+  display: block;
+  font-family: "Baloo 2", "Noto Sans TC", sans-serif;
+  color: var(--cyan);
+  font-size: 2rem;
+}
+
+.hero-stats span {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 999px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #91ddff, #8a86ff);
+  color: #06111d;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 420px;
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 24% 28%, rgba(255, 213, 110, 0.18), transparent 18%),
+    radial-gradient(circle at 78% 32%, rgba(188, 169, 255, 0.24), transparent 20%),
+    linear-gradient(180deg, rgba(13, 25, 48, 0.98), rgba(7, 14, 25, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.visual-code,
+.visual-caption {
+  position: absolute;
+  left: 22px;
+  color: rgba(241, 246, 255, 0.72);
+  font-size: 0.98rem;
+}
+
+.visual-code {
+  top: 20px;
+}
+
+.visual-caption {
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  line-height: 1.7;
+}
+
+.beam-track {
+  position: absolute;
+  top: 170px;
+  left: 54px;
+  right: 54px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.beam-line {
+  position: absolute;
+  top: 173px;
+  left: 60px;
+  right: 130px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(255, 213, 110, 0.9), rgba(136, 221, 255, 0.16));
+}
+
+.beam-dot {
+  position: absolute;
+  top: 160px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.beam-dot.start {
+  left: 56px;
+  background: radial-gradient(circle, #fff1c7, #ffd56e 66%, transparent 70%);
+}
+
+.beam-dot.moon {
+  left: 132px;
+  background: radial-gradient(circle, #ffffff, #d9e6f7 62%, transparent 70%);
+}
+
+.beam-dot.sun {
+  left: 224px;
+  background: radial-gradient(circle, #fff4cc, #ffbd64 62%, transparent 70%);
+}
+
+.beam-dot.star {
+  left: 338px;
+  background: radial-gradient(circle, #fff4d8, #88ddff 62%, transparent 70%);
+}
+
+.beam-dot.galaxy {
+  right: 74px;
+  width: 44px;
+  height: 24px;
+  border-radius: 999px;
+  background: radial-gradient(circle at center, #fff4d8, #d3a2ff 55%, transparent 72%);
+}
+
+.spark {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.spark.one {
+  top: 90px;
+  left: 90px;
+}
+
+.spark.two {
+  top: 104px;
+  right: 70px;
+}
+
+.spark.three {
+  bottom: 120px;
+  left: 50%;
+}
+
+.idea-section,
+.distance-section,
+.formula-section,
+.photos-section,
+.compare-strip,
+.quiz-section,
+.course-finish {
+  padding: 30px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+}
+
+.section-heading p {
+  max-width: 500px;
+  margin: 0;
+}
+
+.idea-grid,
+.photo-grid,
+.scale-steps {
+  display: grid;
+  gap: 18px;
+}
+
+.idea-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.idea-card,
+.scale-steps article {
+  padding: 22px;
+}
+
+.idea-card > p:first-child,
+.scale-steps p,
+.photo-copy p {
+  margin: 0 0 10px;
+  font-family: "Baloo 2", "Noto Sans TC", sans-serif;
+  color: var(--pink);
+  font-size: 1.08rem;
+}
+
+.distance-layout {
+  display: grid;
+  gap: 18px;
+}
+
+.distance-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.distance-button {
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-size: 1.08rem;
+  cursor: pointer;
+}
+
+.distance-button.active {
+  background: linear-gradient(135deg, #93e0ff, #a18dff);
+  color: #05111d;
+}
+
+.distance-card {
+  display: grid;
+  grid-template-columns: 1fr 0.92fr;
+  gap: 20px;
+  padding: 22px;
+}
+
+.distance-track {
+  position: relative;
+  min-height: 360px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at center, rgba(122, 124, 255, 0.16), transparent 28%),
+    rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.track-line,
+.track-progress {
+  position: absolute;
+  top: 168px;
+  left: 42px;
+  right: 42px;
+  height: 8px;
+  border-radius: 999px;
+}
+
+.track-line {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.track-progress {
+  width: 8%;
+  right: auto;
+  background: linear-gradient(90deg, #ffd56e, #88ddff);
+  transition: width 240ms ease;
+}
+
+.track-node,
+.light-ship {
+  position: absolute;
+  transform: translateX(-50%);
+  font-family: "Baloo 2", "Noto Sans TC", sans-serif;
+}
+
+.track-node {
+  top: 204px;
+  color: var(--muted);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.node-moon {
+  left: 10%;
+}
+
+.node-sun {
+  left: 28%;
+}
+
+.node-neptune {
+  left: 48%;
+}
+
+.node-proxima {
+  left: 72%;
+}
+
+.node-andromeda {
+  left: 92%;
+}
+
+.light-ship {
+  top: 134px;
+  left: 10%;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #fff0b9, #ffd56e);
+  color: #05111d;
+  font-size: 1rem;
+  transition: left 240ms ease;
+}
+
+.distance-copy h3 {
+  font-size: 2rem;
+}
+
+.distance-copy p {
+  margin: 0 0 14px;
+}
+
+.memory-box {
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(136, 221, 255, 0.08);
+  border: 1px solid rgba(136, 221, 255, 0.18);
+}
+
+.memory-box strong {
+  display: block;
+  line-height: 1.8;
+  color: #def4ff;
+  font-size: 1.05rem;
+}
+
+.formula-card {
+  padding: 24px;
+}
+
+.formula-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  margin-bottom: 18px;
+}
+
+.formula-main span,
+.formula-main b,
+.formula-main strong {
+  font-family: "Baloo 2", "Noto Sans TC", sans-serif;
+}
+
+.formula-main span,
+.formula-main b {
+  font-size: 1.5rem;
+}
+
+.formula-main strong {
+  color: var(--gold);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.photo-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.photo-card {
+  overflow: hidden;
+}
+
+.photo-card img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.photo-copy {
+  padding: 20px;
+}
+
+.photo-copy h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.photo-copy a {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+.compact {
+  margin-bottom: 18px;
+}
+
+.scale-steps {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.quiz-card {
+  padding: 24px;
+}
+
+.quiz-card h3 {
+  font-size: 1.7rem;
+  margin: 12px 0 20px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 12px;
+}
+
+.quiz-option {
+  width: 100%;
+  text-align: left;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-size: 1.08rem;
+  cursor: pointer;
+}
+
+.quiz-option.correct {
+  background: rgba(158, 233, 195, 0.16);
+  border-color: rgba(158, 233, 195, 0.58);
+}
+
+.quiz-option.wrong {
+  background: rgba(255, 152, 193, 0.15);
+  border-color: rgba(255, 152, 193, 0.56);
+}
+
+#quiz-progress,
+#quiz-feedback {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+#quiz-feedback {
+  min-height: 2.2em;
+  margin: 16px 0;
+}
+
+.course-finish {
+  text-align: center;
+}
+
+.course-finish p:first-child {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-family: "Baloo 2", "Noto Sans TC", sans-serif;
+  font-size: 1.1rem;
+}
+
+.course-finish h2 {
+  max-width: 780px;
+  margin: 0 auto 18px;
+  font-size: clamp(2rem, 3.4vw, 2.9rem);
+}
+
+.finish-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.finish-actions a {
+  padding: 13px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+footer {
+  width: min(1150px, calc(100% - 48px));
+  margin: 0 auto 48px;
+  padding: 24px 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand {
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.02rem;
+}
+
+@media (max-width: 980px) {
+  .hero,
+  .distance-card,
+  .section-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .distance-card {
+    display: grid;
+  }
+
+  .section-heading {
+    align-items: start;
+  }
+
+  .idea-grid,
+  .photo-grid,
+  .scale-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .desktop-nav {
+    order: 3;
+  }
+
+  main {
+    padding: 0 14px 40px;
+  }
+
+  .hero,
+  .idea-section,
+  .distance-section,
+  .formula-section,
+  .photos-section,
+  .compare-strip,
+  .quiz-section,
+  .course-finish {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .hero-visual,
+  .distance-track {
+    min-height: 320px;
+  }
+
+  footer {
+    width: calc(100% - 28px);
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第二十五課：用互動方式認識光年是什麼，知道它是距離，不是時間，並理解太空為什麼要用光年來描述超遠距離。"
+    />
+    <title>光年是什麼，太空距離為什麼要用光年｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="light-year.css" />
+    <script src="light-year.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="光年課程選單">
+        <a href="#distance">距離階梯</a>
+        <a href="#photos">真實照片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta" href="space.html">太空主題 ↗</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <a class="breadcrumb" href="space.html">太空主題 / 第二十五課</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第二十五課</p>
+          <h1>光年不是時間，<em>它是在說有多遠。</em></h1>
+          <p class="hero-intro">
+            當我們開始講到星系、星系群和更遠的宇宙時，
+            公里就會變得太大太大、很難念。這時候，天文學家常用「光年」來說距離。
+            這一課我們就來弄懂：光年到底是什麼。
+          </p>
+
+          <div class="hero-stats">
+            <div><strong>5</strong><span>段距離比較</span></div>
+            <div><strong>4</strong><span>張 NASA 照片</span></div>
+            <div><strong>1</strong><span>個最重要觀念</span></div>
+          </div>
+
+          <a class="button button-primary" href="#distance">
+            開始看距離 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="visual-code">LIGHT / DISTANCE / UNIVERSE</span>
+          <div class="beam-track"></div>
+          <div class="beam-dot start"></div>
+          <div class="beam-dot moon"></div>
+          <div class="beam-dot sun"></div>
+          <div class="beam-dot star"></div>
+          <div class="beam-dot galaxy"></div>
+          <div class="beam-line"></div>
+          <div class="spark one">✦</div>
+          <div class="spark two">✦</div>
+          <div class="spark three">✦</div>
+          <p class="visual-caption">從月亮到仙女座，距離一拉大，就更需要用光來幫我們量距離。</p>
+        </div>
+      </section>
+
+      <section class="idea-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先記住</p>
+            <h2>光年最重要的不是「年」，而是「距離」</h2>
+          </div>
+          <p>孩子最容易搞混的就是這裡，所以我們先把最核心的三件事說清楚。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <p>01</p>
+            <h3>光年不是時間單位</h3>
+            <p>它不是在說要等多久，而是在說光跑了一整年，總共跑了多遠。</p>
+          </article>
+          <article class="idea-card">
+            <p>02</p>
+            <h3>因為太空太大了</h3>
+            <p>如果每次都講好多好多公里，會很難想像，所以才會改用光年。</p>
+          </article>
+          <article class="idea-card">
+            <p>03</p>
+            <h3>光像宇宙裡的尺</h3>
+            <p>你可以把它想成一把很快很快、專門拿來量超遠距離的大尺。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="distance-section" id="distance">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">點點看</p>
+            <h2>光要跑多久，才能到不同地方？</h2>
+          </div>
+          <p>從很近的月亮，一路看到很遠的仙女座。這樣最容易感覺出為什麼最後會用到光年。</p>
+        </div>
+
+        <div class="distance-layout">
+          <div class="distance-buttons" role="tablist" aria-label="距離選擇">
+            <button class="distance-button active" type="button" data-stop="moon">月亮</button>
+            <button class="distance-button" type="button" data-stop="sun">太陽</button>
+            <button class="distance-button" type="button" data-stop="neptune">海王星附近</button>
+            <button class="distance-button" type="button" data-stop="proxima">最近恆星</button>
+            <button class="distance-button" type="button" data-stop="andromeda">仙女座</button>
+          </div>
+
+          <div class="distance-card">
+            <div class="distance-track" id="distance-track">
+              <div class="track-line"></div>
+              <div class="track-progress" id="track-progress"></div>
+              <div class="track-node node-moon">月亮</div>
+              <div class="track-node node-sun">太陽</div>
+              <div class="track-node node-neptune">海王星</div>
+              <div class="track-node node-proxima">最近恆星</div>
+              <div class="track-node node-andromeda">仙女座</div>
+              <div class="light-ship" id="light-ship">光</div>
+            </div>
+
+            <div class="distance-copy">
+              <p class="mini-label">現在看到的是</p>
+              <h3 id="stop-name">月亮</h3>
+              <p id="stop-time">光大約 1.3 秒就能從月亮到地球。</p>
+              <p id="stop-text">
+                月亮其實已經很遠了，但光一下子就能到，所以這種距離還不用說到光年。
+              </p>
+              <div class="memory-box">
+                <strong id="stop-memory">記法：近的地方用秒、分鐘、幾小時就能講清楚；超遠的地方才會開始用光年。</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="formula-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">簡單記法</p>
+            <h2>一光年可以怎麼想？</h2>
+          </div>
+          <p>不用背很長的數字，只要記住下面這個概念就夠了。</p>
+        </div>
+
+        <div class="formula-card">
+          <div class="formula-main">
+            <span>光</span>
+            <b>跑 1 年</b>
+            <span>=</span>
+            <strong>1 光年</strong>
+          </div>
+          <p>
+            所以當你聽到「那顆星離我們 4 光年」，不是說等 4 年才會發生什麼事，
+            而是在說：那個地方遠到連光都要跑 4 年左右才會到。
+          </p>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">NASA 真實照片</p>
+            <h2>把距離和真實畫面連起來</h2>
+          </div>
+          <p>這四張圖會讓孩子感覺到：從太陽、銀河系，到更遠的星系，尺度真的越來越大。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA26681/PIA26681~large.jpg"
+              alt="NASA 太陽照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>01 · 太陽</p>
+              <h3>太陽離我們很遠，但光只要大約 8 分鐘就能到地球</h3>
+              <span>這張最適合幫孩子建立：不是所有太空距離一開始都要用光年。</span>
+              <a href="https://images.nasa.gov/details-PIA26681" target="_blank" rel="noreferrer">來源：NASA Image of Sun From NASA's Solar Dynamics Observatory ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA12467/PIA12467~orig.jpg"
+              alt="NASA 銀河系全天觀測圖"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>02 · 銀河系</p>
+              <h3>一看到整個銀河系，就會知道太空開始大到不能只用公里去想</h3>
+              <span>這張圖很適合把孩子的視角從太陽系往外拉大。</span>
+              <a href="https://images.nasa.gov/details/PIA12467" target="_blank" rel="noreferrer">來源：NASA All-Sky Infrared Survey ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg"
+              alt="NASA 仙女座星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>03 · 仙女座星系</p>
+              <h3>講到像仙女座這麼遠的鄰居星系，就很適合開始用光年來說距離</h3>
+              <span>它能讓孩子直接感覺到：宇宙裡的遠，不是一般日常的遠。</span>
+              <a href="https://images.nasa.gov/details/PIA04921" target="_blank" rel="noreferrer">來源：NASA Andromeda Galaxy ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001651/GSFC_20171208_Archive_e001651~large.jpg"
+              alt="NASA 極深空照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>04 · 更遠更遠</p>
+              <h3>深空照片裡看見的很多小亮點，其實都是非常遙遠的星系</h3>
+              <span>這張圖最能幫孩子建立「光年是拿來講超級遠距離」的感覺。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e001651" target="_blank" rel="noreferrer">來源：NASA Hubble eXtreme Deep Field ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="compare-strip">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">一路拉遠</p>
+            <h2>什麼時候開始需要用光年？</h2>
+          </div>
+        </div>
+
+        <div class="scale-steps">
+          <article>
+            <p>01</p>
+            <h3>月亮</h3>
+            <span>用秒就能講。</span>
+          </article>
+          <article>
+            <p>02</p>
+            <h3>太陽</h3>
+            <span>用分鐘就能講。</span>
+          </article>
+          <article>
+            <p>03</p>
+            <h3>外行星</h3>
+            <span>用幾小時就能講。</span>
+          </article>
+          <article>
+            <p>04</p>
+            <h3>附近恆星</h3>
+            <span>開始需要用光年。</span>
+          </article>
+          <article>
+            <p>05</p>
+            <h3>別的星系</h3>
+            <span>更需要用光年。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2>你記住光年是什麼了嗎？</h2>
+          </div>
+          <p>做完這五題，如果你能說出光年是在量距離，不是在量時間，這課就成功了。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十五課完成</p>
+        <h2>現在你知道，光年不是時間，而是拿來量超級遠宇宙距離的一把大尺。</h2>
+        <div class="finish-actions">
+          <a href="space.html">回到太空主題 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>當宇宙越看越遠，光就像一把超級快、超級長的尺，幫我們量出距離。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
