@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第二十七課：用互動方式認識為什麼深空照片像在看宇宙小時候的樣子。"
+    />
+    <title>我們能看到宇宙小時候嗎｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="young-universe.css" />
+    <script src="young-universe.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="宇宙小時候課程選單">
+        <a href="#timeline">宇宙時間線</a>
+        <a href="#photos">真實照片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta" href="space.html">太空主題 ↗</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <a class="breadcrumb" href="space.html">太空主題 / 第二十七課</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第二十七課</p>
+          <h1>如果光會飛很久，<em>那我們能不能看到宇宙小時候？</em></h1>
+          <p class="hero-intro">
+            上一課我們知道，看很遠很遠的地方，像是在看以前的光。
+            那麼再往前想一步：當望遠鏡看到超級遠的深空時，
+            我們是不是也像在看宇宙很小、很年輕時候留下來的畫面呢？
+          </p>
+
+          <div class="hero-stats">
+            <div><strong>5</strong><span>段宇宙時間感</span></div>
+            <div><strong>4</strong><span>張 NASA 照片</span></div>
+            <div><strong>1</strong><span>個核心答案</span></div>
+          </div>
+
+          <a class="button button-primary" href="#timeline">
+            開始看宇宙小時候 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="visual-code">EARLY UNIVERSE / DEEP SPACE / LIGHT</span>
+          <div class="age-band one"></div>
+          <div class="age-band two"></div>
+          <div class="age-band three"></div>
+          <div class="age-band four"></div>
+          <div class="glow-now"></div>
+          <div class="glow-then"></div>
+          <div class="deep-window"></div>
+          <div class="spark one">✦</div>
+          <div class="spark two">✦</div>
+          <div class="spark three">✦</div>
+          <p class="visual-caption">深空望遠鏡接住很久以前出發的光，所以像在幫我們翻宇宙很早以前的相簿。</p>
+        </div>
+      </section>
+
+      <section class="idea-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先記住</p>
+            <h2>望遠鏡不是時光機，但真的像在看很早以前的光</h2>
+          </div>
+          <p>先抓住這三個感覺，後面的深空照片就會很好懂。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <p>01</p>
+            <h3>越遠，光越老</h3>
+            <p>如果一束光跑了很久很久才到我們眼前，那我們看到的就是它很早以前出發時留下的訊息。</p>
+          </article>
+          <article class="idea-card">
+            <p>02</p>
+            <h3>深空照片像宇宙相簿</h3>
+            <p>深空望遠鏡接到的不是「現在剛出現的畫面」，而是很久以前一路飛來的光。</p>
+          </article>
+          <article class="idea-card">
+            <p>03</p>
+            <h3>所以像在看宇宙小時候</h3>
+            <p>當我們看超級遠的宇宙，就會越像在看宇宙比較年輕時候的樣子。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="timeline-section" id="timeline">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">點點看</p>
+            <h2>宇宙時間線：你現在接到的是哪個時候的光？</h2>
+          </div>
+          <p>按下不同位置，看看我們是先看到比較新的宇宙，還是更早以前的宇宙。</p>
+        </div>
+
+        <div class="timeline-layout">
+          <div class="timeline-buttons" role="tablist" aria-label="宇宙時間線">
+            <button class="timeline-button active" type="button" data-era="near">比較近的宇宙</button>
+            <button class="timeline-button" type="button" data-era="milkyway">銀河附近</button>
+            <button class="timeline-button" type="button" data-era="galaxy">遠星系</button>
+            <button class="timeline-button" type="button" data-era="deep">深空</button>
+            <button class="timeline-button" type="button" data-era="baby">更早宇宙</button>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-bar">
+              <div class="bar-base"></div>
+              <div class="bar-progress" id="bar-progress"></div>
+              <button class="bar-node node-near active" type="button" data-era="near">近</button>
+              <button class="bar-node node-milkyway" type="button" data-era="milkyway">銀河</button>
+              <button class="bar-node node-galaxy" type="button" data-era="galaxy">遠星系</button>
+              <button class="bar-node node-deep" type="button" data-era="deep">深空</button>
+              <button class="bar-node node-baby" type="button" data-era="baby">更早</button>
+            </div>
+
+            <div class="timeline-copy">
+              <p class="mini-label">現在看到的是</p>
+              <h3 id="era-name">比較近的宇宙</h3>
+              <p id="era-text">如果目標比較近，我們接到的光就比較新，比較像宇宙現在的樣子。</p>
+              <div class="memory-box">
+                <strong id="era-memory">記法：越遠的光，越像宇宙以前留下來的信。</strong>
+              </div>
+              <ul id="era-facts" class="fact-list">
+                <li>距離近，光飛行時間較短。</li>
+                <li>所以看到的畫面比較接近現在。</li>
+                <li>這是時間線的起點。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="compare-strip">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">一眼看懂</p>
+            <h2>越往深空看，越像往以前看</h2>
+          </div>
+        </div>
+
+        <div class="step-grid">
+          <article>
+            <p>01</p>
+            <h3>近的</h3>
+            <span>比較像現在。</span>
+          </article>
+          <article>
+            <p>02</p>
+            <h3>遠一點</h3>
+            <span>比較像前一段時間。</span>
+          </article>
+          <article>
+            <p>03</p>
+            <h3>很遠星系</h3>
+            <span>像在看更久以前。</span>
+          </article>
+          <article>
+            <p>04</p>
+            <h3>深空照片</h3>
+            <span>像在翻古老宇宙相簿。</span>
+          </article>
+          <article>
+            <p>05</p>
+            <h3>宇宙小時候</h3>
+            <span>看到更年輕的宇宙。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">NASA 真實照片</p>
+            <h2>用真的照片感覺宇宙小時候</h2>
+          </div>
+          <p>這幾張圖會讓孩子把「看見以前的光」和「宇宙小時候」連在一起。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA26681/PIA26681~large.jpg"
+              alt="NASA 太陽照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>01 · 先從熟悉的開始</p>
+              <h3>看太陽時，我們已經是在看 8 分鐘前的光</h3>
+              <span>這是最容易讓小朋友進入概念的第一步：先懂近的，再懂遠的。</span>
+              <a href="https://images.nasa.gov/details-PIA26681" target="_blank" rel="noreferrer">來源：NASA Image of Sun From NASA's Solar Dynamics Observatory ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg"
+              alt="NASA 仙女座星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>02 · 更遠的鄰居</p>
+              <h3>仙女座讓我們開始感覺：遠星系就是很久以前出發的光</h3>
+              <span>看到這種星系時，我們已經不只是在看「剛才」，而是很久以前。</span>
+              <a href="https://images.nasa.gov/details/PIA04921" target="_blank" rel="noreferrer">來源：NASA Andromeda Galaxy ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA12467/PIA12467~orig.jpg"
+              alt="NASA 銀河系全天觀測圖"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>03 · 把視角再拉大</p>
+              <h3>當視角大到整個銀河系，就會更容易接受宇宙的距離和時間都很巨大</h3>
+              <span>這張可以幫孩子在心裡把尺度拉得更大。</span>
+              <a href="https://images.nasa.gov/details/PIA12467" target="_blank" rel="noreferrer">來源：NASA All-Sky Infrared Survey ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001651/GSFC_20171208_Archive_e001651~large.jpg"
+              alt="NASA 極深空宇宙照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>04 · 深空像古老相簿</p>
+              <h3>深空照片裡很多光，像是宇宙很早以前寄來、現在才到的訊息</h3>
+              <span>這張最適合把「看見宇宙小時候」的感覺做出來。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e001651" target="_blank" rel="noreferrer">來源：NASA Hubble eXtreme Deep Field ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2>你知道為什麼能看到宇宙小時候嗎？</h2>
+          </div>
+          <p>做完這五題，如果你能說出「因為遠方的光飛很久才到」，這課就成功了。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十七課完成</p>
+        <h2>現在你知道，當我們看著超級遠的深空時，也像在看宇宙比較年輕、比較小時候的光。</h2>
+        <div class="finish-actions">
+          <a href="space.html">回到太空主題 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>深空照片最神奇的地方，是它讓我們像在翻宇宙很早很早以前留下來的相簿。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
