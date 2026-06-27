@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第二十一課：用互動方式認識太空望遠鏡是什麼、為什麼要放到太空，還有它幫我們看見了什麼。"
+    />
+    <title>太空望遠鏡是什麼，為什麼要放到太空｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="space-telescope.css" />
+    <script src="space-telescope.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="太空望遠鏡課程選單">
+        <a href="#compare">互動比較</a>
+        <a href="#parts">望遠鏡部位</a>
+        <a href="#photos">真實圖片</a>
+      </nav>
+      <a class="header-cta" href="space.html">太空主題 ↗</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <a class="breadcrumb" href="space.html">太空主題 / 第二十一課</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第二十一課</p>
+          <h1>太空望遠鏡就像<em>飛到天空外面的超級眼睛。</em></h1>
+          <p class="hero-intro">
+            我們站在地球上看星星時，中間會隔著空氣、雲和光。可是如果把望遠鏡送上太空，
+            它就能看得更清楚、更遠。這堂課我們就來認識：為什麼望遠鏡要飛到太空去。
+          </p>
+
+          <div class="hero-stats">
+            <div><strong>2</strong><span>種看太空的方法</span></div>
+            <div><strong>4</strong><span>個重要部位</span></div>
+            <div><strong>4</strong><span>張 NASA 真實圖片</span></div>
+          </div>
+
+          <a class="button button-primary" href="#compare">
+            開始看望遠鏡 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="visual-code">LOOK FAR / SEE CLEAR / SPACE EYE</span>
+          <div class="planet-glow"></div>
+          <div class="planet"></div>
+          <div class="scope-body"></div>
+          <div class="scope-mirror"></div>
+          <div class="scope-panel left"></div>
+          <div class="scope-panel right"></div>
+          <div class="beam"></div>
+          <div class="star one">✦</div>
+          <div class="star two">✦</div>
+          <div class="star three">✦</div>
+          <div class="star four">✦</div>
+          <p class="visual-caption">太空望遠鏡不用隔著大氣層看，所以能幫我們看到更多細節。</p>
+        </div>
+      </section>
+
+      <section class="idea-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先記三件事</p>
+            <h2>太空望遠鏡不是比較帥而已，它是真的比較會看</h2>
+          </div>
+          <p>這三件事先記住，後面互動比較就會一下子看懂。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <p>01</p>
+            <h3>地球空氣會讓畫面抖抖的</h3>
+            <p>我們平常看到星星一閃一閃，很漂亮，但對望遠鏡來說，這代表空氣正在干擾畫面。</p>
+          </article>
+          <article class="idea-card">
+            <p>02</p>
+            <h3>太空裡比較不會被擋住</h3>
+            <p>飛到太空後，就不用擔心雲、空氣和很多地面光線，所以比較容易看清楚。</p>
+          </article>
+          <article class="idea-card">
+            <p>03</p>
+            <h3>它幫我們看到更遠的宇宙</h3>
+            <p>很多星雲、星系和很遠很遠的光，都要靠太空望遠鏡才能看得更明白。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="compare-section" id="compare">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動比較</p>
+            <h2>地面望遠鏡和太空望遠鏡差在哪裡？</h2>
+          </div>
+          <p>按一按，你就會很快知道：不是所有望遠鏡都一樣，位置真的會影響它看到的畫面。</p>
+        </div>
+
+        <div class="compare-layout">
+          <div class="compare-buttons" role="tablist" aria-label="望遠鏡比較模式">
+            <button class="compare-button active" type="button" data-mode="ground">地面望遠鏡</button>
+            <button class="compare-button" type="button" data-mode="space">太空望遠鏡</button>
+            <button class="compare-button" type="button" data-mode="weather">雲和空氣影響</button>
+            <button class="compare-button" type="button" data-mode="infrared">看見躲起來的光</button>
+          </div>
+
+          <div class="compare-card">
+            <div class="compare-visual">
+              <div class="scene-card ground">
+                <p>地面上看</p>
+                <div class="scene-sky cloudy" id="ground-scene">
+                  <span class="scene-star">✦</span>
+                  <span class="scene-star two">✦</span>
+                  <span class="scene-cloud"></span>
+                  <span class="scene-cloud two"></span>
+                  <span class="scene-haze"></span>
+                </div>
+              </div>
+
+              <div class="scene-card space">
+                <p>太空裡看</p>
+                <div class="scene-sky clear" id="space-scene">
+                  <span class="scene-star">✦</span>
+                  <span class="scene-star two">✦</span>
+                  <span class="scene-nebula"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="compare-copy">
+              <p class="mini-label">現在看到的是</p>
+              <h3 id="mode-name">地面望遠鏡</h3>
+              <p id="mode-text">地面望遠鏡很重要，也很厲害，但它要隔著地球的大氣層看，所以畫面常常會被空氣和天氣影響。</p>
+              <div class="memory-box">
+                <strong id="mode-memory">記法：不是望遠鏡不認真，是地球外面的空氣會讓它比較難看清楚。</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="parts-section" id="parts">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">點點看</p>
+            <h2>太空望遠鏡身上有哪些重要地方？</h2>
+          </div>
+          <p>不用學太難，只要先知道它有鏡子、身體、太陽能板和通訊設備，就已經很棒了。</p>
+        </div>
+
+        <div class="parts-layout">
+          <div class="parts-diagram">
+            <svg viewBox="0 0 740 420" role="img" aria-labelledby="parts-title parts-desc">
+              <title id="parts-title">太空望遠鏡互動圖</title>
+              <desc id="parts-desc">可點選主鏡、鏡筒、太陽能板和天線</desc>
+              <rect x="260" y="146" width="200" height="124" rx="48" class="tube"></rect>
+              <circle cx="285" cy="208" r="42" class="mirror"></circle>
+              <rect x="160" y="178" width="95" height="58" rx="10" class="panel"></rect>
+              <rect x="465" y="178" width="95" height="58" rx="10" class="panel"></rect>
+              <line x1="460" y1="160" x2="520" y2="124" class="antenna-line"></line>
+              <circle cx="530" cy="118" r="26" class="antenna-dish"></circle>
+              <line x1="530" y1="118" x2="506" y2="140" class="antenna-line thin"></line>
+            </svg>
+
+            <div class="hotspots">
+              <button class="hotspot active" type="button" style="--x: 285px; --y: 181px" data-part="mirror" aria-label="主鏡"></button>
+              <button class="hotspot" type="button" style="--x: 366px; --y: 210px" data-part="tube" aria-label="鏡筒"></button>
+              <button class="hotspot" type="button" style="--x: 204px; --y: 166px" data-part="panel" aria-label="太陽能板"></button>
+              <button class="hotspot" type="button" style="--x: 530px; --y: 88px" data-part="antenna" aria-label="天線"></button>
+            </div>
+          </div>
+
+          <div class="parts-card">
+            <p class="mini-label">你正在看</p>
+            <h3 id="part-name">主鏡</h3>
+            <p id="part-text">主鏡像望遠鏡的大眼睛，會把很遠很遠的光收進來。收得越好，看到的細節通常就越多。</p>
+            <div class="memory-box">
+              <strong id="part-memory">記法：主鏡就是太空望遠鏡最重要的看光工具。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">NASA 真實圖片</p>
+            <h2>來看看太空望遠鏡自己，還有它拍到的宇宙</h2>
+          </div>
+          <p>這樣孩子會更有感：望遠鏡本身是真的，拍到的畫面也是真的，不只是想像圖。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002151/GSFC_20171208_Archive_e002151~large.jpg"
+              alt="NASA 哈伯太空望遠鏡照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>01 · 哈伯望遠鏡</p>
+              <h3>哈伯真的像一個飛在太空裡的大銀色望遠鏡</h3>
+              <span>這張很適合先讓孩子知道：太空望遠鏡不是幻想，它真的是被送到太空中的設備。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e002151" target="_blank" rel="noreferrer">來源：NASA Hubble Space Telescope ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000356/GSFC_20171208_Archive_e000356~large.jpg"
+              alt="NASA 詹姆斯韋伯太空望遠鏡照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>02 · 韋伯望遠鏡</p>
+              <h3>韋伯的金色鏡面很有名，因為它要接很多很微弱的光</h3>
+              <span>孩子可以從這裡認識：不同太空望遠鏡外形不一樣，工作方式也會有差別。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e000356" target="_blank" rel="noreferrer">來源：NASA James Webb Space Telescope Revealed ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000842/GSFC_20171208_Archive_e000842~large.jpg"
+              alt="NASA 哈伯拍攝的創生之柱圖片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>03 · 哈伯看到的宇宙</p>
+              <h3>這些像高塔一樣的雲氣，叫做「創生之柱」</h3>
+              <span>這張可以讓孩子知道：太空望遠鏡不是只拍黑黑的天空，它能拍到很壯觀的星雲細節。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e000842" target="_blank" rel="noreferrer">來源：NASA Hubble Goes High Def to Revisit the Iconic 'Pillars of Creation' ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/carina_nebula/carina_nebula~large.jpg"
+              alt="NASA 詹姆斯韋伯拍攝的船底座星雲宇宙懸崖"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>04 · 韋伯看到的宇宙</p>
+              <h3>這張像山崖一樣的畫面，其實是船底座星雲裡誕生新星的地方</h3>
+              <span>這很適合讓孩子感受到：太空望遠鏡真的能幫我們看到平常看不到的宇宙景色。</span>
+              <a href="https://images.nasa.gov/details/carina_nebula" target="_blank" rel="noreferrer">來源：NASA James Webb Space Telescope NIRCam Image of the “Cosmic Cliffs” in Carina Nebula ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2>你記住為什麼望遠鏡要去太空了嗎？</h2>
+          </div>
+          <p>這五題會幫孩子把今天最重要的概念重新整理一次。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十一課完成</p>
+        <h2>現在你知道，太空望遠鏡因為飛到大氣層外面，所以能更清楚地幫我們看見遙遠的宇宙。</h2>
+        <div class="finish-actions">
+          <a href="space.html">回到太空主題 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>從太空站再往前一步，我們開始學會怎麼用望遠鏡把宇宙看得更遠、更清楚。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
