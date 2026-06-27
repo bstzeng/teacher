@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第二十二課：用互動方式認識銀河系是什麼，還有地球和太陽系住在銀河系的哪裡。"
+    />
+    <title>銀河系是什麼，我們住在哪裡｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="milky-way.css" />
+    <script src="milky-way.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="銀河系課程選單">
+        <a href="#zoom">互動放大</a>
+        <a href="#map">銀河系地圖</a>
+        <a href="#photos">真實圖片</a>
+      </nav>
+      <a class="header-cta" href="space.html">太空主題 ↗</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <a class="breadcrumb" href="space.html">太空主題 / 第二十二課</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第二十二課</p>
+          <h1>銀河系就是<em>我們住的星星大城市。</em></h1>
+          <p class="hero-intro">
+            上一課我們學到望遠鏡可以把宇宙看得更清楚。這一課就來看看：
+            我們的地球、太陽和太陽系，其實都住在一個很大的家裡，這個家就叫銀河系。
+          </p>
+
+          <div class="hero-stats">
+            <div><strong>4</strong><span>層放大位置</span></div>
+            <div><strong>4</strong><span>個銀河重點</span></div>
+            <div><strong>4</strong><span>張 NASA 圖片</span></div>
+          </div>
+
+          <a class="button button-primary" href="#zoom">
+            開始找位置 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="visual-code">EARTH / SOLAR SYSTEM / MILKY WAY</span>
+          <div class="galaxy-glow"></div>
+          <div class="galaxy-core"></div>
+          <div class="galaxy-ring one"></div>
+          <div class="galaxy-ring two"></div>
+          <div class="galaxy-ring three"></div>
+          <div class="sun-dot"></div>
+          <div class="star one">✦</div>
+          <div class="star two">✦</div>
+          <div class="star three">✦</div>
+          <div class="star four">✦</div>
+          <p class="visual-caption">地球不是單獨漂在宇宙裡，我們和太陽一起住在銀河系裡的一小角。</p>
+        </div>
+      </section>
+
+      <section class="idea-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先記三件事</p>
+            <h2>銀河系不是一顆星星，而是很多很多星星住在一起</h2>
+          </div>
+          <p>先把這三件事記住，等一下看互動畫面就會很直覺。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <p>01</p>
+            <h3>太陽只是其中一顆星</h3>
+            <p>太陽很重要，但在銀河系裡它只是很多很多星星中的其中一顆，不是唯一主角。</p>
+          </article>
+          <article class="idea-card">
+            <p>02</p>
+            <h3>太陽系住在銀河系裡</h3>
+            <p>地球跟著太陽，太陽再和其他星星一起住在銀河系裡，所以我們其實有很多層「家」。</p>
+          </article>
+          <article class="idea-card">
+            <p>03</p>
+            <h3>銀河系外面還有別的星系</h3>
+            <p>銀河系很大，但不是宇宙的全部，像仙女座星系就是我們附近很有名的鄰居。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="zoom-section" id="zoom">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動放大</p>
+            <h2>從地球一路放大，看看我們到底住在哪裡</h2>
+          </div>
+          <p>按一下每一層，就會從地球一直往外看到太陽系、銀河系手臂，再看到整個銀河系。</p>
+        </div>
+
+        <div class="zoom-layout">
+          <div class="zoom-buttons" role="tablist" aria-label="位置放大層級">
+            <button class="zoom-button active" type="button" data-level="earth">地球</button>
+            <button class="zoom-button" type="button" data-level="solar">太陽系</button>
+            <button class="zoom-button" type="button" data-level="arm">銀河系手臂</button>
+            <button class="zoom-button" type="button" data-level="galaxy">整個銀河系</button>
+          </div>
+
+          <div class="zoom-card">
+            <div class="zoom-visual" id="zoom-visual">
+              <div class="level-earth"></div>
+              <div class="level-sun"></div>
+              <div class="level-orbit one"></div>
+              <div class="level-orbit two"></div>
+              <div class="level-arm"></div>
+              <div class="level-core"></div>
+              <div class="level-ring one"></div>
+              <div class="level-ring two"></div>
+              <div class="level-ring three"></div>
+              <div class="level-marker"></div>
+            </div>
+
+            <div class="zoom-copy">
+              <p class="mini-label">目前看到的是</p>
+              <h3 id="zoom-name">地球</h3>
+              <p id="zoom-text">地球是我們住的地方。看起來好像很大，但如果一路往外看，它其實只是太陽系裡的一顆小行星。</p>
+              <div class="memory-box">
+                <strong id="zoom-memory">記法：先記住自己站在哪裡，再一層一層往外看。</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section" id="map">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">點點看</p>
+            <h2>銀河系地圖裡，哪些地方最重要？</h2>
+          </div>
+          <p>不用背很難的天文名詞，只要先看懂中心、旋臂、太陽的位置和外圍就很夠用了。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-card">
+            <svg viewBox="0 0 720 420" role="img" aria-labelledby="map-title map-desc">
+              <title id="map-title">銀河系互動圖</title>
+              <desc id="map-desc">可點選銀河中心、旋臂、太陽位置和銀河外圍</desc>
+              <ellipse cx="360" cy="210" rx="250" ry="120" class="galaxy-disk"></ellipse>
+              <ellipse cx="360" cy="210" rx="210" ry="92" class="galaxy-arm-fill"></ellipse>
+              <ellipse cx="360" cy="210" rx="160" ry="68" class="galaxy-arm-fill light"></ellipse>
+              <circle cx="360" cy="210" r="42" class="galaxy-center"></circle>
+              <circle cx="500" cy="236" r="9" class="sun-position"></circle>
+            </svg>
+
+            <div class="hotspots">
+              <button class="hotspot active" type="button" style="--x: 360px; --y: 180px" data-part="center" aria-label="銀河中心"></button>
+              <button class="hotspot" type="button" style="--x: 430px; --y: 138px" data-part="arm" aria-label="旋臂"></button>
+              <button class="hotspot" type="button" style="--x: 500px; --y: 208px" data-part="sun" aria-label="太陽位置"></button>
+              <button class="hotspot" type="button" style="--x: 596px; --y: 206px" data-part="edge" aria-label="銀河外圍"></button>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <p class="mini-label">你正在看</p>
+            <h3 id="part-name">銀河中心</h3>
+            <p id="part-text">銀河系中間最亮、最密的地方叫銀河中心，那裡擠了很多很多星星，看起來很熱鬧。</p>
+            <div class="memory-box">
+              <strong id="part-memory">記法：中間最亮最擠的地方，就是銀河中心。</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">NASA 真實圖片</p>
+            <h2>來看看跟銀河系有關的真實觀測圖</h2>
+          </div>
+          <p>這幾張圖會讓孩子知道：銀河系不只是課本名詞，科學家真的一直在觀察它。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA12467/PIA12467~orig.jpg"
+              alt="NASA 銀河系全天紅外線觀測圖"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>01 · 銀河帶</p>
+              <h3>中間亮亮長長的一條，就是我們銀河系平面的樣子</h3>
+              <span>這張很適合先建立感覺：原來天空裡那條銀河，和我們住的銀河系有關。</span>
+              <a href="https://images.nasa.gov/details/PIA12467" target="_blank" rel="noreferrer">來源：NASA All-Sky Infrared Survey ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA18912/PIA18912~large.jpg"
+              alt="NASA 銀河系混合觀測圖"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>02 · 銀河全景</p>
+              <h3>這張像彩帶一樣的畫面，是不同資料拼出來的銀河系樣子</h3>
+              <span>孩子可以知道：銀河系太大，所以科學家常要把很多觀測結果拼起來看。</span>
+              <a href="https://images.nasa.gov/details/PIA18912" target="_blank" rel="noreferrer">來源：NASA A Milky Way Mixer Amongst the Stars ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA20468/PIA20468~large.jpg"
+              alt="NASA 銀河系內星團照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>03 · 銀河裡的星星</p>
+              <h3>這一大片亮晶晶的星星，都是我們銀河系裡的成員</h3>
+              <span>這張可以幫孩子感受到：銀河系不是空空的，而是真的塞滿了很多星星。</span>
+              <a href="https://images.nasa.gov/details/PIA20468" target="_blank" rel="noreferrer">來源：NASA Hubble Unveils a Tapestry of Dazzling Diamond-Like Stars ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA15416/PIA15416~large.jpg"
+              alt="NASA 仙女座星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>04 · 隔壁鄰居</p>
+              <h3>仙女座星系是離我們很近、很有名的鄰居星系</h3>
+              <span>這張能幫孩子記住：銀河系很大，但宇宙裡不是只有銀河系一個星系。</span>
+              <a href="https://images.nasa.gov/details/PIA15416" target="_blank" rel="noreferrer">來源：NASA Andromeda ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2>你記住我們住在銀河系的哪裡了嗎？</h2>
+          </div>
+          <p>做完這五題，如果你能說出地球、太陽系和銀河系的關係，這課就成功了。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十二課完成</p>
+        <h2>現在你知道，地球住在太陽系裡，而太陽系又住在銀河系裡的一小角。</h2>
+        <div class="finish-actions">
+          <a href="space.html">回到太空主題 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>從地球一路往外看，我們終於知道自己原來住在銀河系這個很大的星星城市裡。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
