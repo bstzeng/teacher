@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第二十四課：用互動方式認識銀河系、仙女座和其他鄰居星系，知道星系也會成群住在一起。"
+    />
+    <title>星系也會成群住在一起嗎｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="galaxy-groups.css" />
+    <script src="galaxy-groups.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="星系群課程選單">
+        <a href="#neighbors">鄰居地圖</a>
+        <a href="#photos">真實照片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta" href="space.html">太空主題 ↗</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <a class="breadcrumb" href="space.html">太空主題 / 第二十四課</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第二十四課</p>
+          <h1>原來星系也會像社區一樣，<em>很多個一起當鄰居。</em></h1>
+          <p class="hero-intro">
+            上一課我們知道宇宙裡有很多星系。這一課再往前一步：
+            銀河系不是自己單獨住著，它和仙女座、三角座，還有一些比較小的星系，
+            會一起住成一個「本地星系群」的大社區。
+          </p>
+
+          <div class="hero-stats">
+            <div><strong>4</strong><span>位主要鄰居</span></div>
+            <div><strong>4</strong><span>張 NASA 照片</span></div>
+            <div><strong>5</strong><span>題互動小測驗</span></div>
+          </div>
+
+          <a class="button button-primary" href="#neighbors">
+            開始看鄰居 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="visual-code">LOCAL GROUP / NEIGHBORS / GALAXIES</span>
+          <div class="group-ring outer"></div>
+          <div class="group-ring inner"></div>
+          <div class="galaxy-dot home"></div>
+          <div class="galaxy-dot andromeda"></div>
+          <div class="galaxy-dot triangulum"></div>
+          <div class="galaxy-dot dwarf"></div>
+          <div class="spark one">✦</div>
+          <div class="spark two">✦</div>
+          <div class="spark three">✦</div>
+          <p class="visual-caption">銀河系住在一個叫做「本地星系群」的小宇宙社區裡。</p>
+        </div>
+      </section>
+
+      <section class="idea-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先記住</p>
+            <h2>星系群就像很多星系一起住的社區</h2>
+          </div>
+          <p>不用一次記很多名詞，先抓住這三個感覺就夠了。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <p>01</p>
+            <h3>星系不是都孤單一個</h3>
+            <p>很多星系會和附近的其他星系當鄰居，一起待在同一個區域裡。</p>
+          </article>
+          <article class="idea-card">
+            <p>02</p>
+            <h3>銀河系也有鄰居</h3>
+            <p>仙女座星系、三角座星系，還有一些比較小的矮星系，都是我們附近的成員。</p>
+          </article>
+          <article class="idea-card">
+            <p>03</p>
+            <h3>宇宙往外看還有更多群</h3>
+            <p>本地星系群只是附近的一小群，再往更遠處看，還有更多更多星系聚在一起。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="neighbors-section" id="neighbors">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">點點看</p>
+            <h2>本地星系群有哪些鄰居？</h2>
+          </div>
+          <p>按不同按鈕，看看這個宇宙社區裡面住了誰、各自大概扮演什麼角色。</p>
+        </div>
+
+        <div class="neighbors-layout">
+          <div class="neighbor-buttons" role="tablist" aria-label="本地星系群成員">
+            <button class="neighbor-button active" type="button" data-member="milkyway">銀河系</button>
+            <button class="neighbor-button" type="button" data-member="andromeda">仙女座</button>
+            <button class="neighbor-button" type="button" data-member="triangulum">三角座</button>
+            <button class="neighbor-button" type="button" data-member="dwarf">小矮星系</button>
+            <button class="neighbor-button" type="button" data-member="beyond">更遠的外面</button>
+          </div>
+
+          <div class="neighbor-card">
+            <div class="neighbor-map" id="neighbor-map">
+              <div class="map-center-label">本地星系群</div>
+              <button class="map-node active node-milkyway" type="button" data-member="milkyway">銀河系</button>
+              <button class="map-node node-andromeda" type="button" data-member="andromeda">仙女座</button>
+              <button class="map-node node-triangulum" type="button" data-member="triangulum">三角座</button>
+              <button class="map-node node-dwarf" type="button" data-member="dwarf">矮星系</button>
+              <button class="map-node node-beyond" type="button" data-member="beyond">更遠星系</button>
+            </div>
+
+            <div class="neighbor-copy">
+              <p class="mini-label">現在看到的是</p>
+              <h3 id="member-name">銀河系</h3>
+              <p id="member-text">這是我們住的家。太陽系就在銀河系裡，所以講到本地星系群時，銀河系就是我們最熟悉的一位成員。</p>
+              <div class="memory-box">
+                <strong id="member-memory">記法：先記住「我們住在銀河系裡」，再去看外面的鄰居。</strong>
+              </div>
+              <ul id="member-facts" class="fact-list">
+                <li>它是本地星系群的一員。</li>
+                <li>太陽系住在銀河系裡面。</li>
+                <li>我們是從這裡往外看宇宙。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">NASA 真實照片</p>
+            <h2>用真的照片看看這些鄰居</h2>
+          </div>
+          <p>這裡選的都是真實天文照片，讓孩子能把剛剛的名字和實際畫面連在一起。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg"
+              alt="NASA 仙女座星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>01 · 最大鄰居</p>
+              <h3>仙女座星系是我們附近很重要的一位大鄰居</h3>
+              <span>NASA 的說明裡提到它是本地星系群中很有代表性的成員，很適合讓小朋友先記住名字。</span>
+              <a href="https://images.nasa.gov/details/PIA04921" target="_blank" rel="noreferrer">來源：NASA Andromeda Galaxy ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA11969/PIA11969~orig.jpg"
+              alt="NASA 三角座星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>02 · 三角座星系</p>
+              <h3>三角座星系雖然沒有仙女座那麼有名，但它也是本地星系群的重要成員</h3>
+              <span>這張圖很適合建立「我們附近不只一個大星系」的概念。</span>
+              <a href="https://images.nasa.gov/details/PIA11969" target="_blank" rel="noreferrer">來源：NASA Triangulum Galaxy ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000384/GSFC_20171208_Archive_e000384~orig.jpg"
+              alt="NASA Leo A 矮星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>03 · 小矮星系</p>
+              <h3>像 Leo A 這樣的小矮星系，也是本地星系群的一部分</h3>
+              <span>這能幫孩子知道：一個星系群裡不只有大星系，也會有很多比較小的成員。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e000384" target="_blank" rel="noreferrer">來源：NASA Hubble Peers into the Mouth of Leo A ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001651/GSFC_20171208_Archive_e001651~large.jpg"
+              alt="NASA 極深空星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>04 · 更遠的外面</p>
+              <h3>看起來像一堆彩色小點點，但很多其實都是非常遠的星系</h3>
+              <span>這張最重要的感覺是：本地星系群只是附近一小群，宇宙裡外面還有超多別的地方。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e001651" target="_blank" rel="noreferrer">來源：NASA Hubble eXtreme Deep Field ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="compare-strip">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">一眼看懂</p>
+            <h2>從我們家，一路往外看</h2>
+          </div>
+        </div>
+
+        <div class="scale-steps">
+          <article>
+            <p>01</p>
+            <h3>地球</h3>
+            <span>我們站在地球上看天空。</span>
+          </article>
+          <article>
+            <p>02</p>
+            <h3>太陽系</h3>
+            <span>地球繞著太陽轉，住在太陽系裡。</span>
+          </article>
+          <article>
+            <p>03</p>
+            <h3>銀河系</h3>
+            <span>太陽系住在銀河系裡。</span>
+          </article>
+          <article>
+            <p>04</p>
+            <h3>本地星系群</h3>
+            <span>銀河系和鄰居一起住在這裡。</span>
+          </article>
+          <article>
+            <p>05</p>
+            <h3>更多宇宙</h3>
+            <span>再往外看，還有更多星系群。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2>你記住星系群是什麼了嗎？</h2>
+          </div>
+          <p>做完這五題，如果你能說出銀河系不是獨自住著，這課就成功了。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十四課完成</p>
+        <h2>現在你知道，銀河系不是孤單一個，而是和很多鄰居一起住在本地星系群裡。</h2>
+        <div class="finish-actions">
+          <a href="space.html">回到太空主題 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>從銀河系再往外走一步，就會發現宇宙裡也有一個個星系社區。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
