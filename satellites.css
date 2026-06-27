@@ -414,6 +414,18 @@
   font-size: 1.12rem;
 }
 
+.finish-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.finish-actions a {
+  margin-top: 0;
+}
+
 @media (max-width: 1080px) {
   .satellites-hero,
   .play-layout,

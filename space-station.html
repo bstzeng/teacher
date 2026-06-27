@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第二十課：認識太空站是什麼、太空人怎麼在上面生活，還有太空站裡常見的重要區域。"
+    />
+    <title>太空站是什麼，太空人住在上面做什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="space-station.css" />
+    <script src="space-station.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="太空站課程選單">
+        <a href="#station-map">互動畫面</a>
+        <a href="#photos">真實照片</a>
+        <a href="#quiz">小測驗</a>
+      </nav>
+      <a class="header-cta" href="space.html">太空主題 ↗</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <a class="breadcrumb" href="space.html">太空主題 / 第二十課</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第二十課</p>
+          <h1>太空站就像<em>飛在地球上空的太空大房子。</em></h1>
+          <p class="hero-intro">
+            上一課我們學到人造衛星是人類送上去的。這一課再往前走一步，
+            來看看更厲害的版本：太空站。太空人可以住在裡面、做實驗、看地球，
+            還要每天運動和工作。
+          </p>
+
+          <div class="hero-stats">
+            <div><strong>1</strong><span>座太空大房子</span></div>
+            <div><strong>6</strong><span>個常見重要區域</span></div>
+            <div><strong>5</strong><span>種每天會做的事</span></div>
+          </div>
+
+          <a class="button button-primary" href="#station-map">
+            開始認識太空站 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="visual-code">SPACE HOME / ORBIT / WORK</span>
+          <div class="earth-glow"></div>
+          <div class="earth"></div>
+          <div class="orbit-ring"></div>
+          <div class="station station-main">
+            <div class="panel left"></div>
+            <div class="panel right"></div>
+            <div class="core"></div>
+            <div class="module top"></div>
+            <div class="module bottom"></div>
+            <div class="cupola"></div>
+          </div>
+          <div class="star one">✦</div>
+          <div class="star two">✦</div>
+          <div class="star three">✦</div>
+          <div class="star four">✦</div>
+          <p class="visual-caption">太空站也是一種人造衛星，但它可以住人。</p>
+        </div>
+      </section>
+
+      <section class="idea-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先記住三件事</p>
+            <h2>太空站不是普通衛星，它是會飛的研究站</h2>
+          </div>
+          <p>把這三件事記住，後面看到照片和互動圖時就會很容易懂。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <p>01</p>
+            <h3>它是太空中的家</h3>
+            <p>太空人會在裡面吃飯、睡覺、工作，所以太空站像一個漂在太空中的小家。</p>
+          </article>
+          <article class="idea-card">
+            <p>02</p>
+            <h3>它也是超級實驗室</h3>
+            <p>因為裡面接近失重，很多在地球不好做的實驗，可以搬到太空站上完成。</p>
+          </article>
+          <article class="idea-card">
+            <p>03</p>
+            <h3>它會一直繞著地球飛</h3>
+            <p>太空站不是停在天空不動，它其實一直繞地球跑，所以我們有時候也能在地面看到它。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="play-section" id="station-map" aria-labelledby="station-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動太空站</p>
+            <h2 id="station-title">點點看，太空站每個地方在做什麼</h2>
+          </div>
+          <p>太陽能板、實驗艙、機器手臂、觀景窗、氣閘艙和對接口，都是太空站常常會被介紹到的地方。</p>
+        </div>
+
+        <div class="play-layout">
+          <div class="play-buttons" role="tablist" aria-label="太空站區域">
+            <button class="play-button active" type="button" data-part="panels">太陽能板</button>
+            <button class="play-button" type="button" data-part="lab">實驗艙</button>
+            <button class="play-button" type="button" data-part="arm">機器手臂</button>
+            <button class="play-button" type="button" data-part="cupola">觀景窗</button>
+            <button class="play-button" type="button" data-part="airlock">氣閘艙</button>
+            <button class="play-button" type="button" data-part="dock">太空船對接口</button>
+          </div>
+
+          <div class="station-card">
+            <div class="station-diagram">
+              <svg viewBox="0 0 720 420" role="img" aria-labelledby="station-svg-title station-svg-desc">
+                <title id="station-svg-title">太空站互動圖</title>
+                <desc id="station-svg-desc">可點選太陽能板、實驗艙、機器手臂、觀景窗、氣閘艙和對接口</desc>
+
+                <defs>
+                  <linearGradient id="earthFill" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#2ec5ff" />
+                    <stop offset="100%" stop-color="#2357ff" />
+                  </linearGradient>
+                </defs>
+
+                <ellipse cx="360" cy="348" rx="270" ry="70" fill="url(#earthFill)" opacity="0.45"></ellipse>
+                <ellipse cx="360" cy="350" rx="295" ry="86" fill="none" stroke="rgba(114, 156, 255, 0.35)" stroke-width="3" stroke-dasharray="12 10"></ellipse>
+
+                <g class="station-shape">
+                  <rect x="88" y="168" width="150" height="48" rx="8" class="station-panel"></rect>
+                  <rect x="482" y="168" width="150" height="48" rx="8" class="station-panel"></rect>
+                  <rect x="250" y="186" width="220" height="12" rx="6" class="station-truss"></rect>
+                  <rect x="300" y="154" width="120" height="78" rx="18" class="station-core"></rect>
+                  <rect x="326" y="114" width="68" height="42" rx="14" class="station-module"></rect>
+                  <rect x="326" y="232" width="68" height="44" rx="14" class="station-module"></rect>
+                  <circle cx="432" cy="256" r="18" class="station-cupola"></circle>
+                  <line x1="286" y1="172" x2="248" y2="132" class="station-arm"></line>
+                  <circle cx="246" cy="130" r="12" class="station-arm"></circle>
+                  <rect x="454" y="182" width="22" height="20" rx="6" class="station-dock"></rect>
+                </g>
+
+              </svg>
+
+              <div class="hotspots">
+                <button class="hotspot" type="button" style="--x: 160px; --y: 128px" data-part="panels" aria-label="太陽能板"></button>
+                <button class="hotspot" type="button" style="--x: 352px; --y: 160px" data-part="lab" aria-label="實驗艙"></button>
+                <button class="hotspot" type="button" style="--x: 246px; --y: 92px" data-part="arm" aria-label="機器手臂"></button>
+                <button class="hotspot" type="button" style="--x: 430px; --y: 220px" data-part="cupola" aria-label="觀景窗"></button>
+                <button class="hotspot" type="button" style="--x: 362px; --y: 248px" data-part="airlock" aria-label="氣閘艙"></button>
+                <button class="hotspot" type="button" style="--x: 474px; --y: 156px" data-part="dock" aria-label="太空船對接口"></button>
+              </div>
+            </div>
+
+            <div class="station-copy">
+              <p class="mini-label">目前看到的是</p>
+              <h3 id="part-name">太陽能板</h3>
+              <p id="part-text">太陽能板像太空站的大翅膀，會把陽光變成電力，讓裡面的燈、電腦和設備能工作。</p>
+              <div class="memory-box">
+                <strong id="part-memory">記法：沒有電，太空站很多事情都做不了，所以太陽能板很重要。</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="day-section" aria-labelledby="day-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">太空站的一天</p>
+            <h2 id="day-title">太空人住在太空站上，通常會做哪些事？</h2>
+          </div>
+          <p>這不是一直飄來飄去而已。太空人每天有很規律的生活，因為身體、任務和安全都很重要。</p>
+        </div>
+
+        <div class="day-layout">
+          <div class="timeline-buttons">
+            <button class="timeline-button active" type="button" data-step="wake">起床整理</button>
+            <button class="timeline-button" type="button" data-step="science">做實驗</button>
+            <button class="timeline-button" type="button" data-step="exercise">運動</button>
+            <button class="timeline-button" type="button" data-step="spacewalk">太空站外工作</button>
+            <button class="timeline-button" type="button" data-step="sleep">睡覺休息</button>
+          </div>
+
+          <article class="timeline-card">
+            <p class="mini-label" id="step-time">早上</p>
+            <h3 id="step-name">起床整理身體和設備</h3>
+            <p id="step-text">太空人起床後要先整理自己，也要確認今天的任務。因為在失重環境，東西很容易飄走，所以每件小事都要更仔細。</p>
+            <div class="memory-box">
+              <strong id="step-memory">記法：太空站裡看起來很酷，但生活其實很有規矩。</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="photo-section" id="photos" aria-labelledby="photo-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">真實照片</p>
+            <h2 id="photo-title">看幾張 NASA 圖片，會更知道太空站真的長什麼樣</h2>
+          </div>
+          <p>這幾張圖分別幫孩子建立不同印象：外面長什麼樣、裡面怎麼工作、還有太空人怎麼到外面維修。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/200623_ISS_1/200623_ISS_1~large.jpg"
+              alt="NASA 國際太空站結構圖"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>01 · 結構長相</p>
+              <h3>先看整座太空站，大概會知道它不是一顆小球，而是很多模組組起來的</h3>
+              <span>這張很適合拿來對照上面的互動圖，知道太陽能板和艙體大概在哪裡。</span>
+              <a href="https://images.nasa.gov/details/200623_ISS_1" target="_blank" rel="noreferrer">來源：NASA 2020 International Space Station Configuration ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/0102503/0102503~large.jpg"
+              alt="NASA 國際太空站外觀與地球背景"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>02 · 在地球上空飛行</p>
+              <h3>從外面看太空站，真的像一個在地球旁邊飛行的大型機器</h3>
+              <span>孩子可以直接感受到：原來太空站不是卡通概念，而是真的在地球上空運作。</span>
+              <a href="https://images.nasa.gov/details/0102503" target="_blank" rel="noreferrer">來源：NASA International Space Station (ISS) ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/0102500/0102500~large.jpg"
+              alt="NASA 太空人漂浮在國際太空站內部"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>03 · 裡面怎麼工作</p>
+              <h3>太空人會在艙內漂浮著做事，這就是失重感最直覺的樣子</h3>
+              <span>這張很適合用來講：太空站裡是工作場所，不只是拿來看風景。</span>
+              <a href="https://images.nasa.gov/details/0102500" target="_blank" rel="noreferrer">來源：NASA International Space Station (ISS) ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/iss006e46357/iss006e46357~medium.jpg"
+              alt="NASA 太空人在國際太空站外進行太空漫步"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>04 · 到外面維修</p>
+              <h3>有些工作要穿太空衣到外面做，這就是大家常說的太空漫步</h3>
+              <span>這能幫孩子連起來：氣閘艙不是裝飾，它真的跟外面的工作有關。</span>
+              <a href="https://images.nasa.gov/details/iss006e46357" target="_blank" rel="noreferrer">來源：NASA View of Commander Kenneth D. Bowersox outside the Airlock ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你記住太空站是做什麼的了嗎？</h2>
+          </div>
+          <p>做完這五題，如果你能分清楚太空站、太陽能板、實驗艙和太空人日常，這課就算成功了。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十課完成</p>
+        <h2>現在你知道，太空站是會繞著地球飛的大型人造太空家，太空人會在裡面生活、工作和做實驗。</h2>
+        <div class="finish-actions">
+          <a href="space.html">回到太空主題 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>從月亮到人造衛星，再到可以住人的太空站，太空世界開始越來越熱鬧了。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
