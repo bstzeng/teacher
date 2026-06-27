@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第二十三課：用互動方式認識星系是什麼，還有銀河系外面常見的其他星系。"
+    />
+    <title>星系是什麼，銀河系外面還有誰｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="galaxies.css" />
+    <script src="galaxies.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="星系課程選單">
+        <a href="#compare">先分清楚</a>
+        <a href="#types">星系種類</a>
+        <a href="#photos">真實圖片</a>
+      </nav>
+      <a class="header-cta" href="space.html">太空主題 ↗</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <a class="breadcrumb" href="space.html">太空主題 / 第二十三課</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第二十三課</p>
+          <h1>星系就是<em>很多很多星星住在一起的大集合。</em></h1>
+          <p class="hero-intro">
+            上一課我們知道銀河系是我們住的星星大城市。這一課再往外走一步，
+            來看看銀河系不是唯一的城市，宇宙裡還有很多別的星系，而且長得不太一樣。
+          </p>
+
+          <div class="hero-stats">
+            <div><strong>2</strong><span>先分清楚的概念</span></div>
+            <div><strong>3</strong><span>常見星系樣子</span></div>
+            <div><strong>4</strong><span>張 NASA 圖片</span></div>
+          </div>
+
+          <a class="button button-primary" href="#compare">
+            開始認識星系 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="visual-code">STAR / GALAXY / NEIGHBORS</span>
+          <div class="galaxy-core"></div>
+          <div class="galaxy-swish one"></div>
+          <div class="galaxy-swish two"></div>
+          <div class="galaxy-swish three"></div>
+          <div class="neighbor one"></div>
+          <div class="neighbor two"></div>
+          <div class="neighbor three"></div>
+          <div class="star one">✦</div>
+          <div class="star two">✦</div>
+          <div class="star three">✦</div>
+          <div class="star four">✦</div>
+          <p class="visual-caption">銀河系只是其中一個星系，宇宙裡還有很多鄰居和更遠的星系。</p>
+        </div>
+      </section>
+
+      <section class="idea-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先記三件事</p>
+            <h2>星系不是一顆星，也不是只有銀河系一個</h2>
+          </div>
+          <p>先把這三件事記住，後面的互動就會很容易懂。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <p>01</p>
+            <h3>星星是一顆，星系是一大群</h3>
+            <p>太陽是一顆星星，但銀河系是很多很多星星、氣體和塵埃組成的大集合。</p>
+          </article>
+          <article class="idea-card">
+            <p>02</p>
+            <h3>銀河系有鄰居</h3>
+            <p>像仙女座星系就是很有名的鄰居，所以銀河系不是宇宙裡唯一的星系。</p>
+          </article>
+          <article class="idea-card">
+            <p>03</p>
+            <h3>不同星系外形不一樣</h3>
+            <p>有些像旋轉風車，有些比較圓滑，也有些長得亂亂的，這些都是不同的星系樣子。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="compare-section" id="compare">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先分清楚</p>
+            <h2>星星和星系差在哪裡？</h2>
+          </div>
+          <p>這一步很重要，因為很多小朋友會把「一顆星」和「一整個星系」混在一起。</p>
+        </div>
+
+        <div class="compare-layout">
+          <div class="compare-buttons" role="tablist" aria-label="比較模式">
+            <button class="compare-button active" type="button" data-mode="star">一顆星星</button>
+            <button class="compare-button" type="button" data-mode="solar">太陽系</button>
+            <button class="compare-button" type="button" data-mode="galaxy">一個星系</button>
+            <button class="compare-button" type="button" data-mode="many">很多星系</button>
+          </div>
+
+          <div class="compare-card">
+            <div class="compare-visual" id="compare-visual">
+              <div class="single-star"></div>
+              <div class="orbit one"></div>
+              <div class="orbit two"></div>
+              <div class="planet one"></div>
+              <div class="planet two"></div>
+              <div class="galaxy-disk"></div>
+              <div class="galaxy-center"></div>
+              <div class="mini-galaxy one"></div>
+              <div class="mini-galaxy two"></div>
+              <div class="mini-galaxy three"></div>
+            </div>
+
+            <div class="compare-copy">
+              <p class="mini-label">現在看到的是</p>
+              <h3 id="mode-name">一顆星星</h3>
+              <p id="mode-text">一顆星星就是一個會自己發光的天體。像太陽就是一顆星星，不是一整個星系。</p>
+              <div class="memory-box">
+                <strong id="mode-memory">記法：星星像一盞燈，星系像很多很多燈組成的大城市。</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="types-section" id="types">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">點點看</p>
+            <h2>常見的星系大概有哪些樣子？</h2>
+          </div>
+          <p>先用最簡單的方式記三種就好：旋渦型、橢圓型、不規則型。</p>
+        </div>
+
+        <div class="types-layout">
+          <div class="type-buttons">
+            <button class="type-button active" type="button" data-type="spiral">旋渦型</button>
+            <button class="type-button" type="button" data-type="elliptical">橢圓型</button>
+            <button class="type-button" type="button" data-type="irregular">不規則型</button>
+          </div>
+
+          <div class="type-card">
+            <div class="type-visual" id="type-visual">
+              <div class="shape spiral">
+                <div class="shape-core"></div>
+                <div class="arm one"></div>
+                <div class="arm two"></div>
+              </div>
+              <div class="shape elliptical">
+                <div class="oval one"></div>
+                <div class="oval two"></div>
+              </div>
+              <div class="shape irregular">
+                <div class="blob one"></div>
+                <div class="blob two"></div>
+                <div class="blob three"></div>
+              </div>
+            </div>
+
+            <div class="type-copy">
+              <p class="mini-label">你正在看</p>
+              <h3 id="type-name">旋渦型星系</h3>
+              <p id="type-text">這種星系看起來像風車或旋渦，會有彎彎的手臂。銀河系和仙女座都屬於這一類。</p>
+              <div class="memory-box">
+                <strong id="type-memory">記法：有彎彎手臂、像在轉圈圈的，多半就是旋渦型。</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">NASA 真實圖片</p>
+            <h2>來看看銀河系外面的其他星系</h2>
+          </div>
+          <p>這幾張圖能讓孩子很快知道：外面的世界真的很熱鬧，而且每個星系長得不太一樣。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg"
+              alt="NASA 仙女座星系圖片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>01 · 最近的大鄰居</p>
+              <h3>仙女座星系是離我們很近、最常被拿來跟銀河系一起介紹的鄰居</h3>
+              <span>這張很適合幫孩子記住：銀河系不是唯一的星系，而且隔壁就有大鄰居。</span>
+              <a href="https://images.nasa.gov/details/PIA04921" target="_blank" rel="noreferrer">來源：NASA Andromeda Galaxy ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA04230/PIA04230~orig.jpg"
+              alt="NASA 旋渦星系圖片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>02 · 旋渦型範例</p>
+              <h3>這個很像風車的旋渦星系，能幫孩子一眼記住什麼叫旋渦型星系</h3>
+              <span>它的彎彎手臂很明顯，非常適合做星系形狀入門。</span>
+              <a href="https://images.nasa.gov/details/PIA04230" target="_blank" rel="noreferrer">來源：NASA Whirlpool Galaxy ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000384/GSFC_20171208_Archive_e000384~orig.jpg"
+              alt="NASA Leo A 矮星系圖片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>03 · 小小星系</p>
+              <h3>Leo A 這種小星系看起來比較散，不像大旋渦那麼整齊</h3>
+              <span>這張可以幫孩子知道：不是每個星系都像大風車，有些會比較小、比較鬆散。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e000384" target="_blank" rel="noreferrer">來源：NASA Hubble Peers into the Mouth of Leo A ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001651/GSFC_20171208_Archive_e001651~large.jpg"
+              alt="NASA 極深空星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>04 · 超多星系</p>
+              <h3>這張看起來像滿天彩色小點點，但其實很多都是很遠很遠的星系</h3>
+              <span>最重要的感覺是：宇宙裡不是只有幾個星系，而是多到超乎想像。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e001651" target="_blank" rel="noreferrer">來源：NASA Hubble Goes to the eXtreme to Assemble Farthest-Ever View of the Universe ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2>你記住星系和星星差在哪裡了嗎？</h2>
+          </div>
+          <p>做完這五題，如果你能分清楚星星、太陽系、銀河系和其他星系，這課就成功了。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二十三課完成</p>
+        <h2>現在你知道，銀河系只是很多星系中的其中一個，宇宙裡還有很多不同樣子的鄰居。</h2>
+        <div class="finish-actions">
+          <a href="space.html">回到太空主題 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>從銀河系再往外看，我們會發現宇宙裡不是只有一個星星城市，而是有很多很多不同的星系。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
