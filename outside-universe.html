@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學太空主題第三十課：用互動方式認識宇宙外面有什麼，以及為什麼這個問題不一定像問房間外面那樣簡單。"
+    />
+    <title>宇宙外面有什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="outside-universe.css" />
+    <script src="outside-universe.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="宇宙外面課程選單">
+        <a href="#compare">比一比</a>
+        <a href="#photos">真實照片</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta" href="space.html">太空主題 ↗</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <a class="breadcrumb" href="space.html">太空主題 / 第三十課</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>太空主題・第三十課</p>
+          <h1>那宇宙外面呢？<em>這個問題比想像中更特別。</em></h1>
+          <p class="hero-intro">
+            我們平常很習慣問：房間外面是走廊，盒子外面是桌子，
+            水族箱外面是空氣。可是講到宇宙時，這種「外面」不一定還能用同樣方式去想。
+            這一課我們來把這件事慢慢分清楚。
+          </p>
+
+          <div class="hero-stats">
+            <div><strong>4</strong><span>種外面比較</span></div>
+            <div><strong>4</strong><span>張 NASA 圖片</span></div>
+            <div><strong>1</strong><span>個核心提醒</span></div>
+          </div>
+
+          <a class="button button-primary" href="#compare">
+            開始想外面 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="visual-code">OUTSIDE / SPACE / QUESTION</span>
+          <div class="box one"></div>
+          <div class="box two"></div>
+          <div class="bubble one"></div>
+          <div class="bubble two"></div>
+          <div class="bubble three"></div>
+          <div class="glow center"></div>
+          <div class="spark one">✦</div>
+          <div class="spark two">✦</div>
+          <div class="spark three">✦</div>
+          <p class="visual-caption">很多東西都有外面，但宇宙這題的重點是：先確認這個問題能不能像平常那樣問。</p>
+        </div>
+      </section>
+
+      <section class="idea-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先記住</p>
+            <h2>不是每個「外面」都長得一樣</h2>
+          </div>
+          <p>先抓住這三件事，小朋友就不會把宇宙直接想成一個大盒子。</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <p>01</p>
+            <h3>房間外面很好懂</h3>
+            <p>因為房間本來就在更大的地方裡，所以外面這個問題很好回答。</p>
+          </article>
+          <article class="idea-card">
+            <p>02</p>
+            <h3>宇宙不是一定放在別的房間裡</h3>
+            <p>如果宇宙已經是在講所有空間，那「外面」就不一定像走出門那樣簡單。</p>
+          </article>
+          <article class="idea-card">
+            <p>03</p>
+            <h3>有時候更好的回答是：問題要換種問法</h3>
+            <p>與其急著找宇宙外面的東西，不如先問：宇宙是不是一定需要有一個「外面」？</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="compare-section" id="compare">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">點點看</p>
+            <h2>哪些東西適合問「外面有什麼」？</h2>
+          </div>
+          <p>按不同按鈕，比較房間、魚缸、地圖和宇宙，看看哪種問題可以直接回答，哪種要先停一下想。</p>
+        </div>
+
+        <div class="compare-layout">
+          <div class="compare-buttons" role="tablist" aria-label="外面比較模式">
+            <button class="compare-button active" type="button" data-mode="room">房間</button>
+            <button class="compare-button" type="button" data-mode="tank">魚缸</button>
+            <button class="compare-button" type="button" data-mode="map">地圖</button>
+            <button class="compare-button" type="button" data-mode="universe">宇宙</button>
+          </div>
+
+          <div class="compare-card">
+            <div class="compare-visual">
+              <div class="room-shape"></div>
+              <div class="tank-shape"></div>
+              <div class="map-shape"></div>
+              <div class="universe-shape"></div>
+            </div>
+
+            <div class="compare-copy">
+              <p class="mini-label">現在看到的是</p>
+              <h3 id="mode-name">房間</h3>
+              <p id="mode-text">房間在建築裡，所以外面通常是走廊、別的房間或戶外。這種問題很好回答。</p>
+              <div class="memory-box">
+                <strong id="mode-memory">記法：如果東西本來就放在更大的地方裡，問外面通常很合理。</strong>
+              </div>
+              <ul id="mode-facts" class="fact-list">
+                <li>房間有牆。</li>
+                <li>牆外面還有別的地方。</li>
+                <li>所以「外面」這題很直覺。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="compare-strip">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">一句話整理</p>
+            <h2>第三十課最重要的三件事</h2>
+          </div>
+        </div>
+
+        <div class="step-grid">
+          <article>
+            <p>01</p>
+            <h3>有些東西有外面</h3>
+            <span>像房間、盒子、魚缸。</span>
+          </article>
+          <article>
+            <p>02</p>
+            <h3>宇宙不一定像盒子</h3>
+            <span>所以不能直接套同樣問法。</span>
+          </article>
+          <article>
+            <p>03</p>
+            <h3>先問法對不對</h3>
+            <span>比急著找答案更重要。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="photos-section" id="photos">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">NASA 真實照片</p>
+            <h2>讓孩子感覺宇宙尺度真的大到不像房間</h2>
+          </div>
+          <p>這幾張圖的作用，是幫孩子把「宇宙不是普通容器」這種感覺先建立起來。</p>
+        </div>
+
+        <div class="photo-grid">
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA12467/PIA12467~orig.jpg"
+              alt="NASA 銀河系全天觀測圖"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>01 · 先把尺度拉大</p>
+              <h3>當視角大到整個銀河系，就比較不會把宇宙想成一個普通房間</h3>
+              <span>這張很適合幫孩子先把腦中的空間變大。</span>
+              <a href="https://images.nasa.gov/details/PIA12467" target="_blank" rel="noreferrer">來源：NASA All-Sky Infrared Survey ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg"
+              alt="NASA 仙女座星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>02 · 很遠很遠的鄰居</p>
+              <h3>看到像仙女座這樣遙遠的星系時，會更容易理解宇宙不是一個小盒子</h3>
+              <span>星系彼此之間的大距離，能幫孩子打開尺度感。</span>
+              <a href="https://images.nasa.gov/details/PIA04921" target="_blank" rel="noreferrer">來源：NASA Andromeda Galaxy ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/PIA04230/PIA04230~orig.jpg"
+              alt="NASA 旋渦星系照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>03 · 不只一個地方</p>
+              <h3>很多不同星系同時出現時，孩子會更明白宇宙不是一個只有一點點空間的小地方</h3>
+              <span>這張很適合做「宇宙非常開闊」的感覺。</span>
+              <a href="https://images.nasa.gov/details/PIA04230" target="_blank" rel="noreferrer">來源：NASA Whirlpool Galaxy ↗</a>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001651/GSFC_20171208_Archive_e001651~large.jpg"
+              alt="NASA 極深空宇宙照片"
+              loading="lazy"
+            />
+            <div class="photo-copy">
+              <p>04 · 最遠不等於牆</p>
+              <h3>深空照片最適合提醒：我們看得很遠，不代表那裡就是宇宙真正外面</h3>
+              <span>這張剛好能把前一課「邊邊」和這一課「外面」連起來。</span>
+              <a href="https://images.nasa.gov/details/GSFC_20171208_Archive_e001651" target="_blank" rel="noreferrer">來源：NASA Hubble eXtreme Deep Field ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2>你知道為什麼宇宙外面這題特別了嗎？</h2>
+          </div>
+          <p>做完這五題，如果你能說出「宇宙不一定像房間」，這課就成功了。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第三十課完成</p>
+        <h2>現在你知道，「宇宙外面有什麼」之所以難回答，是因為宇宙不一定像房間那樣放在更大的地方裡。</h2>
+        <div class="finish-actions">
+          <a href="space.html">回到太空主題 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>問宇宙外面有什麼之前，先想想宇宙是不是一定要像房間那樣有「外面」，就是很棒的第一步。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
