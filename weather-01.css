@@ -1,0 +1,557 @@
+:root {
+  --lesson-sky: #8fd3ff;
+  --lesson-blue: #2f6ca6;
+  --lesson-dark: #173456;
+  --lesson-paper: #fffdf8;
+  --lesson-gold: #f0c864;
+}
+
+.weather-lesson-header {
+  background: rgba(255, 253, 248, 0.94);
+}
+
+.weather-lesson-hero {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  align-items: center;
+  gap: 72px;
+  min-height: 690px;
+  padding: 100px max(24px, calc((100% - 1180px) / 2)) 90px;
+}
+
+.weather-lesson-hero h1 {
+  max-width: 740px;
+  margin: 24px 0;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(56px, 7vw, 88px);
+  line-height: 0.97;
+  letter-spacing: -0.055em;
+}
+
+.weather-lesson-hero h1 em {
+  display: block;
+  color: var(--lesson-blue);
+  font-style: italic;
+}
+
+.lesson-summary {
+  display: flex;
+  gap: 28px;
+  margin: 34px 0;
+}
+
+.lesson-summary div {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.lesson-summary strong {
+  color: var(--lesson-dark);
+  font-family: "Newsreader", serif;
+  font-size: 29px;
+}
+
+.lesson-summary span {
+  color: var(--ink-soft);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.weather-lesson-visual {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  color: var(--lesson-paper);
+  background: linear-gradient(180deg, #98d8ff 0%, #4a88c3 58%, #234566 100%);
+  box-shadow: 20px 22px 0 var(--lesson-gold);
+  transform: rotate(2deg);
+}
+
+.weather-lesson-visual::before {
+  position: absolute;
+  inset: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  content: "";
+}
+
+.lesson-sun {
+  position: absolute;
+  top: 76px;
+  right: 48px;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff6bf 0%, #ffd05c 68%, #ec9743 100%);
+  box-shadow: 0 0 36px rgba(255, 215, 118, 0.42);
+}
+
+.lesson-cloud {
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.lesson-cloud.big {
+  top: 158px;
+  left: 58px;
+  width: 214px;
+  height: 66px;
+}
+
+.lesson-cloud.small {
+  top: 248px;
+  left: 118px;
+  width: 150px;
+  height: 44px;
+}
+
+.lesson-cloud::before,
+.lesson-cloud::after {
+  position: absolute;
+  border-radius: 50%;
+  background: inherit;
+  content: "";
+}
+
+.lesson-cloud.big::before {
+  left: 18px;
+  top: -24px;
+  width: 76px;
+  height: 76px;
+}
+
+.lesson-cloud.big::after {
+  right: 28px;
+  top: -34px;
+  width: 88px;
+  height: 88px;
+}
+
+.lesson-cloud.small::before {
+  left: 14px;
+  top: -18px;
+  width: 52px;
+  height: 52px;
+}
+
+.lesson-cloud.small::after {
+  right: 16px;
+  top: -20px;
+  width: 60px;
+  height: 60px;
+}
+
+.lesson-rain {
+  position: absolute;
+  left: 118px;
+  top: 322px;
+  display: grid;
+  grid-template-columns: repeat(4, 20px);
+  gap: 16px;
+}
+
+.lesson-rain i {
+  width: 16px;
+  height: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, #59b8ff 100%);
+  clip-path: polygon(50% 0%, 100% 38%, 80% 100%, 20% 100%, 0% 38%);
+}
+
+.weather-lab,
+.weather-parts,
+.weather-diary,
+.quiz-section,
+.course-finish {
+  padding: 102px max(24px, calc((100% - 1180px) / 2));
+}
+
+.weather-lab {
+  color: var(--lesson-paper);
+  background: var(--lesson-dark);
+}
+
+.lab-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 22px;
+}
+
+.lab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.weather-mode-button {
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: var(--lesson-paper);
+  background: transparent;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.weather-mode-button.is-active {
+  color: var(--ink);
+  background: var(--lesson-gold);
+}
+
+.sky-stage {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #97d7ff 0%, #6fb9ef 48%, #4478af 100%);
+}
+
+.sky-stage::before {
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  content: "";
+}
+
+.sky-sun,
+.sky-cloud,
+.sky-rain,
+.sky-shadow,
+.sky-mist {
+  position: absolute;
+  transition: opacity 180ms ease;
+}
+
+.sky-sun {
+  top: 56px;
+  right: 44px;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff7c4 0%, #ffd05d 70%, #e99641 100%);
+  box-shadow: 0 0 30px rgba(255, 213, 110, 0.42);
+}
+
+.sky-cloud {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.sky-cloud::before,
+.sky-cloud::after {
+  position: absolute;
+  border-radius: 50%;
+  background: inherit;
+  content: "";
+}
+
+.sky-cloud.one {
+  top: 138px;
+  left: 50px;
+  width: 180px;
+  height: 56px;
+}
+
+.sky-cloud.one::before {
+  left: 14px;
+  top: -20px;
+  width: 66px;
+  height: 66px;
+}
+
+.sky-cloud.one::after {
+  right: 22px;
+  top: -28px;
+  width: 76px;
+  height: 76px;
+}
+
+.sky-cloud.two {
+  top: 206px;
+  left: 124px;
+  width: 132px;
+  height: 40px;
+}
+
+.sky-cloud.two::before {
+  left: 12px;
+  top: -15px;
+  width: 46px;
+  height: 46px;
+}
+
+.sky-cloud.two::after {
+  right: 14px;
+  top: -18px;
+  width: 54px;
+  height: 54px;
+}
+
+.sky-rain {
+  left: 120px;
+  top: 266px;
+  display: grid;
+  grid-template-columns: repeat(5, 18px);
+  gap: 15px;
+}
+
+.sky-rain i {
+  width: 14px;
+  height: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, #59b8ff 100%);
+  clip-path: polygon(50% 0%, 100% 38%, 80% 100%, 20% 100%, 0% 38%);
+}
+
+.sky-shadow {
+  inset: 0;
+  background: rgba(36, 53, 84, 0.18);
+}
+
+.sky-mist {
+  inset: auto 26px 34px 26px;
+  height: 76px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.62) 100%);
+  filter: blur(3px);
+}
+
+.lab-explainer {
+  padding: 34px 36px;
+  color: var(--ink);
+  background: var(--lesson-paper);
+}
+
+.lab-explainer h3 {
+  margin: 10px 0 12px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 40px;
+  line-height: 1.02;
+}
+
+.lab-explainer p {
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.lab-memory {
+  margin-top: 18px;
+  padding: 20px;
+  color: var(--lesson-paper);
+  background: var(--lesson-blue);
+}
+
+.lab-memory span {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.lab-memory strong {
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.weather-parts {
+  background: var(--lesson-paper);
+}
+
+.parts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.part-card {
+  padding: 28px 24px;
+  background: #eef6fb;
+}
+
+.part-card:nth-child(2n) {
+  background: #f5f0dd;
+}
+
+.part-card .part-icon {
+  font-size: 36px;
+}
+
+.part-card h3 {
+  margin: 16px 0 10px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 30px;
+}
+
+.part-card p {
+  color: var(--ink-soft);
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.weather-diary {
+  background: linear-gradient(180deg, #f3fbff 0%, #fffdf8 100%);
+}
+
+.diary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.diary-card {
+  padding: 28px 24px;
+  background: var(--lesson-paper);
+  box-shadow: var(--shadow);
+}
+
+.diary-card strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--lesson-blue);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.diary-card h3 {
+  margin: 0 0 12px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 30px;
+}
+
+.diary-card p {
+  color: var(--ink-soft);
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.quiz-section {
+  color: var(--lesson-paper);
+  background: var(--lesson-dark);
+}
+
+.quiz-card {
+  max-width: 840px;
+  padding: 34px;
+  color: var(--ink);
+  background: var(--lesson-paper);
+}
+
+.quiz-card h3 {
+  margin: 8px 0 18px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 34px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 12px;
+}
+
+.quiz-option {
+  padding: 15px 18px;
+  border: 1px solid rgba(25, 53, 46, 0.14);
+  color: var(--ink);
+  background: #edf7fc;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.quiz-option.is-correct {
+  background: #d9f2d2;
+}
+
+.quiz-option.is-wrong {
+  background: #f8ddd8;
+}
+
+#quiz-progress,
+#quiz-feedback {
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+.course-finish {
+  background: var(--lesson-paper);
+}
+
+.course-finish p:first-child {
+  margin: 0 0 10px;
+  color: var(--lesson-blue);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.course-finish h2 {
+  margin: 0 0 18px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(38px, 4.5vw, 60px);
+  line-height: 1.05;
+}
+
+.course-finish a {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  padding: 0 18px;
+  color: var(--lesson-paper);
+  background: var(--lesson-blue);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+@media (max-width: 920px) {
+  .weather-lesson-hero,
+  .lab-layout,
+  .parts-grid,
+  .diary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .weather-lab,
+  .weather-parts,
+  .weather-diary,
+  .quiz-section,
+  .course-finish {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 680px) {
+  .weather-lesson-header .desktop-nav {
+    display: none;
+  }
+
+  .weather-lesson-hero {
+    grid-template-columns: 1fr;
+    gap: 52px;
+    min-height: auto;
+    padding-top: 106px;
+  }
+
+  .weather-lesson-hero h1 {
+    font-size: 50px;
+  }
+
+  .lesson-summary {
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .lesson-summary div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .weather-lesson-visual {
+    min-height: 360px;
+    box-shadow: 10px 12px 0 var(--lesson-gold);
+  }
+}

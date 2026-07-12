@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學天氣主題第一課：先學會分晴天、多雲、陰天和雨天，建立每天看天氣的第一步。"
+    />
+    <title>今天天氣是什麼｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260712-weather-01" />
+    <link rel="stylesheet" href="weather-01.css?v=20260712-weather-01" />
+    <script src="script.js" defer></script>
+    <script src="weather-01.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header weather-lesson-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="第一課選單">
+        <a href="#weather-lab">看天氣</a>
+        <a href="#weather-parts">看重點</a>
+        <a href="#weather-diary">怎麼觀察</a>
+        <a href="#quiz">小挑戰</a>
+      </nav>
+      <a class="header-cta" href="weather-topic.html">
+        回天氣主題 <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="weather-lesson-hero">
+        <div class="weather-lesson-copy">
+          <a class="breadcrumb" href="weather-topic.html">主題首頁 / 天氣</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>天氣主題・第一課</p>
+          <h1>先不用背很多名詞，<em>先學會看今天天氣是什麼。</em></h1>
+          <p class="hero-intro">
+            這一課只做一件事：把每天最常看到的幾種天氣分清楚。
+            你會先認識晴天、多雲、陰天和雨天，之後看天空時就不會只說「今天怪怪的」，
+            而是能更清楚說出你看到了什麼。
+          </p>
+          <div class="lesson-summary">
+            <div><strong>4</strong><span>種基本天氣</span></div>
+            <div><strong>1</strong><span>個互動天空</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#weather-lab">
+            開始看天氣 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="weather-lesson-visual" aria-hidden="true">
+          <span class="visual-code">SUN / CLOUD / RAIN</span>
+          <div class="lesson-sun"></div>
+          <div class="lesson-cloud big"></div>
+          <div class="lesson-cloud small"></div>
+          <div class="lesson-rain"><i></i><i></i><i></i><i></i></div>
+          <span class="visual-caption">LOOK UP · NOTICE · NAME IT</span>
+        </div>
+      </section>
+
+      <section class="weather-lab" id="weather-lab" aria-labelledby="weather-lab-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先點點看</p>
+            <h2 id="weather-lab-title">今天的天空比較像哪一種？</h2>
+          </div>
+          <p>先按不同按鈕，直接看天空怎麼變。這比一開始就背定義更快。</p>
+        </div>
+
+        <div class="lab-layout">
+          <div class="lab-stage">
+            <div class="lab-buttons" role="tablist" aria-label="天氣模式">
+              <button class="weather-mode-button is-active" type="button" data-mode="sunny">晴天</button>
+              <button class="weather-mode-button" type="button" data-mode="cloudy">多雲</button>
+              <button class="weather-mode-button" type="button" data-mode="overcast">陰天</button>
+              <button class="weather-mode-button" type="button" data-mode="rainy">雨天</button>
+            </div>
+            <div class="sky-stage" aria-hidden="true">
+              <div class="sky-sun"></div>
+              <div class="sky-cloud one"></div>
+              <div class="sky-cloud two"></div>
+              <div class="sky-rain"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="sky-shadow"></div>
+              <div class="sky-mist"></div>
+            </div>
+          </div>
+
+          <aside class="lab-explainer" aria-live="polite">
+            <p class="section-kicker">現在看到的是</p>
+            <h3 id="factor-title">晴天</h3>
+            <p id="factor-text">
+              天空看起來最亮，雲很少，太陽最容易清楚看見。這種天氣通常會讓人覺得精神很好，也比較想去外面玩。
+            </p>
+            <div class="lab-memory">
+              <span>先記住</span>
+              <strong id="factor-remember">晴天最明顯的特徵，就是陽光很多、雲很少。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="weather-parts" id="weather-parts" aria-labelledby="weather-parts-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看四件事就夠了</p>
+            <h2 id="weather-parts-title">先不要想太難，先看這四個觀察重點</h2>
+          </div>
+          <p>小朋友看天氣時，先看太陽、雲、亮不亮、地上有沒有雨，就已經很夠用了。</p>
+        </div>
+
+        <div class="parts-grid">
+          <article class="part-card">
+            <div class="part-icon">☀️</div>
+            <h3>太陽</h3>
+            <p>看不看得到太陽，是分晴天和陰天最直覺的第一步。</p>
+          </article>
+          <article class="part-card">
+            <div class="part-icon">☁️</div>
+            <h3>雲</h3>
+            <p>雲有多少、是不是把天空蓋滿，會直接改變你看到的天氣感覺。</p>
+          </article>
+          <article class="part-card">
+            <div class="part-icon">💧</div>
+            <h3>雨</h3>
+            <p>有沒有下雨，是最容易觀察的事，但不是所有灰灰的天都一定在下雨。</p>
+          </article>
+          <article class="part-card">
+            <div class="part-icon">👀</div>
+            <h3>亮度</h3>
+            <p>今天亮亮的、還是灰灰暗暗的，也能幫你更快分出不同天氣。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="weather-diary" id="weather-diary" aria-labelledby="weather-diary-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">每天都能做</p>
+            <h2 id="weather-diary-title">三步驟小觀察，今天就可以開始</h2>
+          </div>
+          <p>這個做法很適合 6 歲小朋友，因為不需要工具，只要抬頭看。</p>
+        </div>
+
+        <div class="diary-grid">
+          <article class="diary-card">
+            <strong>STEP 1</strong>
+            <h3>先看太陽</h3>
+            <p>先問自己：我有沒有直接看到太陽？如果很清楚，就很可能是晴天或多雲。</p>
+          </article>
+          <article class="diary-card">
+            <strong>STEP 2</strong>
+            <h3>再看雲多不多</h3>
+            <p>如果雲很少，像晴天；如果雲變多，但還看得到亮亮天空，像多雲；如果整片蓋住，像陰天。</p>
+          </article>
+          <article class="diary-card">
+            <strong>STEP 3</strong>
+            <h3>最後看有沒有雨</h3>
+            <p>如果有雨滴、地面濕濕的或聽到雨聲，就可以很清楚說這是雨天。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小挑戰</p>
+            <h2 id="quiz-title">你會不會先抬頭看天空了？</h2>
+          </div>
+          <p>共五題，做完看看你能不能把晴天、多雲、陰天和雨天分清楚。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第一課完成</p>
+        <h2>你現在已經有能力說出：今天比較像晴天、多雲、陰天，還是雨天。</h2>
+        <a href="weather-02.html">下一站・第二課：晴天、陰天、多雲差在哪 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>先會看今天的天空，後面看雲、風和雨就會更快上手。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
