@@ -1,2 +1,208 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="慢慢學天氣主題第四課：雲是怎麼來的。課程殼已建立。" /><title>雲是怎麼來的｜慢慢學</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css?v=20260712-weather-shell" /><link rel="stylesheet" href="weather-shell.css?v=20260712-weather-shell" /><script src="script.js" defer></script></head><body class="weather-shell-body"><header class="site-header weather-shell-header"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a><nav class="desktop-nav" aria-label="殼頁選單"><a href="weather-topic.html">回主題</a><a href="weather-03.html">上一課</a><a href="weather-05.html">下一課</a></nav><a class="header-cta" href="weather-topic.html">天氣主題 ↗</a></header><main class="weather-shell-main"><section class="weather-shell-hero"><div><a class="breadcrumb" href="weather-topic.html">主題首頁 / 天氣</a><p class="eyebrow"><span aria-hidden="true"></span>天氣主題・第四課</p><h1>天空裡的雲，<em>到底是怎麼來的？</em></h1><p class="hero-intro">這一課的殼已建立。之後會補上水氣、變冷和小水滴聚在一起的互動示意。</p></div><div class="weather-shell-visual" aria-hidden="true"><div class="shell-cloud big"></div><div class="shell-cloud small"></div></div></section><section class="shell-card-grid"><article class="shell-card"><p class="shell-status">LESSON SHELL READY</p><h2>本課內容稍後補上</h2><p>後續會加入水蒸氣變成雲的動畫和簡化版水循環。</p><div class="shell-actions"><a href="weather-03.html">回第三課 →</a><a href="weather-05.html">先看第五課 →</a></div></article><article class="shell-next"><h2>這課會做什麼</h2><p>預計補上：水氣上升、空氣變冷、雲怎麼形成，以及孩子最常看到的雲感覺。</p><a href="weather-topic.html">回天氣主題總表 →</a></article></section></main><footer><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a><p>第四課殼頁已建立，後續會補完整內容。</p><p>© <span id="current-year"></span> 慢慢學</p></footer></body></html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學天氣主題第四課：用互動方式看懂雲是怎麼形成的。"
+    />
+    <title>雲是怎麼來的｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260712-weather-04" />
+    <link rel="stylesheet" href="weather-04.css?v=20260712-weather-04" />
+    <script src="script.js" defer></script>
+    <script src="weather-04.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header weather-lesson-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="第四課選單">
+        <a href="#cloud-lab">雲怎麼來</a>
+        <a href="#steps">四步驟</a>
+        <a href="#observe">生活裡的例子</a>
+        <a href="#quiz">小測驗</a>
+      </nav>
+      <a class="header-cta" href="weather-topic.html">
+        回天氣主題 <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="lesson-hero">
+        <div class="lesson-copy">
+          <a class="breadcrumb" href="weather-topic.html">主題首頁 / 天氣</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>天氣主題・第四課</p>
+          <h1>天空裡白白的雲，<em>其實是很多很小很小的水滴聚在一起。</em></h1>
+          <p class="hero-intro">
+            雲不是棉花，也不是煙。它和水很有關係。
+            這一課會用最簡單的方式，帶你看懂水跑到空氣裡、遇冷、聚在一起，最後變成雲。
+          </p>
+          <div class="lesson-summary">
+            <div><strong>4</strong><span>個形成步驟</span></div>
+            <div><strong>1</strong><span>個雲生成互動</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#cloud-lab">
+            開始看雲 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="lesson-visual" aria-hidden="true">
+          <div class="visual-scene">
+            <div class="visual-sun"></div>
+            <div class="visual-cloud"></div>
+            <div class="visual-vapor"><i></i><i></i><i></i><i></i></div>
+            <div class="visual-water"></div>
+            <span>WATER → AIR → CLOUD</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="lesson-section lab-section" id="cloud-lab" aria-labelledby="cloud-lab-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">互動看形成</p>
+            <h2 id="cloud-lab-title">按一按，看看雲怎麼一步一步出現</h2>
+          </div>
+          <p>從地上的水開始，慢慢看到它怎麼跑到天上變成雲。</p>
+        </div>
+
+        <div class="lab-layout">
+          <div class="lab-panel">
+            <div class="step-buttons" role="tablist" aria-label="雲形成步驟">
+              <button class="step-button is-active" type="button" data-step="warm">1 水被曬暖</button>
+              <button class="step-button" type="button" data-step="rise">2 跑到空氣裡</button>
+              <button class="step-button" type="button" data-step="cool">3 遇冷變小滴</button>
+              <button class="step-button" type="button" data-step="cloud">4 聚成雲</button>
+            </div>
+
+            <div class="cloud-stage" aria-hidden="true">
+              <div class="stage-sun"></div>
+              <div class="stage-water"></div>
+              <div class="stage-arrow"></div>
+              <div class="stage-vapor"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="stage-cloud"></div>
+              <div class="stage-droplets"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+
+          <aside class="lab-explainer" aria-live="polite">
+            <p class="section-kicker">現在步驟</p>
+            <h3 id="step-title">1 水被曬暖</h3>
+            <p id="step-text">
+              太陽照到水坑、河流、海面或濕濕的地面時，水會慢慢變得比較容易跑進空氣裡。
+            </p>
+
+            <div class="memory-card">
+              <span>先記一句</span>
+              <strong id="step-remember">雲的起點不是天空，而是地上的水。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="lesson-section steps-section" id="steps" aria-labelledby="steps-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">整理成四步</p>
+            <h2 id="steps-title">記住這四步，你就知道雲不是突然冒出來的</h2>
+          </div>
+          <p>先有水，再有水氣，再有小水滴，最後才有雲。</p>
+        </div>
+
+        <div class="step-grid">
+          <article class="step-card">
+            <strong>STEP 1</strong>
+            <h3>地上的水被太陽曬暖</h3>
+            <p>水坑、海洋、河流、濕地面都可以當起點。</p>
+          </article>
+          <article class="step-card">
+            <strong>STEP 2</strong>
+            <h3>水跑到空氣裡</h3>
+            <p>我們可以把它想成「水變得看不太見，跑到空氣裡」。</p>
+          </article>
+          <article class="step-card">
+            <strong>STEP 3</strong>
+            <h3>高一點、冷一點</h3>
+            <p>水到了比較冷的地方，就比較容易變成很多很小的小水滴。</p>
+          </article>
+          <article class="step-card">
+            <strong>STEP 4</strong>
+            <h3>小水滴聚在一起</h3>
+            <p>當小水滴夠多、聚成一團，我們就看見雲了。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-section observe-section" id="observe" aria-labelledby="observe-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">生活裡也看得到</p>
+            <h2 id="observe-title">下面這些畫面，都在提醒你：水會跑進空氣裡</h2>
+          </div>
+          <p>不用只看天空，生活中也有很多小提示。</p>
+        </div>
+
+        <div class="observe-grid">
+          <article class="observe-card">
+            <div class="observe-visual puddle"></div>
+            <h3>雨停後的水坑慢慢變少</h3>
+            <p>水不是消失了，而是慢慢跑到空氣裡。</p>
+          </article>
+          <article class="observe-card">
+            <div class="observe-visual soup"></div>
+            <h3>熱湯上方白白的一團</h3>
+            <p>那是在提醒你：熱熱的水很容易跑到空氣裡、又變成小小水滴。</p>
+          </article>
+          <article class="observe-card">
+            <div class="observe-visual bathroom"></div>
+            <h3>洗澡後鏡子霧霧的</h3>
+            <p>空氣裡的水遇到比較冷的鏡子，就變成很小的小水滴。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-section quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小測驗</p>
+            <h2 id="quiz-title">你會用自己的話說出雲怎麼來了嗎？</h2>
+          </div>
+          <p>共五題，做完就能把雲的形成講得很清楚。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第四課完成</p>
+        <h2>你現在知道：雲不是突然冒出來，而是地上的水先跑到空氣裡，最後聚成很多小水滴。</h2>
+        <a href="weather-05.html">下一站・第五課：雲有好多種長相 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>先懂雲怎麼來，後面看下雨和水循環會更直覺。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>

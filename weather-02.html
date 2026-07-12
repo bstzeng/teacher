@@ -1,2 +1,247 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="慢慢學天氣主題第二課：晴天、陰天、多雲差在哪。課程殼已建立。" /><title>晴天、陰天、多雲差在哪｜慢慢學</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css?v=20260712-weather-shell" /><link rel="stylesheet" href="weather-shell.css?v=20260712-weather-shell" /><script src="script.js" defer></script></head><body class="weather-shell-body"><header class="site-header weather-shell-header"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a><nav class="desktop-nav" aria-label="殼頁選單"><a href="weather-topic.html">回主題</a><a href="weather-01.html">上一課</a><a href="weather-03.html">下一課</a></nav><a class="header-cta" href="weather-topic.html">天氣主題 ↗</a></header><main class="weather-shell-main"><section class="weather-shell-hero"><div><a class="breadcrumb" href="weather-topic.html">主題首頁 / 天氣</a><p class="eyebrow"><span aria-hidden="true"></span>天氣主題・第二課</p><h1>晴天、陰天、多雲，<em>到底差在哪？</em></h1><p class="hero-intro">這一課的殼已建立。之後會補上比較互動，讓孩子把三種最常見的天氣一眼分清楚。</p></div><div class="weather-shell-visual" aria-hidden="true"><div class="shell-sun"></div><div class="shell-cloud big"></div><div class="shell-cloud small"></div></div></section><section class="shell-card-grid"><article class="shell-card"><p class="shell-status">LESSON SHELL READY</p><h2>本課內容稍後補上</h2><p>已保留正式標題、網址與課程順序。後續會加入互動比較、圖示與小測驗。</p><div class="shell-actions"><a href="weather-01.html">回第一課 →</a><a href="weather-03.html">先看第三課 →</a></div></article><article class="shell-next"><h2>這課會做什麼</h2><p>預計補上：晴天 / 多雲 / 陰天的天空比較、亮度差異、雲量差異，以及孩子最容易混淆的地方。</p><a href="weather-topic.html">回天氣主題總表 →</a></article></section></main><footer><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a><p>第二課殼頁已建立，後續會補完整內容。</p><p>© <span id="current-year"></span> 慢慢學</p></footer></body></html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="慢慢學天氣主題第二課：用互動方式分清楚晴天、多雲、陰天的差別。"
+    />
+    <title>晴天、陰天、多雲差在哪｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260712-weather-02" />
+    <link rel="stylesheet" href="weather-02.css?v=20260712-weather-02" />
+    <script src="script.js" defer></script>
+    <script src="weather-02.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header weather-lesson-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="第二課選單">
+        <a href="#compare">天空比較</a>
+        <a href="#clues">觀察線索</a>
+        <a href="#game">分一分</a>
+        <a href="#quiz">小測驗</a>
+      </nav>
+      <a class="header-cta" href="weather-topic.html">
+        回天氣主題 <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="lesson-hero">
+        <div class="lesson-copy">
+          <a class="breadcrumb" href="weather-topic.html">主題首頁 / 天氣</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>天氣主題・第二課</p>
+          <h1>一樣是沒下雨的天空，<em>晴天、多雲、陰天其實很不一樣。</em></h1>
+          <p class="hero-intro">
+            這一課會把三種最常見的天空放在一起比較。你不用背很難的定義，
+            只要看太陽有沒有露出來、雲有多少、整體亮不亮，就能分得越來越準。
+          </p>
+          <div class="lesson-summary">
+            <div><strong>3</strong><span>種天空一起比</span></div>
+            <div><strong>1</strong><span>個互動比較台</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#compare">
+            開始比較 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="lesson-visual" aria-hidden="true">
+          <div class="visual-sky sunny">
+            <span>晴天</span>
+            <i class="sun"></i>
+            <i class="cloud one"></i>
+          </div>
+          <div class="visual-sky cloudy">
+            <span>多雲</span>
+            <i class="sun"></i>
+            <i class="cloud one"></i>
+            <i class="cloud two"></i>
+          </div>
+          <div class="visual-sky overcast">
+            <span>陰天</span>
+            <i class="cloud one"></i>
+            <i class="cloud two"></i>
+            <i class="cloud three"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="lesson-section compare-section" id="compare" aria-labelledby="compare-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先點點看</p>
+            <h2 id="compare-title">把三種天空放在同一個地方比一比</h2>
+          </div>
+          <p>按下面按鈕，看看太陽、雲量和亮度怎麼一起改變。</p>
+        </div>
+
+        <div class="compare-layout">
+          <div class="compare-panel">
+            <div class="mode-buttons" role="tablist" aria-label="天空模式">
+              <button class="mode-button is-active" type="button" data-mode="sunny">晴天</button>
+              <button class="mode-button" type="button" data-mode="cloudy">多雲</button>
+              <button class="mode-button" type="button" data-mode="overcast">陰天</button>
+            </div>
+
+            <div class="sky-stage" aria-hidden="true">
+              <div class="stage-sun"></div>
+              <div class="stage-cloud one"></div>
+              <div class="stage-cloud two"></div>
+              <div class="stage-cloud three"></div>
+              <div class="stage-shadow"></div>
+              <div class="stage-ground"></div>
+            </div>
+          </div>
+
+          <aside class="compare-explainer" aria-live="polite">
+            <p class="section-kicker">現在看到的是</p>
+            <h3 id="mode-title">晴天</h3>
+            <p id="mode-text">
+              晴天的特徵是太陽最清楚、雲最少，整個天空看起來最亮。
+            </p>
+
+            <div class="meter-group">
+              <div class="meter-card">
+                <span>雲量</span>
+                <div class="meter-track"><i id="cloud-meter"></i></div>
+                <strong id="cloud-label">很少</strong>
+              </div>
+              <div class="meter-card">
+                <span>亮度</span>
+                <div class="meter-track"><i id="light-meter"></i></div>
+                <strong id="light-label">最亮</strong>
+              </div>
+            </div>
+
+            <div class="memory-card">
+              <span>先記一句</span>
+              <strong id="mode-remember">晴天 = 太陽明顯 + 雲很少。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="lesson-section clues-section" id="clues" aria-labelledby="clues-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看四個線索</p>
+            <h2 id="clues-title">遇到分不清的時候，就用這四件事判斷</h2>
+          </div>
+          <p>這四個觀察點最容易用，也最適合小朋友每天自己練習。</p>
+        </div>
+
+        <div class="clue-grid">
+          <article class="clue-card">
+            <div class="clue-icon">☀️</div>
+            <h3>太陽有沒有清楚露出來</h3>
+            <p>晴天最容易直接看到太陽；陰天通常比較看不到。</p>
+          </article>
+          <article class="clue-card">
+            <div class="clue-icon">☁️</div>
+            <h3>雲有多少</h3>
+            <p>多雲是雲變多，但不一定把天空整片蓋滿；陰天常常蓋得更多。</p>
+          </article>
+          <article class="clue-card">
+            <div class="clue-icon">💡</div>
+            <h3>整體亮不亮</h3>
+            <p>亮亮的比較像晴天或多雲；灰灰暗暗的比較像陰天。</p>
+          </article>
+          <article class="clue-card">
+            <div class="clue-icon">🏃</div>
+            <h3>出去玩的感覺</h3>
+            <p>晴天最像有陽光灑下來；多雲有時亮有時暗；陰天常常比較悶。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-section game-section" id="game" aria-labelledby="game-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">一起分一分</p>
+            <h2 id="game-title">看到描述後，你知道比較像哪一種天空嗎？</h2>
+          </div>
+          <p>每張卡都先自己想，再按按鈕看答案。</p>
+        </div>
+
+        <div class="game-grid">
+          <article class="game-card" data-answer="晴天">
+            <strong>情境 1</strong>
+            <h3>天空很亮，雲只有幾朵，太陽很清楚。</h3>
+            <div class="game-options">
+              <button type="button">晴天</button>
+              <button type="button">多雲</button>
+              <button type="button">陰天</button>
+            </div>
+            <p class="game-feedback" aria-live="polite"></p>
+          </article>
+
+          <article class="game-card" data-answer="多雲">
+            <strong>情境 2</strong>
+            <h3>天空還是亮的，可是雲變多，太陽一下出來一下躲起來。</h3>
+            <div class="game-options">
+              <button type="button">晴天</button>
+              <button type="button">多雲</button>
+              <button type="button">陰天</button>
+            </div>
+            <p class="game-feedback" aria-live="polite"></p>
+          </article>
+
+          <article class="game-card" data-answer="陰天">
+            <strong>情境 3</strong>
+            <h3>天空灰灰的，雲很多，太陽不容易看見，但還沒有下雨。</h3>
+            <div class="game-options">
+              <button type="button">晴天</button>
+              <button type="button">多雲</button>
+              <button type="button">陰天</button>
+            </div>
+            <p class="game-feedback" aria-live="polite"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-section quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小測驗</p>
+            <h2 id="quiz-title">你已經會分晴天、多雲、陰天了嗎？</h2>
+          </div>
+          <p>共五題，做完就更不容易混淆。</p>
+        </div>
+
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>
+            下一題 <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第二課完成</p>
+        <h2>你現在知道：晴天、多雲、陰天最大的差別，是太陽、雲量和亮度。</h2>
+        <a href="weather-03.html">下一站・第三課：太陽為什麼有時很亮也很熱 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <p>把三種常見天空分清楚，後面看雲和太陽就會更容易。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
