@@ -1,2 +1,172 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="慢慢學天氣主題第十一課：為什麼有時風大、有時風小。課程殼已建立。" /><title>為什麼有時風大、有時風小｜慢慢學</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css?v=20260712-weather-shell" /><link rel="stylesheet" href="weather-shell.css?v=20260712-weather-shell" /><script src="script.js" defer></script></head><body class="weather-shell-body"><header class="site-header weather-shell-header"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a><nav class="desktop-nav" aria-label="殼頁選單"><a href="weather-topic.html">回主題</a><a href="weather-10.html">上一課</a><a href="weather-12.html">下一課</a></nav><a class="header-cta" href="weather-topic.html">天氣主題 ↗</a></header><main class="weather-shell-main"><section class="weather-shell-hero"><div><a class="breadcrumb" href="weather-topic.html">主題首頁 / 天氣</a><p class="eyebrow"><span aria-hidden="true"></span>天氣主題・第十一課</p><h1>有時只是微風，<em>有時卻吹得很大力。</em></h1><p class="hero-intro">這一課的殼已建立。之後會補上不同風力的感覺和簡單比較互動。</p></div><div class="weather-shell-visual" aria-hidden="true"><div class="shell-cloud small"></div><div class="shell-sun"></div></div></section><section class="shell-card-grid"><article class="shell-card"><p class="shell-status">LESSON SHELL READY</p><h2>本課內容稍後補上</h2><p>後續會加入微風、強風、風大風小的生活例子。</p><div class="shell-actions"><a href="weather-10.html">回第十課 →</a><a href="weather-12.html">先看第十二課 →</a></div></article><article class="shell-next"><h2>這課會做什麼</h2><p>預計補上：風力差異、東西怎麼被吹動，以及孩子最直覺的觀察方法。</p><a href="weather-topic.html">回天氣主題總表 →</a></article></section></main><footer><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a><p>第十一課殼頁已建立，後續會補完整內容。</p><p>© <span id="current-year"></span> 慢慢學</p></footer></body></html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="慢慢學天氣主題第十一課：用互動方式分辨為什麼有時風大、有時風小。" />
+    <title>為什麼有時風大、有時風小｜慢慢學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260712-weather-11" />
+    <link rel="stylesheet" href="weather-11.css?v=20260712-weather-11" />
+    <script src="script.js" defer></script>
+    <script src="weather-11.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header weather-lesson-header">
+      <a class="brand" href="index.html" aria-label="回到慢慢學首頁">
+        <span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span>
+      </a>
+      <nav class="desktop-nav" aria-label="第十一課選單">
+        <a href="#wind-lab">比風力</a>
+        <a href="#wind-clues">看差別</a>
+        <a href="#wind-game">情境判斷</a>
+        <a href="#quiz">小測驗</a>
+      </nav>
+      <a class="header-cta" href="weather-topic.html">回天氣主題 <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="lesson-hero">
+        <div class="lesson-copy">
+          <a class="breadcrumb" href="weather-topic.html">主題首頁 / 天氣</a>
+          <p class="eyebrow"><span aria-hidden="true"></span>天氣主題・第十一課</p>
+          <h1>有時只是輕輕吹，<em>有時卻會吹得很用力。</em></h1>
+          <p class="hero-intro">這一課會把沒什麼風、微風、強一點的風放在一起比。你會用旗子、樹葉、頭髮和身體感覺去分辨風大風小。</p>
+          <div class="lesson-summary">
+            <div><strong>4</strong><span>種風力感覺</span></div>
+            <div><strong>1</strong><span>個互動比較台</span></div>
+            <div><strong>5</strong><span>題小測驗</span></div>
+          </div>
+          <a class="button button-primary" href="#wind-lab">開始比較 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="lesson-visual" aria-hidden="true">
+          <div class="hero-board">
+            <div class="hero-flag one"></div>
+            <div class="hero-flag two"></div>
+            <div class="hero-flag three"></div>
+            <div class="hero-wind"><i></i><i></i><i></i></div>
+            <span>WIND LEVELS</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="lesson-section lab-section" id="wind-lab" aria-labelledby="wind-lab-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">先點點看</p>
+            <h2 id="wind-lab-title">風越大，東西動得通常越明顯</h2>
+          </div>
+          <p>按不同按鈕，比較旗子、樹葉和風線怎麼變。</p>
+        </div>
+
+        <div class="lab-layout">
+          <div class="lab-panel">
+            <div class="mode-buttons" role="tablist" aria-label="風力模式">
+              <button class="mode-button is-active" type="button" data-mode="calm">幾乎沒風</button>
+              <button class="mode-button" type="button" data-mode="breeze">微風</button>
+              <button class="mode-button" type="button" data-mode="windy">比較有風</button>
+              <button class="mode-button" type="button" data-mode="strong">強風</button>
+            </div>
+            <div class="wind-stage" aria-hidden="true">
+              <div class="stage-tree"></div>
+              <div class="stage-flag"></div>
+              <div class="stage-wind"><i></i><i></i><i></i><i></i></div>
+              <div class="stage-ground"></div>
+            </div>
+          </div>
+          <aside class="lab-explainer" aria-live="polite">
+            <p class="section-kicker">現在風力</p>
+            <h3 id="mode-title">幾乎沒風</h3>
+            <p id="mode-text">空氣動得很少，所以旗子和樹葉也不太動。</p>
+            <div class="meter-card">
+              <span>風的感覺</span>
+              <div class="meter-track"><i id="wind-meter"></i></div>
+              <strong id="wind-label">很少</strong>
+            </div>
+            <div class="memory-card">
+              <span>先記一句</span>
+              <strong id="mode-remember">風越大，通常越容易看到東西被吹動。</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="lesson-section clues-section" id="wind-clues" aria-labelledby="clues-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">看四件事</p>
+            <h2 id="clues-title">你可以用這些線索分辨風大風小</h2>
+          </div>
+          <p>不用工具，先用眼睛和身體感覺就很夠用。</p>
+        </div>
+        <div class="clue-grid">
+          <article class="clue-card"><div class="clue-icon">🚩</div><h3>旗子飄多少</h3><p>旗子越用力拉開，通常風越明顯。</p></article>
+          <article class="clue-card"><div class="clue-icon">🍃</div><h3>樹葉動多少</h3><p>微風只會輕輕動，強風會讓葉子動得很明顯。</p></article>
+          <article class="clue-card"><div class="clue-icon">🙂</div><h3>臉上感覺</h3><p>有時先是微微吹到臉，再變成很清楚的吹風感。</p></article>
+          <article class="clue-card"><div class="clue-icon">👕</div><h3>衣服和頭髮</h3><p>如果被吹得更明顯，通常風也更大。</p></article>
+        </div>
+      </section>
+
+      <section class="lesson-section game-section" id="wind-game" aria-labelledby="game-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">情境判斷</p>
+            <h2 id="game-title">看到下面情境，你知道比較像哪種風嗎？</h2>
+          </div>
+          <p>每題先猜，再看答案。</p>
+        </div>
+        <div class="game-grid">
+          <article class="game-card" data-answer="微風">
+            <strong>情境 1</strong>
+            <h3>臉上只有一點點風，葉子輕輕動，旗子沒有完全拉開。</h3>
+            <div class="game-options"><button type="button">微風</button><button type="button">強風</button><button type="button">幾乎沒風</button></div>
+            <p class="game-feedback" aria-live="polite"></p>
+          </article>
+          <article class="game-card" data-answer="強風">
+            <strong>情境 2</strong>
+            <h3>旗子拉得很開，頭髮和衣服都被吹得很明顯。</h3>
+            <div class="game-options"><button type="button">幾乎沒風</button><button type="button">強風</button><button type="button">微風</button></div>
+            <p class="game-feedback" aria-live="polite"></p>
+          </article>
+          <article class="game-card" data-answer="幾乎沒風">
+            <strong>情境 3</strong>
+            <h3>旗子垂著，樹葉幾乎不動，臉上也沒什麼感覺。</h3>
+            <div class="game-options"><button type="button">幾乎沒風</button><button type="button">比較有風</button><button type="button">強風</button></div>
+            <p class="game-feedback" aria-live="polite"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-section quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">小測驗</p>
+            <h2 id="quiz-title">你會分風大風小了嗎？</h2>
+          </div>
+          <p>共五題，做完就更會用生活線索描述風力。</p>
+        </div>
+        <div class="quiz-card">
+          <p id="quiz-progress">第 1 題，共 5 題</p>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-primary" id="quiz-next" type="button" hidden>下一題 <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+
+      <section class="course-finish">
+        <p>第十一課完成</p>
+        <h2>你現在知道：風大風小，可以用旗子、樹葉、衣服和身體感覺來判斷。</h2>
+        <a href="weather-12.html">下一站・第十二課：颱風是什麼 →</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">慢</span><span>慢慢學</span></a>
+      <p>先學會分風力，後面看颱風就更容易理解。</p>
+      <p>© <span id="current-year"></span> 慢慢學</p>
+    </footer>
+  </body>
+</html>
