@@ -394,6 +394,60 @@
   border-top: 1px solid rgba(47, 27, 71, 0.08);
 }
 
+.song-focus-chords {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(47, 27, 71, 0.08);
+}
+
+.song-focus-chords h4 {
+  margin: 0 0 12px;
+  color: var(--uke-purple);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.song-focus-note {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.song-focus-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.song-focus-gallery .chord-card {
+  padding: 16px 14px 14px;
+  border-radius: 20px;
+}
+
+.song-focus-gallery .chord-head h4 {
+  font-size: 26px;
+}
+
+.song-focus-gallery .chord-head span {
+  font-size: 12px;
+}
+
+.song-focus-gallery .chord-grid {
+  height: 136px;
+}
+
+.song-focus-gallery .chord-dot {
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+}
+
+.song-focus-gallery .chord-tip {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
 .song-detail-block h4 {
   margin: 0 0 10px;
   color: var(--uke-purple);

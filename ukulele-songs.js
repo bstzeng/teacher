@@ -13,6 +13,19 @@ const ukuleleSongLibrary = [
     note: "如果換 G7 來不及，可以先停一下再接，不要亂刷。"
   },
   {
+    id: "little-bee",
+    title: "小蜜蜂",
+    subtitle: "兩個和弦就能開始玩",
+    level: "2 個和弦",
+    filter: "two-three",
+    tempo: "中慢板",
+    strum: "下、下、下、下",
+    chords: ["C", "G7"],
+    focus: "先把 C 和 G7 的來回切換練穩。",
+    structure: "C｜C｜G7｜G7｜C｜C｜G7｜C",
+    note: "如果 G7 還不熟，可以先慢慢換，不要急著追拍。"
+  },
+  {
     id: "london-bridge",
     title: "倫敦鐵橋",
     subtitle: "和弦切換很規律",
@@ -24,6 +37,19 @@ const ukuleleSongLibrary = [
     focus: "練習每 1 小節換一次和弦。",
     structure: "C｜F｜C｜G7｜C｜F｜C｜G7｜C",
     note: "這首歌很適合大聲數 1 2 3 4。"
+  },
+  {
+    id: "row-row",
+    title: "划呀划呀小船",
+    subtitle: "很適合練平穩刷弦",
+    level: "3 個和弦",
+    filter: "two-three",
+    tempo: "慢板",
+    strum: "下、下、下、下",
+    chords: ["C", "F", "G7"],
+    focus: "刷弦要像划船一樣穩穩往前，不要忽快忽慢。",
+    structure: "C｜C｜C｜G7｜F｜C｜G7｜C",
+    note: "這首歌的重點是平穩，不是大聲。"
   },
   {
     id: "mary",
@@ -52,6 +78,19 @@ const ukuleleSongLibrary = [
     note: "先用兩個和弦玩熟，比急著學更多歌更重要。"
   },
   {
+    id: "clap-hands",
+    title: "如果開心你就拍拍手",
+    subtitle: "很適合邊唱邊做動作",
+    level: "3 個和弦",
+    filter: "three-four",
+    tempo: "中板",
+    strum: "下、下、上、下",
+    chords: ["C", "F", "G7"],
+    focus: "練習唱到動作詞時還能保持拍子。",
+    structure: "C｜C｜G7｜G7｜C｜F｜C｜G7｜C",
+    note: "這首歌很適合邊彈邊拍手或做動作，會更有參與感。"
+  },
+  {
     id: "happy-birthday",
     title: "生日快樂",
     subtitle: "之後很實用的一首",
@@ -63,6 +102,58 @@ const ukuleleSongLibrary = [
     focus: "練習在旋律轉彎的地方準備換和弦。",
     structure: "C｜G7｜G7｜C｜C7｜F｜C｜G7｜C",
     note: "這首歌的重點不是快，是提前看下一個和弦。"
+  },
+  {
+    id: "old-macdonald",
+    title: "王老先生有塊地",
+    subtitle: "一句一句很規律",
+    level: "3 個和弦",
+    filter: "three-four",
+    tempo: "中板",
+    strum: "下、下、下、下",
+    chords: ["C", "F", "G7"],
+    focus: "練習在固定段落裡換和弦，建立規律感。",
+    structure: "C｜C｜C｜G7｜G7｜C｜F｜C｜G7｜C",
+    note: "這首歌很適合每唱完一句就看一下下一個和弦。"
+  },
+  {
+    id: "bingo",
+    title: "BINGO",
+    subtitle: "反覆段落很好練",
+    level: "3 個和弦",
+    filter: "three-four",
+    tempo: "中板",
+    strum: "下、下、上、下",
+    chords: ["C", "F", "G7"],
+    focus: "練習同一段落反覆出現時，和弦能不能保持穩定。",
+    structure: "C｜C｜F｜C｜G7｜C｜F｜C｜G7｜C",
+    note: "可以先不管拼字遊戲，先把和弦規律刷穩。"
+  },
+  {
+    id: "jingle-bells",
+    title: "鈴兒響叮噹",
+    subtitle: "熟悉旋律很有幫助",
+    level: "3 個和弦",
+    filter: "three-four",
+    tempo: "中板",
+    strum: "下、下、上、下",
+    chords: ["C", "F", "G7"],
+    focus: "在熟悉旋律裡練換和弦，通常比較不容易緊張。",
+    structure: "C｜C｜C｜F｜C｜G7｜C｜F｜C｜G7｜C",
+    note: "這首歌可以先慢慢彈，等熟了再加快。"
+  },
+  {
+    id: "are-you-sleeping",
+    title: "哥哥爸爸真偉大",
+    subtitle: "很適合先練兩到三個和弦",
+    level: "2 到 3 個和弦",
+    filter: "two-three",
+    tempo: "慢板",
+    strum: "下、下、下、下",
+    chords: ["C", "G7", "F"],
+    focus: "每一小句都很短，適合練短句換和弦。",
+    structure: "C｜G7｜C｜C｜F｜C｜G7｜C",
+    note: "如果孩子會唱這首，會更容易把拍子抓住。"
   }
 ];
 
@@ -103,7 +194,15 @@ document.addEventListener("DOMContentLoaded", () => {
         <h4>老師提醒</h4>
         <p>${song.note}</p>
       </div>
+      <div class="song-focus-chords">
+        <h4>這首歌會用到的和弦</h4>
+        <p class="song-focus-note">我已經把這首歌需要的和弦單獨抽出來了，演奏時可以直接看這一區，不用再回上面的總和弦表找。</p>
+        <div class="chord-gallery song-focus-gallery" id="song-active-chords"></div>
+      </div>
     `;
+
+    const focusChordEl = document.getElementById("song-active-chords");
+    window.UkuleleTools?.renderChordGallery(focusChordEl, song.chords);
   };
 
   const renderList = () => {

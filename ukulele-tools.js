@@ -117,9 +117,13 @@ function createChordCard(name) {
   `;
 }
 
+function getChordGalleryMarkup(names) {
+  return names.map(createChordCard).join("");
+}
+
 function renderChordGallery(container, names) {
   if (!container) return;
-  container.innerHTML = names.map(createChordCard).join("");
+  container.innerHTML = getChordGalleryMarkup(names);
 }
 
 function setupSwitcher({ buttons, modes, applyMode }) {
@@ -201,6 +205,7 @@ function setupQuiz({ data, progressEl, questionEl, optionsEl, feedbackEl, nextEl
 
 window.UkuleleTools = {
   chordLibrary: ukuleleChordLibrary,
+  getChordGalleryMarkup,
   renderChordGallery,
   setupSwitcher,
   setupQuiz
