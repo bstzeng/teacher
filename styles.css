@@ -640,18 +640,17 @@ h1 em {
 
 .uke-string {
   position: absolute;
-  top: 145px;
-  width: 2px;
-  height: 154px;
+  width: 156px;
+  height: 3px;
   background: rgba(255, 255, 255, 0.86);
   transform: rotate(-6deg);
-  transform-origin: top center;
+  transform-origin: left center;
 }
 
-.uke-string.string-one { left: 258px; }
-.uke-string.string-two { left: 268px; }
-.uke-string.string-three { left: 278px; }
-.uke-string.string-four { left: 288px; }
+.uke-string.string-one { left: 112px; top: 174px; }
+.uke-string.string-two { left: 114px; top: 188px; }
+.uke-string.string-three { left: 116px; top: 202px; }
+.uke-string.string-four { left: 118px; top: 216px; }
 
 .uke-pick-note {
   position: absolute;

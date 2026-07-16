@@ -59,6 +59,7 @@
   right: 36px;
   width: 180px;
   height: 180px;
+  animation: pulseGlow 3.4s ease-in-out infinite;
 }
 
 .lesson-hero-shape.two {
@@ -66,6 +67,7 @@
   bottom: 34px;
   width: 220px;
   height: 220px;
+  animation: pulseGlow 4.2s ease-in-out infinite 0.6s;
 }
 
 .lesson-hero-mini-uke {
@@ -76,6 +78,7 @@
   height: 190px;
   border-radius: 50px;
   background: linear-gradient(180deg, #e8b66f 0%, #cd8745 100%);
+  animation: ukuleleFloat 5s ease-in-out infinite;
 }
 
 .lesson-hero-mini-hole {
@@ -86,6 +89,7 @@
   height: 60px;
   border-radius: 50%;
   background: rgba(47, 27, 71, 0.84);
+  animation: ukuleleFloat 5s ease-in-out infinite;
 }
 
 .lesson-hero-mini-neck {
@@ -97,6 +101,7 @@
   border-radius: 12px;
   background: linear-gradient(180deg, #efd9ad 0%, #dcbf88 100%);
   transform: rotate(-7deg);
+  animation: ukuleleFloat 5s ease-in-out infinite;
 }
 
 .lesson-points,
@@ -489,6 +494,385 @@
 
 .ukulele-figure[data-mode="together"] .hands-board .strum-path {
   border-right-color: rgba(111, 70, 167, 0.7);
+}
+
+.tuning-board,
+.note-track-board,
+.beat-board,
+.value-board,
+.rhythm-board {
+  position: absolute;
+  inset: 0;
+}
+
+.tuning-board .headstock-plate {
+  position: absolute;
+  right: 54px;
+  top: 80px;
+  width: 118px;
+  height: 238px;
+  border-radius: 34px;
+  background: linear-gradient(180deg, #f2d39d 0%, #d6a869 100%);
+  transform: rotate(-6deg);
+}
+
+.tuning-board .peg {
+  position: absolute;
+  width: 70px;
+  height: 18px;
+  border-radius: 999px;
+  background: #7250a4;
+  transform: rotate(-6deg);
+}
+
+.tuning-board .peg::after {
+  position: absolute;
+  right: -8px;
+  top: -4px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #f7eddc;
+  border: 2px solid rgba(47, 27, 71, 0.12);
+  content: "";
+}
+
+.tuning-board .peg.g { right: 132px; top: 112px; }
+.tuning-board .peg.c { right: 132px; top: 162px; }
+.tuning-board .peg.e { right: 132px; top: 212px; }
+.tuning-board .peg.a { right: 132px; top: 262px; }
+
+.tuning-board .string-run {
+  position: absolute;
+  left: 68px;
+  width: 286px;
+  height: 3px;
+  background: rgba(111, 70, 167, 0.22);
+  transform: rotate(-6deg);
+  transform-origin: left center;
+}
+
+.tuning-board .string-run.g { top: 124px; }
+.tuning-board .string-run.c { top: 174px; }
+.tuning-board .string-run.e { top: 224px; }
+.tuning-board .string-run.a { top: 274px; }
+
+.tuning-board .pitch-pill {
+  position: absolute;
+  left: 54px;
+  width: 62px;
+  height: 38px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.tuning-board .pitch-pill.g { top: 104px; }
+.tuning-board .pitch-pill.c { top: 154px; }
+.tuning-board .pitch-pill.e { top: 204px; }
+.tuning-board .pitch-pill.a { top: 254px; }
+
+.ukulele-figure[data-mode="g"] .tuning-board .peg.g,
+.ukulele-figure[data-mode="c"] .tuning-board .peg.c,
+.ukulele-figure[data-mode="e"] .tuning-board .peg.e,
+.ukulele-figure[data-mode="a"] .tuning-board .peg.a {
+  box-shadow: 0 0 0 10px rgba(111, 70, 167, 0.14);
+}
+
+.ukulele-figure[data-mode="g"] .tuning-board .pitch-pill.g,
+.ukulele-figure[data-mode="c"] .tuning-board .pitch-pill.c,
+.ukulele-figure[data-mode="e"] .tuning-board .pitch-pill.e,
+.ukulele-figure[data-mode="a"] .tuning-board .pitch-pill.a {
+  transform: scale(1.08);
+}
+
+.open-string-board .uke-body-shape {
+  position: absolute;
+  left: 56px;
+  top: 118px;
+  width: 210px;
+  height: 170px;
+  border-radius: 46%;
+  background: linear-gradient(180deg, #efc17a 0%, #cd8745 100%);
+}
+
+.open-string-board .uke-hole-shape {
+  position: absolute;
+  left: 136px;
+  top: 184px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(47, 27, 71, 0.82);
+}
+
+.open-string-board .open-string {
+  position: absolute;
+  left: 90px;
+  width: 260px;
+  height: 3px;
+  background: rgba(111, 70, 167, 0.28);
+  transform: rotate(-6deg);
+  transform-origin: left center;
+}
+
+.open-string-board .open-string.g { top: 162px; }
+.open-string-board .open-string.c { top: 182px; }
+.open-string-board .open-string.e { top: 202px; }
+.open-string-board .open-string.a { top: 222px; }
+
+.open-string-board .open-tag {
+  position: absolute;
+  right: 54px;
+  width: 66px;
+  height: 38px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.open-string-board .open-tag.g { top: 142px; }
+.open-string-board .open-tag.c { top: 162px; }
+.open-string-board .open-tag.e { top: 182px; }
+.open-string-board .open-tag.a { top: 202px; }
+
+.ukulele-figure[data-mode="all"] .open-string-board .open-string,
+.ukulele-figure[data-mode="g"] .open-string-board .open-string.g,
+.ukulele-figure[data-mode="c"] .open-string-board .open-string.c,
+.ukulele-figure[data-mode="e"] .open-string-board .open-string.e,
+.ukulele-figure[data-mode="a"] .open-string-board .open-string.a {
+  background: rgba(111, 70, 167, 0.76);
+  box-shadow: 0 0 12px rgba(111, 70, 167, 0.34);
+}
+
+.single-note-neck-board .neck-bar {
+  position: absolute;
+  left: 52px;
+  top: 176px;
+  width: 310px;
+  height: 54px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #efd9ad 0%, #dcbf88 100%);
+}
+
+.single-note-neck-board .string-guide {
+  position: absolute;
+  left: 70px;
+  top: 202px;
+  width: 274px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(111, 70, 167, 0.56);
+}
+
+.single-note-neck-board .fret-line {
+  position: absolute;
+  top: 176px;
+  width: 4px;
+  height: 54px;
+  background: rgba(47, 27, 71, 0.2);
+}
+
+.single-note-neck-board .fret-line.f0 { left: 70px; }
+.single-note-neck-board .fret-line.f1 { left: 138px; }
+.single-note-neck-board .fret-line.f2 { left: 206px; }
+.single-note-neck-board .fret-line.f3 { left: 274px; }
+.single-note-neck-board .fret-line.f4 { left: 342px; }
+
+.single-note-neck-board .position-dot {
+  position: absolute;
+  top: 190px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  font-size: 12px;
+  font-weight: 800;
+  transform: translateX(-50%);
+}
+
+.single-note-neck-board .position-dot.p0 { left: 104px; }
+.single-note-neck-board .position-dot.p1 { left: 172px; }
+.single-note-neck-board .position-dot.p2 { left: 240px; }
+.single-note-neck-board .position-dot.p3 { left: 308px; }
+
+.single-note-neck-board .string-name {
+  position: absolute;
+  left: 56px;
+  top: 126px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.9);
+  color: var(--uke-purple);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ukulele-figure[data-mode="open"] .single-note-neck-board .position-dot.p0,
+.ukulele-figure[data-mode="fret1"] .single-note-neck-board .position-dot.p1,
+.ukulele-figure[data-mode="fret2"] .single-note-neck-board .position-dot.p2,
+.ukulele-figure[data-mode="fret3"] .single-note-neck-board .position-dot.p3 {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.14);
+}
+
+.beat-board .beat-line {
+  position: absolute;
+  left: 54px;
+  right: 54px;
+  top: 216px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(111, 70, 167, 0.16);
+}
+
+.beat-board .beat-dot {
+  position: absolute;
+  top: 186px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.beat-board .beat-dot.b1 { left: 64px; }
+.beat-board .beat-dot.b2 { left: 148px; }
+.beat-board .beat-dot.b3 { left: 232px; }
+.beat-board .beat-dot.b4 { left: 316px; }
+
+.beat-board .pulse-hand {
+  position: absolute;
+  right: 72px;
+  top: 108px;
+  width: 90px;
+  height: 120px;
+  border-radius: 42px;
+  background: #ffd5ae;
+  transform-origin: bottom center;
+  animation: cardDrift 2.4s ease-in-out infinite;
+}
+
+.ukulele-figure[data-mode="steady"] .beat-board .beat-dot {
+  animation: pulseGlow 1.4s ease-in-out infinite;
+}
+
+.ukulele-figure[data-mode="fast"] .beat-board .beat-dot {
+  animation: pulseGlow 0.75s ease-in-out infinite;
+}
+
+.ukulele-figure[data-mode="slow"] .beat-board .beat-dot {
+  animation: pulseGlow 2.4s ease-in-out infinite;
+}
+
+.value-board .value-card {
+  position: absolute;
+  width: 92px;
+  height: 148px;
+  padding-top: 18px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(47,27,71,0.1);
+  text-align: center;
+}
+
+.value-board .value-card.whole { left: 42px; top: 128px; }
+.value-board .value-card.half { left: 154px; top: 128px; }
+.value-board .value-card.quarter { left: 266px; top: 128px; }
+
+.value-board .value-card strong {
+  display: block;
+  color: var(--uke-deep);
+  font-size: 16px;
+}
+
+.value-board .value-block {
+  width: 54px;
+  margin: 18px auto 10px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #c59df6 0%, #6f46a7 100%);
+}
+
+.value-board .whole .value-block { height: 78px; }
+.value-board .half .value-block { height: 52px; }
+.value-board .quarter .value-block { height: 28px; }
+
+.value-board .count-text {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ukulele-figure[data-mode="whole"] .value-board .whole,
+.ukulele-figure[data-mode="half"] .value-board .half,
+.ukulele-figure[data-mode="quarter"] .value-board .quarter {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
+}
+
+.rhythm-board .lane {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  height: 82px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.86);
+  border: 1px solid rgba(47,27,71,0.08);
+}
+
+.rhythm-board .lane.clap { top: 114px; }
+.rhythm-board .lane.strum { top: 230px; }
+
+.rhythm-board .lane-label {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  color: var(--uke-purple);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.rhythm-board .step-chip {
+  position: absolute;
+  top: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.rhythm-board .lane .step-chip.s1 { left: 110px; }
+.rhythm-board .lane .step-chip.s2 { left: 174px; }
+.rhythm-board .lane .step-chip.s3 { left: 238px; }
+.rhythm-board .lane .step-chip.s4 { left: 302px; }
+
+.ukulele-figure[data-mode="clap"] .rhythm-board .lane.clap,
+.ukulele-figure[data-mode="pluck"] .rhythm-board .lane.strum,
+.ukulele-figure[data-mode="together"] .rhythm-board .lane {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
 }
 
 @media (max-width: 980px) {
