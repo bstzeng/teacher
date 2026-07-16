@@ -875,6 +875,298 @@
   box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
 }
 
+.lesson-chord-gallery {
+  width: min(240px, calc(100% - 36px));
+  margin: 62px auto 0;
+}
+
+.lesson-chord-gallery.wide {
+  width: min(760px, calc(100% - 36px));
+}
+
+.lesson-tip-cloud {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  padding: 14px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--uke-deep);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.7;
+  box-shadow: 0 16px 30px rgba(28, 13, 45, 0.12);
+}
+
+.lesson-chord-highlight {
+  position: absolute;
+  top: 34px;
+  right: 24px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: var(--paper);
+  background: rgba(111, 70, 167, 0.86);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.switch-track-board,
+.song-build-board,
+.strum-board,
+.count-board {
+  position: absolute;
+  inset: 0;
+}
+
+.switch-track-board .switch-row {
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  top: 102px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.switch-track-board .switch-card {
+  padding: 18px 14px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+  text-align: center;
+}
+
+.switch-track-board .switch-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--uke-deep);
+  font-family: "Newsreader", serif;
+  font-size: 24px;
+}
+
+.switch-track-board .switch-card span {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.switch-track-board .arrow-lane {
+  position: absolute;
+  left: 52px;
+  right: 52px;
+  bottom: 116px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(111, 70, 167, 0.16);
+}
+
+.switch-track-board .arrow-node {
+  position: absolute;
+  bottom: 92px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.switch-track-board .arrow-node.n1 { left: 74px; }
+.switch-track-board .arrow-node.n2 { left: 154px; }
+.switch-track-board .arrow-node.n3 { left: 234px; }
+.switch-track-board .arrow-node.n4 { left: 314px; }
+
+.ukulele-figure[data-mode="pair1"] .switch-track-board .switch-card.c,
+.ukulele-figure[data-mode="pair1"] .switch-track-board .switch-card.am,
+.ukulele-figure[data-mode="pair2"] .switch-track-board .switch-card.f,
+.ukulele-figure[data-mode="pair2"] .switch-track-board .switch-card.g7,
+.ukulele-figure[data-mode="all"] .switch-track-board .switch-card {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
+}
+
+.song-build-board .song-line {
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  padding: 16px 18px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+}
+
+.song-build-board .song-line.progression { top: 86px; }
+.song-build-board .song-line.strum { top: 190px; }
+.song-build-board .song-line.sing { top: 294px; }
+
+.song-build-board .song-line strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--uke-purple);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.song-chip-row,
+.strum-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.song-chip,
+.strum-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 999px;
+  color: var(--uke-deep);
+  background: #f1e6ff;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ukulele-figure[data-mode="progression"] .song-build-board .progression,
+.ukulele-figure[data-mode="strum"] .song-build-board .strum,
+.ukulele-figure[data-mode="sing"] .song-build-board .sing,
+.ukulele-figure[data-mode="full"] .song-build-board .song-line {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
+}
+
+.strum-board .strum-lane {
+  position: absolute;
+  left: 42px;
+  right: 42px;
+  top: 126px;
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(47,27,71,0.1);
+}
+
+.strum-board .strum-title {
+  margin-bottom: 16px;
+  color: var(--uke-purple);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.strum-board .arrow-track {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.strum-board .arrow-box {
+  min-height: 72px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.strum-board .count-track {
+  position: absolute;
+  left: 42px;
+  right: 42px;
+  bottom: 94px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.strum-board .count-box {
+  min-height: 44px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--uke-deep);
+  background: rgba(255,255,255,0.86);
+  border: 1px solid rgba(47,27,71,0.1);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ukulele-figure[data-mode="down"] .strum-board .arrow-box.down,
+.ukulele-figure[data-mode="up"] .strum-board .arrow-box.up,
+.ukulele-figure[data-mode="pattern"] .strum-board .arrow-box,
+.ukulele-figure[data-mode="count"] .strum-board .count-box,
+.ukulele-figure[data-mode="loop"] .strum-board .arrow-box {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
+}
+
+.count-board .count-line {
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  top: 118px;
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(47,27,71,0.1);
+}
+
+.count-board .count-line strong {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--uke-purple);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.count-board .count-pill-row {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.count-board .count-pill {
+  min-height: 42px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.count-board .cue-text {
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  bottom: 92px;
+  padding: 16px 18px;
+  border-radius: 22px;
+  color: var(--uke-deep);
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(47,27,71,0.1);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.75;
+}
+
+.ukulele-figure[data-mode="count"] .count-board .count-pill,
+.ukulele-figure[data-mode="voice"] .count-board .cue-text,
+.ukulele-figure[data-mode="play"] .count-board .count-line,
+.ukulele-figure[data-mode="together"] .count-board .count-line,
+.ukulele-figure[data-mode="together"] .count-board .cue-text {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
+}
+
 @media (max-width: 980px) {
   .ukulele-lesson-hero,
   .point-grid,
