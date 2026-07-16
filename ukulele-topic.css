@@ -454,6 +454,53 @@
   letter-spacing: 0.08em;
 }
 
+.song-lyric-guide {
+  display: grid;
+  gap: 14px;
+}
+
+.lyric-guide-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 16px;
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(111, 70, 167, 0.14);
+}
+
+.lyric-segment {
+  min-width: 84px;
+  padding: 0;
+}
+
+.lyric-chord {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--uke-purple);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.lyric-text {
+  display: block;
+  color: var(--uke-deep);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.55;
+  white-space: nowrap;
+}
+
+.songbook-guide {
+  padding: 18px 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #fffdf8 0%, #fbf6ff 100%);
+  border: 1px solid rgba(47, 27, 71, 0.08);
+}
+
+.songbook-guide .lyric-guide-line:last-child {
+  border-bottom: 0;
+}
+
 .song-focus-note {
   margin: 0 0 14px;
   color: var(--ink-soft);
