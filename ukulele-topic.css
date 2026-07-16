@@ -345,6 +345,18 @@
   margin-bottom: 24px;
 }
 
+.song-filter-shell {
+  margin-bottom: 18px;
+}
+
+.song-filter-label {
+  margin: 0 0 12px;
+  color: var(--uke-purple);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
 .song-library-layout {
   display: grid;
   grid-template-columns: 0.84fr 1.16fr;
@@ -384,6 +396,26 @@
   color: var(--ink-soft);
   font-size: 14px;
   line-height: 1.6;
+}
+
+.song-list-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.song-list-meta span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin-top: 0;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #f5eefc;
+  color: var(--uke-purple);
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .song-detail {

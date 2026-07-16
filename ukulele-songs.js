@@ -5,6 +5,8 @@ const ukuleleSongLibrary = [
     subtitle: "最適合先練三個和弦",
     level: "2 到 3 個和弦",
     filter: "two-three",
+    category: "classic",
+    categoryLabel: "經典入門",
     tempo: "慢板",
     strum: "下、下、下、下",
     chords: ["C", "F", "G7"],
@@ -18,6 +20,8 @@ const ukuleleSongLibrary = [
     subtitle: "兩個和弦就能開始玩",
     level: "2 個和弦",
     filter: "two-three",
+    category: "animal",
+    categoryLabel: "動物朋友",
     tempo: "中慢板",
     strum: "下、下、下、下",
     chords: ["C", "G7"],
@@ -31,6 +35,8 @@ const ukuleleSongLibrary = [
     subtitle: "和弦切換很規律",
     level: "3 個和弦",
     filter: "three-four",
+    category: "classic",
+    categoryLabel: "經典入門",
     tempo: "中慢板",
     strum: "下、下、下、下",
     chords: ["C", "F", "G7"],
@@ -44,6 +50,8 @@ const ukuleleSongLibrary = [
     subtitle: "很適合練平穩刷弦",
     level: "3 個和弦",
     filter: "two-three",
+    category: "classic",
+    categoryLabel: "經典入門",
     tempo: "慢板",
     strum: "下、下、下、下",
     chords: ["C", "F", "G7"],
@@ -57,6 +65,8 @@ const ukuleleSongLibrary = [
     subtitle: "很適合小朋友邊唱邊彈",
     level: "3 個和弦",
     filter: "three-four",
+    category: "animal",
+    categoryLabel: "動物朋友",
     tempo: "中板",
     strum: "下、下、下、下",
     chords: ["C", "F", "G7"],
@@ -70,6 +80,8 @@ const ukuleleSongLibrary = [
     subtitle: "很快就能有成就感",
     level: "2 個和弦",
     filter: "two-three",
+    category: "animal",
+    categoryLabel: "動物朋友",
     tempo: "中慢板",
     strum: "下、下、上、下",
     chords: ["C", "G7"],
@@ -83,6 +95,8 @@ const ukuleleSongLibrary = [
     subtitle: "很適合邊唱邊做動作",
     level: "3 個和弦",
     filter: "three-four",
+    category: "action",
+    categoryLabel: "動作遊戲",
     tempo: "中板",
     strum: "下、下、上、下",
     chords: ["C", "F", "G7"],
@@ -96,6 +110,8 @@ const ukuleleSongLibrary = [
     subtitle: "之後很實用的一首",
     level: "4 個和弦",
     filter: "three-four",
+    category: "celebration",
+    categoryLabel: "節日生活",
     tempo: "中板",
     strum: "下、下、上、下",
     chords: ["C", "G7", "F", "C7"],
@@ -109,6 +125,8 @@ const ukuleleSongLibrary = [
     subtitle: "一句一句很規律",
     level: "3 個和弦",
     filter: "three-four",
+    category: "animal",
+    categoryLabel: "動物朋友",
     tempo: "中板",
     strum: "下、下、下、下",
     chords: ["C", "F", "G7"],
@@ -122,6 +140,8 @@ const ukuleleSongLibrary = [
     subtitle: "反覆段落很好練",
     level: "3 個和弦",
     filter: "three-four",
+    category: "animal",
+    categoryLabel: "動物朋友",
     tempo: "中板",
     strum: "下、下、上、下",
     chords: ["C", "F", "G7"],
@@ -135,6 +155,8 @@ const ukuleleSongLibrary = [
     subtitle: "熟悉旋律很有幫助",
     level: "3 個和弦",
     filter: "three-four",
+    category: "celebration",
+    categoryLabel: "節日生活",
     tempo: "中板",
     strum: "下、下、上、下",
     chords: ["C", "F", "G7"],
@@ -148,21 +170,175 @@ const ukuleleSongLibrary = [
     subtitle: "很適合先練兩到三個和弦",
     level: "2 到 3 個和弦",
     filter: "two-three",
+    category: "classic",
+    categoryLabel: "經典入門",
     tempo: "慢板",
     strum: "下、下、下、下",
     chords: ["C", "G7", "F"],
     focus: "每一小句都很短，適合練短句換和弦。",
     structure: "C｜G7｜C｜C｜F｜C｜G7｜C",
     note: "如果孩子會唱這首，會更容易把拍子抓住。"
+  },
+  {
+    id: "abc-song",
+    title: "ABC 歌",
+    subtitle: "字母歌很適合規律換和弦",
+    level: "3 個和弦",
+    filter: "two-three",
+    category: "classic",
+    categoryLabel: "經典入門",
+    tempo: "中慢板",
+    strum: "下、下、下、下",
+    chords: ["C", "F", "G7"],
+    focus: "練習固定節拍和規律換和弦。",
+    structure: "C｜C｜F｜C｜G7｜C｜F｜C",
+    note: "字母歌旋律很熟，孩子通常更容易把拍子撐住。"
+  },
+  {
+    id: "wheels-on-the-bus",
+    title: "公車上的輪子",
+    subtitle: "重複句型很適合初學刷法",
+    level: "3 個和弦",
+    filter: "three-four",
+    category: "action",
+    categoryLabel: "動作遊戲",
+    tempo: "中板",
+    strum: "下、下、上、下",
+    chords: ["C", "F", "G7"],
+    focus: "在重複段落裡維持同樣節拍。",
+    structure: "C｜F｜C｜G7｜C｜F｜C｜G7｜C",
+    note: "每一句都很像，最適合練穩定感。"
+  },
+  {
+    id: "head-shoulders",
+    title: "頭兒肩膀膝腳趾",
+    subtitle: "邊做動作邊彈更有趣",
+    level: "2 到 3 個和弦",
+    filter: "two-three",
+    category: "action",
+    categoryLabel: "動作遊戲",
+    tempo: "中板",
+    strum: "下、下、下、下",
+    chords: ["C", "G7", "F"],
+    focus: "練習唱和動作一起時拍子不要亂。",
+    structure: "C｜C｜G7｜C｜F｜C｜G7｜C",
+    note: "可以先只唱不做動作，穩了再一起做。"
+  },
+  {
+    id: "baby-shark",
+    title: "寶寶鯊魚",
+    subtitle: "節奏明確，小朋友很熟",
+    level: "2 個和弦",
+    filter: "two-three",
+    category: "animal",
+    categoryLabel: "動物朋友",
+    tempo: "中板",
+    strum: "下、下、上、下",
+    chords: ["C", "G7"],
+    focus: "練習在重複句子裡保持活力但不加速。",
+    structure: "C｜C｜G7｜G7｜C｜C｜G7｜C",
+    note: "這首很容易越彈越快，要刻意穩住。"
+  },
+  {
+    id: "rain-rain",
+    title: "雨啊雨啊別下了",
+    subtitle: "短短一句，很適合剛開始練",
+    level: "2 到 3 個和弦",
+    filter: "two-three",
+    category: "classic",
+    categoryLabel: "經典入門",
+    tempo: "慢板",
+    strum: "下、下、下、下",
+    chords: ["C", "F", "G7"],
+    focus: "練習短句裡的簡單換和弦。",
+    structure: "C｜F｜C｜G7｜C｜F｜C｜G7",
+    note: "短句歌很適合讓孩子先建立完成感。"
+  },
+  {
+    id: "santa-coming",
+    title: "聖誕老公公進城",
+    subtitle: "節慶歌裡很實用的一首",
+    level: "4 個和弦",
+    filter: "three-four",
+    category: "celebration",
+    categoryLabel: "節日生活",
+    tempo: "中板",
+    strum: "下、下、上、下",
+    chords: ["C", "Am", "F", "G7"],
+    focus: "練習四和弦在一首歌裡輪流出現。",
+    structure: "C｜Am｜F｜G7｜C｜Am｜F｜G7",
+    note: "很適合在四和弦都熟一點之後再玩。"
+  },
+  {
+    id: "we-wish-you",
+    title: "祝你聖誕快樂",
+    subtitle: "有節日氣氛，也很好配和弦",
+    level: "4 個和弦",
+    filter: "three-four",
+    category: "celebration",
+    categoryLabel: "節日生活",
+    tempo: "中板",
+    strum: "下、下、上、下",
+    chords: ["C", "F", "G7", "C7"],
+    focus: "練習在節慶歌裡提前看下一個和弦。",
+    structure: "C｜F｜G7｜C｜C7｜F｜G7｜C",
+    note: "如果 C7 還不熟，可以先放慢到非常慢。"
+  },
+  {
+    id: "you-are-my-sunshine",
+    title: "你是我的陽光",
+    subtitle: "旋律溫柔，很適合慢慢唱",
+    level: "4 個和弦",
+    filter: "three-four",
+    category: "classic",
+    categoryLabel: "經典入門",
+    tempo: "慢板",
+    strum: "下、下、上、下",
+    chords: ["C", "F", "C7", "G7"],
+    focus: "練習在慢歌裡維持穩定呼吸和拍子。",
+    structure: "C｜F｜C｜G7｜C｜F｜C7｜G7｜C",
+    note: "慢歌最怕拖拍，所以嘴巴和右手都要穩。"
+  },
+  {
+    id: "little-donkey",
+    title: "小毛驢",
+    subtitle: "很適合做反覆和弦練習",
+    level: "3 個和弦",
+    filter: "two-three",
+    category: "animal",
+    categoryLabel: "動物朋友",
+    tempo: "中板",
+    strum: "下、下、下、下",
+    chords: ["C", "F", "G7"],
+    focus: "練習在熟悉旋律裡反覆換和弦。",
+    structure: "C｜C｜F｜C｜G7｜C｜F｜G7｜C",
+    note: "這首歌很適合先用下下下下刷穩。"
+  },
+  {
+    id: "pull-the-turnip",
+    title: "拔蘿蔔",
+    subtitle: "故事感很強，適合小朋友",
+    level: "2 到 3 個和弦",
+    filter: "two-three",
+    category: "action",
+    categoryLabel: "動作遊戲",
+    tempo: "中慢板",
+    strum: "下、下、下、下",
+    chords: ["C", "G7", "F"],
+    focus: "邊唱故事邊保持和弦順序。",
+    structure: "C｜C｜G7｜C｜F｜C｜G7｜C",
+    note: "可以搭配拉蘿蔔動作，孩子會更投入。"
   }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
   const chordTarget = document.getElementById("song-chord-gallery");
   const filterRow = document.getElementById("song-filters");
+  const categoryRow = document.getElementById("song-category-filters");
   const listEl = document.getElementById("song-list");
   const detailEl = document.getElementById("song-detail");
   let activeFilter = "all";
+  let activeCategory = "all";
   let activeSongId = ukuleleSongLibrary[0].id;
 
   window.UkuleleTools?.renderChordGallery(chordTarget, ["C", "Am", "F", "G7", "G", "Dm", "C7", "Am7"]);
@@ -178,6 +354,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <p>${song.subtitle}</p>
       <div class="song-meta-row">
+        <span>分類：${song.categoryLabel}</span>
         <span>速度：${song.tempo}</span>
         <span>刷法：${song.strum}</span>
         <span>和弦：${song.chords.join(" / ")}</span>
@@ -207,8 +384,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const renderList = () => {
     const filtered = ukuleleSongLibrary.filter((song) => {
-      if (activeFilter === "all") return true;
-      return song.filter === activeFilter;
+      const difficultyMatch = activeFilter === "all" ? true : song.filter === activeFilter;
+      const categoryMatch = activeCategory === "all" ? true : song.category === activeCategory;
+      return difficultyMatch && categoryMatch;
     });
 
     if (!filtered.find((song) => song.id === activeSongId)) {
@@ -220,7 +398,12 @@ document.addEventListener("DOMContentLoaded", () => {
         (song) => `
           <button type="button" data-song="${song.id}" class="${song.id === activeSongId ? "is-active" : ""}">
             <strong>${song.title}</strong>
-            <span>${song.subtitle}<br />${song.chords.join(" / ")}</span>
+            <span>${song.subtitle}</span>
+            <div class="song-list-meta">
+              <span>${song.categoryLabel}</span>
+              <span>${song.level}</span>
+              <span>${song.chords.join(" / ")}</span>
+            </div>
           </button>
         `
       )
@@ -240,6 +423,16 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       activeFilter = button.dataset.filter;
       Array.from(filterRow.querySelectorAll("button")).forEach((item) => {
+        item.classList.toggle("is-active", item === button);
+      });
+      renderList();
+    });
+  });
+
+  Array.from(categoryRow.querySelectorAll("button")).forEach((button) => {
+    button.addEventListener("click", () => {
+      activeCategory = button.dataset.category;
+      Array.from(categoryRow.querySelectorAll("button")).forEach((item) => {
         item.classList.toggle("is-active", item === button);
       });
       renderList();

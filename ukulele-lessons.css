@@ -1167,6 +1167,274 @@
   box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
 }
 
+.multi-chord-board,
+.chart-board,
+.bridge-board,
+.sheet-board,
+.final-board {
+  position: absolute;
+  inset: 0;
+}
+
+.multi-chord-board .mini-gallery {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  top: 52px;
+}
+
+.multi-chord-board .mini-gallery .chord-gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.multi-chord-board .mini-gallery .chord-card {
+  padding: 14px 12px 12px;
+}
+
+.multi-chord-board .mini-gallery .chord-grid {
+  height: 120px;
+}
+
+.multi-chord-board .mini-gallery .chord-head h4 {
+  font-size: 24px;
+}
+
+.chart-board .chart-card {
+  position: absolute;
+  left: 70px;
+  top: 58px;
+  width: 240px;
+  padding: 18px 18px 20px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(47,27,71,0.1);
+}
+
+.chart-board .chart-legend {
+  position: absolute;
+  right: 22px;
+  top: 62px;
+  width: 128px;
+  display: grid;
+  gap: 10px;
+}
+
+.chart-board .legend-card {
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(47,27,71,0.08);
+}
+
+.chart-board .legend-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--uke-purple);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.chart-board .legend-card span {
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.chart-board .chart-card .chord-head {
+  margin-bottom: 12px;
+}
+
+.chart-board .chart-card .chord-head h4 {
+  font-size: 28px;
+}
+
+.chart-board .chart-card .chord-grid {
+  height: 160px;
+}
+
+.chart-board .chart-label-bar {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(47,27,71,0.08);
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ukulele-figure[data-mode="strings"] .chart-board .legend-card.strings,
+.ukulele-figure[data-mode="frets"] .chart-board .legend-card.frets,
+.ukulele-figure[data-mode="dots"] .chart-board .legend-card.dots,
+.ukulele-figure[data-mode="read"] .chart-board .chart-card {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
+}
+
+.bridge-board .bridge-row {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  display: grid;
+  grid-template-columns: 1fr 86px 1fr;
+  gap: 14px;
+}
+
+.bridge-board .bridge-row.top { top: 86px; }
+.bridge-board .bridge-row.bottom { top: 236px; }
+
+.bridge-board .bridge-card {
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(47,27,71,0.08);
+}
+
+.bridge-board .bridge-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--uke-purple);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.bridge-board .bridge-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.bridge-board .bridge-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  border-radius: 22px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.ukulele-figure[data-mode="name"] .bridge-board .bridge-card.name,
+.ukulele-figure[data-mode="harmony"] .bridge-board .bridge-card.harmony,
+.ukulele-figure[data-mode="shape"] .bridge-board .bridge-card.shape {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
+}
+
+.sheet-board .sheet-card {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  top: 78px;
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(47,27,71,0.1);
+}
+
+.sheet-board .sheet-line {
+  margin-bottom: 16px;
+}
+
+.sheet-board .sheet-line:last-child {
+  margin-bottom: 0;
+}
+
+.sheet-board .sheet-chords {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.sheet-board .sheet-chords span {
+  min-width: 50px;
+  min-height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  background: #6f46a7;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.sheet-board .sheet-bars {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.sheet-board .bar {
+  min-height: 68px;
+  padding: 12px;
+  border-radius: 18px;
+  background: #f8f1ff;
+  color: var(--uke-deep);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.ukulele-figure[data-mode="name"] .sheet-board .sheet-chords span,
+.ukulele-figure[data-mode="switch"] .sheet-board .bar,
+.ukulele-figure[data-mode="play"] .sheet-board .sheet-card {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
+}
+
+.final-board .final-card {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  top: 78px;
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(47,27,71,0.1);
+}
+
+.final-board .challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.final-board .challenge-card {
+  padding: 14px;
+  border-radius: 18px;
+  background: #f7f0ff;
+}
+
+.final-board .challenge-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--uke-purple);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.final-board .challenge-card span {
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.final-board .final-footer {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(47,27,71,0.08);
+  color: var(--uke-deep);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.75;
+}
+
+.ukulele-figure[data-mode="prepare"] .final-board .challenge-card.prepare,
+.ukulele-figure[data-mode="perform"] .final-board .challenge-card.perform,
+.ukulele-figure[data-mode="share"] .final-board .challenge-card.share,
+.ukulele-figure[data-mode="all"] .final-board .final-card {
+  box-shadow: 0 0 0 10px rgba(111,70,167,0.12);
+}
+
 @media (max-width: 980px) {
   .ukulele-lesson-hero,
   .point-grid,
