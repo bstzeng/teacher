@@ -1,0 +1,513 @@
+.ukulele-lesson-hero {
+  display: grid;
+  grid-template-columns: 0.98fr 1.02fr;
+  gap: 52px;
+  align-items: center;
+  min-height: 620px;
+  padding: 96px max(24px, calc((100% - 1180px) / 2)) 74px;
+}
+
+.ukulele-lesson-copy h1 {
+  margin: 18px 0 18px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(52px, 6vw, 82px);
+  line-height: 0.99;
+  letter-spacing: -0.05em;
+}
+
+.ukulele-lesson-copy h1 em {
+  color: var(--uke-purple);
+  font-style: italic;
+}
+
+.ukulele-lesson-copy .hero-intro {
+  max-width: 640px;
+  color: var(--ink-soft);
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.ukulele-lesson-visual {
+  position: relative;
+  min-height: 460px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f6eefc 0%, #eadffd 100%);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+}
+
+.lesson-hero-badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  color: var(--uke-purple);
+  background: rgba(255, 255, 255, 0.86);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.lesson-hero-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(111, 70, 167, 0.12);
+}
+
+.lesson-hero-shape.one {
+  top: 76px;
+  right: 36px;
+  width: 180px;
+  height: 180px;
+}
+
+.lesson-hero-shape.two {
+  left: 26px;
+  bottom: 34px;
+  width: 220px;
+  height: 220px;
+}
+
+.lesson-hero-mini-uke {
+  position: absolute;
+  left: 70px;
+  top: 130px;
+  width: 250px;
+  height: 190px;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #e8b66f 0%, #cd8745 100%);
+}
+
+.lesson-hero-mini-hole {
+  position: absolute;
+  left: 156px;
+  top: 208px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(47, 27, 71, 0.84);
+}
+
+.lesson-hero-mini-neck {
+  position: absolute;
+  right: 52px;
+  top: 184px;
+  width: 140px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #efd9ad 0%, #dcbf88 100%);
+  transform: rotate(-7deg);
+}
+
+.lesson-points,
+.lesson-practice,
+.lesson-quiz,
+.lesson-chords {
+  padding-top: 78px;
+  padding-bottom: 12px;
+}
+
+.point-grid,
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.point-card,
+.practice-card {
+  padding: 26px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+}
+
+.point-card h3,
+.practice-card h3 {
+  margin: 0 0 12px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 30px;
+}
+
+.point-card p,
+.practice-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.practice-card .step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  color: var(--paper);
+  background: var(--uke-purple);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.lesson-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.lesson-nav-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(47, 27, 71, 0.12);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.strings-stage .string-strip {
+  position: absolute;
+  top: 88px;
+  bottom: 70px;
+  width: 12px;
+  border-radius: 999px;
+  background: #d7c9f0;
+}
+
+.strings-stage .string-strip[data-string="g"] { left: 90px; }
+.strings-stage .string-strip[data-string="c"] { left: 146px; }
+.strings-stage .string-strip[data-string="e"] { left: 202px; }
+.strings-stage .string-strip[data-string="a"] { left: 258px; }
+
+.strings-stage .string-label {
+  position: absolute;
+  bottom: 34px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.strings-stage .string-label[data-string="g"] { left: 70px; background: #6f46a7; }
+.strings-stage .string-label[data-string="c"] { left: 126px; background: #3c79c7; }
+.strings-stage .string-label[data-string="e"] { left: 182px; background: #1e9d6d; }
+.strings-stage .string-label[data-string="a"] { left: 238px; background: #da7f43; }
+
+.ukulele-figure[data-mode="g"] .string-strip[data-string="g"],
+.ukulele-figure[data-mode="c"] .string-strip[data-string="c"],
+.ukulele-figure[data-mode="e"] .string-strip[data-string="e"],
+.ukulele-figure[data-mode="a"] .string-strip[data-string="a"] {
+  background: #6f46a7;
+  box-shadow: 0 0 0 10px rgba(111, 70, 167, 0.12);
+}
+
+.ukulele-figure[data-mode="g"] .string-label[data-string="g"],
+.ukulele-figure[data-mode="c"] .string-label[data-string="c"],
+.ukulele-figure[data-mode="e"] .string-label[data-string="e"],
+.ukulele-figure[data-mode="a"] .string-label[data-string="a"] {
+  transform: scale(1.1);
+}
+
+.compare-board {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding-top: 70px;
+}
+
+.compare-box {
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(47, 27, 71, 0.08);
+  text-align: center;
+}
+
+.compare-box strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--uke-deep);
+  font-size: 20px;
+}
+
+.compare-box span {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.posture-kid,
+.hands-board,
+.parts-stage-board {
+  position: absolute;
+  inset: 0;
+}
+
+.parts-stage-board .part-zone {
+  position: absolute;
+  border-radius: 24px;
+  border: 2px dashed transparent;
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.parts-stage-board .part-zone.headstock {
+  right: 44px;
+  top: 126px;
+  width: 80px;
+  height: 84px;
+}
+
+.parts-stage-board .part-zone.neck {
+  right: 116px;
+  top: 156px;
+  width: 150px;
+  height: 50px;
+}
+
+.parts-stage-board .part-zone.body {
+  left: 66px;
+  top: 124px;
+  width: 238px;
+  height: 188px;
+}
+
+.parts-stage-board .part-zone.hole {
+  left: 156px;
+  top: 196px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+}
+
+.parts-stage-board .part-zone.bridge {
+  left: 112px;
+  top: 264px;
+  width: 110px;
+  height: 36px;
+}
+
+.ukulele-figure[data-mode="headstock"] .part-zone.headstock,
+.ukulele-figure[data-mode="neck"] .part-zone.neck,
+.ukulele-figure[data-mode="body"] .part-zone.body,
+.ukulele-figure[data-mode="hole"] .part-zone.hole,
+.ukulele-figure[data-mode="bridge"] .part-zone.bridge {
+  border-color: var(--uke-purple);
+  background: rgba(111, 70, 167, 0.12);
+  transform: scale(1.03);
+}
+
+.posture-kid .kid-head {
+  position: absolute;
+  left: 114px;
+  top: 74px;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #ffd5ae;
+}
+
+.posture-kid .kid-body {
+  position: absolute;
+  left: 94px;
+  top: 150px;
+  width: 136px;
+  height: 170px;
+  border-radius: 40px;
+  background: #89b9ff;
+}
+
+.posture-kid .kid-arm {
+  position: absolute;
+  width: 110px;
+  height: 22px;
+  border-radius: 18px;
+  background: #ffd5ae;
+}
+
+.posture-kid .kid-arm.left {
+  left: 64px;
+  top: 188px;
+  transform: rotate(-16deg);
+}
+
+.posture-kid .kid-arm.right {
+  left: 184px;
+  top: 208px;
+  transform: rotate(18deg);
+}
+
+.posture-kid .kid-leg {
+  position: absolute;
+  width: 28px;
+  height: 130px;
+  border-radius: 20px;
+  background: #5d4b86;
+}
+
+.posture-kid .kid-leg.left {
+  left: 114px;
+  bottom: 22px;
+}
+
+.posture-kid .kid-leg.right {
+  left: 176px;
+  bottom: 22px;
+}
+
+.posture-kid .mini-uke {
+  position: absolute;
+  left: 176px;
+  top: 156px;
+  width: 150px;
+  height: 116px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #efc17a 0%, #cf8847 100%);
+}
+
+.posture-kid .mini-uke-hole {
+  position: absolute;
+  left: 238px;
+  top: 194px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(47, 27, 71, 0.8);
+}
+
+.ukulele-figure[data-mode="stand"] .posture-kid .kid-leg {
+  height: 156px;
+}
+
+.ukulele-figure[data-mode="stand"] .posture-kid .mini-uke,
+.ukulele-figure[data-mode="stand"] .posture-kid .mini-uke-hole {
+  top: 138px;
+}
+
+.ukulele-figure[data-mode="ready"] .posture-kid .kid-arm.left {
+  transform: rotate(-28deg);
+}
+
+.ukulele-figure[data-mode="ready"] .posture-kid .kid-arm.right {
+  transform: rotate(4deg);
+}
+
+.hands-board .left-hand,
+.hands-board .right-hand {
+  position: absolute;
+  width: 116px;
+  height: 86px;
+  border-radius: 40px;
+  background: #ffd5ae;
+}
+
+.hands-board .left-hand {
+  left: 88px;
+  top: 126px;
+  transform: rotate(-18deg);
+}
+
+.hands-board .right-hand {
+  right: 74px;
+  top: 210px;
+  transform: rotate(22deg);
+}
+
+.hands-board .fret-neck {
+  position: absolute;
+  left: 146px;
+  top: 176px;
+  width: 194px;
+  height: 34px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #efd9ad 0%, #dcbf88 100%);
+}
+
+.hands-board .fret-mark {
+  position: absolute;
+  top: 176px;
+  width: 3px;
+  height: 34px;
+  background: rgba(47, 27, 71, 0.22);
+}
+
+.hands-board .fret-mark.one { left: 194px; }
+.hands-board .fret-mark.two { left: 236px; }
+.hands-board .fret-mark.three { left: 278px; }
+.hands-board .fret-mark.four { left: 320px; }
+
+.hands-board .strum-path {
+  position: absolute;
+  right: 98px;
+  top: 142px;
+  width: 60px;
+  height: 160px;
+  border-right: 4px dashed rgba(111, 70, 167, 0.4);
+  border-radius: 999px;
+}
+
+.hands-board .finger-dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--uke-purple);
+}
+
+.hands-board .finger-dot.one { left: 208px; top: 182px; }
+.hands-board .finger-dot.two { left: 248px; top: 182px; }
+.hands-board .finger-dot.three { left: 286px; top: 182px; }
+
+.ukulele-figure[data-mode="left"] .hands-board .left-hand,
+.ukulele-figure[data-mode="right"] .hands-board .right-hand,
+.ukulele-figure[data-mode="together"] .hands-board .left-hand,
+.ukulele-figure[data-mode="together"] .hands-board .right-hand {
+  box-shadow: 0 0 0 10px rgba(111, 70, 167, 0.12);
+}
+
+.ukulele-figure[data-mode="left"] .hands-board .strum-path {
+  opacity: 0.25;
+}
+
+.ukulele-figure[data-mode="right"] .hands-board .finger-dot,
+.ukulele-figure[data-mode="right"] .hands-board .fret-mark {
+  opacity: 0.3;
+}
+
+.ukulele-figure[data-mode="together"] .hands-board .strum-path {
+  border-right-color: rgba(111, 70, 167, 0.7);
+}
+
+@media (max-width: 980px) {
+  .ukulele-lesson-hero,
+  .point-grid,
+  .practice-grid,
+  .compare-board {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .ukulele-lesson-hero {
+    padding-top: 78px;
+    gap: 34px;
+    min-height: auto;
+  }
+
+  .ukulele-lesson-visual {
+    min-height: 360px;
+  }
+}

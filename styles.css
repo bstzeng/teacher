@@ -411,6 +411,15 @@ h1 em {
   box-shadow: var(--shadow);
 }
 
+.ukulele-category {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
 .category-visual {
   position: relative;
   min-height: 410px;
@@ -425,6 +434,10 @@ h1 em {
 
 .weather-visual-card {
   background: linear-gradient(180deg, #8dd5ff 0%, #3c78af 100%);
+}
+
+.ukulele-visual-card {
+  background: linear-gradient(180deg, #724aa7 0%, #3b225c 100%);
 }
 
 .category-visual::before {
@@ -579,6 +592,82 @@ h1 em {
 .weather-drop.three {
   left: 214px;
   top: 302px;
+}
+
+.uke-body {
+  position: absolute;
+  left: 54px;
+  top: 122px;
+  width: 214px;
+  height: 170px;
+  border-radius: 44% 44% 42% 42%;
+  background: linear-gradient(180deg, #f0c17b 0%, #c98645 100%);
+  box-shadow: inset 0 0 0 3px rgba(74, 38, 17, 0.28);
+}
+
+.uke-sound-hole {
+  position: absolute;
+  left: 128px;
+  top: 176px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(40, 19, 55, 0.85);
+  box-shadow: 0 0 0 7px rgba(254, 244, 220, 0.2);
+}
+
+.uke-neck {
+  position: absolute;
+  left: 222px;
+  top: 148px;
+  width: 104px;
+  height: 42px;
+  background: linear-gradient(180deg, #f4ddb0 0%, #e4c88c 100%);
+  border-radius: 10px;
+  transform: rotate(-6deg);
+}
+
+.uke-head {
+  position: absolute;
+  right: 34px;
+  top: 126px;
+  width: 66px;
+  height: 74px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f1d497 0%, #d8ad6a 100%);
+  transform: rotate(-6deg);
+}
+
+.uke-string {
+  position: absolute;
+  top: 145px;
+  width: 2px;
+  height: 154px;
+  background: rgba(255, 255, 255, 0.86);
+  transform: rotate(-6deg);
+  transform-origin: top center;
+}
+
+.uke-string.string-one { left: 258px; }
+.uke-string.string-two { left: 268px; }
+.uke-string.string-three { left: 278px; }
+.uke-string.string-four { left: 288px; }
+
+.uke-pick-note {
+  position: absolute;
+  color: #efc256;
+  font-size: 36px;
+}
+
+.uke-pick-note.note-one {
+  right: 46px;
+  top: 226px;
+}
+
+.uke-pick-note.note-two {
+  right: 94px;
+  top: 268px;
+  font-size: 28px;
 }
 
 .space-orbit.one {
@@ -959,7 +1048,8 @@ footer p:last-child {
 
   .aviation-category,
   .space-category,
-  .weather-category {
+  .weather-category,
+  .ukulele-category {
     grid-template-columns: 0.8fr 1.2fr;
   }
 
@@ -1030,7 +1120,8 @@ footer p:last-child {
 
   .aviation-category,
   .space-category,
-  .weather-category {
+  .weather-category,
+  .ukulele-category {
     grid-template-columns: 1fr;
   }
 

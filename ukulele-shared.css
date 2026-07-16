@@ -1,0 +1,608 @@
+:root {
+  --uke-purple: #6f46a7;
+  --uke-deep: #2f1b47;
+  --uke-cream: #fffaf2;
+  --uke-gold: #e7c16e;
+  --uke-mint: #dff4ea;
+  --uke-peach: #f6e1d1;
+  --uke-blue: #dfefff;
+}
+
+.ukulele-page {
+  background: linear-gradient(180deg, #fffaf2 0%, #f7f0ff 100%);
+}
+
+.ukulele-header {
+  background: rgba(255, 250, 242, 0.94);
+}
+
+.ukulele-breadcrumb {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ukulele-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--uke-purple);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.ukulele-eyebrow span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--uke-gold);
+}
+
+.ukulele-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 0 22px;
+  color: var(--uke-deep);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(47, 27, 71, 0.16);
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.secondary-button:hover {
+  transform: translateY(-1px);
+}
+
+.ukulele-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.ukulele-summary-card {
+  padding: 22px 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(84, 54, 124, 0.08);
+}
+
+.ukulele-summary-card strong {
+  display: block;
+  color: var(--uke-deep);
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.ukulele-summary-card span {
+  display: block;
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.ukulele-panel {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+  border-radius: 28px;
+  box-shadow: 0 18px 50px rgba(84, 54, 124, 0.08);
+}
+
+.ukulele-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: var(--uke-deep);
+  background: #f7eddc;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ukulele-note::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--uke-gold);
+  content: "";
+}
+
+.ukulele-card-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.ukulele-card-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ukulele-info-card {
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+}
+
+.ukulele-info-card h3 {
+  margin: 0 0 14px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 32px;
+  line-height: 1.08;
+}
+
+.ukulele-info-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.section-shell {
+  padding: 0 max(24px, calc((100% - 1180px) / 2));
+}
+
+.section-top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 34px;
+}
+
+.section-top h2 {
+  margin: 10px 0 0;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(36px, 4.4vw, 58px);
+  line-height: 1.08;
+}
+
+.section-top p {
+  max-width: 470px;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.lesson-chip-row,
+.song-meta-row,
+.chord-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lesson-chip,
+.song-meta-row span,
+.chord-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #f1e6ff;
+  color: var(--uke-purple);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ukulele-stage-shell {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.stage-visual-card,
+.stage-copy-card {
+  padding: 26px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+}
+
+.stage-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stage-controls button,
+.song-filter-row button,
+.quiz-options button,
+.song-list button {
+  font: inherit;
+}
+
+.stage-controls button,
+.song-filter-row button {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--uke-deep);
+  background: #efe5fb;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.stage-controls button.is-active,
+.song-filter-row button.is-active {
+  color: var(--paper);
+  background: var(--uke-purple);
+}
+
+.stage-controls button:hover,
+.song-filter-row button:hover,
+.quiz-options button:hover,
+.song-list button:hover {
+  transform: translateY(-1px);
+}
+
+.stage-copy-card h3 {
+  margin: 0 0 14px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 34px;
+}
+
+.stage-copy-card p,
+.stage-copy-card li,
+.quiz-card p,
+.song-detail p,
+.song-card p {
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.stage-copy-card ul,
+.quiz-card ul,
+.song-detail ul {
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+.ukulele-figure {
+  position: relative;
+  min-height: 400px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f6eefc 0%, #ece2fb 100%);
+}
+
+.hero-uke-body {
+  position: absolute;
+  left: 78px;
+  top: 150px;
+  width: 280px;
+  height: 220px;
+  border-radius: 44% 44% 42% 42%;
+  background: linear-gradient(180deg, #f1c985 0%, #c98342 100%);
+}
+
+.hero-uke-hole {
+  position: absolute;
+  left: 180px;
+  top: 220px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(47, 27, 71, 0.82);
+  box-shadow: 0 0 0 10px rgba(255, 245, 228, 0.18);
+}
+
+.hero-uke-neck {
+  position: absolute;
+  right: 82px;
+  top: 188px;
+  width: 180px;
+  height: 58px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #efd9ad 0%, #dcbf88 100%);
+  transform: rotate(-6deg);
+}
+
+.hero-uke-head {
+  position: absolute;
+  right: 38px;
+  top: 154px;
+  width: 92px;
+  height: 100px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #f4d6a1 0%, #d2a15f 100%);
+  transform: rotate(-6deg);
+}
+
+.hero-uke-string {
+  position: absolute;
+  top: 185px;
+  width: 3px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.86);
+  transform: rotate(-6deg);
+}
+
+.hero-uke-string.one { left: 332px; }
+.hero-uke-string.two { left: 348px; }
+.hero-uke-string.three { left: 364px; }
+.hero-uke-string.four { left: 380px; }
+
+.uke-stage-tag {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--uke-purple);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.stage-badge {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  padding: 8px 12px;
+  border-radius: 16px;
+  background: rgba(47, 27, 71, 0.86);
+  color: var(--paper);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.quiz-card {
+  padding: 30px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+}
+
+.quiz-progress {
+  margin-bottom: 10px;
+  color: var(--uke-purple);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.quiz-card h3 {
+  margin: 0 0 16px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 34px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.quiz-options button {
+  min-height: 52px;
+  padding: 12px 16px;
+  text-align: left;
+  border: 1px solid rgba(47, 27, 71, 0.12);
+  border-radius: 18px;
+  color: var(--uke-deep);
+  background: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.quiz-feedback {
+  min-height: 28px;
+  margin-top: 14px;
+  color: var(--uke-purple);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.quiz-next {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  min-height: 48px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--paper);
+  background: var(--uke-deep);
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.quiz-next[disabled] {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.chord-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.chord-card {
+  padding: 20px 18px 18px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+}
+
+.chord-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.chord-head h4 {
+  margin: 0;
+  color: var(--uke-deep);
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 32px;
+}
+
+.chord-head span {
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.chord-diagram {
+  position: relative;
+  padding-top: 18px;
+}
+
+.chord-string-labels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 8px;
+  color: var(--uke-purple);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.chord-grid {
+  position: relative;
+  height: 178px;
+  border-top: 6px solid var(--uke-deep);
+}
+
+.chord-grid .string {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(47, 27, 71, 0.5);
+}
+
+.chord-grid .fret {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(47, 27, 71, 0.25);
+}
+
+.chord-grid .string[data-index="0"] { left: 12.5%; }
+.chord-grid .string[data-index="1"] { left: 37.5%; }
+.chord-grid .string[data-index="2"] { left: 62.5%; }
+.chord-grid .string[data-index="3"] { left: 87.5%; }
+
+.chord-grid .fret[data-index="1"] { top: 25%; }
+.chord-grid .fret[data-index="2"] { top: 50%; }
+.chord-grid .fret[data-index="3"] { top: 75%; }
+.chord-grid .fret[data-index="4"] { top: 100%; }
+
+.chord-dot {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--uke-purple);
+  color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+  transform: translate(-50%, -50%);
+}
+
+.chord-open {
+  position: absolute;
+  top: -14px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--uke-purple);
+  border-radius: 50%;
+  background: var(--paper);
+  transform: translateX(-50%);
+}
+
+.chord-tip {
+  margin: 14px 0 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ukulele-footer-note {
+  padding: 0 max(24px, calc((100% - 1180px) / 2)) 90px;
+}
+
+.ukulele-footer-note .ukulele-panel {
+  padding: 28px;
+}
+
+@media (max-width: 980px) {
+  .ukulele-summary-grid,
+  .ukulele-card-grid.two,
+  .ukulele-stage-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .section-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .ukulele-button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .secondary-button,
+  .ukulele-button-row .button {
+    justify-content: center;
+  }
+
+  .ukulele-summary-card {
+    padding: 20px;
+  }
+
+  .stage-visual-card,
+  .stage-copy-card,
+  .quiz-card {
+    padding: 22px;
+  }
+
+  .ukulele-figure {
+    min-height: 340px;
+  }
+}

@@ -1,0 +1,478 @@
+.ukulele-hero {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 64px;
+  align-items: center;
+  min-height: 720px;
+  padding: 100px max(24px, calc((100% - 1180px) / 2)) 90px;
+}
+
+.ukulele-hero-copy h1,
+.song-hero-copy h1 {
+  margin: 22px 0 20px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: clamp(56px, 6.4vw, 88px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.ukulele-hero-copy h1 em,
+.song-hero-copy h1 em {
+  color: var(--uke-purple);
+  font-style: italic;
+}
+
+.ukulele-hero-copy .hero-intro,
+.song-hero-copy .hero-intro {
+  max-width: 650px;
+  color: var(--ink-soft);
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.ukulele-hero-visual {
+  position: relative;
+  min-height: 560px;
+  border-radius: 32px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #774cb4 0%, #35204e 100%);
+  box-shadow: 22px 22px 0 rgba(231, 193, 110, 0.7);
+}
+
+.ukulele-hero-visual::before {
+  position: absolute;
+  inset: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  content: "";
+}
+
+.hero-note {
+  position: absolute;
+  top: 30px;
+  left: 34px;
+  color: var(--uke-gold);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.hero-uke-body {
+  position: absolute;
+  left: 78px;
+  top: 150px;
+  width: 280px;
+  height: 220px;
+  border-radius: 44% 44% 42% 42%;
+  background: linear-gradient(180deg, #f1c985 0%, #c98342 100%);
+}
+
+.hero-uke-hole {
+  position: absolute;
+  left: 180px;
+  top: 220px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(47, 27, 71, 0.82);
+  box-shadow: 0 0 0 10px rgba(255, 245, 228, 0.18);
+}
+
+.hero-uke-neck {
+  position: absolute;
+  right: 82px;
+  top: 188px;
+  width: 180px;
+  height: 58px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #efd9ad 0%, #dcbf88 100%);
+  transform: rotate(-6deg);
+}
+
+.hero-uke-head {
+  position: absolute;
+  right: 38px;
+  top: 154px;
+  width: 92px;
+  height: 100px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #f4d6a1 0%, #d2a15f 100%);
+  transform: rotate(-6deg);
+}
+
+.hero-uke-string {
+  position: absolute;
+  top: 185px;
+  width: 3px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.86);
+  transform: rotate(-6deg);
+}
+
+.hero-uke-string.one { left: 332px; }
+.hero-uke-string.two { left: 348px; }
+.hero-uke-string.three { left: 364px; }
+.hero-uke-string.four { left: 380px; }
+
+.hero-floating-card {
+  position: absolute;
+  padding: 14px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--uke-deep);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.6;
+  box-shadow: 0 16px 30px rgba(28, 13, 45, 0.18);
+}
+
+.hero-floating-card.top {
+  right: 38px;
+  bottom: 122px;
+}
+
+.hero-floating-card.bottom {
+  left: 36px;
+  bottom: 36px;
+}
+
+.ukulele-quick-links,
+.ukulele-roadmap,
+.ukulele-completed,
+.ukulele-starter-chords,
+.song-library-section,
+.song-structure-section,
+.song-add-section {
+  padding-top: 86px;
+  padding-bottom: 18px;
+}
+
+.quick-link-grid,
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.quick-link-card,
+.lesson-entry,
+.roadmap-block,
+.song-detail,
+.song-add-card {
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+  box-shadow: 0 18px 50px rgba(84, 54, 124, 0.08);
+}
+
+.quick-link-card h3,
+.lesson-entry h3,
+.roadmap-block h3,
+.song-detail h3,
+.song-add-card h3 {
+  margin: 12px 0 12px;
+  font-family: "Newsreader", "Noto Sans TC", serif;
+  font-size: 34px;
+  line-height: 1.08;
+}
+
+.quick-link-card p,
+.lesson-entry p,
+.roadmap-block p,
+.song-add-card p {
+  margin: 0 0 18px;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.lesson-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lesson-entry-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.lesson-number {
+  color: var(--uke-purple);
+  font-family: "Newsreader", serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.lesson-entry a,
+.quick-link-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.roadmap-block ol {
+  margin: 0;
+  padding-left: 22px;
+  color: var(--ink-soft);
+}
+
+.roadmap-block li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.roadmap-block li strong {
+  color: var(--uke-deep);
+}
+
+.song-hero {
+  display: grid;
+  grid-template-columns: 0.98fr 1.02fr;
+  gap: 54px;
+  align-items: center;
+  min-height: 660px;
+  padding: 100px max(24px, calc((100% - 1180px) / 2)) 84px;
+}
+
+.song-hero-visual {
+  position: relative;
+  min-height: 500px;
+  border-radius: 32px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #fff4e1 0%, #f3e7ff 100%);
+  border: 1px solid rgba(47, 27, 71, 0.1);
+}
+
+.music-sheet {
+  position: absolute;
+  inset: 40px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.music-line {
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  height: 2px;
+  background: rgba(47, 27, 71, 0.16);
+}
+
+.music-line.one { top: 100px; }
+.music-line.two { top: 126px; }
+.music-line.three { top: 152px; }
+.music-line.four { top: 178px; }
+.music-line.five { top: 204px; }
+
+.music-line.six { top: 282px; }
+.music-line.seven { top: 308px; }
+.music-line.eight { top: 334px; }
+.music-line.nine { top: 360px; }
+.music-line.ten { top: 386px; }
+
+.music-note {
+  position: absolute;
+  color: var(--uke-purple);
+  font-size: 54px;
+}
+
+.music-note.one { top: 116px; left: 112px; }
+.music-note.two { top: 96px; left: 200px; }
+.music-note.three { top: 296px; left: 182px; }
+.music-note.four { top: 270px; right: 118px; }
+
+.music-uke-mini {
+  position: absolute;
+  right: 54px;
+  bottom: 40px;
+  width: 180px;
+  height: 120px;
+  border-radius: 26px;
+  background: linear-gradient(180deg, #774cb4 0%, #4a2f70 100%);
+}
+
+.music-uke-mini::before {
+  position: absolute;
+  left: 24px;
+  top: 28px;
+  width: 72px;
+  height: 60px;
+  border-radius: 48%;
+  background: #d79c58;
+  content: "";
+}
+
+.music-uke-mini::after {
+  position: absolute;
+  right: 18px;
+  top: 44px;
+  width: 70px;
+  height: 18px;
+  border-radius: 10px;
+  background: #ead09f;
+  content: "";
+}
+
+.song-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.song-library-layout {
+  display: grid;
+  grid-template-columns: 0.84fr 1.16fr;
+  gap: 18px;
+}
+
+.song-list {
+  display: grid;
+  gap: 12px;
+}
+
+.song-list button {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  text-align: left;
+  border: 1px solid rgba(47, 27, 71, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+}
+
+.song-list button.is-active {
+  background: #efe5fb;
+  border-color: rgba(111, 70, 167, 0.38);
+}
+
+.song-list strong {
+  display: block;
+  color: var(--uke-deep);
+  font-size: 18px;
+}
+
+.song-list span {
+  display: block;
+  margin-top: 6px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.song-detail {
+  min-height: 100%;
+}
+
+.song-detail .song-title-row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.song-detail .song-title-row h3 {
+  margin: 0;
+}
+
+.song-detail-block {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(47, 27, 71, 0.08);
+}
+
+.song-detail-block h4 {
+  margin: 0 0 10px;
+  color: var(--uke-purple);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.song-structure-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.song-add-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 980px) {
+  .ukulele-hero,
+  .song-hero,
+  .lesson-grid,
+  .song-library-layout,
+  .song-structure-grid,
+  .song-add-grid,
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .ukulele-hero,
+  .song-hero {
+    padding-top: 78px;
+    gap: 34px;
+    min-height: auto;
+  }
+
+  .ukulele-hero-visual,
+  .song-hero-visual {
+    min-height: 380px;
+  }
+
+  .hero-uke-body {
+    left: 42px;
+    top: 148px;
+    width: 210px;
+    height: 168px;
+  }
+
+  .hero-uke-hole {
+    left: 114px;
+    top: 202px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero-uke-neck {
+    right: 52px;
+    top: 186px;
+    width: 132px;
+    height: 44px;
+  }
+
+  .hero-uke-head {
+    right: 18px;
+    top: 160px;
+    width: 74px;
+    height: 84px;
+  }
+
+  .hero-uke-string.one { left: 214px; }
+  .hero-uke-string.two { left: 226px; }
+  .hero-uke-string.three { left: 238px; }
+  .hero-uke-string.four { left: 250px; }
+}
