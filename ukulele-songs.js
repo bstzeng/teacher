@@ -136,45 +136,6 @@ const ukuleleSongLibrary = [
   }
 ];
 
-const ukuleleCueGuideLibrary = {
-  twinkle: [
-    [["C", "開頭第 1 句"], ["C", "開頭第 2 句"], ["F", "往上唱的句子"], ["C", "回主句"]],
-    [["F", "第二段前半"], ["C", "第二段回主和弦"], ["G7", "準備結尾"], ["C", "最後一句"]]
-  ],
-  mary: [
-    [["C", "主角名字句"], ["G7", "小羊句"], ["C", "重複句"], ["F", "描述句"]],
-    [["C", "往前走的句子"], ["G7", "跟著走句"], ["C", "收尾句"]]
-  ],
-  "two-tigers": [
-    [["C", "開頭重複句"], ["C", "第二個重複句"], ["G7", "變化句"], ["G7", "接續句"]],
-    [["C", "再回主句"], ["C", "重複"], ["G7", "最後轉折"], ["C", "收尾"]]
-  ],
-  "clap-hands": [
-    [["C", "開頭邀請句"], ["C", "動作句"], ["G7", "再唱一次"], ["G7", "動作重複"]],
-    [["C", "大家一起"], ["F", "動作段"], ["C", "回主句"], ["G7", "準備收尾"], ["C", "結尾"]]
-  ],
-  "happy-birthday": [
-    [["C", "祝福句 1"], ["G7", "祝福句 2"], ["G7", "名字句前半"], ["C", "名字句後半"]],
-    [["C7", "轉向高點"], ["F", "長音句"], ["C", "回主句"], ["G7", "最後轉折"], ["C", "收尾"]]
-  ],
-  "old-macdonald": [
-    [["C", "開頭介紹"], ["C", "農場句"], ["C", "繼續主句"], ["G7", "呼應句"]],
-    [["G7", "動物段前半"], ["C", "動物段後半"], ["F", "叫聲段"], ["C", "回主句"], ["G7", "轉折"], ["C", "收尾"]]
-  ],
-  "abc-song": [
-    [["C", "字母前段"], ["C", "接續"], ["F", "中段"], ["C", "回主句"]],
-    [["G7", "後段轉折"], ["C", "再接續"], ["F", "最後前半"], ["C", "收尾"]]
-  ],
-  "little-donkey": [
-    [["C", "開頭介紹"], ["C", "重複主句"], ["F", "故事前進"], ["C", "回主句"]],
-    [["G7", "轉折段"], ["C", "接續故事"], ["F", "再推進"], ["G7", "準備結尾"], ["C", "收尾"]]
-  ],
-  "pull-the-turnip": [
-    [["C", "開頭動作句"], ["C", "重複動作"], ["G7", "用力句"], ["C", "回主句"]],
-    [["F", "大家一起"], ["C", "接續幫忙"], ["G7", "最後用力"], ["C", "拔出來"]]
-  ]
-};
-
 document.addEventListener("DOMContentLoaded", () => {
   const chordTarget = document.getElementById("song-chord-gallery");
   const filterRow = document.getElementById("song-filters");
@@ -188,25 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.UkuleleTools?.renderChordGallery(chordTarget, ["C", "Am", "F", "G7", "G", "Dm", "C7", "Am7"]);
 
   const renderDetail = (song) => {
-    const cueGuideMarkup = (ukuleleCueGuideLibrary[song.id] || [])
-      .map(
-        (line) => `
-          <div class="lyric-guide-line">
-            ${line
-              .map(
-                ([chord, text]) => `
-                  <div class="lyric-segment">
-                    <span class="lyric-chord">${chord}</span>
-                    <span class="lyric-text">${text}</span>
-                  </div>
-                `
-              )
-              .join("")}
-          </div>
-        `
-      )
-      .join("");
-
     detailEl.innerHTML = `
       <div class="song-title-row">
         <div>
@@ -229,13 +171,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="song-detail-block">
         <h4>簡化和弦順序</h4>
         <p>${song.structure}</p>
-      </div>
-      <div class="song-detail-block">
-        <h4>換和弦提示</h4>
-        <p class="song-focus-note">這裡只保留已先篩過的 9 首。因為不同教材和版本歌詞差很多，所以先用「句子位置提示」幫你看換和弦點，避免再放錯版本歌詞。</p>
-        <div class="song-lyric-guide songbook-guide">
-          ${cueGuideMarkup}
-        </div>
       </div>
       <div class="song-detail-block">
         <h4>老師提醒</h4>
